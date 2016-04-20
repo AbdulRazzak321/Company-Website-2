@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/time-is-the-fire-in-which-we-burn by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:29:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Time Is the Fire in Which We Burn — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Time Is the Fire in Which We Burn — Futurice">
+  <meta property="og:description" name="description" content="In the software industry it is not uncommon to come across time related bugs or legacy software that has serious issues in its handling of time. Even when designing new features, especially in mobile software, it often causes headache to present time for a user that is potentially travelling around the world. The topic of time itself is huge, and it has bothered me that I haven&#x27;t found a good article describing the relevant concepts of time from the software development perspective. This article is my personal take on things one should take into consideration when working with, or against, time.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="time-is-the-fire-in-which-we-burn.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/6377784239_8b07c69cc1_o_s1200x630_noupscale.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-3" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-3.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-3.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-09-08T10:46:24Z">
+          September  8, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Time Is the Fire in Which We Burn
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <span class="article__header__author-link" rel="author">
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Juho Vähä-Herttua</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Senior Software Engineer</span>
+                </div>
+              </span>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searcha750.html?q=date" class="article__header__tag-link">
+                  <span class="article__header__tag-name">date</span></a>, 
+                <a href="../searchbdd7.html?q=time" class="article__header__tag-link">
+                  <span class="article__header__tag-name">time</span></a>, 
+                <a href="../search538d.html?q=timezone" class="article__header__tag-link">
+                  <span class="article__header__tag-name">timezone</span></a>, 
+                <a href="../search38d7.html?q=calendar" class="article__header__tag-link">
+                  <span class="article__header__tag-name">calendar</span></a>, 
+                <a href="../search74c3.html?q=era" class="article__header__tag-link">
+                  <span class="article__header__tag-name">era</span></a>, 
+                <a href="../search0881.html?q=computers" class="article__header__tag-link">
+                  <span class="article__header__tag-name">computers</span></a>, 
+                <a href="../search3d6e.html?q=utc" class="article__header__tag-link">
+                  <span class="article__header__tag-name">utc</span></a>, 
+                <a href="../search8aea.html?q=greenwich" class="article__header__tag-link">
+                  <span class="article__header__tag-name">greenwich</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p class="article__paragraph">In the software industry it is not uncommon to come across time related bugs or legacy software that has serious issues in its handling of time. Even when designing new features, especially in mobile software, it often causes headache to present time for a user that is potentially travelling around the world. The topic of time itself is huge, and it has bothered me that I haven't found a good article describing the relevant concepts of time from the software development perspective. This article is my personal take on things one should take into consideration when working with, or against, time.</p>
+
+<h2 class="article__heading--h2">Basic Concepts of Time</h2>
+
+<p dir="ltr">When starting to work with date and time, people are often confused about what is so difficult about it and why. This is only natural, since regarding dates and times we usually work in a somewhat monocultural environment where people know from experience what is meant by dates and times. When applying the same concepts globally and historically things become much more difficult, so let’s look at some basic concepts of date and time and see what makes them complicated. Some of the examples are simplified in order to keep this article compact.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/530100860_433a8bb8e0_o_s1800x0_q80_noupscale.jpg" target="_blank"><img alt="The Prague astronomical clock showing both time and astronomical details" src="../../flockler.com/thumbs/1992/530100860_433a8bb8e0_o_s830x0_q80_noupscale.jpg"></a></div>
+
+<figcaption><span class="article__figure__caption">The Prague astronomical clock showing both time and astronomical details (photo by Kainet, CC BY)</span></figcaption>
+</figure>
+
+<h3 class="article__heading--h3">Calendar</h3>
+
+<p class="article__lead-paragraph" dir="ltr"><em>A system measuring astronomical cycles, such as years (revolutions of the earth around the sun), months (revolutions of the moon around the earth) and days (rotation of the earth on its axis).</em></p>
+
+<p class="article__paragraph" dir="ltr">One difficulty is that a month is actually somewhere between 29.18 and 29.93 days long depending on the location of earth on its elliptic orbit around the sun. Actually it’s even more complicated than that, because we can measure a full rotation in several ways, e.g. based on its location with respect to the stars or with respect to to the sun. In any case days in a month is a fractional number and difficult to calculate. Similarly there are about 12.36 months in a year, which is also an inconvenient number. The most common calendar in use is the Gregorian calendar, which is used in pretty much all international standards and forms the basis for many other calendars. However, other calendars, like the Islamic Hijri calendar which uses completely different date numbering, are also in official use.</p>
+
+<p class="article__paragraph" dir="ltr">In addition to the officially used calendars, it is quite common to use traditional calendars for different traditional holidays. For example the Orthodox church still continues to use the Julian calendar (astronomically less accurate predecessor of the Gregorian calendar) for their holidays. Also, holidays in China often fall on the new moon or the full moon, which means they still need to be determined by the traditional Chinese lunar calendar.</p>
+
+<div contenteditable="false" tabindex="-1">
+<div contenteditable="false" tabindex="-1">
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/6377784239_8b07c69cc1_o_s1800x0_q80_noupscale.jpg" target="_blank"><img alt="Ancient Aztec/Mayan calendar" src="../../flockler.com/thumbs/1992/6377784239_8b07c69cc1_o_s830x0_q80_noupscale.jpg"></a></div>
+
+<figcaption><span class="article__figure__caption">Ancient Aztec/Mayan calendar (photo by Kim Alaniz, CC BY-ND)</span></figcaption>
+</figure>
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="><span><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="></span>
+</div>
+</div>
+
+<h3 class="article__heading--h3">Era</h3>
+
+<p class="article__lead-paragraph"><em>The year numbering system used by a certain calendar during a certain period.</em></p>
+
+<p>This is purely cultural. There are several calendars currently in use that are identical in how they measure dates, months and years, except that they count the years differently. The Gregorian calendar counts years from the assumed birth year of Jesus of Nazareth, but traces back to the Roman calendar which used to count years from the founding of Rome. The current Gregorian calendar era is traditionally called anno Domini, as in year of the Lord, but here we use the alternative name Common Era (CE), as the era is now widely used in non-Christian context as well. As another example, the official calendar in Thailand since 1940 is a renumbered Gregorian calendar so that year 2015 CE is year 2558 BE (Buddhist Era), the buddhist era starting from the assumed year of the Buddha leaving his body and attaining nirvana.</p>
+
+<p>Similarly Republic of China in Taiwan is using a Gregorian calendar where the first year is the year the republic was founded, so year 2015 CE is ROC (Republic of China) year 104. Coincidentally the ROC calendar is identical to the Juche calendar used in North Korea since 1997, because Kim Il-Sung was born on the same year as the Republic of China was founded. Japan has also migrated to the Gregorian calendar, but officially still keeps using the old Chinese practice of numbering years, which means restarting the era on every ascension of a new emperor. The current era in Japan is Heisei of emperor Akihito, and year 2015 CE is year 27 of Heisei.</p>
+
+<div contenteditable="false" tabindex="-1">
+<div contenteditable="false" tabindex="-1">
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/500jpy_s1800x0_q80_noupscale.jpg" target="_blank"><img alt="Modern Japanese 500 yen coin minted in year 18 of the Heisei period (2006)" src="../../flockler.com/thumbs/1992/500jpy_s830x0_q80_noupscale.jpg"></a></div>
+
+<figcaption><span class="article__figure__caption">Modern Japanese 500 yen coin minted in year 18 of the Heisei period (2006)</span></figcaption>
+</figure>
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="><span><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="></span>
+</div>
+</div>
+
+<h3 class="article__heading--h3">Time</h3>
+
+<p class="article__lead-paragraph" dir="ltr"><em>A system dividing the rotation of the earth on its axis to smaller units that are easily and accurately measurable, mainly hours, minutes and seconds.</em></p>
+
+<p dir="ltr">What makes time problematic is that the rotation of the earth is not constant and varies depending on the time of the year, due to the elliptic orbit of the earth. This has been solved by using the mean solar day in calculations, since it is almost constant between years. Almost. Events like tidal friction, earthquakes and movement of the earth’s crust affect the rotation.</p>
+
+<p dir="ltr">Currently the variation in rotation is solved for scientific purposes by defining the SI second as periods of radiation of the caesium 133 atom. There are over four hundred clocks around the world counting time based on this definition, and together they define TAI (International Atomic Time), which is the basis of our current time. In addition to this, there is another definition of time called Universal Time, of which the UT1 version is the one that has remained in use. This definition is based on the mean solar time at 0° longitude and therefore drifts a bit from TAI depending on the rotation speed of the earth. Therefore, finally, a concept of UTC (Coordinated Universal Time) was created, which follows TAI, but adds or removes leap seconds to keep itself always within 0.9 seconds from the “real solar time” UT1.</p>
+
+<p dir="ltr">The history of time in itself is extremely interesting, and I very much recommend visiting the Royal Observatory, Greenwich London to understand how the measurement of time has changed our society and saved countless lives. However, the introduction of UTC has more or less solved the problem of time itself in our daily lives and all the civil clocks in the world are now synchronised to it. Its slightly weird abbreviation is actually a compromise between CUT proposed by the English speakers and TUC (for “temps universel coordonné”) proposed by the French speakers. There is an ongoing debate of whether leap seconds should be removed to simplify calculations, but that would mean UTC would not follow the Universal Time any more.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/shepherds--s7yorhhqlk_s1800x0_q80_noupscale.jpg" target="_blank"><img alt="Shepherd Gate Clock, likely the first public clock to show Greenwich Mean Time" src="../../flockler.com/thumbs/1992/shepherds--s7yorhhqlk_s830x0_q80_noupscale.jpg"></a></div>
+
+<figcaption><span class="article__figure__caption">Shepherd Gate Clock, likely the first public clock to show Greenwich Mean Time</span></figcaption>
+</figure>
+
+<h3 class="article__heading--h3">Time Zone</h3>
+
+<p class="article__lead-paragraph" dir="ltr"><em>A region that observes a uniform standard time, meaning all clocks in the region are synchronised to show the exact same time.</em></p>
+
+<p dir="ltr">The problem time zones are trying to solve is that people are historically used to time their lives by using midnight and noon as reference points. Always observing the local solar time, as was still common in the early 19th century before railway networks were developed, is not practical, because people would have to resynchronise their clocks even on short travels. Also, it would have been easy to set all the clocks in the world to UTC (or its predecessor GMT, Greenwich Mean Time), but it would mean that e.g. midnight in Hawaii would be at 10 AM. The locals might very well get used to this, but it would be very difficult for everyone from other regions to realise what is early and what is late in Hawaii. Hence, time zones were invented as a compromise between these two.</p>
+
+<p dir="ltr">Most time zones are simply offset from UTC by a whole number of hours, and even if the number of hours is not whole the concept is very clear. There are mainly two things that make time zones very painful to handle: Daylight Saving Time and constant change. Daylight Saving Time is very controversial and was first implemented by Germany and Austria-Hungary during World War I in order to save coal, but it has been widely adopted in the Western world since the 1970s. The idea is that the clocks are moved forward during the summer in order to have more daylight after the workday. However, it is not clear if this saves much energy in the modern world where heating and especially lighting is constantly developing at a fast pace, but what is clear is that it makes local time non-continuous and difficult to handle.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/dolphins_s1800x0_q80_noupscale.jpg" target="_blank"><img alt="An artistic sundial in Greenwich, with a changeable plate for DST" src="../../flockler.com/thumbs/1992/dolphins_s830x0_q80_noupscale.jpg"></a></div>
+
+<figcaption><span class="article__figure__caption">An artistic sundial in Greenwich, with a changeable plate for DST</span></figcaption>
+</figure>
+
+<p dir="ltr">To name some difficulties, for example in the EU, the last Sunday of March does not have the time 3:30 AM at all and the last Sunday of October has the time 3:30 AM twice. What makes things more complicated is that different countries move to the Daylight Saving Time on a different date, and on the southern hemisphere it is actually from around October to April, which is opposite from the northern hemisphere. One cannot even rely on the midnight being 00:00 on a 24-hour clock, because in the Gaza Strip (the political status of which is very unclear, but is de facto governed by Hamas) they have decided to move to the Daylight Saving Time on the last Friday of March exactly at midnight, which means midnight on that day is actually at 1:00 AM. People have often combined a date with a zero time to construct a local midnight timestamp, but even that cannot be relied on without validation.</p>
+
+<p dir="ltr">Another problem is the constant change, which means that the time zone rules are not stable. For example in only the last five years since 2010, the time zones in Russia have had three major changes that have changed both the boundaries and also the DST rules observed. In 2011 Samoa moved from UTC-11 to UTC+13, practically skipping a day. The People’s Republic of China during its founding abolished the time zones in 1949 to simplify things and since that year everyone has followed Beijing Time all over the country, but even this is not as simple as it sounds. They experimented with the daylight saving time from 1986 to 1991 and this still needs to be taken into account on events that happened on those years. Also the fixed time causes the western parts of China, mainly Xinjiang and Tibet, to have sunrises as late as 9:41 in the winter and sunsets as late as 21:50 in the summer. Therefore the Uyghur minority in China have established their own time zone and having a clock on a certain time can even be considered a political statement in the Xinjiang area.</p>
+
+<p dir="ltr">There are numerous other unexpected changes as well, the most recent one being North Korea changing their time zone from UTC+9 to UTC+8.5 on August 2015, because they consider the UTC+9 zone introduced by Japan during Japanese colonisation of the Korean peninsula imperialistic. Recently Egypt and Morocco in turn have decided to observe Daylight Saving Time, but so that it is suspended for the Ramadan period, so they actually turn their clocks four times a year. Countries in general consider their time zone as part of their identity, which means political changes often result in time zone changes. Nevertheless, when working with time one can never escape history, because historical events still need to be placed on a timeline.</p>
+
+<div contenteditable="false" tabindex="-1">
+<div contenteditable="false" tabindex="-1">
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/standard_world_time_zones_s1800x0_q80_noupscale.png" target="_blank"><img alt="Time zones without DST on August 2015" src="../../flockler.com/thumbs/1992/standard_world_time_zones_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption> <span class="article__figure__caption">Time zones without DST on August 2015 (by TimeZonesBoy, CC BY-SA)</span></figcaption>
+</figure>
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="><span><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="></span>
+</div>
+</div>
+
+<h2 class="article__heading--h2">Time in Computers</h2>
+
+<p>After understanding the basic concepts, there are some small details that should be taken into account when using computers to calculate time. The international standard for handling date and time related data is called ISO 8601, and the definitions used here are more or less in line with the definitions of ISO 8601.</p>
+
+<h3 class="article__heading--h3">Time</h3>
+
+<p dir="ltr">The most common way of counting time instants with computers is Unix time, meaning seconds that have elapsed since 00:00:00 UTC, January 1st, 1970. In general when working with time in seconds one doesn’t have to worry about anything. Leap seconds are the only possible problem, because Unix time handles leap seconds by replaying the last second before leap second to keep in sync with the UTC. Modern frameworks and libraries usually use a variation called UTC-SLS (UTC with Smoothed Leap Seconds), which slows down or accelerates the clock 1000 seconds before the leap second to minimise its effect. Only applications that need extreme precision have to take leap seconds into account.</p>
+
+<p dir="ltr">When talking about hours one has to pay a bit more attention to the presentation. The main thing to understand is that when we humans talk about an hour, it pretty much always means 60 minutes. But because of time zone changes, 60 minutes from 2:30 AM can be 3:30 AM or 4:30 AM or something completely different, depending on the time zone and the date used. Therefore, always when working with time one should realise that a time instant cannot be presented in local time used by humans without also knowing the date and the time zone used.</p>
+
+<h3 class="article__heading--h3">Date</h3>
+
+<p dir="ltr">It is very much recommended to do date handling using the Gregorian calendar, since it is the basis of ISO 8601 interchange format for dates and times. The important thing to pay attention to is the slightly unintuitive arithmetics caused by variable length months. For example date 2015-01-31 + 2 months results in date 2015-03-31, but depending a bit on the implementation date 2015-01-31 + 1 month + 1 month results in date 2015-03-28. This is naturally because February does not have 31 days and it gets rounded down to the last day of February which is the 28th. Same thing happens with years when doing 2012-02-29 + 1 year, which results in 2013-02-28 because of the leap year. But unlike with time zones, people are usually already used to these anomalies. The financial markets use 360-day calendar to avoid these problems, but that’s another topic.</p>
+
+<p dir="ltr">Date on its own is mostly useful for recording things like birthdays or independence days, which people celebrate on the same day regardless of where they are. Dates can also be combined with time in order to create a local date and time combination, but without knowing the exact time zone used it is neither possible to validate if that date and time combination exists nor is it possible to convert it to UTC timestamp for chronological comparison. Converting a date from one calendar to another should always be safe and very useful in doing localisation to different regions. And last but not least, one should never assume that a day is 24 hours or any number of minutes or seconds. It might be, sometimes even without exception, but it should not be assumed.</p>
+
+<h3 class="article__heading--h3">Time Zone</h3>
+
+<p dir="ltr">Time zones are quite well described in the earlier paragraphs, but there is one very common misunderstanding about them that needs to be corrected: many seem to think that by combining a UTC timestamp with the local time zone UTC offset as in “2015-09-01T08:00:00+03:00” is enough to handle the time zone problem completely. This is true if one only cares about the exact time when an event happened (a timestamp) and the local time when it happened. But if we want to do any operations on that time, like add hours or days to it, we need to know the actual time zone where the event happened to keep the local time representation in sync. In this particular case the IANA (Internet Assigned Numbers Authority) time zone name would be “Europe/Helsinki”, and with that information we can add days or hours to it without risk of losing track of local time.</p>
+
+<p dir="ltr">Because the time zone rules can be extremely complicated, there is a quite comprehensive database called IANA time zone database, which is used by almost all operating systems and platforms. It is sometimes also called the Olson database by its original author Arthur David Olson. It does not even try to maintain exact time zone information for zones that have ceased to exist before 1970, but for zones that are currently still in use it has quite comprehensive history dating all the way back to the 19th century. The database is maintained by the community and if anyone finds inaccuracies in it, they are free to send an email to the maintainers with an explanation and proof of the required change, and it will most likely be included in the database.</p>
+
+<h3 class="article__heading--h3">Instant</h3>
+
+<p dir="ltr">Instant means an absolute instant of time, which usually is represented by Unix time or a date of Gregorian calendar combined with UTC time. Instant can always be calculated from local date, local time and time zone. Instant can always be converted to local date and/or local time if the local time zone is known.</p>
+
+<h3 class="article__heading--h3">Duration</h3>
+
+<p dir="ltr">Duration can be any length of time that one would conveniently measure with a stopwatch, including seconds, minutes and hours. A stopwatch doesn't have information about leap seconds or DST rules, and neither does duration.</p>
+
+<h3 class="article__heading--h3">Period</h3>
+
+<p dir="ltr">Period means a calendar period between two dates, for example one month or two weeks. Practically period is almost the same as duration, but it is often handled separately to avoid confusion. For example a duration of one day is always 24 hours, but a period of one day could be 23 hours or 24 hours or something else depending on DST rules.</p>
+
+<h3 class="article__heading--h3">Interval</h3>
+
+<p dir="ltr">Interval means a duration between two known instants. It can be constructed from two instants, or alternatively from an instant and a duration, in which case the other instant is calculated using the duration. Interval is defined in ISO 8601, but not very often used and therefore for example Java 8 date and time API does not include support for it at all. Interval is most useful when wanting to calculate if two known durations with a starting time overlap or not.</p>
+
+<h2 class="article__heading--h2">Final Words</h2>
+
+<p dir="ltr">I have tried to sum up the most important things I would like to know if I had to work with date and time handling for the first time in my life. I genuinely hope this is useful, and works as a short reference when dealing with the problems above. I also hope to have time to write a bit more practical real world examples of how date and time should be handled in computer programs, but that is saved for another blog post. If there are any mistakes in the content, I will correct them as soon as possible.</p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <span class="article__author-link" rel="author">
+              <span class="article__author-name" itemprop="name">Juho Vähä-Herttua</span>
+            </span>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007ff0410b7910&gt;, #&lt;Tag:0x007ff0410b7348&gt;, #&lt;Tag:0x007ff0410b6f60&gt;, #&lt;Tag:0x007ff0410b68f8&gt;, #&lt;Tag:0x007ff0410b64c0&gt;, #&lt;Tag:0x007ff0410b5f48&gt;, #&lt;Tag:0x007ff0410b5ae8&gt;, #&lt;Tag:0x007ff0410b54f8&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searcha750.html?q=date" class="article__tag-link">
+                <span class="article__tag-name">date</span></a>, 
+              <a href="../searchbdd7.html?q=time" class="article__tag-link">
+                <span class="article__tag-name">time</span></a>, 
+              <a href="../search538d.html?q=timezone" class="article__tag-link">
+                <span class="article__tag-name">timezone</span></a>, 
+              <a href="../search38d7.html?q=calendar" class="article__tag-link">
+                <span class="article__tag-name">calendar</span></a>, 
+              <a href="../search74c3.html?q=era" class="article__tag-link">
+                <span class="article__tag-name">era</span></a>, 
+              <a href="../search0881.html?q=computers" class="article__tag-link">
+                <span class="article__tag-name">computers</span></a>, 
+              <a href="../search3d6e.html?q=utc" class="article__tag-link">
+                <span class="article__tag-name">utc</span></a>, 
+              <a href="../search8aea.html?q=greenwich" class="article__tag-link">
+                <span class="article__tag-name">greenwich</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Time%20Is%20the%20Fire%20in%20Which%20We%20Burn&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Time%20Is%20the%20Fire%20in%20Which%20We%20Burn&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn&amp;title=Time%20Is%20the%20Fire%20in%20Which%20We%20Burn', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftime-is-the-fire-in-which-we-burn&amp;title=Time%20Is%20the%20Fire%20in%20Which%20We%20Burn">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="why-does-futurice-exist.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Why does Futurice exist?</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="scaling-agility.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Scaling Agility - building an agile foundation</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="make-it-move-make-it-bounce.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Make it move, make it bounce</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Juho Vähä-Herttua</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="broken-uitableviewcontroller-initializer-in-swift.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Broken UITableViewController initializer in Swift</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="id-like-to-have-some-lcd-on-my-pi.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">I&#x27;d like to have some LCD on my Pi</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="build-environment-like-its-1986.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Build environment like it&#x27;s 1986</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/time-is-the-fire-in-which-we-burn by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:29:43 GMT -->
+</html>

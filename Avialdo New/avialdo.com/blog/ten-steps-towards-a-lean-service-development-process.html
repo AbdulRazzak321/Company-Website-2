@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/ten-steps-towards-a-lean-service-development-process by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:09:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Ten steps towards a lean service development process — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Ten steps towards a lean service development process — Futurice">
+  <meta property="og:description" name="description" content="Mari Piirainen and Mikko Viikari go through some steps that help make product and service development processes leaner and meaner. ">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="ten-steps-towards-a-lean-service-development-process.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/istock_000013728498small_s1200x630_noupscale.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-2" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-2.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-2.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-02-13T11:11:08Z">
+          February 13, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            The rest
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Ten steps towards a lean service development process
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/mari-piirainen.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/mari-piirainen_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Mari Piirainen</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Senior Consultant</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search0710.html?q=LSC" class="article__header__tag-link">
+                  <span class="article__header__tag-name">LSC</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../../flockler.com/thumbs/1992/istock_000013728498small--vggu9q7xh9_s830x0_q80_noupscale.jpg">
+<figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
+</figure>
+
+<p dir="ltr"><span>Lean service development is not a secret code. There are concrete steps you can take to integrate it into your development projects and your organization. </span></p>
+
+<p dir="ltr"><span><span>If you decide you want your product development organization or project to be leaner, meaner, more flexible and capable of fast moves, changes have to be made on all levels and in every phase of the development process:</span></span></p>
+
+<ol>
+	<li>
+	<p dir="ltr"><span><span>Recognizing the problem</span></span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span>Finding a product/market fit and validating it on the market</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span>Scaling up to create a profitable and growing business</span></p>
+	</li>
+</ol>
+
+<p dir="ltr"><span><span>Different things drive the various phases of the product development process. Rapid validation is of the essence during the first phase: build cheap and test. </span></span></p>
+
+<p dir="ltr"><span><span>High-quality design and the ability to react quickly to feedback are important in phase two. This phase is about creating a product that users love.</span><br>
+<span>Optimization based on key data and metrics, scaling up the product technically and commercially, and continuously improving internal and external quality are the primary drivers for phase three.  </span></span></p>
+
+<p dir="ltr"><span><span>Here some practical tips:</span></span></p>
+
+<p dir="ltr"><span><strong>1. Put all your experts in the same room </strong><br>
+<span>Moving workstations around is a nice, concrete first step to take when making your organization’s product development process leaner. Getting experts from different fields to communicate with each other is vital for the success of digital services. Take your planners, designers, developers, content creators and marketing people, and stick them in the same room. </span></span></p>
+
+<p dir="ltr"><span><strong>2. Know your customer and find a problem worth solving</strong><br>
+<span>Live with your target group. A personal experience with a user’s issues will always leave a stronger mark than reading second hand research reports. In the early phases of the design process, we should look to the users for inspiration and an understanding of what constitutes a problem worth solving, as well as insight into the their everyday lives. Be open and curious, but keep in mind it’s not up to the user to spell out what he or she really wants. Figuring it out is your job. </span><br>
+<span>Here are some excellent tips to help you get closer to the user: </span><a href="http://giffconstable.com/2012/12/12-tips-for-early-customer-development-interviews-revision-3/"><u>http://giffconstable.com/2012/12/12-tips-for-early-customer-development-interviews-revision-3/</u></a><span> </span></span></p>
+
+<p dir="ltr"><span><span>Meeting and getting to know the customer is how you find problems worth solving. For the user, a problem worth solving is significant, expensive, common and a source of frustration - a problem the user is willing to pay to have solved. He or she may already have tried to solve it or circumvent it altogether. </span></span></p>
+
+<p><span><strong>3. Design the emotions the user experience evokes</strong><br>
+<span>Expert organizations have a tendency to view customers as rational agents and underestimate the importance of emotions as a part of the design process. Appealing to the user’s emotions can have a considerable impact on the decision to buy. </span></span></p>
+
+<p dir="ltr"><span><span>Think back on things you’ve bought lately. Were you swayed by a list of specifications and rational argumentation or the fact that you just liked the product? A user experience that evokes emotions doesn’t happen automatically or as a by-product of some other process. It requires design. </span><br>
+<span>Deep design creates a harmonious whole that is more than the sum of its parts. If the product is built by the book, from the ground up, while hewing tightly to a rigid priority list, the end result will probably be quite adequate, but it won’t inspire an emotional reaction. </span></span></p>
+
+<p dir="ltr"><span><span>Lean development processes and design complement each other well. Incremental design requires a strong vision. Otherwise the core idea of the product risks being lost in the compromises that are an integral part of the development process.  </span></span></p>
+
+<p><span><strong>4. Validate your business assumptions</strong><br>
+<span>In the beginning, all you have are some educated guesses related to how to build a successful business. These assumptions are validated along the way. Honest feedback from outside the project team is essential: users, markets or other stakeholders. From the point of view of creating a successful business, most of the people you need to convince are to be found outside the project team. </span><br>
+<span>Testing is considered a cumbersome part of the process and it strikes fear in people. In 2014 our own </span><strong>Risto Sarvas </strong><span>wrote an article titled </span><em>You can avoid customer-centeredness, but you can’t run away from the customer</em><span> (</span><a href="http://issuu.com/vapamedia/docs/hiljainen_signaali_2014_vol1_valmis"><em>Asiakaskeskeisyyttä voi vältellä, mutta asiakkaita ei voi juosta pakoon</em></a><span> in Finnish). In it he listed some of the reasons commonly used to ditch user testing during the early phases of the development process: </span><em>No time. No money. No need. No use. Never did it before. Apple doesn’t do it. </em></span></p>
+
+<p dir="ltr"><span><span>Don’t buy it. Fight it. Do something. Convince the others. Test the product for five minutes with the first person you run into. Continue fighting for user-centered design. </span></span></p>
+
+<p><span><strong>5. The customer is product development’s crowning achievement</strong><br>
+<span>Developing a product and growing its customer base should go hand in hand when building new business. Some questions you need to consider early on in the process: how are you going to identify and find potential customers? How will you pique their interest in your product and get them to commit to buying it? </span><br>
+<span>By putting everyone in the same room, the lean product development process essentially eliminates the artificial division between product development and marketing, allowing for closer consideration of how features under development will impact customer relationships. </span></span></p>
+
+<ul>
+	<li>
+	<p dir="ltr"><span><span>Will they increase the rate at which the product is recommended by users? </span></span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><span><span><span>Do any features have the potential to go viral? </span></span></span></span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><span><span><span><span><span>Do they increase engagement with the product? </span></span></span></span></span></span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><span><span><span><span><span><span><span>Could it cause someone to abandon the product? </span></span></span></span></span></span></span></span></p>
+	</li>
+</ul>
+
+<p dir="ltr"><span><span>Don’t forget to utilize marketing automation and build in the necessary metrics. </span></span></p>
+
+<p><span><strong>6. Get a great product manager </strong><br>
+<strong>‘</strong><span>The product guy’ is an important role in many Silicon Valley companies. He or she is like a product manager and in a startup, the role is as central to the success of a company as that of the programmer and the designer. The product manager looks at the way the company functions from a product perspective and through the value of the product. It’s the <a href="http://careers.neo.com/product-manager">product manager’s</a> </span><span>job to find the balance between user needs, business demands and technology. The product manager makes the tough choices when prioritizing functionalities. A good product manager is like a junior  CEO: influential, good at networking, understands the customer and the markets, sees the big picture and makes good decisions that maximize product ROI.  </span></span></p>
+
+<p><span><strong>7. Lightning-fast feedback guarantees quality</strong></span><br>
+<span><span>In addition to the developers’ know-how, the environment they work with has a critical impact on the cost-effectiveness and quality of a software product. Testing changes should be possible within seconds. Make investing in and building development and testing environments, tools and automation an early priority for your project.  </span><br>
+<span>Imagine two professional chefs, both working on a new recipe for a pasta sauce. The first one is allowed to taste the sauce boiling in the pot whenever he wants. The second one has to carefully package a sample, call a courier and send the package to be tested by someone whose taste the chef is in no way familiar with. Which chef do you think will create the better sauce?</span></span></p>
+
+<p><span><strong>8. Don’t build everything yourself </strong><br>
+<span>Once your understanding of your customer’s problems is deep enough, it’s easier to find ready-made solutions for those problems among what other technology vendors offer. Building high-quality solutions is expensive. Solutions with a defined scope and a global market are often much more cost-effective than local products with a broader scope, never mind something you built yourself.  </span><br>
+<span>If you decide to build it yourself, make sure you do that one core thing that differentiates your product from the rest really well. The rest of the stuff you can buy from the cloud or China. Utilizing open source components and putting your own components out there is worth considering, too. Creating and activating a community of creators takes some resources, though. </span></span></p>
+
+<p><span><strong>9. Kill your bad ideas as early as possible</strong><br>
+<span>A lean development model encourages the team to take quick, incremental steps towards the desired end-result. It emphasizes short-term goals. Sometimes this way of working can make it hard for the team to make radical decisions, such as killing the product or changing its place in the value chain. </span><strong>    </strong><br>
+<span>Sometimes past investments in technology (e.g. a lot of code that does the wrong thing) make radical changes psychologically, financially and technologically difficult. </span></span></p>
+
+<p dir="ltr"><span><span>You can prepare for changes by investing in modularity and high quality tech. But don’t give this kind of thinking too much leeway, because really you should be investing as little as possible and only in what is most important for strategic differentiation. </span></span></p>
+
+<p><span><strong>10. The service launch is the starting point for development, not the goal</strong><br>
+<span>The biggest, boldest and most beautiful milestone of a traditional product development process is the launch. The product is thrown out into the market and the team’s focus moves on to other things. The project is over and everyone is reluctant to return to the old stuff. </span><br>
+<span>In service development, this is where the real work starts. Where does the money come from? Using no more than half of your development budget before launch is a good rule of thumb - preferably no more than ten percent, in fact. The launch is when you find out whether there’s demand for the product and if it’s worth investing in. </span></span></p>
+
+<p dir="ltr"><span><span>After the launch, decisions can finally be made based on data. Analytics that measure use and behavior can tell us:</span></span></p>
+
+<ul>
+	<li><span><span>Did we reach the right users?</span></span></li>
+	<li><span><span><span>Does the product design work?</span></span></span></li>
+	<li><span><span><span><span>Does the marketing work?</span></span></span></span></li>
+	<li><span><span><span><span><span>Does the business model work?</span></span></span></span></span></li>
+</ul>
+
+<p dir="ltr"><span><span>This doesn’t mean you should start adding functionalities after launch, even though expanding a service is rewarding work. Utilizing analytics and feedback to optimize the primary features of service is usually more profitable - just make sure you and the analytics concur on what those features are. This is how we build services people learn to love. </span></span></p>
+
+<p dir="ltr"><span><span>Mari Piirainen<br>
+Mikko Viikari</span></span></p>
+
+<p dir="ltr"><span><span><em>This is the third in a series of blogs written by experts at Futurice for Talouselämä magazine's <a href="http://www.talouselama.fi/kumppaniblogit/futurice/">partner blog</a>. The original Finnish version is <a href="http://www.talouselama.fi/kumppaniblogit/futurice/kymmenen+askelta+ketteraan+palvelukehitykseen/a2292460">here</a>.</em></span></span></p>
+
+<div> </div>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/mari-piirainen.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Mari Piirainen</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007ff02ab6b8c8&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search0710.html?q=LSC" class="article__tag-link">
+                <span class="article__tag-name">LSC</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Ten%20steps%20towards%20a%20lean%20service%20development%20process&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Ten%20steps%20towards%20a%20lean%20service%20development%20process&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process&amp;title=Ten%20steps%20towards%20a%20lean%20service%20development%20process', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ften-steps-towards-a-lean-service-development-process&amp;title=Ten%20steps%20towards%20a%20lean%20service%20development%20process">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="to-innovate-is-to-hustle.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">To innovate is to hustle</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="a-culture-of-experimentation-is-the-key-to-survival.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">A culture of experimentation is the key to survival</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="why-hackathon.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Why hackathon?</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Mari Piirainen</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="../cases/case-tallink.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Digital capabilities and innovation culture for a ferry company - Tallink</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="greetings-from-slush-asia.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Greetings from Slush Asia!</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="state-of-digital-transformation-2014.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">State of digital transformation 2014</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/ten-steps-towards-a-lean-service-development-process by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:09:17 GMT -->
+</html>

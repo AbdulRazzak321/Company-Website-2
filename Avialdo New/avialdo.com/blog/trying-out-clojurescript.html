@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/trying-out-clojurescript by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:11:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Trying out ClojureScript — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Trying out ClojureScript — Futurice">
+  <meta property="og:description" name="description" content="The Christmas holidays are a perfect time to try and learn new things. A few weeks ago, I helped organize a Code Club session with my colleague Tiina Romu at the English School. She had created an exercise to draw snowflakes in the Python in Browser e">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="trying-out-clojurescript.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/screen-shot-2015-12-25-at-02-32-57_s1200x630_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-2" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-2.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-2.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-12-28T13:44:20Z">
+          December 28, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Trying out ClojureScript
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/yka.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/futuliens_0385_headcrop_big_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Yrjö Kari-Koskinen</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Head of Technology</span>
+                </div>
+              </a>
+          </div>
+
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p dir="ltr">The Christmas holidays are a perfect time to try and learn new things. A few weeks ago, I helped <a href="https://twitter.com/ykarikos/status/677113182499053568">organize a Code Club session</a> with my colleague <a href="https://twitter.com/tiinaromu">Tiina Romu</a> at the English School. She had created an exercise to draw snowflakes in the <a href="https://github.com/futurice/PythonInBrowser">Python in Browser</a> environment. I thought it would be fun to experiment my own implementation as well.</p>
+
+<p dir="ltr">Derek Slager’s recent, nice presentation <a href="https://www.youtube.com/watch?v=gsffg5xxFQI">ClojureScript for sceptics</a> had made me thinking that the time is ripe to start learning ClojureScript as well. Here’s what I learned:</p>
+
+<ol>
+	<li>
+	<p dir="ltr">It might be a good idea to first read the <a href="https://github.com/clojure/clojurescript/wiki/Quick-Start">Quick Start tutorial</a> but the journey might not be that quick in the end. It is good to understand what’s really happening when you build your ClojureScript source to JavaScript, but it’s much easier to build your project with e.g. <a href="https://github.com/emezeske/lein-cljsbuild">lein-cljsbuild</a> or <a href="https://github.com/bhauman/lein-figwheel">Figwheel</a>. It might also help to start with a suitable Leiningen template.</p>
+	</li>
+	<li>
+	<p dir="ltr">After you have set up your build process, you’ll want to build changes automatically to skip the JVM startup time hit. If you’re using lein-cljsbuild, use:</p>
+
+	<pre class="article__code CodeRay CodeRay-- CodeRay--unknown-lang">
+<code data-lang="">$ lein cljsbuild auto</code></pre>
+	</li>
+	<li>
+	<p dir="ltr">The ClojureScript platform is developing fast, so make sure you are using the newest version of both Clojure and ClojureScript languages and tools.</p>
+	</li>
+	<li>
+	<p dir="ltr">Check the <a href="https://github.com/clojure/clojurescript/wiki/Differences-from-Clojure">Differences from Clojure</a>. Not all Clojure features are available in ClojureScript. Some examples</p>
+
+	<ul>
+		<li>
+		<p dir="ltr">One cannot e.g. <a href="https://groups.google.com/forum/#!searchin/clojurescript/refer%2420all/clojurescript/SzYK08Oduxo/p0bWhM5lftUJ">require all functions from another namespace</a> with</p>
+
+		<pre class="article__code CodeRay CodeRay--clojure">
+<code data-lang="clojure">(<span class="keyword">ns</span> <span class="namespace">some.ns</span> (<span class="symbol">:require</span> [some.dep <span class="symbol">:refer</span> <span class="symbol">:all</span>]))</code></pre>
+		</li>
+		<li>
+		<p dir="ltr">E.g. Ratio, BigDecimal, and BigInteger literals are currently not supported.</p>
+		</li>
+		<li>
+		<p dir="ltr">Naturally, one cannot use Java dependencies, so e.g. instead of java.lang.Math you have to use the JavaScript Math lib.</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p dir="ltr">The <a href="https://www.niwi.nz/cljs-workshop/#_interoperability">JavaScript interoperability</a> is uglyish at times:</p>
+
+	<pre class="article__code CodeRay CodeRay--clojure">
+<code data-lang="clojure">(<span class="keyword">def</span> <span class="function">element</span> (<span class="keyword">aget</span> (js/document.getElementsByTagName <span class="string"><span class="delimiter">"</span><span class="content">main</span><span class="delimiter">"</span></span>) <span class="integer">0</span>))</code></pre>
+	</li>
+	<li>
+	<p dir="ltr">You have all the <a href="https://clojars.org/">Clojars</a> libraries in your fingertips with an <a href="http://leiningen.org/">easy build tool</a></p>
+	</li>
+	<li>
+	<p dir="ltr">Once you get the compiled code running in the browser, the source mapping works nicely and you can check the errors right from the browser’s development console!</p>
+	</li>
+</ol>
+
+<p dir="ltr">In the end, I got my Christmas greeting done. You can find it at <a href="http://ykarikos.github.io/cljs-flake/">http://ykarikos.github.io/cljs-flake/</a>. The source code is shared at <a href="https://github.com/ykarikos/cljs-flake">https://github.com/ykarikos/cljs-flake</a>.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="custom" href="http://ykarikos.github.io/cljs-flake/" target="_blank"><img alt="Merry CLJS Christmas" src="../../flockler.com/thumbs/1992/screen-shot-2015-12-25-at-02-32-57_s830x0_q80_noupscale.png"></a></div>
+</figure>
+
+<p dir="ltr">I really like functional programming in LISP syntax and thus it has been a pleasure to learn Clojure. However, at the same time I haven’t had the time to learn the tooling and frameworks needed for <a href="https://gist.github.com/kpuputti/52b095c068e8f08f0ec6">modern Javascipt development</a>. However, it seems that ClojureScript will be – at least for me – an easier way to start building modern web frontends. The platform has advanced a lot this year. David Nolen has listed the highlights in <a href="http://swannodette.github.io/2015/12/23/year-in-review/">ClojureScript Year In Review</a>.</p>
+
+<p dir="ltr">So, what might I try next?</p>
+
+<ul>
+	<li>
+	<p dir="ltr">React and <a href="https://reagent-project.github.io/">Reagent</a>: <a href="https://twitter.com/juhovh">Juho Vähä-Herttua</a> demoed simple but non-trivial Reagent use in Futurice <a href="http://www.meetup.com/Futurice-WWWeeklies/">WWWeeklies</a>. The source can be found at <a href="https://github.com/jvah/weather-demo">https://github.com/jvah/weather-demo</a>. There's also a <a href="https://github.com/reagent-project/reagent-template">Leiningen template</a> for Reagent projects.</p>
+	</li>
+	<li>
+	<p dir="ltr">I did not yet try out <a href="https://github.com/bhauman/lein-figwheel">Figwheel</a>, but it sounds like the way to go for the best hot-code reloading and REPL experience.</p>
+	</li>
+</ul>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/yka.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Yrjö Kari-Koskinen</span>
+            </a>
+        </div>
+      </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Trying%20out%20ClojureScript&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Trying%20out%20ClojureScript&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript&amp;title=Trying%20out%20ClojureScript', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftrying-out-clojurescript&amp;title=Trying%20out%20ClojureScript">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="on-making-ethical-choices.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">On making ethical choices</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="change-team-organising-the-stakeholders-to-make-the-change-happen.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Change Team - Organising the stakeholders to make the change happen</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="summer-of-love-of-open-source.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Summer of Love (of Open Source)</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Yrjö Kari-Koskinen</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="how-to-change-the-world-byte-by-byte.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">How to change the world, byte by byte</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="do-you-trust-your-car-mechanic.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Do you trust your car mechanic?</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="../services/agile-coaching.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Agile Coaching, Agile Change &amp; Agile @ Scale</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/trying-out-clojurescript by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:11:32 GMT -->
+</html>

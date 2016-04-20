@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/tech-pick-of-the-week-log-anomaly-detection-tools by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:10:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Tech Pick of the Week: Log anomaly detection tools — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Tech Pick of the Week: Log anomaly detection tools — Futurice">
+  <meta property="og:description" name="description" content="An important part of creating successful digital services is the ability to monitor system&amp;rsquo;s health and to respond to exceptional situations in a timely fashion. Log files contain information that a maintainer needs in figuring out causes for ap">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="tech-pick-of-the-week-log-anomaly-detection-tools.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/dynamic_s1200x630_q80_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-2" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-2.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-2.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2013-12-12T08:56:44Z">
+          December 12, 2013
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Tech Pick of the Week: Log anomaly detection tools
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/antti-ajanki.html" class="article__header__author-link" itemprop="url" rel="author">
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Antti Ajanki</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Senior Software Engineer</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search31ca.html?q=Analytics" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Analytics</span></a>, 
+                <a href="../searchc6c4.html?q=Maintenance" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Maintenance</span></a>, 
+                <a href="../search0895.html?q=Tech%20Pick%20of%20the%20Week" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Tech Pick of the Week</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p>An important part of creating successful digital services is the ability to monitor system’s health and to respond to exceptional situations in a timely fashion. Log files contain information that a maintainer needs in figuring out causes for application failures or unexpected behavior. However, it is often difficult for a human to identify the explanations even if all the necessary information is in principle available in the logs because today’s applications are so complex and consist of several interconnected software components. Luckily there are tools that can help. IT operation analytics is a field that uses statistical and data mining techniques to let computers do the hard work of detecting and analysing important events in the application logs. Mining insights from logs leads to better and more maintainable software.</p>
+
+<h2>Anomaly detection spots unexpected patterns in logs</h2>
+
+<p><br>
+On this blog post, I focus on one particular kind of tool: log anomaly detection. An anomaly detection software monitors logs for unexpected patterns and alerts the maintainer if something abnormal is detected. The anomaly detectors use statistical methods to analyze the logs so that there is no need for a maintainer to define what is considered normal behavior in advance. Instead, the tool learns  patterns of what kind of log messages typically appear under normal conditions. It then continues to track incoming log messages and alerts the maintainer if something unexpected is detected. An anomaly detection algorithm can track either numerical values extracted from the logs or frequencies of log messages. Equipped with the exact knowledge of what is abnormal in the logs, the maintainer can then hopefully track down the reason for the anomaly easily.</p>
+
+<p>The usual approach without automatic tools is to identify a set of measures to track and to write down scripts that send alerts when an observed value exceed a static threshold. For example, an alert could be set to fire if the amount of incoming traffic per hour on a site is larger than a predefined value as in the figure below.</p>
+
+<p><img alt="Example measurement values with a static threshold" src="../../flockler.com/thumbs/1992/static_s830x0_q80_noupscale.png"></p>
+
+<p>Static thresholds, however, are difficult to calibrate. If the threshold is set too low, false alerts will be generated (perhaps the peak on day 2 in the figure is completely normal operation?). If, on the other hand, the threshold is too high, not all abnormal events are detected. A static threshold also fails to notice the strange slump in the middle of day 1.</p>
+
+<p>Anomaly detection automatically learns a baseline, or a typical pattern of events, by inspecting the logs, and is able to infer dynamic thresholds. A simplified example of dynamic thresholds is shown in the figure below. The shaded band between the red lines shows the region where the values are expected to land. Now, the day 1 slump crosses the lower threshold and is thus detected. In fact, an anomaly detection model can be even more flexible than the figure shows. Instead of fixed thresholds, a model can estimate the probability of each new observation given the similar situations in the past, and raise an alert if the new observation is very unlikely.</p>
+
+<p><img alt="Example measurement values with a dynamic threshold" src="../../flockler.com/thumbs/1992/dynamic_s830x0_q80_noupscale.png"></p>
+
+<p>Another benefit of automatic anomaly detection is that it is possible to find unexpected events, whereas matching against pre-written rules is only ever able to find things the developer anticipated (the developer has not been able to write detection rules for unanticipated events!). At its best, an anomaly detection algorithm might even notice unexpected changes before a serious problem develops.</p>
+
+<h2>Experiment: Processing logs with Prelert Anomaly Detective</h2>
+
+<p><br>
+I experimented with a program called <a href="http://www.prelert.com/">Prelert Anomaly Detective</a> by using it to process logs of a project. It uses machine learning methods to identify anomalies in the logs in real-time. Prelert is not the only tool for the task; <a href="http://www.sumologic.com/">Sumo Logic</a> and <a href="https://support.google.com/analytics/answer/1320491">Google Analytics Intelligence Events</a> are some of the other tools capable of detecting unexpected patterns in logs.</p>
+
+<p>There are several options for getting the log files into Prelert. One can manually upload logs or set up a scheduled task to download logs from a remote server. Prelert automatically detects timestamps, and can summarize data by grouping similar log messages together. A developer can also ask Prelert to extract numerical or textual values from log messages for further analysis. Prelert helps in this task by constructing regular expressions from examples.</p>
+
+<p>After the parsing is finished, one can tell Prelert to analyse the logs and to learn a baseline. As far as I can tell (there is not much documentation available), Prelert’s baseline consists of a mean value and typical variation in a time window. Prelert’s main task is detecting large deviations that do not fit in the learned baseline (e.g. fewer than expected of certain kind of log messages). Prelert computes an “anomaly score”, which is an abstract measure of the magnitude of the deviation at the given time window. The anomaly score is plotted on a timeline to visualize when potential anomalies have occurred. The detection can be done as an ad-hoc analysis on historical data or in real-time as more logs come in. In the latter mode, the system sends emails to the maintainer as soon as deviations happen.</p>
+
+<p><img alt="Screenshot of Prelert's anomaly score view" src="../../flockler.com/thumbs/1992/prelert_anomaly_example_s830x0_q80_noupscale.png"></p>
+
+<p>The figure above shows Prelert’s anomaly timeline for back-end server logs. There are three clear peaks between November 12 and 18 showing that something unexpected has happened. The red lines below the graph show log lines with the largest deviations from the expected during the selected point in time (i.e. the log messages that are the reason for the deviation). All of the lines are related to database connection errors, and, indeed, during the time in question there was a problem with the database that caused connection failures under a heavy load.</p>
+
+<h2>Challenges and conclusions</h2>
+
+<p><br>
+There are some challenges in using automated log analysis methods. An important issue is reliability: can one trust that the program has detected all the important events? Secondly, although anomaly detection tools automate some parts of the log analysis, manual work and understanding of the system is still required in setting up and understanding the detected anomalies.</p>
+
+<p>Anomaly detection is just one of the interesting statistical methods that can help a maintainer. Intrusion and fraud detection use similar techniques to discover possible security breaches or otherwise suspicious user behavior from the logs. Predictive analytics predicts how a system will behave in the future, and can forecast, for example, the need to allocate more hard drive space before the current capacity is exceeded. Root cause analysis tries to pinpoint which software component is responsible for causing a failure.</p>
+
+<p>The anomaly detection tools can help developers to understand application behavior by making sense of application logs. Automatic learning of baselines and detection of unusual deviations aim to decrease maintainer’s workload in monitoring logs. The ability to react to abnormal conditions faster, even before they cause failures, leads to more resilient software. Overall, the anomaly detection and other log analysis methods seem great tools for finding bugs and other error conditions with a small effort. This will eventually lead to higher quality software.</p>
+
+<h2>More to explore</h2>
+
+<ul>
+	<li>
+<a href="http://www.alphagalileo.org/Organisations/ViewItem.aspx?OrganisationId=377&amp;ItemId=61305&amp;CultureCode=en">Anomaly detection from server log data</a>, a case study by VTT</li>
+	<li>
+<a href="http://www.cio.com/article/739390/Anomaly_Detection_Lets_You_Find_Patterns_in_Log_Data">Anomaly Detection Lets You Find Patterns in Log Data</a>, an article in CIO magazine</li>
+	<li><a href="http://www.ibm.com/developerworks/library/bd-systemloganalysis/">System log analysis using InfoSphere BigInsights</a></li>
+	<li><a href="http://randyzwitch.com/anomaly-detection-adobe-analytics-api/">Anomaly Detection Using The Adobe Analytics API</a></li>
+</ul>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/antti-ajanki.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Antti Ajanki</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f72907f7268&gt;, #&lt;Tag:0x007f72907f6e80&gt;, #&lt;Tag:0x007f72907f69a8&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search31ca.html?q=Analytics" class="article__tag-link">
+                <span class="article__tag-name">Analytics</span></a>, 
+              <a href="../searchc6c4.html?q=Maintenance" class="article__tag-link">
+                <span class="article__tag-name">Maintenance</span></a>, 
+              <a href="../search0895.html?q=Tech%20Pick%20of%20the%20Week" class="article__tag-link">
+                <span class="article__tag-name">Tech Pick of the Week</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Tech%20Pick%20of%20the%20Week%3A%20Log%20anomaly%20detection%20tools&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Tech%20Pick%20of%20the%20Week%3A%20Log%20anomaly%20detection%20tools&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools&amp;title=Tech%20Pick%20of%20the%20Week%3A%20Log%20anomaly%20detection%20tools', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-log-anomaly-detection-tools&amp;title=Tech%20Pick%20of%20the%20Week%3A%20Log%20anomaly%20detection%20tools">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="the-future-is-digital-and-full-of-data.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">The future is digital and full of data</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="tech-pick-of-the-week-angularjs.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Tech Pick of the Week: AngularJS</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="fake-it-till-you-make-it-in-digital-business.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Fake It Till You Make It in Digital Business</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Antti Ajanki</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="categorizing-software-from-rigid-to-emergent.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Categorizing software from rigid to emergent</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="chilicorn-code-club.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Code club mentoring experiences</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="understanding-software.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Understanding software</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/tech-pick-of-the-week-log-anomaly-detection-tools by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:10:15 GMT -->
+</html>

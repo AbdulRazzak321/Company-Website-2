@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/validating-in-app-purchases-in-your-ios-app by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:13:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Validating in-app purchases in your iOS app — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Validating in-app purchases in your iOS app — Futurice">
+  <meta property="og:description" name="description" content="When you’re providing a user with a paid resource, how do you ensure that they have actually paid for it?">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="validating-in-app-purchases-in-your-ios-app.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/receipt_s1200x630_c1744x1018_l0x211_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-4.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-4.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-02-10T14:39:05Z">
+          February 10, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Validating in-app purchases in your iOS app
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/ali-rantakari.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/omakuva_s100x100_q80_noupscale.png" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Ali Rantakari</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Senior Consultant</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searche7f4.html?q=iOS" class="article__header__tag-link">
+                  <span class="article__header__tag-name">iOS</span></a>, 
+                <a href="../searchd37d.html?q=Mobile" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Mobile</span></a>, 
+                <a href="../searcha937.html?q=Programming" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Programming</span></a>, 
+                <a href="../searchbe6d.html?q=In-app%20purchases" class="article__header__tag-link">
+                  <span class="article__header__tag-name">In-app purchases</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p dir="ltr"><span><span>Apple’s App Store launched in 2008 as a marketplace for distributing free or paid apps for their iOS platform, and the next year they introduced in-app purchases — a way for app developers to sell digital goods or additional functionality from within their apps. Initially this was only available for paid apps, but quickly thereafter Apple enabled them for free apps as well. Today, offering the main app for free and making money via in-app purchases is a very common approach, and seems to work well for many.</span></span></p>
+
+<p dir="ltr"><span><span>As with any feature that has anything to do with (real-life) money, security is very important when implementing in-app purchases. Specifically, it’d be good to ensure that when you’re providing a user with a paid resource, they have <strong>actually paid for it</strong>. Mobile platform system APIs do their best to make it as easy as possible for app developers to do this, but there is still lots of nontrivial design and implementation work to do.</span></span></p>
+
+<p dir="ltr"><span><span>In this article we will go through the basic process of performing in-app purchase payments, and discuss approaches for ensuring that paid resources are only provided for users who have actually paid for them.</span></span></p>
+
+<p dir="ltr"><em><span><span>This has been written with iOS in mind, but the general principles should hold also for Android and Windows, given that the in-app purchase systems for these three platforms are very similar.</span></span></em></p>
+
+<h2 class="article__heading--h2">The purchase flow</h2>
+
+<p dir="ltr">Apple provides the <a href="https://developer.apple.com/library/mac/documentation/StoreKit/Reference/StoreKit_Collection/">StoreKit</a> framework in the iOS SDK for working with in-app purchases. When your app is ready to initiate a purchase, it creates an SKPayment object and adds it to the SKPaymentQueue, which makes the system throw a dialog up on the screen to let the user know that payment is being requested:</p>
+
+<figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../../flockler.com/thumbs/1992/confirmation-dialog_s830x0_q80_noupscale.png">
+<figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
+</figure>
+
+<p dir="ltr"><span><span>After the user has confirmed the purchase, the iOS device sends a purchase transaction request to Apple’s servers.</span></span></p>
+
+<p><span><span>When Apple has processed the purchase on their end (mainly: successfully charged the purchase amount from the user’s credit card) they will send a response to the device indicating this. This response contains a </span><em><strong>receipt</strong></em><span> for the transaction — a signed document specifying what was purchased, by whom, in what app, when the purchase took place, etc.</span></span></p>
+
+<figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../../flockler.com/thumbs/1992/receipt-wide_s830x0_q80_noupscale.jpg">
+<figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
+</figure>
+
+<p>Your app is now responsible for the following steps:</p>
+
+<ol>
+	<li>
+<strong>Inspect the receipt</strong> and verify that it identifies a valid purchase transaction</li>
+	<li>
+<strong>Fulfill the purchase</strong> (give the user what they paid for)</li>
+	<li>
+<strong>Tell iOS that the transaction has been handled</strong> (by marking it as “finished” using the SKPaymentQueue API)</li>
+</ol>
+
+<p>Step #1 is where you have to be careful.</p>
+
+<h2 class="article__heading--h2">Receipt validation</h2>
+
+<p>When inspecting an in-app purchase receipt, you primarily want to check two things:</p>
+
+<ol>
+	<li>
+<strong>Authenticity</strong> — that the receipt comes from Apple and not someone else</li>
+	<li>
+<strong>Integrity</strong> — that the receipt has not been tampered with</li>
+</ol>
+
+<p>In addition to these basic checks, you’ll also want to make sure that the receipt is for the correct product in the correct app, and that it hasn’t been used before. We’ll get back to these a bit later.</p>
+
+<p>There are two ways to perform the basic authenticity and integrity checks: manually, or via Apple’s HTTP validation service. The <a href="https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Introduction.html">Receipt Validation Guide</a> in Apple’s developer documentation describes both of these.</p>
+
+<figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../../flockler.com/thumbs/1992/receipt-validation_s830x0_q80_noupscale.png">
+<figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
+</figure>
+
+<p><a href="http://www.objc.io/issue-17/receipt-validation.html">The objc.io periodical has a good article</a> on implementing manual receipt validation — this requires use of the OpenSSL APIs, and is not trivial.</p>
+
+<p>The HTTP validation service, on the other hand, is much simpler to use: just send the receipt data to Apple’s server, and it’ll tell you whether the receipt is valid, and if so, provide a JSON document that can be easily read for further information. This option, however enticing, should never be used in the iOS app itself; it is strictly meant for server-side receipt validation (that is, validation performed on a server that you control.) This is what Apple’s engineers have to say about this in the WWDC 2013 session titled <a href="http://asciiwwdc.com/2013/sessions/308">“Using Receipts to Protect Your Digital Sales”</a>: </p>
+
+<blockquote>
+<p>…but this is only to be used for your server to talk to our server to validate the receipt. It's not to be used for your app to talk directly to the validation service. So if you're doing that today, you really need to stop, because you can now validate the receipt on the device in itself.</p>
+</blockquote>
+
+<p>The reason for this rule is that the connection between the user’s iOS device and Apple’s servers cannot be trusted: if your app were to validate receipts by asking Apple’s servers, that connection would be subject to <em>man-in-the-middle attacks</em>, which we’ll discuss next.</p>
+
+<h2 class="article__heading--h2">Man-in-the-middle (MITM) attacks</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/IOS_jailbreaking">Jailbreaking</a> is a term that refers to the bypassing of built-in security mechanisms in the iOS operating system for the purpose of gaining more control over the system. Many people do this willingly in order to avoid many of the restrictions Apple builds into the OS. Once an iOS device has been jailbroken, software running on it pretty much has free rein over the whole system, and is not limited by any of the security features that Apple has implemented.</p>
+
+<p>People like free stuff, and some are willing to compromise their morals to get free stuff, so it comes as no surprise that <strong>there is readily available software that allows one to essentially “get free in-app purchases in any app”</strong>. This software works by intercepting the requests the device sends to Apple’s servers, and instead of letting the requests actually go through to Apple, responding with a fraudulent receipt. This is called a <a href="http://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle</a> attack:</p>
+
+<figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../../flockler.com/thumbs/1992/mitm_s830x0_q80_noupscale.png">
+<figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
+</figure>
+
+<p>After an attack like this has taken place, your unsuspecting app will receive whatever (fraudulent) purchase receipt the MITM program has provided.</p>
+
+<p>If the receipt were some random garbage file and your app didn’t bother to validate it at all, the user would just get their free stuff. But of course it’s not that simple because your app validates the receipt — right?</p>
+
+<p>Well, <strong>validating the authenticity and integrity of the receipt is not enough:</strong> it’s easy enough for the developers of these MITM programs to capture some random valid in-app purchase receipt, store it in their program, and have it provide that same receipt over and over again for all the apps on the device whenever they try to initiate purchases. Since the receipt is completely valid and has actually been issued by Apple in the past, any validity and integrity checks performed on it (whether manually via the OpenSSL APIs or by asking Apple’s validation server) will pass.</p>
+
+<p>A common receipt returned by one of these MITM programs has the product identifier <em>com.zeptolab.ctrbonus.superpower1</em>. This is apparently a valid receipt that Apple has at some point issued for the iOS game “Cut the Rope”.</p>
+
+<p>The next step, then, is to <strong>check that the receipt is for the correct product in your app</strong> (by comparing the product identifier and bundle identifier in the receipt with your expected values). This check would thwart the attack described above.</p>
+
+<p>Even this is not enough, though: these MITM programs could quite easily return valid receipts that have in fact been provisioned for the correct product in your app. They can do this by letting the first such payment transaction go through to Apple (requiring the user to actually pay, once), capturing the receipt in Apple’s response, storing it, and then again intercepting all future payment requests for that product, and providing the same captured receipt data over and over again.</p>
+
+<p>In order to thwart these kinds of “replay attacks,” you can store the identifiers of all in-app purchase receipts as they are used and <strong>check each time that newly provisioned receipts have not been seen before</strong>.</p>
+
+<h2 class="article__heading--h2">Cracking</h2>
+
+<p>You write your iOS app and submit it to the store, and then the rest is — in a sense — out of your hands. Users can download your app, break it open, modify it however they like (“crack” it,) and run the modified version on their jailbroken devices. This can be done by some individual who is specifically interested enough in your app to crack it, or it can even be done (to some extent) by some automatic process running on a jailbroken device.</p>
+
+<p>When your app has been cracked, <strong>all bets are off:</strong> any security measures you’ve built into it can be overridden — it’s just a matter of how much resources you’re willing to invest in “hardening” the app (in order to make the cracker’s job slower and more difficult.)</p>
+
+<p>This is not news to software engineers: it should be common knowledge that when it comes to security in client-server systems, <em>you can never trust the client</em>. This tenet, however, provides an important premise for the rest of our discussion.</p>
+
+<h2 class="article__heading--h2">Where we stand</h2>
+
+<p>Okay, let’s recap:</p>
+
+<ul>
+	<li>If you validate the receipts in the client app, the app can be cracked and the validation bypassed.</li>
+	<li>If you validate the receipts on your server, the connection from your client to your server can be intercepted and the response replaced with a fraudulent “yes, looks valid.” Or, the client app can be cracked and the validation bypassed.</li>
+</ul>
+
+<p>The question then becomes: how does your app provide the purchased content to the user? Or more precisely: <strong>how does your system provide the purchased content to the client app?</strong></p>
+
+<h2 class="article__heading--h2">The nature of the content for sale</h2>
+
+<p>The security of your in-app purchase implementation ultimately hinges on the nature of the content you’re selling.</p>
+
+<p>If the content is naturally part of the client app and the user just pays to have it unlocked, then it’ll always be possible for the app to be cracked and modified to unlock the content without payment. This is typically the case with products like “100 gold coins” or “an unlocked game character”.</p>
+
+<p>On the other hand, if the content is <strong>stored server-side and sent to the client in exchange for a valid purchase receipt</strong>, then:</p>
+
+<ul>
+	<li>
+<strong>Cracking the client app is not useful:</strong> the receipt validation isn’t performed in the client, and the content for sale isn’t even there (it’s on the server)</li>
+	<li>
+<strong>MITM attacks on the client-server connection are not useful:</strong> in order to legitimately stand in for the server, the MITM process would have to provide the purchased content in its response (which is exactly the thing it’s trying to get in the first place)</li>
+	<li>
+<strong>MITM attacks on the connection between the device and Apple’s servers are not useful:</strong> the receipt validation performed by your server cannot be influenced by the attacker, so the receipt would have to be completely new (not seen before by your server) and completely valid for this attack to work. Notwithstanding unknown security vulnerabilities in Apple’s receipt signing system, we can reasonably safely assert that it’s not possible for an attacker to create such receipts without making a real purchase.</li>
+</ul>
+
+<p><strong>This distinction is the most important issue to discuss</strong> when you’re designing a system for providing in-app purchase products for sale in an iOS app: you should always strive for a solution where the server holds the content that the user wants to buy (whatever it is — hopefully not something that’s easy to replicate) and then only provides it in exchange for a fresh, valid receipt.</p>
+
+<p>If the nature of the product you want to sell is such that the above proposition is not possible, and you must include the product in the client app itself, then you must accept the fact that it’ll always be possible for a determined attacker to crack your app in order to avoid paying. When implementing a system like this, just remember the following:</p>
+
+<ul>
+	<li>When validating the receipts on the client, in addition to validity and integrity checks, also remember to compare the product ID and app bundle ID <em>(in order to catch receipts provisioned for some other app)</em>
+</li>
+	<li>Store a list of redeemed receipt identifiers somewhere in the client <em>(in order to catch trivial replay attacks)</em>
+</li>
+	<li>Spend some time — whatever is reasonable in your case — hardening your receipt validation code <em>(in order to thwart trivial cracking attempts.)</em> The “Secure Practices” section in the <a href="http://www.objc.io/issue-17/receipt-validation.html">objc.io article on receipt validation</a> contains some practical advice for this.</li>
+</ul>
+
+<p>Of course, it’s also perfectly reasonable to skip many of the checks suggested here, implement some kind of “bare minimum” receipt validation, and just assume that the level of piracy will be low enough to not matter. However, a decision like that needs to be informed, and you must understand the consequences.</p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/ali-rantakari.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Ali Rantakari</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f728938d1e8&gt;, #&lt;Tag:0x007f728938c950&gt;, #&lt;Tag:0x007f728937fcc8&gt;, #&lt;Tag:0x007f728937f3b8&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searche7f4.html?q=iOS" class="article__tag-link">
+                <span class="article__tag-name">iOS</span></a>, 
+              <a href="../searchd37d.html?q=Mobile" class="article__tag-link">
+                <span class="article__tag-name">Mobile</span></a>, 
+              <a href="../searcha937.html?q=Programming" class="article__tag-link">
+                <span class="article__tag-name">Programming</span></a>, 
+              <a href="../searchbe6d.html?q=In-app%20purchases" class="article__tag-link">
+                <span class="article__tag-name">In-app purchases</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Validating%20in-app%20purchases%20in%20your%20iOS%20app&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Validating%20in-app%20purchases%20in%20your%20iOS%20app&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app&amp;title=Validating%20in-app%20purchases%20in%20your%20iOS%20app', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fvalidating-in-app-purchases-in-your-ios-app&amp;title=Validating%20in-app%20purchases%20in%20your%20iOS%20app">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="best-practices-mobile.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Sharing best practices for Android, iOS, and Windows apps</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="rock-out-with-your-app-out.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Rock out with your app out</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="tech-pick-of-the-week-pushd.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Tech Pick of the Week: pushd</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Ali Rantakari</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="a-swift-outlook.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">A Swift Outlook</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="ios-8.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">iOS 8</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/validating-in-app-purchases-in-your-ios-app by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:13:52 GMT -->
+</html>

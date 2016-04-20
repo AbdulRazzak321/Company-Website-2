@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/javafx-vpn-wizard by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:13:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Trying JavaFX — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Trying JavaFX — Futurice">
+  <meta property="og:description" name="description" content="A year ago there was a blog post about VPN Wizard, a tool that was going to save time and money for our IT team. But it won&amp;rsquo;t save anything if people can&amp;#39;t use it. This year people have reported problems running the wizard on high-dpi displa">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="javafx-vpn-wizard.html">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-4.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-4.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-09-14T07:24:07Z">
+          September 14, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Trying JavaFX
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/konstantin-petrukhnov.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/me_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Konstantin Petrukhnov</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Senior Consultant</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search27da.html?q=JavaFX" class="article__header__tag-link">
+                  <span class="article__header__tag-name">JavaFX</span></a>, 
+                <a href="../search9467.html?q=Software%20Development" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Software Development</span></a>, 
+                <a href="../searchd5fa.html?q=Gradle" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Gradle</span></a>, 
+                <a href="../search5439.html?q=Java" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Java</span></a>, 
+                <a href="../searche281.html?q=UI" class="article__header__tag-link">
+                  <span class="article__header__tag-name">UI</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p dir="ltr" id="docs-internal-guid-421d6ee1-ca7c-8acd-fae6-5613edbc5c9b">A year ago there was a blog <a href="vpn-management-self-provisioning-and-more.html">post</a> about VPN Wizard, a tool that was going to save time and money for our IT team. But it won’t save anything if people can't use it. This year people have reported problems running the wizard on high-dpi displays, e.g. text was too small on a 15" display with 4K resolution.</p>
+
+<p dir="ltr">After playing for a few hours with Swing, we realized that the time had come to throw out some legacy code, and write something new. Actually only a small part of the code was discarded (the one that contained the Swing UI), so I believe we are doing our apps efficiently. :)</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/screenshot--6ymhcbg46y_s1800x0_q80_noupscale.png" target="_blank"><img alt="" src="../../flockler.com/thumbs/1992/screenshot--6ymhcbg46y_s830x0_q80_noupscale.png"></a></div>
+</figure>
+
+<h3 class="article__heading--h3"> </h3>
+
+<h3 class="article__heading--h3">JavaFX pros and cons for VPN wizard</h3>
+
+<p dir="ltr" id="docs-internal-guid-421d6ee1-ca7d-0780-700a-dc90ddddaa6e">Good things:</p>
+
+<ul>
+	<li>
+	<p dir="ltr">Runs on all OSs that we have (Linux, OSX, Windows).</p>
+	</li>
+	<li>
+	<p dir="ltr">Builds on all OSs that we have.</p>
+	</li>
+	<li>
+	<p dir="ltr">CSS and declarative layouts.</p>
+	</li>
+	<li>
+	<p dir="ltr">Could be bundled with JRE.</p>
+	</li>
+</ul>
+
+<p dir="ltr">Not so good things:</p>
+
+<ul>
+	<li>
+	<p dir="ltr">Not so many UI libs compared to what is available in JS. Many things that I have gotten used to in JS development, I’ve had to code myself.</p>
+	</li>
+	<li>
+	<p dir="ltr">Some build plugins don't work as expected or don't work at all, and there are no alternatives.</p>
+	</li>
+	<li>
+	<p dir="ltr">No livereload. You have to restart the app and navigate to the desired view to see changes after every update. This slows down development and especially the styling of the application.</p>
+	</li>
+</ul>
+
+<p><br>
+I won’t go into every detail about JavaFX, but I will show some interesting snippets that may help if someone decides to start writing desktop UIs.</p>
+
+<h3 class="article__heading--h3">
+<br>
+Building (with gradle 2.1+)</h3>
+
+<p>build.gradle</p>
+
+<pre class="article__code CodeRay CodeRay--groovy">
+<code data-lang="groovy">plugins {
+  id <span class="string"><span class="delimiter">'</span><span class="content">java</span><span class="delimiter">'</span></span>
+  id <span class="string"><span class="delimiter">'</span><span class="content">application</span><span class="delimiter">'</span></span>
+  id <span class="string"><span class="delimiter">'</span><span class="content">edu.sc.seis.macAppBundle</span><span class="delimiter">'</span></span> version <span class="string"><span class="delimiter">'</span><span class="content">2.1.1</span><span class="delimiter">'</span></span>
+  id <span class="string"><span class="delimiter">'</span><span class="content">edu.sc.seis.launch4j</span><span class="delimiter">'</span></span> version <span class="string"><span class="delimiter">'</span><span class="content">1.5.1</span><span class="delimiter">'</span></span>
+}
+
+mainClassName = <span class="string"><span class="delimiter">'</span><span class="content">com.futurice.intra.vpn.Main</span><span class="delimiter">'</span></span>
+
+macAppBundle {
+  mainClassName = project.mainClassName
+}
+
+launch4j {
+  mainClassName = project.mainClassName
+}</code></pre>
+
+<p>And you are ready to make Win build from your Mac, or OSX builds from your brand new Dell XPS:</p>
+
+<pre class="article__code CodeRay CodeRay-- CodeRay--unknown-lang">
+<code data-lang="">//build version for windows (exe)
+gradle launch4j
+
+//build version for Mac
+gradle createAppZip</code></pre>
+
+<p>There are also other gradle plugins, that do similar builds, but so far these work best for us.</p>
+
+<h3 class="article__heading--h3">FXML</h3>
+
+<p>FXML is very similar to html and android markup. Write some tags, apply styles, run and see nice UI.</p>
+
+<p>Layouts could be nested in fxml:</p>
+
+<pre class="article__code CodeRay CodeRay--xml">
+<code data-lang="xml"><span class="tag">&lt;BorderPane&gt;</span>
+  <span class="tag">&lt;center</span> <span class="tag">&gt;</span>
+    <span class="tag">&lt;fx:include</span> <span class="attribute-name">source</span>=<span class="string"><span class="delimiter">"</span><span class="content">my_panel.fxml</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/center&gt;</span>
+<span class="tag">&lt;/BorderPane&gt;</span></code></pre>
+
+<p>Or in dynamically in controller:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java">rootLayoutBorderPane.setCenter(my_panel);</code></pre>
+
+<h3 class="article__heading--h3">
+<br>
+Controls</h3>
+
+<p dir="ltr" id="docs-internal-guid-421d6ee1-ca7e-08b6-27b7-43c63261d023">For controls I suggest checking out<a href="https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm"> Ensemble 8</a> and<a href="http://fxexperience.com/controlsfx/"> ControlsFX</a>.</p>
+
+<p>Another nice tool is SceneBuilder. Gluon is making binary builds that can be downloaded from here:<a href="http://gluonhq.com/open-source/scene-builder/"> http://gluonhq.com/open-source/scene-builder/</a> You could use it standalone, or just integrate to your IDE. With IntelliJ Idea it was really nice to prototype views, switching back and forth between code and layout.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/scenebuilder--0fots2pxz8_s1800x0_q80_noupscale.png" target="_blank"><img alt="" src="../../flockler.com/thumbs/1992/scenebuilder--0fots2pxz8_s830x0_q80_noupscale.png"></a></div>
+</figure>
+
+<h3 class="article__heading--h3"> </h3>
+
+<h3 class="article__heading--h3">Data binding</h3>
+
+<p>Databinding is really easy. Define element in  .fxml:</p>
+
+<pre class="article__code CodeRay CodeRay--xml">
+<code data-lang="xml"><span class="tag">&lt;TextField</span> <span class="attribute-name">fx:id</span>=<span class="string"><span class="delimiter">"</span><span class="content">usernameField</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span></code></pre>
+
+<p>Add the same element as a private field with an annotation, and then just get/set values:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java"><span class="annotation">@FXML</span>
+<span class="directive">private</span> <span class="predefined-type">TextField</span> usernameField;
+
+usernameField.setText(<span class="string"><span class="delimiter">"</span><span class="content">Username</span><span class="delimiter">"</span></span>);
+usernameField.getText();</code></pre>
+
+<p> </p>
+
+<h3 class="article__heading--h3">UI Scaling</h3>
+
+<p>Earlier I mentioned XPS, and there is a reason. One of the problems with the old Swing UI was that it was too small on high-dpi displays. It just doesn't respect the font scaling setting of the operating system. With JavaFX it is not a problem anymore.</p>
+
+<h3 class="article__heading--h3">Async call with progress bar</h3>
+
+<p>When the UI needs to send data to a remote server, it is good practice to use a new thread. That new thread could handle the server response, but it is not allowed to change elements in the UI. In JavaFX only GUI thread could change UI. Platform.runLater() is one of the methods to solve that limitation. Internally it will add a new Runnable to event queue that will be executed in GUI thread.</p>
+
+<p>A simple label and a progress bar. Note that we don't set any values, allowing it to have infinite animation.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/progress-bar_s1800x0_q80_noupscale.png" target="_blank"><img alt="" src="../../flockler.com/thumbs/1992/progress-bar_s830x0_q80_noupscale.png"></a></div>
+</figure>
+
+<pre class="article__code CodeRay CodeRay--xml">
+<code data-lang="xml"><span class="tag">&lt;Label</span> <span class="attribute-name">fx:id</span>=<span class="string"><span class="delimiter">"</span><span class="content">serverResponse</span><span class="delimiter">"</span></span> <span class="attribute-name">text</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span> <span class="attribute-name">visible</span>=<span class="string"><span class="delimiter">"</span><span class="content">false</span><span class="delimiter">"</span></span> <span class="attribute-name">textFill</span>=<span class="string"><span class="delimiter">"</span><span class="content">darkred</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;ProgressBar</span> <span class="attribute-name">fx:id</span>=<span class="string"><span class="delimiter">"</span><span class="content">progressBar</span><span class="delimiter">"</span></span> <span class="attribute-name">visible</span>=<span class="string"><span class="delimiter">"</span><span class="content">false</span><span class="delimiter">"</span></span> <span class="attribute-name">GridPane.columnIndex</span>=<span class="string"><span class="delimiter">"</span><span class="content">1</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span></code></pre>
+
+<p>And method that send data and show progressbar while waiting for response:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java">    <span class="directive">protected</span> sendDataToServer() {
+        <span class="comment">//hide initially and when resend</span>
+        serverResponse.setVisible(<span class="predefined-constant">false</span>);
+        curState = STATE_SENDING_PASSWORD;
+        <span class="comment">// New Thread to keep gui responsive</span>
+        <span class="predefined-type">Thread</span> send = <span class="keyword">new</span> <span class="predefined-type">Thread</span>() {
+            <span class="directive">public</span> <span class="type">void</span> run() {
+                <span class="predefined-type">String</span> response = myRemoteHttpCall(<span class="string"><span class="delimiter">"</span><span class="content">some value</span><span class="delimiter">"</span></span>); <span class="comment">//remote service call</span>
+                curState = STATE_USER_INPUT;
+                <span class="keyword">if</span> (response != <span class="predefined-constant">null</span>) {
+                    <span class="comment">//as response come in another thread, Platform.runLater will run code in main UI thread</span>
+                    Platform.runLater(() -&gt; {
+                        <span class="comment">//show error to user</span>
+                        serverResponse.setText(<span class="string"><span class="delimiter">"</span><span class="content">There was an error when sending the information:</span><span class="char">\n</span><span class="delimiter">"</span></span> + response);
+                        serverResponse.setVisible(<span class="predefined-constant">true</span>);
+                    });
+                } <span class="keyword">else</span> {
+                    Platform.runLater(() -&gt; {
+                        wizard.next();
+                    });
+                    curState = STATE_USER_INPUT;
+                }
+            }
+        };
+        send.start();
+
+        <span class="comment">//separate thread to check progress and show progressbar</span>
+        <span class="predefined-type">Thread</span> statusUpdates = <span class="keyword">new</span> <span class="predefined-type">Thread</span>(){
+            <span class="directive">public</span> <span class="type">void</span> run(){
+                progressBar.setVisible(<span class="predefined-constant">true</span>);
+                <span class="keyword">while</span>(curState == STATE_SENDING_PASSWORD){
+                    <span class="keyword">try</span> {
+                        <span class="predefined-type">Thread</span>.sleep(<span class="integer">200</span>);
+                    } <span class="keyword">catch</span> (<span class="exception">InterruptedException</span> e) {
+                        log.error(<span class="string"><span class="delimiter">"</span><span class="content">thread interrupted</span><span class="delimiter">"</span></span>, e);
+                    }
+                }
+                <span class="comment">//hide when </span>
+                progressBar.setVisible(<span class="predefined-constant">false</span>);
+            }
+        };
+        statusUpdates.start();
+
+        <span class="keyword">return</span> <span class="predefined-constant">false</span>;
+    }
+</code></pre>
+
+<p class="article__paragraph"> </p>
+
+<h3 class="article__heading--h3">
+<br>
+JRE Bundling</h3>
+
+<p>When we can't rely on the user having the latest Java version, we can bundle the JRE inside our application.</p>
+
+<pre class="article__code CodeRay CodeRay--groovy">
+<code data-lang="groovy">macAppBundle {
+  mainClassName = project.mainClassName
+  bundleJRE = <span class="predefined-constant">true</span>
+}</code></pre>
+
+<p>The current JRE will be included in the distribution. Unfortunately it doesn't work out of the box for Windows builds.</p>
+
+<h3 class="article__heading--h3">
+<br>
+Summary</h3>
+
+<p>The intent of this article was to show how easy is to develop and build JavaFX desktop applications. These were just a few code samples that make development easier. You can find more examples in our public github repo:<a href="https://github.com/futurice/vpn-management-client"> https://github.com/futurice/vpn-management-client</a> or on the Internet (e.g.<a href="http://www.javafxtutorials.com/whatisjavafx/"> http://www.javafxtutorials.com/whatisjavafx/</a> )</p>
+
+<p> </p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/konstantin-petrukhnov.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Konstantin Petrukhnov</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f7290ef7298&gt;, #&lt;Tag:0x007f7290ef6eb0&gt;, #&lt;Tag:0x007f7290ef6a00&gt;, #&lt;Tag:0x007f7290ef65c8&gt;, #&lt;Tag:0x007f7290ef61e0&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search27da.html?q=JavaFX" class="article__tag-link">
+                <span class="article__tag-name">JavaFX</span></a>, 
+              <a href="../search9467.html?q=Software%20Development" class="article__tag-link">
+                <span class="article__tag-name">Software Development</span></a>, 
+              <a href="../searchd5fa.html?q=Gradle" class="article__tag-link">
+                <span class="article__tag-name">Gradle</span></a>, 
+              <a href="../search5439.html?q=Java" class="article__tag-link">
+                <span class="article__tag-name">Java</span></a>, 
+              <a href="../searche281.html?q=UI" class="article__tag-link">
+                <span class="article__tag-name">UI</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Trying%20JavaFX&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Trying%20JavaFX&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard&amp;title=Trying%20JavaFX', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fjavafx-vpn-wizard&amp;title=Trying%20JavaFX">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="tech-pick-of-the-week-play-2-dot-2.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Tech Pick of the Week: Play 2.2</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="programmer-proverbs.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Programmer proverbs</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="vuoden-isa-father-of-the-year.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Vuoden Isä  - Father of the year</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Konstantin Petrukhnov</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="self-explanatory-code.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Self-explanatory code is good code, isn&#x27;t it?</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/javafx-vpn-wizard by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:13:47 GMT -->
+</html>

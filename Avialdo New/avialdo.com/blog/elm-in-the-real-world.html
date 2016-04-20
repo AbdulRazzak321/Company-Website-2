@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/elm-in-the-real-world by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:10:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>How Elm made our work better — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="How Elm made our work better — Futurice">
+  <meta property="og:description" name="description" content="Elm is a beginner friendly functional reactive programming language for building web frontend. Choosing Elm for a customer project made my job nicer than ever and helped maintain project velocity during months of development.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="elm-in-the-real-world.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/elm_s1200x630_c2048x1198_l0x172_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-8" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-8.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-8.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2016-01-11T11:16:27Z">
+          January 11, 2016
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        How Elm made our work better
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/ossi-hanhinen.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/futuliens_0196_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Ossi Hanhinen</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Hypertext Elementalist</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search40d3.html?q=functional" class="article__header__tag-link">
+                  <span class="article__header__tag-name">functional</span></a>, 
+                <a href="../searcha9a4.html?q=reactive" class="article__header__tag-link">
+                  <span class="article__header__tag-name">reactive</span></a>, 
+                <a href="../search5056.html?q=web" class="article__header__tag-link">
+                  <span class="article__header__tag-name">web</span></a>, 
+                <a href="../search7664.html?q=frontend" class="article__header__tag-link">
+                  <span class="article__header__tag-name">frontend</span></a>, 
+                <a href="../searcha867.html?q=Elm" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Elm</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p><em>This article was originally titled "Elm in the real world", but it started to sound strange to me after Evan mentioned about it. -- Ossi, Jan 16th 2016</em></p>
+
+<p>Elm is a beginner friendly functional reactive programming language for building web frontend. Choosing Elm for a customer project made my job nicer than ever and helped maintain project velocity during months of development. This boils down to two things, in my opinion:</p>
+
+<ol>
+	<li>Elm restricts the way you program, resulting in maintainable code no matter what.</li>
+	<li>There are no runtime exceptions so debugging is way less of an issue.</li>
+</ol>
+
+<p>At the <a href="https://reactive2015.com/">Reactive 2015</a> conference, where I gave a lightning talk on stateless web UI rendering, many people asked me: "How hard is it to debug compiled Elm code on the browser?" I was more than a little confused by these questions, until I remembered what it's like to write JavaScript. You make a change, switch to browser, set up debugging stops, click on a few things in the app, check the debugger and go "Uhhh... How did that happen? Maybe I should <code>console.log</code> something?"</p>
+
+<p>Writing Elm, on the other hand, is like this: you make a change, check the superb <a href="http://elm-lang.org/blog/compilers-as-assistants">compiler errors</a>, fix them. Next. Of course, you should then switch to the browser and check that it actually does what you wanted, but the point is: you don't spend half the time coding digging through the debugger.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="custom" href="http://elm-lang.org/blog/compilers-as-assistants" target="_blank"><img alt="" src="../../flockler.com/thumbs/1992/truthy_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Elm compiler errors can be super helpful</span></figcaption>
+</figure>
+
+<p>Despite being a whole new language to learn, I would argue the gains of the language design can far outweigh the "loss of time" while learning. JavaScript is, after all, a very very convoluted language with myriads of different libraries, frameworks, linters et cetera to try and make dealing with it less painful.</p>
+
+<p>Based on my experiences, I wholeheartedly recommend Elm for all bigger frontend application projects from now on. There are parts that are more cumbersome than in JavaScript, for sure. But all things considered, I value the guarantees Elm provides far more than the ability to do things quick 'n' dirty.</p>
+
+<h2>How we chose Elm</h2>
+
+<p>In the Summer of 2015 I had a stroke of luck. I got into a project, where there were no restrictions on the frontend technology. We were tasked with building a web application for a select few expert users, from scratch. The browser support target reflected the fact: Latest Chrome.</p>
+
+<p>I sat down with Henrik Saksela to discuss our options. The baseline assumption was that we would use React to build the frontend, but I wasn't convinced of its merits. We talked about <a href="http://cycle.js.org/">Cycle.js</a>, ClojureScript and <a href="https://reagent-project.github.io/">Reagent</a>, and my <a href="https://gist.github.com/ohanhi/0d3d83cf3f0d7bbea9db/">recent endeavors</a> with <a href="http://elm-lang.org/">Elm</a>.</p>
+
+<p>In the end, we decided to just give Elm a try and quickly fall back to Reagent or React if it doesn't work out. We figured we should try and make the trickiest parts (technology-wise) first, so we could fail early.</p>
+
+<p>Here's how I originally put it in the project README:</p>
+
+<blockquote>
+<h4><a href="https://speakerdeck.com/ohanhi/on-simplicity">Less complexity</a></h4>
+
+<p>The main properties and benefits of using Elm instead of plain JavaScript are the following:</p>
+
+<ul>
+	<li>
+<strong>Strong static types</strong> → finding errors fast with readable <a href="http://elm-lang.org/blog/compiler-errors-for-humans">compiler messages</a>
+</li>
+	<li>
+<strong>No <code>null</code> or <code>undefined</code></strong> → impossible to leave possible problems unhandled</li>
+	<li>
+<strong>Immutability &amp; purity</strong> → readability and maintainability</li>
+	<li>
+<strong>No runtime exceptions</strong> → uncomparable reliability</li>
+	<li>
+<strong>Reactive by design</strong> → FRP isn't opt-in, it is baked right in the language</li>
+</ul>
+</blockquote>
+
+<p>Months later:</p>
+
+<div class="article__embed-code">
+<blockquote class="twitter-tweet" lang="en">
+<p dir="ltr" lang="en">Some stats of our <a href="https://twitter.com/elmlang">@elmlang</a> project so far: - 2-3 devs, 3mo - 148 <a href="https://twitter.com/hashtag/Elm?src=hash">#Elm</a> modules - 1 JS file - 3 major refactors - 0 runtime exceptions 🎉</p>
+— Ossi Hanhinen (@ohanhi) <a href="https://twitter.com/ohanhi/status/652368381182672898">October 9, 2015</a>
+</blockquote>
+
+</div>
+
+<h2>The project</h2>
+
+<p>The application was a tool for quickly managing news website content. In essence, the articles on the site's main pages are curated by a handful of experts 24/7, and our tool was the means for doing that efficiently. Futurice was also responsible for the design, both user interaction and graphics, and building the backend service, so we had a great cohesion within the whole project.</p>
+
+<p>The interaction was heavily based on drag-and-drop. To place an article on the page, the user would drag it from the side panel into the main panel. Similarly, modules (article groups) could be dragged up and down on the page to determine their order.</p>
+
+<h2>Architecture</h2>
+
+<p><em><strong>Note:</strong> Back when we started the project, <a href="http://package.elm-lang.org/packages/evancz/start-app/latest">StartApp</a> wasn't as big a thing as it is now. It might have guided our approach to a different direction, but we feel our architectural choices resulted in a great solution in this case.</em></p>
+
+<p><a href="https://github.com/evancz/elm-architecture-tutorial/">The Elm Architecture</a> outlines the basic pattern of Model, Update and View. This is in fact a mandatory separation in any Elm application. The language just works that way and there is no way around it.</p>
+
+<p>Everything in Elm is immutable, from "variables" to function definitions to records (which are a bit like JS objects). That means rendering a view, for example, cannot possibly have an effect on the application state. And that the dreaded "global state" is actually a very nice thing - since we can be sure nothing is changing it in secret.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/elm-pattern_s1800x0_q80_noupscale.png" target="_blank"><img alt="" src="../../flockler.com/thumbs/1992/elm-pattern_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">The Elm pattern</span></figcaption>
+</figure>
+
+<p>The Elm pattern is the following:</p>
+
+<ul>
+	<li>Define the shape of the data (model)</li>
+	<li>Define Actions and how to react to them (update)</li>
+	<li>Define how to show the state (view)</li>
+</ul>
+
+<h3>Dissecting the state</h3>
+
+<p>Having worked with Virtual DOM and immutable structures before, me and Henrik reasoned we could try and rely on the backend data -- forgoing frontend state completely. This simple idea worked out really well for us.</p>
+
+<p>We came to think about "application state" in this manner:</p>
+
+<ul>
+	<li>The UI can be in different states regarding views, ongoing drag-and-drop actions and so on, which should not persist between sessions. This is our <em>UiState</em>.</li>
+	<li>The backend represents the real state of the world, or all data that should persist. This is our <em>DataState</em>.</li>
+</ul>
+
+<p><em>UiState</em> was handled like in any other Elm application, updating the state based on Actions.</p>
+
+<p>The way we handled <em>DataState</em> was a bit more involved than the standard pattern, though:</p>
+
+<ul>
+	<li>Define the shape of the data on the backend (model)</li>
+	<li>Define Actions that get turned into <a href="http://elm-lang.org/guide/reactivity#tasks">Tasks</a>
+</li>
+	<li>Define HTTP call tasks that get turned into succeed/fail Actions</li>
+	<li>Define how to react to the succeed/fail actions (update)</li>
+	<li>Define how to show the state (view)</li>
+</ul>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/our-architecture_s1800x0_q80_noupscale.png" target="_blank"><img alt="" src="../../flockler.com/thumbs/1992/our-architecture_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Our model for pessimistic UI updates</span></figcaption>
+</figure>
+
+<p>How our pattern differed from a standard Elm application was that instead of updating models immediately based on an Action, we used the actions to determine which HTTP calls are necessary to comply to the user's intent. These calls then resolve to either a failing or succeeding scenario. Both of these are then translated to updates - be it showing a notification about the error or changing the data. In short, we had a fully "pessimistic" UI that would save the state to the backend on every change. Pessimistic means that we never assume an operation to succeed, but instead we rely only on facts: what (if at all) the server responds.</p>
+
+<p>The way we update the backend-provided data in the Elm application was the main kicker, though. Once we've POSTed a change to a list in the backend, we simply GET the whole list from the backend and <em>replace the whole thing in our model</em>. This means the state can never be inconsistent between the backend and the frontend. We also made sure only one of these tasks could be running at once simply by deferring data-changing user interactions until the UI had updated. The user could still scroll and click on things while the task was running, but not drag things from one place to another (which would imply a data change).</p>
+
+<p>There were two main concerns to this approach: 1) is the UI responsive enough with backend-only updates, and 2) is it madness to discard and replace the whole model on update. As it turns out, concern 2 was mostly unfounded. The Virtual DOM in elm-html does the heavy lifting, so on the browser only an updated item gets re-rendered. Concern 1 was valid though. As previously stated, our project was an expert tool. It would only be used from within the customer network, using desktop computers. In our experiments using a wireless connection (actual users have wired connections), we found the heaviest updates took about 600ms on average. This was before we optimized the caching, which sped things up ten-fold. As a result, pretty much all updates happen in consistently under 300ms, which is great!</p>
+
+<h2>Strictness - a mixed blessing?</h2>
+
+<p>The strictness of Elm proved invaluable. Since the compiler won't let you disregard a potential failure even when trying out something, there is no way some of them might end up in production code. Coupled with total immutability the language itself enforces good functional programming practices.</p>
+
+<p>The place where Elm's restrictions can become hardships are when dealing with the outside world. For one, you need to provide full modeling of the data structure if you wish to parse a JSON response from the server. And you need to take into account that the parsing may fail at that point. This all seems obvious once you get familiar with Elm's type system, though. If your API is a little "tricky" - for example the response JSON can have certain properties that define which other properties are available - you may need to jump through hoops to make that work.</p>
+
+<p>Another thing is interoperability with JavaScript libraries. First off though: Elm has its FRP and functional utilities built-in, and the elm-html package comes with virtual-dom, so there's no need for stuff like Lodash, React or Redux.</p>
+
+<p>But if you do need to interact with JavaScript, the mechanism for that is called Ports. Ports are essentially strictly typed event streams to listen to (Elm to JS) or to push events into (JS to Elm). This means you will need to write some boilerplate-ish code, both in Elm and in JavaScript, in order to pass a message to the other side. So the more JavaScript libraries you need, and the more different kinds of objects you want to pass through, the more boilerplate code you will end up with.</p>
+
+<p>That said, Elm is still fairly young and seems to be quickly gaining recognition in the aftermath of the "functional web frontend tsunami" React and friends brought about. The fact some commonly used library alternatives are still missing could soon turn. And while we're on the topic of dependencies, Elm has one more ace up its sleeve: <strong>the package system enforces semantic versioning</strong>. Because of the strict typing, the package manager can infer any outfacing changes to the package source code and determine the version number on its own. No more sudden breaking because an NPM package upgraded from 0.14.3 to 0.15.0!</p>
+
+<h2>Conclusions</h2>
+
+<p>Go and learn Elm. Seriously. It is the simplest language I have ever tried, and the team has put a crazy lot of effort into making the developer experience as nice as possible.</p>
+
+<p>The syntax may seem daunting at first, but don't fret. It's like getting a nice new sweater. A few days in, you'll be familiar with it and from then on it's like you've always known it. In our project, two out of three developers had never coded in Elm before. Both of them got up to speed and were productive in a couple of weeks. Even the sceptic told me that once he got over the initial shock, he found Elm a very nice language and a good fit for the project.</p>
+
+<p>A compiled Elm application has a whole FRP implementation built in, so it might not make sense to use it for very small things on a mostly static web page. For these kinds of uses, you may be better off with e.g. <a href="http://www.purescript.org/">PureScript</a>. PureScript is, however, much harder to learn without a solid prior understanding of functional programming concepts. There are other differences between the two as well, such as the way they handle data. Elm uses persistent data structures under the hood, which means better performance in big apps. PureScript resorts to standard JavaScript data structures, which results in smaller compiled files.</p>
+
+<p>To get started with Elm, I recommend reading through the official <a href="http://elm-lang.org/docs">Elm documentation</a> and checking out the links at <a href="https://github.com/isRuslan/awesome-elm">Awesome Elm</a>. When I was first learning the language, I wrote an introductory article that describes the basic syntax and the model-update-view pattern: <a href="https://gist.github.com/ohanhi/0d3d83cf3f0d7bbea9db">Learning FP the hard way</a>.</p>
+
+<p><strong>Have fun!</strong></p>
+
+<p>If you liked this article, please consider sharing it with others who might as well!</p>
+
+<div class="article__embed-code">
+<hr>
+</div>
+
+<p>Thank you for the proofreading comments and clarification suggestions, <a href="../people/harri-halikka.html">Harri Hälikkä</a>, <a href="../people/andre-medeiros.html">Andre Medeiros</a>, <a href="../people/henrik-saksela.html">Henrik Saksela</a> and <a href="https://twitter.com/rtfeldman">Richard Feldman</a>. You were most helpful!</p>
+<script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "../../platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));</script>
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/ossi-hanhinen.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Ossi Hanhinen</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007ff0277e50a8&gt;, #&lt;Tag:0x007ff0277e4c98&gt;, #&lt;Tag:0x007ff0277e48b0&gt;, #&lt;Tag:0x007ff0277e44c8&gt;, #&lt;Tag:0x007ff0277e40e0&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search40d3.html?q=functional" class="article__tag-link">
+                <span class="article__tag-name">functional</span></a>, 
+              <a href="../searcha9a4.html?q=reactive" class="article__tag-link">
+                <span class="article__tag-name">reactive</span></a>, 
+              <a href="../search5056.html?q=web" class="article__tag-link">
+                <span class="article__tag-name">web</span></a>, 
+              <a href="../search7664.html?q=frontend" class="article__tag-link">
+                <span class="article__tag-name">frontend</span></a>, 
+              <a href="../searcha867.html?q=Elm" class="article__tag-link">
+                <span class="article__tag-name">Elm</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=How%20Elm%20made%20our%20work%20better&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=How%20Elm%20made%20our%20work%20better&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world&amp;title=How%20Elm%20made%20our%20work%20better', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Felm-in-the-real-world&amp;title=How%20Elm%20made%20our%20work%20better">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="reactive-mvc-and-the-virtual-dom.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Reactive MVC and the Virtual DOM</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="reactive-mvc-and-the-virtual-dom.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Reactive MVC and the Virtual DOM</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="combining-react-flux-and-web-components.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Combining React, Flux &amp; Web Components</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Ossi Hanhinen</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="breaking-news-wwweeklies-is-now-a-public-event.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Breaking news: WWWeeklies is now a public event</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="learning-functional-reactive-programming-with-elm.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Learning functional reactive programming with Elm</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="futurice-at-jsconf-budapest.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Futurice at JSConf Budapest</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/elm-in-the-real-world by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:10:58 GMT -->
+</html>

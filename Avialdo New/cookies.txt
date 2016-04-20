@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.wikimedia.org	TRUE	/	FALSE	1999999999	GeoIP	PK:05:Karachi:24.92:67.07:v4
+commons.wikimedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	14-Apr-2016
+.wikipedia.org	TRUE	/	FALSE	1999999999	GeoIP	PK:05:Karachi:24.92:67.07:v4
+gist.github.com	TRUE	/	FALSE	1999999999	_gh_sess	eyJzZXNzaW9uX2lkIjoiZWRjNmMyNmY0OWZmY2U1ZDZmNjFjZThiZjVlMTdiYmEiLCJyZWZlcnJhbF9jb2RlIjoiaHR0cDovL2Z1dHVyaWNlLmNvbS9ibG9nL25wbS1yZWdpc3RyeS1pbi1udW1iZXJzIiwic3B5X3JlcG8iOiJ0ai9jb21tYW5kZXIuanMiLCJzcHlfcmVwb19hdCI6MTQ2MDYyMTM0MCwiX2NzcmZfdG9rZW4iOiJpcC83WVpyS3czY1BUTHczOFlsc2hQbXY1Syt2d2VzOXdUU1pmRWVEbmFRPSJ9--be6e348f1f7ac95e443c44193201e2fbcdfb6d23
+.gitter.im	TRUE	/	FALSE	1999999999	g_session	s%3AR4EAm1n2Yx2lGW55G8z9P-JI0vkmp9ts.ySXHEMFGWA8Eoxsv88rqYNJTj%2FJu%2FKgTdEn6TmEJTcQ
+commons.wikimedia.org	TRUE	/	FALSE	1999999999	commonswikiSession	jqtctab8495r8t1l3tvus284j83b25eh
+commons.wikimedia.org	TRUE	/	FALSE	1999999999	forceHTTPS	true
+en.wikipedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	14-Apr-2016
+upload.wikimedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	14-Apr-2016
+en.wikipedia.org	TRUE	/	FALSE	1999999999	enwikiSession	kkg2p8r53mefavjccaf7ob1ps0v88jaa
+en.wikipedia.org	TRUE	/	FALSE	1999999999	forceHTTPS	true
+.github.com	TRUE	/	FALSE	1999999999	logged_in	no
+github.com	TRUE	/	FALSE	1999999999	_gh_sess	eyJzZXNzaW9uX2lkIjoiZmVmODBiYWI1MTYxMTVkZjUxOGI1ZTIyZTY0ZGVhNzgiLCJyZWZlcnJhbF9jb2RlIjoiaHR0cDovL2dpdGh1Yi5jb20vTWFyYWsvY29sb3JzLmpzIiwicmV0dXJuX3RvIjoiL3RqL2NvbW1hbmRlci5qcyIsIl9jc3JmX3Rva2VuIjoid2lyRkM2VDBaMWd3Z2NyWHhXZXd5VzBTa3JJMHFKbTl0bnkwU1ltSXl0RT0iLCJzcHlfcmVwbyI6InRqL2NvbW1hbmRlci5qcyIsInNweV9yZXBvX2F0IjoxNDYwNjI1MTI2LCJfZmxpcHBlcl9pZCI6NTA4MTQzMDAxMDI4NjQ2MTkzODU2MjkzMDk4MTYyfQ%3D%3D--6e4adcee3521f4c4f250b7e4c348e9694c841aa7
+

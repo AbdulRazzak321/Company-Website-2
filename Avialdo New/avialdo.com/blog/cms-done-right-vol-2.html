@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/cms-done-right-vol-2 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:14:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>CMS done right, vol. 2 — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="CMS done right, vol. 2 — Futurice">
+  <meta property="og:description" name="description" content="Henrik Saksela writes about using Prismic.io to manage the content of a customer-facing site.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="cms-done-right-vol-2.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/prismicio_example_small--dy57ub9gnw_s1200x630_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-7" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-7.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-7.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-04-08T08:40:45Z">
+          April  8, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        CMS done right, vol. 2
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/henrik-saksela.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/pienibw_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Henrik Saksela</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Senior Consultant</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searchc93d.html?q=CMS" class="article__header__tag-link">
+                  <span class="article__header__tag-name">CMS</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <figure contenteditable="false" data-flockler="image-add"><img alt="The document editing view featuring Prismic.io's example project​" src="../../flockler.com/thumbs/1992/prismicio_example_small_s830x0_q80_noupscale.png">
+<figcaption><span class="image-caption-title" contenteditable="false">The document editing view featuring Prismic.io's example project​</span></figcaption>
+</figure>
+
+<p>Last week, Futurice published a <a href="cms-done-right-vol-1.html">post</a> documenting one team’s experience using a CMS purely as a content repository, accessed through an API from a separate presentation layer. Our team had a similar experience, but because the customer’s demands were not as strict as in the previous case, we were able to choose a SaaS solution instead of a locally hosted one.</p>
+
+<p>What follows is a short description of our experience using Prismic.io to manage the content of a customer-facing site.</p>
+
+<p>The requirements for a content management system were clear: the site was to contain a bunch of marketing material that would have to be updated <span>periodically </span>by nontechnical users. Not wanting to set up our own CMS, we started looking for something that would take care of the content management part, and offer us an API to serve the content with minimal fuss. <a href="http://prismic.io/">Prismic.io</a> seemed to fit the bill.</p>
+
+<h3 class="article__heading--h3">Prismic.io, a SaaS CMS</h3>
+
+<p>Prismic.io is a SaaS content management system. It’s a concept that makes a lot of sense. Editable content is a universal problem when developing bespoke web applications, and rolling your own solution is often cost prohibitive. Faced with the idea of having to set up your own CMS, moving your content to a cloud-based SaaS provider and bypassing the issue of administering yet another application feels like a smart decision. </p>
+
+<p>Getting started with Prismic.io is easy: you set up a repository, create some content, grab an SDK and off you go. You can also get started by using the <a href="https://developers.prismic.io/examples/UjBmm8uvzeMJvE5V/les-bonnes-choses">example repository</a> (content for a pastry shop, complete with dozens of pictures of delicious cupcakes) and a sample project to consume that content. Starter projects are available for a large number of platforms and the SDKs cover even more ground.</p>
+
+<h3 class="article__heading--h3">Representing your data</h3>
+
+<p>Prismic.io’s data model is basically a set of documents plus some attributes used to categorize them. A document’s contents are defined by something called a document mask. This is a JSON document that declares a document’s fields and their types. You get a bunch of data types for your basic values, such as text, numbers and images. Additionally, a type called <em>group</em> allows you to create nested sets of fields that repeat (nested groups are not allowed, though) and a type called <em>link</em> allows you to reference other documents. A document mask can have any number of document instances that “implement” it.</p>
+
+<p>Collections and tags are used to categorize documents. Collections are basically just named queries into your data and don’t really add any metadata: you define a set of document types and a set of tags, and your collection will contain all the documents that match any of the types and all of the tags. So really, for categorizing documents, you’re left with tags, which are labels that you can attach to documents.</p>
+
+<p>Finally, you get a query syntax for retrieving documents, which allows you to fetch documents through the API using different parameters: document mask, tags, author name and so on.</p>
+
+<h3 class="article__heading--h3">Creating a site with Prismic.io</h3>
+
+<p>You can create all manner of structures for your content using the model provided by Prismic.io. You could opt for a hierarchical structure where links between documents build up bigger entities. Or you could use a system in which a tag denotes a document as belonging to a certain page and a page is built up of multiple documents rendered one after another. This is what we did for our project.</p>
+
+<p>All in all, using tags to denote pages worked quite well. We defined a bunch of document types to represent different fragments that could be combined to build up the contents of a page. As documents are unordered, we had to add a synthetic sort key to each document type. This key could then be used to order the documents belonging to a specific tag. Creating a custom document type to store the mapping from URLs to tag names allowed us to create a completely new content page by creating a new tag, associating some documents with it, and adding a new entry in the mapping table.</p>
+
+<p>This approach, however, led to one of the problems we encountered: you’re not really given any control over how the interface for editing your content is presented. And you have to use the interface, as Prismic.io’s API is read-only. In our case, the editor would bring up the content to be edited by querying the interface for a certain tag. The interface wasn’t, however, aware of our synthetic sort key, so the results presented to the editor would be a jumble of small content snippets in seemingly random order. It would've been nice to be able to define an order for these in the editing view.</p>
+
+<p>Another limitation we ran into was with Prismic.io’s workhorse for formatted content: structured text. It provides a WYSIWYG editor for a subset of HTML, containing the following tags: h1, h2, h3, p, strong, em, a, img, em, ul, ol. It would’ve been convenient to extend this to cover linebreaks, for instance, or to have been able to annotate images with CSS class names to control text flow. We found mentions of people implementing their own solutions to interpret [classname] -type tags within the content for these purposes, but we didn’t want to go down that road.</p>
+
+<p>Near the end of our project, we realized how convenient it would be if, <span>for editors logged into the site,</span> we could display an “edit” -button next to each content fragment that would transport them directly to the editing interface for that fragment's document. Alas, it turns out the URL for the edit page contains an internal document version string that isn’t exposed through the API, which prevented us from realizing this idea.</p>
+
+<p>These are fairly minor gripes, however, and all in all Prismic.io helped us accomplish what we set out to do. </p>
+
+<p>The system for versioning merits a special mention. It’s quite nice. When you modify a document, you initially end up with a draft version. The draft version has to be published into a release (or directly into the master release) to be visible. Releases are sets of changes that are made visible at the same time and mirror approximately the idea of branches in version control systems. What makes this especially nice is that you can build in functionality in your application that, in a session scope, overrides what content release it works against. This allows you to preview upcoming releases on your actual site.</p>
+
+<h3 class="article__heading--h3">Conclusion</h3>
+
+<p>All in all, Prismic.io shows promise as a viable alternative for hosting content. Its minimal API lets us focus on building a site without worrying too much about the content part. Our customer, who edits the content, seemed satisfied as well. We’re looking forward to seeing how Prismic.io continues to evolve.</p>
+
+<p>Finally, <a href="https://www.contentful.com/">Contentful</a> looks like another interesting alternative in this space, feel free to let us know about your experiences with it!</p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/henrik-saksela.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Henrik Saksela</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007ff0429a44f0&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searchc93d.html?q=CMS" class="article__tag-link">
+                <span class="article__tag-name">CMS</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=CMS%20done%20right%2C%20vol.%202&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=CMS%20done%20right%2C%20vol.%202&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2&amp;title=CMS%20done%20right%2C%20vol.%202', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fcms-done-right-vol-2&amp;title=CMS%20done%20right%2C%20vol.%202">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="cms-done-right-vol-1.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">CMS done right, vol. 1</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="lifecycle-management-selling-a-concept-for-agile-maintenance.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Lifecycle Management - Selling a concept for agile maintenance</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="prototyping-is-always-worth-it.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Prototyping is always worth it</h1>
+</a></article>
+
+    </aside>
+
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/cms-done-right-vol-2 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:14:25 GMT -->
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/declarative-apps-with-polymers-two-way-data-binding by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:11:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Declarative web applications with Polymer’s two-way data-binding — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Declarative web applications with Polymer’s two-way data-binding — Futurice">
+  <meta property="og:description" name="description" content="Lately I&amp;rsquo;ve been having a lot of fun with Google&amp;rsquo;s Polymer, trying out different patterns of creating web apps with it. Polymer is a future-oriented frontend library based on Web Components standards. I have a strong feeling Web Components">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="declarative-apps-with-polymers-two-way-data-binding.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/polymer-feature_s1200x630_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-1.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-1.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-03-20T07:52:03Z">
+          March 20, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Declarative web applications with Polymer’s two-way data-binding
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/ossi-hanhinen.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/futuliens_0196_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Ossi Hanhinen</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Hypertext Elementalist</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search4f07.html?q=Polymer" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Polymer</span></a>, 
+                <a href="../searchaec1.html?q=Web%20Components" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Web Components</span></a>, 
+                <a href="../search4237.html?q=declarative" class="article__header__tag-link">
+                  <span class="article__header__tag-name">declarative</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p><span><span>Lately I’ve been having a lot of fun with Google’s <a href="http://www.polymer-project.org/" target="_blank">Polymer</a></span><span>, trying out different patterns of creating web apps with it. Polymer is a future-oriented frontend library based on Web Components standards. I have a strong feeling Web Components will fundamentally change the way we build the web. Polymer is just one of the libraries that try and make using them as easy as possible.</span></span></p>
+
+<p dir="ltr"><span><span>Polymer authors are quite big on </span><em>declarative</em><span>. They argue HTML used to be entirely declarative in the days of yore, but has failed to keep up with the times. <a href="http://webcomponents.org/articles/introduction-to-custom-elements/" target="_blank">Custom Elements</a></span><span> are the solution to this discrepancy: just like a &lt;select&gt; element magically transforms into the dropdown we all know, we can now define our own Custom Elements, that can have functionality of their own. </span></span></p>
+
+<p dir="ltr"><span><span>In order to try out the declarative pattern, I set out to create a currency converter with as little JavaScript as possible, trying to leave all the heavy lifting to data-bindings alone.</span></span></p>
+
+<p dir="ltr"><span><span><img src="https://lh5.googleusercontent.com/vrB4GmMaQqRjLpDKMIncmWfxlTHZzUL3DUKRPfPolWjSlLFZjARxsuao5g3rnF-HAL-B2V9s_TeNSaOYDzK6hidu1zc2e4KLkbexxLP_eASoaNf4-Fq9kAxHi8m2bxb2LelaVe8"></span></span></p>
+
+<p dir="ltr"><span><span>This is what we’ll end up with, so hold on to your hat and enjoy the ride!</span></span></p>
+
+<h2><span><strong>Step 1. Must-have pieces of UI: the template</strong></span></h2>
+
+<p dir="ltr"><span><span>Polymer uses the familiar AngularJS handlebars expression syntax for the data-binding:</span></span></p>
+
+<pre class="article__code CodeRay CodeRay-- CodeRay--unknown-lang">
+<code data-lang="">{{ value | filter }}</code></pre>
+
+<p dir="ltr"><span><span>Using this syntax, we can do something like the following to arrive at an almost-working solution.</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--html">
+<code data-lang="html"><span class="tag">&lt;input</span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">{{ amount }}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="tag">&lt;input</span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">{{ fromCurrencyRelativeValue }}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="tag">&lt;input</span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">{{ toCurrencyRelativeValue }}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">result</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    {{ (amount * (fromCurrencyRelativeValue / toCurrencyRelativeValue)) }}"
+<span class="tag">&lt;/div&gt;</span></code></pre>
+
+<p dir="ltr"><span><span>In essence, in the result div we have a simple calculation expression: the amount entered multiplied with the fraction of the relative values.</span></span></p>
+
+<p dir="ltr"><span><span>However, there are no restrictions on what the `</span></span>fromCurrencyRelativeValue<span><span>` and `to</span></span>CurrencyRelativeValue<span><span>` can be, which would definitely be a problem.</span></span></p>
+
+<h2><span><strong>Step 2. Make it work</strong></span></h2>
+
+<p dir="ltr"><span><span>There is a small amount of Polymer boilerplate that we need to get over with to make the element do its thing. It looks a little something like this:</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--html">
+<code data-lang="html"><span class="tag">&lt;polymer-element</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">currency-converter</span><span class="delimiter">"</span></span> <span class="attribute-name">attributes</span>=<span class="string"><span class="delimiter">"</span><span class="content">amount fromCurrency toCurrency</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;template&gt;</span>
+    <span class="comment">&lt;!-- The above stuff here. --&gt;</span>
+  <span class="tag">&lt;/template&gt;</span>
+  <span class="tag">&lt;script&gt;</span>
+<span class="inline">    Polymer({
+      <span class="comment">// New stuff here?</span>
+    });</span>
+  <span class="tag">&lt;/script&gt;</span>
+<span class="tag">&lt;/polymer-element&gt;</span></code></pre>
+
+<p dir="ltr"><span><span>See how I added the variables as the element’s attributes? This allows us to use the element like so:</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--html">
+<code data-lang="html"><span class="tag">&lt;currency-converter</span>
+  <span class="attribute-name">amount</span>=<span class="attribute-value">100</span>
+  <span class="attribute-name">fromCurrency</span>=<span class="attribute-value">0</span>
+  <span class="attribute-name">toCurrency</span>=<span class="attribute-value">1</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/currency-converter&gt;</span></code></pre>
+
+<p dir="ltr"><span><span>But back to the topic. The JS part in the boilerplate above is for defining the Custom Element’s prototype. We could of course define the currencies elsewhere (as an attribute or even using an external JSON resource), but for this demo, let’s go ahead and add the data straight to the converter’s prototype.</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--javascript">
+<code data-lang="javascript">Polymer({
+  <span class="comment">/**
+   * The data model holds currencies' names and relative values.
+   */</span>
+  <span class="key">currencies</span>: [
+    {
+      <span class="key">name</span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+      <span class="key">relativeValue</span>: <span class="float">1.13085</span>
+    }, {
+      <span class="key">name</span>: <span class="string"><span class="delimiter">"</span><span class="content">SEK</span><span class="delimiter">"</span></span>,
+      <span class="key">relativeValue</span>: <span class="float">0.1189895</span>
+    }, {
+      <span class="key">name</span>: <span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span>,
+      <span class="key">relativeValue</span>: <span class="float">1.0</span>
+    }, {
+      <span class="key">name</span>: <span class="string"><span class="delimiter">"</span><span class="content">NOK</span><span class="delimiter">"</span></span>,
+      <span class="key">relativeValue</span>: <span class="float">0.1311897</span>
+    }, {
+      <span class="key">name</span>: <span class="string"><span class="delimiter">"</span><span class="content">JPY</span><span class="delimiter">"</span></span>,
+      <span class="key">relativeValue</span>: <span class="float">0.00836764</span>
+    }
+  ]
+});</code></pre>
+
+<p dir="ltr"><span><span>Okay, now we have the HTML template from Step 1, the necessary boilerplate, and the data model. It’s all good! But let’s not stop while we’re having fun!</span></span></p>
+
+<h2>
+<span><strong>Step 3. Usability </strong></span>—<span><strong> and swag</strong></span>
+</h2>
+
+<p dir="ltr"><span><span>The text input for selecting a currency index is obviously a poor decision, but while we’re at it, why not decorate all of the stuff with some <a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank">Material Design</a></span><span> goodness?</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--html">
+<code data-lang="html"><span class="tag">&lt;paper-input-decorator</span> <span class="attribute-name">floatingLabel</span> <span class="attribute-name">label</span>=<span class="string"><span class="delimiter">"</span><span class="content">Amount</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;input</span> <span class="attribute-name">is</span>=<span class="string"><span class="delimiter">"</span><span class="content">core-input</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">number</span><span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">{{ amount }}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="tag">&lt;/paper-input-decorator&gt;</span>
+<span class="comment">&lt;!-- … --&gt;</span>
+<span class="tag">&lt;paper-dropdown-menu</span> <span class="attribute-name">label</span>=<span class="string"><span class="delimiter">"</span><span class="content">From</span><span class="delimiter">"</span></span> <span class="attribute-name">flex</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;paper-dropdown</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">dropdown</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;core-menu</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">menu</span><span class="delimiter">"</span></span> <span class="attribute-name">selected</span>=<span class="string"><span class="delimiter">"</span><span class="content">{{ fromCurrency }}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;template</span> <span class="attribute-name">repeat</span>=<span class="string"><span class="delimiter">"</span><span class="content">{{ c in currencies }}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;paper-item&gt;</span>{{ c.name }}<span class="tag">&lt;/paper-item&gt;</span>
+      <span class="tag">&lt;/template&gt;</span>
+    <span class="tag">&lt;/core-menu&gt;</span>
+  <span class="tag">&lt;/paper-dropdown&gt;</span>
+<span class="tag">&lt;/paper-dropdown-menu&gt;</span></code></pre>
+
+<p dir="ltr"><span><span>Also, let’s add a swap button for quick to-fro:</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--html">
+<code data-lang="html"><span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">swap</span><span class="delimiter">"</span></span> <span class="attribute-name">on-tap</span>=<span class="string"><span class="delimiter">"</span><span class="content">{{ swap }}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;core-icon</span> <span class="attribute-name">icon</span>=<span class="string"><span class="delimiter">"</span><span class="content">swap-horiz</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/core-icon&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
+
+<p dir="ltr"><span><span>Finally, show the result with a label above it:</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--html">
+<code data-lang="html"><span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">result</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;p</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">description</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    {{ amount + ' ' + currencies[fromCurrency].name + ' in ' + currencies[toCurrency].name }}:
+  <span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;p</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">result-number</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    {{ (amount * (currencies[fromCurrency].relativeValue / currencies[toCurrency].relativeValue)) | toFixed(2) }}
+  <span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/section&gt;</span></code></pre>
+
+<p><span><span>Phew, that’s it! All we need to do now is define the two functions we are now referencing: the `swap` method and the `toFixed` filter. They are very simple.</span></span></p>
+
+<pre class="article__code CodeRay CodeRay--javascript">
+<code data-lang="javascript"><span class="comment">/**
+ * Filter for bringing numbers to a defined precision.
+ */</span>
+<span class="function">toFixed</span>: <span class="keyword">function</span>(value, precision) {
+  <span class="keyword">return</span> Number(value).toFixed(precision);
+},
+<span class="comment">/**
+ * Method that swaps the two selected currencies with each other.
+ */</span>
+<span class="function">swap</span>: <span class="keyword">function</span> () {
+  <span class="keyword">var</span> temp = <span class="local-variable">this</span>.fromCurrency;
+  <span class="local-variable">this</span>.fromCurrency = <span class="local-variable">this</span>.toCurrency;
+  <span class="local-variable">this</span>.toCurrency = temp;
+}</code></pre>
+
+<p dir="ltr"> </p>
+
+<p> </p>
+
+<h2><span><strong>Step 4. Admire our accomplishments</strong></span></h2>
+
+<p dir="ltr"><span><span>The demo page over on GitHub hosts 3 separate `&lt;currency-converter&gt;` elements. Their invocations are described below each element like so:</span></span></p>
+
+<p dir="ltr"><span><span><img src="https://lh3.googleusercontent.com/56mpOML6On9XtnQjCzVbyT7WQNO9QNxlUHucIRaIy-ChBq0RgqfRMidlvSEUascQPza3UpCeQcsgxA257EdekUbSz4ZThgv9zC4YHy-XN0ZmZH1G0gwyxGCM_9YxwJhXuY6Z00E"></span></span></p>
+
+<p dir="ltr"><span><span>All of the code is available too, the gist of it being the <a href="https://github.com/ohanhi/declarative-polymer/blob/master/elements/currency-converter.html" target="_blank">Custom Element file</a> we’ve been going through here.</span></span></p>
+
+<p dir="ltr">Demo: <a href="http://ohanhi.github.io/declarative-polymer/"><u>http://ohanhi.github.io/declarative-polymer/</u></a><br>
+Code: <a href="https://github.com/ohanhi/declarative-polymer/blob/master/elements/currency-converter.html"><u>https://github.com/ohanhi/declarative-polymer/</u></a></p>
+
+<p>Happy hacking!</p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/ossi-hanhinen.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Ossi Hanhinen</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f6f66550ca8&gt;, #&lt;Tag:0x007f6f66550848&gt;, #&lt;Tag:0x007f6f66550438&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search4f07.html?q=Polymer" class="article__tag-link">
+                <span class="article__tag-name">Polymer</span></a>, 
+              <a href="../searchaec1.html?q=Web%20Components" class="article__tag-link">
+                <span class="article__tag-name">Web Components</span></a>, 
+              <a href="../search4237.html?q=declarative" class="article__tag-link">
+                <span class="article__tag-name">declarative</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Declarative%20web%20applications%20with%20Polymer%E2%80%99s%20two-way%20data-binding&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Declarative%20web%20applications%20with%20Polymer%E2%80%99s%20two-way%20data-binding&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding&amp;title=Declarative%20web%20applications%20with%20Polymer%E2%80%99s%20two-way%20data-binding', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fdeclarative-apps-with-polymers-two-way-data-binding&amp;title=Declarative%20web%20applications%20with%20Polymer%E2%80%99s%20two-way%20data-binding">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="how-we-use-polymer-to-make-sales-transparent.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">How we use Polymer to make sales transparent</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="combining-react-flux-and-web-components.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Combining React, Flux &amp; Web Components</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="visual-design-basics.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Visual design basics</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Ossi Hanhinen</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="elm-in-the-real-world.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">How Elm made our work better</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="breaking-news-wwweeklies-is-now-a-public-event.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Breaking news: WWWeeklies is now a public event</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="learning-functional-reactive-programming-with-elm.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Learning functional reactive programming with Elm</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/declarative-apps-with-polymers-two-way-data-binding by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:11:21 GMT -->
+</html>

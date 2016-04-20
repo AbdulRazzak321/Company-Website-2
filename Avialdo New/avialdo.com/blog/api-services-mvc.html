@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/api-services-mvc by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:11:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>API services &amp; MVC — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="API services &amp; MVC — Futurice">
+  <meta property="og:description" name="description" content="MVC (or Model-View-Controller) is an architectural pattern on which to build software. The basic idea in it is to separate internal data models from the user interface via the controller and view. It is dominating web and mobile development, and although some alternatives exist, almost all relevant server-side software is developed with an MVC-compliant (or an MVC-variant-compliant) framework. The thing is, MVC is made for full-stack development, where the software consists of the database, user interface and business logic.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="api-services-mvc.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/normal_istock_000005492651small--y8dvh09zym_s1200x630_noupscale.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-4.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-4.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2016-02-02T07:25:07Z">
+          February  2, 2016
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        API services &amp; MVC
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/lauri-lavanti.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/llav20150727073605_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Lauri Lavanti</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Software Developer</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searchc711.html?q=backend" class="article__header__tag-link">
+                  <span class="article__header__tag-name">backend</span></a>, 
+                <a href="../search3f1c.html?q=api" class="article__header__tag-link">
+                  <span class="article__header__tag-name">api</span></a>, 
+                <a href="../searcha940.html?q=mvc" class="article__header__tag-link">
+                  <span class="article__header__tag-name">mvc</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p dir="ltr">You might have heard of this thing called <a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC</a> before, maybe you read about it in 1988 in The Journal of Object Oriented Programming, or you were a fanatic user of <a href="https://classes.soe.ucsc.edu/cmps112/Spring03/readings/Ingalls78.html">Smalltalk-76</a> in the 1970s? Or maybe you are (or work with) an aspiring software developer, in the business of modern web and mobile applications.</p>
+
+<p dir="ltr">MVC (or Model-View-Controller) is an <a href="https://en.wikipedia.org/wiki/Architectural_pattern">architectural pattern</a> on which to build software. The basic idea in it is to separate internal data models from the user interface via the controller and view. It is dominating web and mobile development, and although some alternatives exist, almost all relevant server-side software is developed with an MVC-compliant (or an MVC-variant-compliant) framework.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><img alt="" src="../../flockler.com/thumbs/1992/mvc_original--eadpdd4c1v_s830x0_q80_noupscale.png"></div>
+
+<figcaption><span class="article__figure__caption">A typical representation of the MVC pattern</span></figcaption>
+</figure>
+
+<h3 class="article__heading--h3">You should care because</h3>
+
+<p>The thing is, MVC is made for full-stack development, where the software consists of the database, user interface and business logic. But, consider for a second, the use case of most mobile applications. Yes, in most cases the MVC-stack is present, but it is no longer the same as it once was. The client application is the view, the backend is the controller and the database is the model. Now as a self-proclaimed backend developer I’m going to focus on the backend part of said use case.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><img alt="" src="../../flockler.com/thumbs/1992/mvc_modern--gw3naf9le8_s830x0_q80_noupscale.png"></div>
+
+<figcaption><span class="article__figure__caption">What MVC actually looks like now</span></figcaption>
+</figure>
+
+<p>Of course the above diagram still follows the principles of MVC, the problem comes when you expand one of those pieces, namely the backend. In that piece of the MVC you can most certainly find another implementation of the MVC pattern, with abstracted database implementations and endpoints. This would be okay if all parts of the backend are fairly complex, but most of the time it’s made up of a few steps:</p>
+
+<ol>
+	<li>
+	<p dir="ltr">Get request for some data</p>
+	</li>
+	<li>
+	<p dir="ltr">Find said data in database</p>
+	</li>
+	<li>
+	<p dir="ltr">Convert said data to correct format</p>
+	</li>
+	<li>Return said data</li>
+</ol>
+
+<p>These sorts of cases seem more like a pipeline than a complex multi-layer application to me, and makes me wonder why would you build a server-side API application following the MVC pattern in these cases. If you could significantly reduce the complexity and size of the application with a simple pattern shift, shouldn’t you do it? </p>
+
+<h3 class="article__heading--h3"><strong>Example case</strong></h3>
+
+<p>Let’s say you have a very standard setup where you have some form of <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> database, a mobile client of operating system X and then a <a href="http://www.scala-lang.org/">Scala</a> <a href="https://playframework.com/">Play</a> 2.X backend. Now you notice that Play is a framework intended for use with the MVC architecture (as most backend frameworks are at the moment) and can be used either with mobile clients as an API or as a stand-alone web application. Our example client calls the backend with the call: </p>
+
+<div class="article__embed-code">
+<!-- HTML generated using hilite.me -->
+<div style="background: whitesmoke; overflow:auto;width:auto;padding:.2em .6em; font-size: 0.8em;">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #00aaaa">HTTP</span> <span style="color: #00aaaa">GET</span> https<span style="color: #00aaaa">://</span>our.mobileclient.com/users
+</pre>
+</div>
+</div>
+
+<p> </p>
+
+<p>Now what happens in the backend is that first the Play application checks the <a href="https://www.playframework.com/documentation/2.4.x/ScalaRouting">routes</a>-file to see where that URL is mapped to (the first part of the view-layer in Play):</p>
+
+<div class="article__embed-code">
+<!-- HTML generated using hilite.me -->
+<div style="background: whitesmoke; overflow:auto;width:auto;padding:.2em .6em; font-size: 0.8em;">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #00aa00; text-decoration: underline">GET</span>   /users          controllers.<span style="color: #00aa00; text-decoration: underline">HelloClient</span>.users
+</pre>
+</div>
+</div>
+
+<p> </p>
+
+<p>From there we can see that the actual view is in the controller HelloClient. When building a stand-alone web application, the <a href="https://www.playframework.com/documentation/2.4.x/ScalaActions">Controller</a> is equivalent to MVC's controller, but in the case of an API it's more of a hybrid between a view and a controller:</p>
+
+<div class="article__embed-code">
+<!-- HTML generated using hilite.me -->
+<div style="background: whitesmoke; overflow:auto;width:auto;padding:.2em .6em; font-size: 0.8em;">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #0000aa">object</span> <span style="color: #00aa00; text-decoration: underline">HelloClient</span> <span style="color: #0000aa">extends</span> <span style="color: #00aa00; text-decoration: underline">Controller</span> {
+  <span style="color: #0000aa">def</span> users <span style="color: #0000aa">=</span> <span style="color: #00aa00; text-decoration: underline">Action</span> {
+      <span style="color: #00aa00; text-decoration: underline">Ok</span>(<span style="color: #00aa00; text-decoration: underline">HelloService</span>.getAll)
+  }
+}
+</pre>
+</div>
+</div>
+
+<p> </p>
+
+<p>And inside the Service we find that it's just routing the call to the model and transforming it to JSON. A level such as Services isn't necessary in a Play application, but it is a place where you can put the business logic in, to keep concerns nicely separated. HelloService could look something like this:</p>
+
+<div class="article__embed-code">
+<!-- HTML generated using hilite.me -->
+<div style="background: whitesmoke; overflow:auto;width:auto;padding:.2em .6em; font-size: 0.8em;">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #0000aa">object</span> <span style="color: #00aa00; text-decoration: underline">HelloService</span> {
+   <span style="color: #0000aa">def</span> getAll<span style="color: #0000aa">:</span> <span style="color: #00aaaa">JSON</span> = {
+     <span style="color: #00aa00; text-decoration: underline">UserRepository</span>.getAll.toJson
+   }
+ }
+</pre>
+</div>
+</div>
+
+<p> </p>
+
+<p>And now, finally, we get to the model part, which would seem to be a two-part layer, where UserRepository defines the actual storing (in the database), and User is the class that defines the actual model. UserRepository here is missing it's two <a href="https://www.playframework.com/documentation/2.4.x/ScalaAnorm">helper functions "userParser" and "rowToUser"</a> which are used to translate stuff the SQL library gives us into a User-object. But overall they would look something like this:</p>
+
+<div class="article__embed-code">
+<!-- HTML generated using hilite.me -->
+<div style="background: whitesmoke; overflow:auto;width:auto;padding:.2em .6em; font-size: 0.8em;">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #0000aa">case</span> <span style="color: #0000aa">class</span> <span style="color: #00aa00; text-decoration: underline">User</span>(id<span style="color: #0000aa">:</span> <span style="color: #00aaaa">UUID</span>, name<span style="color: #0000aa">:</span> <span style="color: #00aaaa">String</span>)
+
+<span style="color: #0000aa">object</span> <span style="color: #00aa00; text-decoration: underline">UserRepository</span> {
+  <span style="color: #0000aa">def</span> getAll<span style="color: #0000aa">:</span> <span style="color: #00aaaa">List</span>[<span style="color: #00aaaa">User</span>] <span style="color: #0000aa">=</span>
+    <span style="color: #00aa00; text-decoration: underline">DB</span>.withConnection {
+      <span style="color: #0000aa">implicit</span> c <span style="color: #0000aa">=&gt;</span>
+        <span style="color: #00aa00; text-decoration: underline">SQL</span>”select * from user_account”
+          .as(userParser.*)
+          .flatMap(rowToUser)
+    }
+}
+</pre>
+</div>
+</div>
+
+<p> </p>
+
+<p>To someone who has some experience with Scala this may be a fairly normal approach, but as I first laid my eyes upon this architecture, it got me thinking that surely this isn’t the best way to do such stuff. Thinking about it a mobile backend API only has to provide the API, and the payload (and of course some logic, but that’s not in all the cases).</p>
+
+<h3 class="article__heading--h3"><strong>What if it looked something like this</strong></h3>
+
+<p class="article__paragraph">What if we had a framework that allowed us to flatten the architecture almost completely? After noticing that most of our calls (or in this case the single call) is just a direct pipeline from database to return, we remove all the copypasta and let the framework handle the repetitive stuff. Working our way from the bottom up, we abstract the database connection altogether (it will be defined in <em><a href="https://www.playframework.com/documentation/2.4.x/Configuration">application.conf</a> </em>or a similar file). The model only needs to know what table the data is located in, and the framework handles the rest. </p>
+
+<p> </p>
+
+<div class="article__embed-code">
+<!-- HTML generated using hilite.me -->
+<div style="background: whitesmoke; overflow:auto;width:auto;padding:.2em .6em; font-size: 0.8em;">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #888888">@table</span>(”user_account”)
+<span style="color: #0000aa">case</span> <span style="color: #0000aa">class</span> <span style="color: #00aa00; text-decoration: underline">User</span>(id<span style="color: #0000aa">:</span> <span style="color: #00aaaa">UUID</span>, name<span style="color: #0000aa">:</span> <span style="color: #00aaaa">String</span>) <span style="color: #0000aa">extends</span> <span style="color: #00aa00; text-decoration: underline">JsonModel</span> <span style="color: #0000aa">with</span> <span style="color: #00aa00; text-decoration: underline">DBConnection</span>
+
+<span style="color: #0000aa">object</span> <span style="color: #00aa00; text-decoration: underline">User</span> <span style="color: #0000aa">extends</span> <span style="color: #00aa00; text-decoration: underline">EndPoint</span> {
+  <span style="color: #888888">@GET</span>(<span style="color: #aa5500">"/users"</span>)
+  <span style="color: #0000aa">def</span> users <span style="color: #0000aa">=</span> <span style="color: #00aa00; text-decoration: underline">Action</span> {
+    <span style="color: #00aa00; text-decoration: underline">Ok</span>(<span style="color: #00aa00; text-decoration: underline">User</span>.findAll)
+  }
+}
+</pre>
+</div>
+</div>
+
+<p dir="ltr"> </p>
+
+<p dir="ltr">Now the companion object is where the endpoint magic happens. The annotation tells what route this function responds to, Ok is the response type and findAll is a function that returns a list of users, which the framework translates to JSON. Of course all of this expects the variables to be named the same way in all levels (JSON, database and model).</p>
+
+<p dir="ltr">Now what if we want to include some more functionality to our program? Say we want to find all users with book loans and return a list of users with a list of their loaned books, for example. This is the case where a model is not the best solution, but extra logic is called for, so just add the correct class and work there.</p>
+
+<div class="article__embed-code">
+<!-- HTML generated using hilite.me -->
+<div style="background: whitesmoke; overflow:auto;width:auto;padding:.2em .6em; font-size: 0.8em;">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #0000aa">object</span> <span style="color: #00aa00; text-decoration: underline">BookLoansService</span> <span style="color: #0000aa">extends</span> <span style="color: #00aa00; text-decoration: underline">EndPoint</span> {
+  <span style="color: #888888">@GET</span>(<span style="color: #aa5500">"/users/withloans"</span>)
+  <span style="color: #0000aa">def</span> usersWithLoans <span style="color: #0000aa">=</span> <span style="color: #00aa00; text-decoration: underline">Action</span> {
+    <span style="color: #0000aa">val</span> loans <span style="color: #0000aa">=</span> <span style="color: #00aa00; text-decoration: underline">BookLoan</span>.findAll
+    <span style="color: #0000aa">val</span> users <span style="color: #0000aa">=</span> loans.map(<span style="color: #00aa00; text-decoration: underline">User</span>.find(<span style="color: #0000aa">_</span>.userid))
+    <span style="color: #00aa00; text-decoration: underline">Ok</span>(users.map(user <span style="color: #0000aa">=&gt;</span> user.addAttribute(<span style="color: #aa5500">"loans"</span>,
+        loans.filter(<span style="color: #0000aa">_</span>.userid == user.id))))
+  }
+}
+</pre>
+</div>
+</div>
+
+<p> </p>
+
+<p>So the example pattern proposed here would boil down to Models &amp; Services where most calls go directly to the models, taxing the server application as little as possible, and then the calls that require some extra functionality are the ones we work in.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><img alt="" src="../../flockler.com/thumbs/1992/m-s-1_s830x0_q80_noupscale.png"></div>
+
+<figcaption><span class="article__figure__caption">Example architecture pattern for M&amp;S</span></figcaption>
+</figure>
+
+<h3 class="article__heading--h3"><strong>So I have this library called [insert library name]</strong></h3>
+
+<p>Yes, there are libraries (mostly for JavaScript) that implement some or all of the requirements expressed here and you can use those to implement the Models &amp; Services-pattern in your application. I personally don't like combining applications together from multiple little libraries, preferring instead a semi-ready framework, to avoid compatibility problems.</p>
+
+<p>I did spend a few days scouring the internet for frameworks that would implement just about anything other than MVC, but my search only turned up JavaScript libraries. Also, I stumbled on the fact that most <a href="http://hotframeworks.com/">popular</a> and <a href="http://trends.builtwith.com/framework">used</a> frameworks on the internet tend to be MVC. So if you do find something give me a holler on <a href="https://twitter.com/laurilavanti" target="_blank">Twitter</a>.</p>
+
+<p>What I’m talking about here is more about changing the entire mindset and pattern when starting work on an API backend. Yes, you could do a flattish architecture in for example Scala, but you would still need to make the abstractions of databases and routes yourself, or endure extremely bloated models. This would very much undermine the usefulness of the flat architecture, trading maintainability for flatness.</p>
+
+<h3 class="article__heading--h3"><strong>In conclusion</strong></h3>
+
+<p>Although this is just a napkin-scribble-level proposition, I find the idea of a lightweight optimized (for API applications) pattern very alluring. And even though memory or CPU isn’t as valuable nowadays I believe this sort of solution would save a lot of grey hairs in revisions and would significantly ease the pain of creating a new application. </p>
+
+<p><strong>Pros of Models &amp; Services:</strong></p>
+
+<ul>
+	<li>Higher abstraction level =&gt; comprehensibility</li>
+	<li>Flat architecture =&gt; maintainablity</li>
+	<li>Overall simplicity =&gt; models allow for simplistic end-to-end use of the API with minimal implementation</li>
+</ul>
+
+<p><strong>Pros of MVC:</strong></p>
+
+<ul>
+	<li>Lower abstraction level =&gt; controllability</li>
+	<li>Widely used =&gt; ease of handover</li>
+	<li>Many implementations =&gt; tested and understood</li>
+</ul>
+
+<p><em>* Of course not all endpoints are as simple as that, but I propose that those are the exceptions, and the needs of the few should not incur in to a new layer in the whole architecture.</em></p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/lauri-lavanti.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Lauri Lavanti</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f728a8e7c28&gt;, #&lt;Tag:0x007f728a8e6fd0&gt;, #&lt;Tag:0x007f728a8e6120&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searchc711.html?q=backend" class="article__tag-link">
+                <span class="article__tag-name">backend</span></a>, 
+              <a href="../search3f1c.html?q=api" class="article__tag-link">
+                <span class="article__tag-name">api</span></a>, 
+              <a href="../searcha940.html?q=mvc" class="article__tag-link">
+                <span class="article__tag-name">mvc</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=API%20services%20%26%20MVC&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=API%20services%20%26%20MVC&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc&amp;title=API%20services%20%26%20MVC', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fapi-services-mvc&amp;title=API%20services%20%26%20MVC">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="better-than-google-use-cases-for-topical-search.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Better than Google — Use cases for topical search</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="breaking-news-wwweeklies-is-now-a-public-event.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Breaking news: WWWeeklies is now a public event</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="reactive-mvc-and-the-virtual-dom.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Reactive MVC and the Virtual DOM</h1>
+</a></article>
+
+    </aside>
+
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/api-services-mvc by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:11:52 GMT -->
+</html>

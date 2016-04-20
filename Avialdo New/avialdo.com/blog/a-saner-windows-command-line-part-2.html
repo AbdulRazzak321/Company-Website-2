@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/a-saner-windows-command-line-part-2 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:03:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>A Saner Windows Command Line - Part 2 — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="A Saner Windows Command Line - Part 2 — Futurice">
+  <meta property="og:description" name="description" content="The default Windows command line experience is a little lacking. Let&#x27;s supercharge it--now with tabs, Git and more!">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="a-saner-windows-command-line-part-2.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/super_console--aj72ozn2wu_s1200x630_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-7" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-7.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-7.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2016-03-29T10:59:15Z">
+          March 29, 2016
+        </time>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        A Saner Windows Command Line - Part 2
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/neil-mcalister.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/nmca20150421163600_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Neil McAlister</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Software Developer</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searchcbf0.html?q=windows" class="article__header__tag-link">
+                  <span class="article__header__tag-name">windows</span></a>, 
+                <a href="../search8e26.html?q=console" class="article__header__tag-link">
+                  <span class="article__header__tag-name">console</span></a>, 
+                <a href="../searchc9e0.html?q=shell" class="article__header__tag-link">
+                  <span class="article__header__tag-name">shell</span></a>, 
+                <a href="../search289e.html?q=command%20line" class="article__header__tag-link">
+                  <span class="article__header__tag-name">command line</span></a>, 
+                <a href="../search56ae.html?q=chocolatey" class="article__header__tag-link">
+                  <span class="article__header__tag-name">chocolatey</span></a>, 
+                <a href="../search33d5.html?q=powershell" class="article__header__tag-link">
+                  <span class="article__header__tag-name">powershell</span></a>, 
+                <a href="../searchde58.html?q=git" class="article__header__tag-link">
+                  <span class="article__header__tag-name">git</span></a>, 
+                <a href="../search2fe2.html?q=conemu" class="article__header__tag-link">
+                  <span class="article__header__tag-name">conemu</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/super_console--mxgwqj4uhz_s1800x0_q80_noupscale.png" target="_blank"><img alt="Header image" src="../../flockler.com/thumbs/1992/super_console--mxgwqj4uhz_s830x0_q80_noupscale.png"></a></div>
+</figure>
+
+<p>In case you missed it, make sure to check out <a href="a-saner-windows-command-line-part-1.html">Part 1</a> of this series first--it'll introduce you to some improvements to the basic Windows command line experience that we'll be building on in this post.</p>
+
+<p>Today, I'm going to be introducing some resources that'll allow us to improve our Git experience, and some utilities that'll allow us to completely overhaul the console experience altogether.</p>
+
+<h2 class="article__heading--h2">Git Gud</h2>
+
+<p>For those not aware, Git is a popular version control system, in the same vein as SVN, TFS, or Mercurial. While it has GUI clients, the official release is a CLI-only tool, and advanced techniques are often difficult to accomplish in existing GUI clients.</p>
+
+<p>If you don't already have a Git install you're happy with, let's go get one for you. Fire up your newly souped-up PowerShell client, and let's make Chocolatey work for us. <code>choco list git</code> will give us way too many results, but if we just do a <code>choco install git</code> it'll give us what we're after.</p>
+
+<p>I'd also like to point out a nice feature of Chocolatey that I ran into while preparing for this post--I was trying to uninstall Git so I could do a fresh install, and got the following error:</p>
+
+<pre class="article__code CodeRay CodeRay-- CodeRay--unknown-lang">
+<code data-lang="">choco uninstall git
+Uninstalling the following packages:
+git
+git not uninstalled. An error occurred during uninstall:
+ Unable to uninstall 'git 2.7.4' because 'poshgit 0.6.0.20160310' depends on it.
+
+Chocolatey uninstalled 0/1 packages. 1 packages failed.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+Failures
+ - git</code></pre>
+
+<p>It detected that I had another package that depended on Git, and refused to allow it. If necessary, you can force uninstall of a package, but it's nice to have that safeguard.</p>
+
+<p>Anyway, after Chocolatey finishes installing Git, it'll tell you that it added Git to your PATH, and that you should restart your shell, so let's follow its advice. Once we're back up and running, it's time to make using Git from PowerShell much easier with...</p>
+
+<h3 class="article__heading--h3">posh-git</h3>
+
+<p>Note that that's not posh as in "fancy and upper-class", but rather short for <strong>Po</strong>wer<strong>Sh</strong>ell...though given the improvements it makes, I guess you could call it posh. posh-git adds tab completion for git commands, and modifies your prompt when you're in a folder that contains a git repository, like so:<br>
+ </p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/posh-git--rj80o58pmn_s1800x0_q80_noupscale.png" target="_blank"><img alt="posh-git image" src="../../flockler.com/thumbs/1992/posh-git--rj80o58pmn_s830x0_q80_noupscale.png"></a></div>
+</figure>
+
+<p>posh-git is telling me that I'm currently on the master branch and the triple-equals indicates that I'm up to date with that branch. The green text indicates files that are staged for commit, and that I've added 0 new files, changed 1 file, and deleted zero files. The red text indicates files that are <em>not</em> staged for commit, and that, of those files, I've added 0 new files, changed 1 file, and deleted zero files.</p>
+
+<p>The exact formatting and coloring of the prompt are user-customizable, but the defaults have always worked just fine for me.</p>
+
+<p>Let's go grab it from the Chocolatey gallery!</p>
+
+<pre class="article__code CodeRay CodeRay--bash">
+<code data-lang="bash">choco install poshgit</code></pre>
+
+<p>You might need to restart PowerShell after installation, but other than that, it should Just Work™ . Entering a directory with a git repository should change your prompt. If you have an SSH key, posh-git will attempt to find it on PowerShell startup, and ask you for your passkey. This will allow you to do <code>git push</code> and <code>git pull</code> using SSH, which is nicer than doing so via HTTPS, because you don't need to authenticate with a username and password every time.</p>
+
+<p>If you find that it's not working, you may need to modify your PowerShell profile. You can find its location by typing <code>$profile</code> in a PowerShell prompt. If you try to navigate to that location and find that it doesn't exist, you can just create it yourself. By default, posh-git adds the following block to your profile. If posh-git's not working, and the block isn't there, you can just add it yourself:<br>
+ </p>
+
+<pre class="article__code CodeRay CodeRay-- CodeRay--unknown-lang">
+<code data-lang=""># Load posh-git example profile
+if(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshGitPrompt -Force}
+. 'C:\tools\poshgit\dahlbyk-posh-git-1941da2\profile.example.ps1'
+Rename-Item Function:\Prompt PoshGitPrompt -Force
+function Prompt() {
+	if(Test-Path Function:\PrePoshGitPrompt){
+		++$global:poshScope; 
+		New-Item function:\script:Write-host -value "param([object] `$object, `$backgroundColor, `$foregroundColor, [switch] `$nonewline) " -Force  | 
+			Out-Null;$private:p = PrePoshGitPrompt; 
+		if(--$global:poshScope -eq 0) {
+			Remove-Item function:\Write-Host -Force
+		}
+	}
+	PoshGitPrompt
+}</code></pre>
+
+<p>You may need to modify the <code>. 'C:\tools\poshgit\dahlbyk-posh-git-1941da2\profile.example.ps1'</code> path if that's not representative of where your posh-git is installed.</p>
+
+<p>My favorite feature of posh-git is probably the way its tab-completion interacts with PSReadLine's Ctrl + Space autocompletion. If you type <code>git</code>, and then press Ctrl + Space, you get a list of possible git commands.<br>
+ </p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/autocomplet_s1800x0_q80_noupscale.png" target="_blank"><img alt="posh-git autocomplete image" src="../../flockler.com/thumbs/1992/autocomplet_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Which is just nifty.</span></figcaption>
+</figure>
+
+<h2 class="article__heading--h2">Leveling Up</h2>
+
+<p>In the previous post, I mentioned that we'd be extending some goodness of the Windows 10 console to non-Windows 10 machines. It's time we talked about how we'll be doing that. Our secret here today is replacing our default consoles with wrapper applications, sometimes called terminal emulators or console emulators.</p>
+
+<p>There are several options, all with their own pros, cons and idiosyncrasies. Among the most popular are:</p>
+
+<ul>
+	<li><a href="https://conemu.github.io/">ConEmu</a></li>
+	<li>
+<a href="http://cmder.net/">Cmder</a>, a fork of ConEmu with a different color scheme and a focus on portability.</li>
+	<li><a href="https://sourceforge.net/projects/console/">Console2</a></li>
+	<li>
+<a href="https://github.com/cbucher/console">ConsoleZ</a>, a fork of Console2 updated for better rendering on Windows Vista and above, and with many more options.</li>
+</ul>
+
+<p>All of them give you tabs, the ability to host multiple different shells in a single window and better editing and selection at the <em>very</em> least.</p>
+
+<p>ConEmu, Cmder and ConsoleZ are all active projects with frequent updates. In the interest of keeping this post focused, I'm only going to be talking about the one I have the most experience with: ConEmu. There are <a href="http://devtidbits.com/2014/05/21/create-a-better-windows-command-line-prompt/">plenty of</a> <a href="https://aarontgrogg.com/blog/2015/07/31/a-better-windows-command-line-experience-comparing-powercmd-vs-console2-vs-consolez-vs-conemu-vs-cmder/#tldr">other</a> <a href="http://www.wintellect.com/devcenter/tsneed/cmder-making-the-command-line-your-best-friend">posts</a> on the internet that discuss the alternatives, and you should feel free to make your own choice.</p>
+
+<h3 class="article__heading--h3">ConEmu</h3>
+
+<p>Here's what my ConEmu looks like on startup.<br>
+ </p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/default_conemu_s1800x0_q80_noupscale.png" target="_blank"><img alt="ConEmu start image" src="../../flockler.com/thumbs/1992/default_conemu_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Hello, world!</span></figcaption>
+</figure>
+
+<p>And here's what it looks like when I'm in the middle of doing some git-wrangling for a little experimental project.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/conemu_wranglin_s1800x0_q80_noupscale.png" target="_blank"><img alt="Fancy conemu image" src="../../flockler.com/thumbs/1992/conemu_wranglin_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Okay, so it's not exactly rocket-science-git.</span></figcaption>
+</figure>
+
+<p>Yep, that's an instance of <a href="https://notepad-plus-plus.org/">Notepad++</a> hosted in ConEmu in a split tab.</p>
+
+<p>Right out of the box, ConEmu comes with a number of preset shells already set up. When I installed it, it knew how to open PowerShell, cmd.exe, git bash, and adding more is remarkably simple.</p>
+
+<p>If you're convinced, then let's go get ConEmu, again using Chocolatey.</p>
+
+<pre class="article__code CodeRay CodeRay-- CodeRay--unknown-lang">
+<code data-lang="">choco install conemu</code></pre>
+
+<p>Cmder and ConsoleZ also have packages on Chocolatey, so if those are more your style, you can feel free to grab them instead.</p>
+
+<p>Once ConEmu is installed, close out of your PowerShell window, and fire up your shiny new ConEmu install. You've probably got a little bit of configuring to do before it's comfortable, and I have some recommendations.</p>
+
+<h4 class="article__heading--h4">Hotkeys</h4>
+
+<p>Make your way to <em>Settings -&gt; Keys &amp; Macro</em>, and change the following:</p>
+
+<ul>
+	<li>"Create new console or new window (check 'Multiple in one ConEmu window')" from its default to Ctrl + T.</li>
+	<li>"Close current tab: Close(6)" from its default to Ctrl + F4.</li>
+</ul>
+
+<p>I prefer those settings, because they mimic browser behavior, which is the only other place I use a lot of tabs.</p>
+
+<p>You should also skim through the other hotkeys while you're in here. A lot of shortcuts use the "Apps" key, a seldom-used key that usually lives between Right-Alt and Right-Ctrl, but is missing from quite a few keyboard layouts, especially on laptops. If you see anything using the Apps key that looks useful to you, consider rebinding it to something more accessible.</p>
+
+<h4 class="article__heading--h4">Selection</h4>
+
+<p>This one is only for the Windows 10 folks. I actually like Windows 10's keyboard-selection better than ConEmu's, because it only allows selection of the current command buffer. ConEmu's keyboard-based selection allows selection of the current command buffer, the prompt, and everything above it.</p>
+
+<p>To disable ConEmu's keyboard-selection, make your way to: <em>Settings -&gt; Keys &amp; Macro -&gt; Mark/Copy</em>. Once there, look to the bottom of the panel, and disable the <strong>Start selection with Shift+Arrow (Text = Left/Right/Home/End, Block = Up/Down)</strong> option.</p>
+
+<p> </p>
+
+<p>Once you've got everything set up the way you like it, take it for a test run. ConEmu alone has more options than I've personally experimented with, so I certainly can't discuss them all in a single blog post! And if you're curious, the command that I used to create a new split tab with Notepad++ was <code>notepad++ -new_console:s</code>. You can find more details on the <code>-new_console</code> syntax (and a whole more) in <a href="http://conemu.github.io/en/NewConsole.html">ConEmu's documentation for creating a new console</a>. I should also note that notepad++ is in my PATH, so I didn't need to give the shell the entire canonical path to its .exe.</p>
+
+<h2 class="article__heading--h2">In Closing</h2>
+
+<p>If you've followed this series from start to finish, you may have gone from something like this:</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/awwwwisawiddlecmd_s1800x0_q80_noupscale.png" target="_blank"><img alt="cmd.exe screenshot" src="../../flockler.com/thumbs/1992/awwwwisawiddlecmd_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Boooo!</span></figcaption>
+</figure>
+
+<p>To something like this:</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/conemuohyeah_s1800x0_q80_noupscale.png" target="_blank"><img alt="ConEmu screenshot" src="../../flockler.com/thumbs/1992/conemuohyeah_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Yaaaay!</span></figcaption>
+</figure>
+
+<p>And even if your own console's transformation wasn't quite as dramatic, I hope I was able to introduce you to some new tools, like Chocolatey and PackageManagement!</p>
+
+<p>If you've got any feedback, feel free to send it my way directly (you can find my email in my profile page), or to our company Twitter account, <a href="https://twitter.com/futurice">@Futurice</a>!</p>
+
+<p> </p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="custom" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons license image and link" src="../../flockler.com/thumbs/1992/cc-by--5yztiadfs2_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">This work is licensed under a Creative Commons Attribution 4.0 International License.</span></figcaption>
+</figure>
+
+<p> </p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/neil-mcalister.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Neil McAlister</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007ff02859a040&gt;, #&lt;Tag:0x007ff028599c30&gt;, #&lt;Tag:0x007ff028599848&gt;, #&lt;Tag:0x007ff028599460&gt;, #&lt;Tag:0x007ff028599050&gt;, #&lt;Tag:0x007ff028598c68&gt;, #&lt;Tag:0x007ff0285987b8&gt;, #&lt;Tag:0x007ff0285983a8&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searchcbf0.html?q=windows" class="article__tag-link">
+                <span class="article__tag-name">windows</span></a>, 
+              <a href="../search8e26.html?q=console" class="article__tag-link">
+                <span class="article__tag-name">console</span></a>, 
+              <a href="../searchc9e0.html?q=shell" class="article__tag-link">
+                <span class="article__tag-name">shell</span></a>, 
+              <a href="../search289e.html?q=command%20line" class="article__tag-link">
+                <span class="article__tag-name">command line</span></a>, 
+              <a href="../search56ae.html?q=chocolatey" class="article__tag-link">
+                <span class="article__tag-name">chocolatey</span></a>, 
+              <a href="../search33d5.html?q=powershell" class="article__tag-link">
+                <span class="article__tag-name">powershell</span></a>, 
+              <a href="../searchde58.html?q=git" class="article__tag-link">
+                <span class="article__tag-name">git</span></a>, 
+              <a href="../search2fe2.html?q=conemu" class="article__tag-link">
+                <span class="article__tag-name">conemu</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=A%20Saner%20Windows%20Command%20Line%20-%20Part%202&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=A%20Saner%20Windows%20Command%20Line%20-%20Part%202&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2&amp;title=A%20Saner%20Windows%20Command%20Line%20-%20Part%202', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-saner-windows-command-line-part-2&amp;title=A%20Saner%20Windows%20Command%20Line%20-%20Part%202">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="best-practices-mobile.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Sharing best practices for Android, iOS, and Windows apps</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="our-first-code-camp-definitely-worth-it.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Our first code camp – definitely worth it</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="breaking-news-wwweeklies-is-now-a-public-event.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Breaking news: WWWeeklies is now a public event</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Neil McAlister</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="a-saner-windows-command-line-part-1.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">A Saner Windows Command Line - Part 1</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/a-saner-windows-command-line-part-2 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:03:42 GMT -->
+</html>

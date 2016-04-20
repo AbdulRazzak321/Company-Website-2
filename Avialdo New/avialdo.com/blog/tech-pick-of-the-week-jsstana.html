@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/tech-pick-of-the-week-jsstana by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:10:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Tech Pick of the Week: jsstana — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Tech Pick of the Week: jsstana — Futurice">
+  <meta property="og:description" name="description" content="This week&#x27;s tech pick is a small JavaScript library, made for a very specific purpose by yours truly: jsstana. The homepage states “Find code inside your code! Pattern matching for Mozilla Parser AST, produced e.g. by esprima.” This might need a bit o">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="tech-pick-of-the-week-jsstana.html">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-7" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-7.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-7.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2013-11-13T08:00:50Z">
+          November 13, 2013
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Tech Pick of the Week: jsstana
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/oleg-grenrus.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/tuimaoleg-nelio_s100x100_q80_noupscale.png" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Oleg Grenrus</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Software developer</span>
+                </div>
+              </a>
+          </div>
+
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p>This week's tech pick is a small JavaScript library, made for a very specific purpose by yours truly: <a href="http://oleg.fi/jsstana/">jsstana</a>. The homepage states <em>“Find code inside your code! Pattern matching for <a href="https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API">Mozilla Parser AST</a>, produced e.g. by <a href="https://github.com/ariya/esprima">esprima</a>.”</em> This might need a bit of explanation. I hope that the following examples will tell the story best.
+
+</p>
+<h2>
+<a></a>Pattern matching</h2>
+<p><br>Consider you have to check whether a piece of text contains exactly three exclamation marks. There are many ways to tackle a problem even as simple as this one.<br></p>
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang"><code>int has3exclmarks(const char *str, int len) {
+    int count = 0;
+    int len4 = len - 4;
+
+    int i = 0;
+    for (; i &lt; len4 &amp;&amp; count &lt;= 3; i += 4) {
+        uint32_t j = *((uint32_t *) (str + i));
+        count += (j &amp; (0xff)) == '!';
+        count += (j &amp; (0xff) &lt;&lt; 8) == '!' &lt;&lt; 8;
+        count += (j &amp; (0xff) &lt;&lt; 16) == '!' &lt;&lt; 16;
+        count += (j &amp; (0xff) &lt;&lt; 24) == '!' &lt;&lt; 24;
+    }
+
+    for (; i &lt; len; i++) {
+        count += str[i] == '!';
+    }
+
+    return count == 3;
+}
+</code></pre>
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang"><code>hasThreeExclamationMarks = (3==) . length . filter ('!'==)
+</code></pre>
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang"><code>sub has3exclmarks {
+    @_[0] =~ /^[^!]*![^!]*![^!]*![^!]*$/;
+}
+</code></pre>
+<p><br>The first example is written in an </p>
+<em>imperative</em><p> way. It's probably </p>
+<em>very fast</em><p> (though I didn't check if it's really faster than a more trivial for loop, C compilers can work magic nowadays). On the other hand it's also very explicit about </p>
+<em>how</em><p> it finds the answer.</p>
+<p>The </p>
+<em>functional</em><p> example, the second one is very terse, and yet not obfuscated. There we combine even more primitive functions to get our job done. You can argue whether it's still </p>
+<em>how</em><p>, or if it is already close to the executed definition, </p>
+<em>what</em><p>.</p>
+<p>The last example is by no means close to obfuscated. However, the regular expression shows exactly what we are searching for: three exclamation marks surrounded by anything else. That is very </p>
+<em>declarative</em><p>.</p>
+<p>But wait, what if the requirement changes? Say, now we still need to check whether a piece of text contains three exclamation marks but only if two of them are next to each other, </p>
+<em>“like in this sentence! ni!!”</em><p>. Updating the above examples is left as an exercise for the reader.<br></p>
+<h2>
+<a></a>Searching for pieces of code</h2>
+<p><br>Sometimes, actually pretty often when refactoring, you have to find a particular piece of code. With trivial needles like </p>
+<code>new Error</code><a href="http://en.wikipedia.org/wiki/Grep">grep</a><p> is probably sufficient, assuming your code style is consistent and there is only ever one space between </p>
+<code>new</code><p> and </p>
+<code>Error</code><p> (of course you could use </p>
+<code>grep -E 'new\s+Error'</code><p>, couldn’t you?)</p>
+<p>From time to time, you might want to find more complicated patterns, for example </p>
+<em>the return of the sum of two expressions</em><p>, like </p>
+<code>return (a*b) + c;</code><p>. Perhaps if you are writing rules for </p>
+<a href="https://github.com/nzakas/eslint">eslint</a><p>, or trying to do some static analysis for the quality assurance of your JavaScript codebase by other means. With plain grep it will be painful (and you cannot really use it with eslint). Luckily there are JavaScript parsers, like </p>
+<a href="http://esprima.org/">esprima</a><p> or </p>
+<a href="http://marijnhaverbeke.nl/acorn/">acorn</a><p>, which parse JavaScript source code into an Abstract Syntax Tree (AST). On the other hand it's more complicated to work with an AST, but on the other it's very precise.</p>
+<p>Traversing and searching for patterns inside an AST without any helpers is very verbose:<br></p>
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang"><code>function isReturnOfSum(node) {
+    return node.type === "ReturnStatement" &amp;&amp;
+        node.argument.type === "BinaryExpression" &amp;&amp;
+        node.argument.operator === "+";
+}
+</code></pre>
+<p><br>With more complex patterns it's very easy to “blow up” the code. Of course you should use helpers, or some kind of a library to help you. </p>
+<em>jsstana</em><p> goes further and provides a way to write patterns for matching within an AST.<br></p>
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang"><code>var isReturnOfSum = jsstana.match("(return (+ ?lhs ?rhs))");
+</code></pre>
+<h2>
+<a></a>About jsstana</h2>
+<p><br>jsstana is a very young project, still already quite powerful. It can match everything we needed to match in our current project and a bit more. Fortunately it's extensible, so you can add more </p>
+<em>rators</em><p> as you like, without having to go through me.</p>
+<p>Actually, you can try out jsstana on </p>
+<a href="http://oleg.fi/jsstana/">its homepage</a><p>. Try to hover over matches on the right, or change different patterns at the bottom.</p>
+<p>Or you can install </p>
+<a href="https://npmjs.org/package/jsstana">the npm package</a><p>, and use the </p>
+<code>jsgrep</code><p> tool bundled with it. Nowadays I use it daily in project work, it's an easy substitute for plain grep, just two additional characters in the name.<br></p>
+<h2>
+<a></a>Why lispy s-expressions?</h2>
+<p><br>This is the most frequent question asked about jsstana. I'm not trying to trick everyone into using ClojureScript. It just felt natural to use s-expressions for this need. And it took a quarter of an hour to write the parser and get to the fun part.</p>
+<p>You could use </p>
+<a href="https://npmjs.org/package/esquery">css selectors</a><p>, as you could for any tree structure. Or you could use JavaScript syntax itself. But both approaches are limiting, e.g. how to match returns with anything but the sum? With lispy s-expressions it's easy:<br></p>
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang"><code>var isReturnOfNotSum = jsstana.match("(return (not (+ ? ?)))");
+</code></pre>
+<p><br>However, you can try out </p>
+<a href="http://graspjs.com/">graspjs</a><p>, which is a relatively new project as well. Maybe it will include s-expression support by </p>
+<code>jsstana</code><p>. Maybe I'll borrow ideas from it. Time will tell.</p>
+<p>I would like to hear feedback about jsstana. If you have any question, ideas or bug reports, please tell me, via </p>
+<a href="https://twitter.com/phadej">Twitter</a><p> or </p>
+<a href="https://github.com/phadej/jsstana">GitHub</a><p>.</p>
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/oleg-grenrus.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Oleg Grenrus</span>
+            </a>
+        </div>
+      </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Tech%20Pick%20of%20the%20Week%3A%20jsstana&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Tech%20Pick%20of%20the%20Week%3A%20jsstana&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana&amp;title=Tech%20Pick%20of%20the%20Week%3A%20jsstana', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Ftech-pick-of-the-week-jsstana&amp;title=Tech%20Pick%20of%20the%20Week%3A%20jsstana">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="categorizing-software-from-rigid-to-emergent.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Categorizing software from rigid to emergent</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="how-your-business-goals-affect-your-mobile-application-data-collection.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">How your business goals affect your mobile application data collection</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="customers-role-in-project-success.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Customer&#x27;s role in project success</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Oleg Grenrus</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="an-example-of-functional-design.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">An example of functional design</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="npm-registry-in-numbers.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">NPM registry in numbers</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/tech-pick-of-the-week-jsstana by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:10:31 GMT -->
+</html>

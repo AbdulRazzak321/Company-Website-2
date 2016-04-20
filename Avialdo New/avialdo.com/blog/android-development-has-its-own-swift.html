@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/android-development-has-its-own-swift by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:12:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Android development has its own Swift — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Android development has its own Swift — Futurice">
+  <meta property="og:description" name="description" content="Xtend is modern multi-paradigm language that compiles to Java source code, ideal for Android development, specially when combined with RxJava.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="android-development-has-its-own-swift.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/xtendlogo_s1200x630_c580x338_l0x0_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-5" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-5.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-5.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2014-07-22T08:34:59Z">
+          July 22, 2014
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Android development has its own Swift
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/andre-medeiros.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/new_andre_web_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Andre Medeiros</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">User Interface Engineer</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search2e4a.html?q=Android" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Android</span></a>, 
+                <a href="../searchcf6b.html?q=Functional%20Programming" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Functional Programming</span></a>, 
+                <a href="../searchb33a.html?q=programming" class="article__header__tag-link">
+                  <span class="article__header__tag-name">programming</span></a>, 
+                <a href="../search1ff8.html?q=RxJava" class="article__header__tag-link">
+                  <span class="article__header__tag-name">RxJava</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p>In Apple's WWDC in June, Swift was announced as their new <a href="http://blog.futurice.com/a-swift-outlook">lean and mean language</a> for developing iOS and OS X apps, meant to eventually replace Objective-C. A few weeks later, it was Google's turn to announce new exciting technology at their Google I/O conference. They had a lot of interesting developments to show, but not a programming language to replace Java for Android development. Although Google is known for creating languages, such as <a href="https://en.wikipedia.org/wiki/Go_language">Go</a> and <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)">Dart</a>, there is no evidence they are preparing a language for Android, which is primarily Java-only.</p>
+
+<p>In theory, you can develop Android applications in <a href="http://clojure-android.info/">Clojure</a>, <a href="https://code.google.com/p/scalaforandroid/">Scala</a>, <a href="http://melix.github.io/blog/2014/06/grooid.html">Groovy</a>, and JVM-based languages. However, because Android runs Dalvik bytecode and not Java bytecode, the aforementioned languages must go through an additional compilation step that modifies the program's bytecode. This normally ends up producing performance drawbacks visible to the end user. Even if this is optimized somehow, Android development tools for these languages (such as debugging) are still far behind Java for Android. These problems make those languages not yet ready for production. <strong>Except for a special little language called <a href="http://www.eclipse.org/xtend">Xtend</a>.</strong></p>
+
+<p><img alt="​" src="../../flockler.com/thumbs/1992/xtend-logo--eb5yj2b13h_s830x0_q80_noupscale.png"></p>
+
+<p>It is best understood as "<a href="http://coffeescript.org/">CoffeeScript</a> for Java", or as "Java 10". Xtend looks like Groovy, but it has the special property of being compiled into Java source code instead of bytecode. It is multi-paradigm, supports lambdas, functions are first-class objects, has type inference, optional semicolons, operator overloading, and other features. It is the only language I know which compiles to Java source code, which is its most important property for Android development. A quick teaser of lambdas:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java">button.onClickListener = [ clickedView |
+    Toast.make(context, <span class="string"><span class="delimiter">"</span><span class="content">Hello world!</span><span class="delimiter">"</span></span>, Toast.LENGTH_LONG).show()
+]</code></pre>
+
+<p>Compiles to:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java"><span class="directive">final</span> <span class="predefined-type">View</span>.OnClickListener _function = <span class="keyword">new</span> <span class="predefined-type">View</span>.OnClickListener() {
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onClick(<span class="directive">final</span> <span class="predefined-type">View</span> clickedView) {
+        Toast.make(context, <span class="string"><span class="delimiter">"</span><span class="content">Hello world!</span><span class="delimiter">"</span></span>, Toast.LENGTH_LONG).show();
+    }
+};
+button.setOnClickListener(_function);</code></pre>
+
+<p>Xtend guarantees seamless interoperability with Java, which makes it a perfect match for Android development. The Java code it compiles to can be inspected and debugged as any other Java Android app can be. The generated Java code is not beautiful, but still understandable and maintainable. For these reasons, we decided to adopt Xtend in a new customer project. Our reasoning was that, if our experiment with this language wouldn't work out, we had at all times a plan B: take the generated Java code and continue developing with Java.</p>
+
+<p>We never took plan B. In fact, we fell in love with Xtend. Mark Voit, the other developer in the project with over 15 years of professional Java experience, had some initial struggles learning the new syntax and new shortcuts. But after some weeks, he was well convinced that Xtend is cleaner and quicker.</p>
+
+<p>The <a href="http://www.eclipse.org/xtend/documentation.html">documentation</a> gives a good overview of the language's features, but here are some highlights that are useful for developing Android applications.</p>
+
+<p><strong>Lambda</strong></p>
+
+<p>The cherry on the cake of Xtend. Enables a basic functional programming workflow. In Android development, it's common to use anonymous inner classes for click listeners and other similar listeners. As teased above in this article, an Xtend lambda is compiled to an anonymous inner class. The compiler infers which interface (or abstract class) should be implemented. Type inference also happens for the lambda's parameter. The Xtend jar also comes with some basic interfaces to represent generic <a href="http://download.eclipse.org/modeling/tmf/xtext/javadoc/2.5/org/eclipse/xtext/xbase/lib/Functions.html">functions</a> and <a href="http://download.eclipse.org/modeling/tmf/xtext/javadoc/2.5/org/eclipse/xtext/xbase/lib/Procedures.html">procedures</a>.</p>
+
+<p><strong>Encourages final variables</strong></p>
+
+<p>You can declare local variables as <code>var foo = 123</code>, but if you are confident that this won't need to be reassigned, you can declare it as <code>val foo = 123</code>. The `val` keyword simply marks the variable as final, in the generated code. The compiler will also infer the type (in this case, integer). The injection of `final` is also used in other places, such as in method arguments, by default. Your code will end up having many final variables, which is a good property for applying functional programming techniques.</p>
+
+<p><strong>Null-safe feature call</strong></p>
+
+<p>Like in Groovy, you can avoid wrapping statements with an if checking for null, simply by adding the character `?`. Very good against `NullPointerExceptions`.</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java">override onPause() {
+    <span class="local-variable">super</span>.onPause()
+    subscription?.unsubscribe()
+}</code></pre>
+
+<p><br>
+Compiles to:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java"><span class="annotation">@Override</span>
+<span class="directive">public</span> <span class="type">void</span> onPause() {
+    <span class="local-variable">super</span>.onPause();
+    <span class="keyword">if</span> (<span class="local-variable">this</span>.subscription != <span class="predefined-constant">null</span>) {
+        <span class="local-variable">this</span>.subscription.unsubscribe();
+    }
+}</code></pre>
+
+<p>This is specially important when you have many statements that need to be null-cautious. It can also be used to fallback to a default value, as such:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java">var zoom = <span class="local-variable">this</span>.cameraPosition?.zoom</code></pre>
+
+<p>Equivalent to:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java"><span class="type">float</span> zoom = <span class="float">0f</span>;
+<span class="keyword">if</span> (<span class="local-variable">this</span>.cameraPosition != <span class="predefined-constant">null</span>) {
+    zoom = <span class="local-variable">this</span>.cameraPositon.zoom;
+}</code></pre>
+
+<p><strong>Perfect language for RxJava</strong></p>
+
+<p>Reactive Programming has been gaining traction as a good solution to manage event-driven interactive apps. The state of the art library for this is <a href="https://github.com/Netflix/RxJava">RxJava</a>, which <a href="http://blog.futurice.com/top-7-tips-for-rxjava-on-android">we have used at Futurice</a>. It is very common to see RxJava code using many anonymous inner classes as such:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java"><span class="predefined-type">Observable</span>&lt;<span class="predefined-type">Integer</span>&gt; totalSizeObservable = stringObservable
+    .map(<span class="keyword">new</span> Func1&lt;<span class="predefined-type">String</span>, <span class="predefined-type">Integer</span>&gt;() {
+        <span class="annotation">@Override</span>
+        <span class="directive">public</span> <span class="predefined-type">Integer</span> call(<span class="predefined-type">String</span> s) {
+            <span class="keyword">return</span> s.length();
+        }
+    })
+    .filter(<span class="keyword">new</span> Func1&lt;<span class="predefined-type">Integer</span>, <span class="predefined-type">Boolean</span>&gt;() {
+        <span class="annotation">@Override</span>
+        <span class="directive">public</span> <span class="predefined-type">Boolean</span> call(<span class="predefined-type">Integer</span> i) {
+            <span class="keyword">return</span> i &gt; <span class="integer">0</span>;
+        }
+    })
+    .scan(<span class="keyword">new</span> Func2&lt;<span class="predefined-type">Integer</span>, <span class="predefined-type">Integer</span>, <span class="predefined-type">Integer</span>&gt;() {
+        <span class="annotation">@Override</span>
+        <span class="directive">public</span> <span class="predefined-type">Integer</span> call(<span class="predefined-type">Integer</span> acc, <span class="predefined-type">Integer</span> x) {
+            <span class="keyword">return</span> (acc + x);
+        }
+    });</code></pre>
+
+<p>In Xtend, all that boilerplate code can be hidden away like this:</p>
+
+<pre class="article__code CodeRay CodeRay--ruby">
+<code data-lang="ruby">val totalSizeObservable = stringObservable
+    .map([ s | s.length ])
+    .filter([ i | i &gt; <span class="integer">0</span> ])
+    .scan([ acc, x | (acc + x) ])</code></pre>
+
+<p>That is 19 lines versus 4 lines. Lambdas make developing Reactive applications a breeze, because they lower the cognitive cost of reading an anonymous function.</p>
+
+<p>But lambdas are not the only Xtend feature good for RxJava. The language's name refers to one of its main features: Extension Methods. These enable you to augment a class with an external method, essentially adding a method to that class even though it has been closed already. An example:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java"><span class="type">class</span> <span class="class">MyActivity</span> <span class="directive">extends</span> Activity {
+    <span class="comment">// ...</span>
+    def <span class="type">void</span> hide(<span class="predefined-type">View</span> view) {
+        view?.setVisibility(<span class="predefined-type">View</span>.GONE);
+    }
+
+    override onCreate(Bundle bundle) {
+        <span class="comment">// ...</span>
+        myButton.hide()
+    }
+}</code></pre>
+
+<p>We used the MyActivity.hide() method as if it were actually View.hide(). This feature is very useful in RxJava, because you can simplify calls to your custom Observable operators. The RxJava way of calling custom operators is:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java"><span class="predefined-type">Observable</span>&lt;Foo&gt; myObservable = originObservable.lift(<span class="keyword">new</span> myOperator());</code></pre>
+
+<p>In Xtend, you can simply define the custom operator as a method, and call it as if it would belong to the Observable class:</p>
+
+<pre class="article__code CodeRay CodeRay--java">
+<code data-lang="java">val myObservable = originObservable.myOperator()</code></pre>
+
+<p><strong>Is Xtend perfect?</strong></p>
+
+<p>You might be wondering what are the drawbacks of using Xtend, since there is no free lunch. The obvious drawback is that there is yet an additional compilation step when building the apk. It may or may not be an annoying to you. On a big enough Android project, it takes about 20 seconds to compile the whole project from Xtend to Java.</p>
+
+<p>Perhaps the most disappointing disadvantage is a total lack of IntelliJ IDEA support, and hence also no Android Studio support. Xtend source code looks like plain text in IDEA, not even syntax highlighting is available. Xtend is primarily an Eclipse Foundation effort, and the code intelligence support in Eclipse is of course good and seamless. Xtend "just works" in Eclipse, and "just does not work" in IDEA.</p>
+
+<p>That said, it is not a problem with Xtend language per se. It is an IDEA problem, and the least we can do at the moment is to upvote a <a href="http://youtrack.jetbrains.com/issue/IDEABKL-6179">feature request in IDEA</a>. If you can use Eclipse, then use Eclipse for Xtend development. If you really dislike Eclipse, then do like me and develop <a href="https://sublime.wbond.net/packages/Xtend">Xtend in Sublime Text</a>. It might sound crazy to program "Java" without an IDE, but I actually managed quite well without one. All I needed was the adb, gradle, a text editor, and the logcat in the DDMS. This <a href="https://github.com/oehme/xtend-gradle-plugin">gradle plugin</a> makes it easy to compile Xtend for your Android project. Sure, life without an IDE is different, I often forget to import all the classes I need, but I got stuff done and enjoyed coding in Xtend.</p>
+
+<p>Java is one of those languages that makes it hard to code without an IDE. Just think about the sheer amount of keyboard typing needed just to make an anonymous inner class for a click listener. IDEs make it easy by inferring what you want and inserting code for you. Surprisingly, all that magic isn't needed in Xtend programming because it is made to be simple, so it makes sense I managed to do work in a simple text editor.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>Xtend resembles Swift. Both are modern multi-paradigm languages, with strong inferred types, functions as first-class objects, optional semicolons, map and filter built-in, simple variable and constant declarations (<strong>var</strong> and <strong>val</strong>, or <strong>var</strong> and <strong>let</strong>), string interpolation, powerful switch blocks, the `override` keyword, etc. The purpose of both is to speed up development, make it more intuitive, while also providing easy tools for what used to be rather cumbersome in Java or Objective-C: handling null errors and programming in a functional programming style.</p>
+
+<p>Right now, we have Xtend code running in production in an Android app we recently delivered. Although measurements could be better evidence, we believe developing in Xtend was quicker than in Java, and to some extent, safer against null pointer exceptions. It is a nice language I can gladly recommend to anyone doing Android development, and who is open to program in Eclipse or some raw text editor like Sublime Text or Vim or Emacs.</p>
+
+<p>If you zoom out, we also learned one important lesson when adopting new technologies in production: follow your gut feeling when a new technology seems promising and might optimize your development time, but always, <strong>always</strong>, have a plan B. Even if plan A works out perfectly.</p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/andre-medeiros.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Andre Medeiros</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f6f67e97298&gt;, #&lt;Tag:0x007f6f67e96c30&gt;, #&lt;Tag:0x007f6f67e96708&gt;, #&lt;Tag:0x007f6f67e961b8&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search2e4a.html?q=Android" class="article__tag-link">
+                <span class="article__tag-name">Android</span></a>, 
+              <a href="../searchcf6b.html?q=Functional%20Programming" class="article__tag-link">
+                <span class="article__tag-name">Functional Programming</span></a>, 
+              <a href="../searchb33a.html?q=programming" class="article__tag-link">
+                <span class="article__tag-name">programming</span></a>, 
+              <a href="../search1ff8.html?q=RxJava" class="article__tag-link">
+                <span class="article__tag-name">RxJava</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Android%20development%20has%20its%20own%20Swift&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Android%20development%20has%20its%20own%20Swift&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift&amp;title=Android%20development%20has%20its%20own%20Swift', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fandroid-development-has-its-own-swift&amp;title=Android%20development%20has%20its%20own%20Swift">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="android-unit-testing-in-android-studio-and-ci-environments.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Android Unit Testing in Android Studio and CI Environments</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="top-7-tips-for-rxjava-on-android.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Top 7 Tips for RxJava on Android</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="top-7-tips-for-rxjava-on-android.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Top 7 Tips for RxJava on Android</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Andre Medeiros</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="why-debugging-is-all-about-understanding.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Why debugging is all about understanding</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="best-practices-mobile.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Sharing best practices for Android, iOS, and Windows apps</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="../events/frp-lounge-meetup.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Helsinki FRP Pioneers 6.5.2015</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/android-development-has-its-own-swift by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:12:53 GMT -->
+</html>

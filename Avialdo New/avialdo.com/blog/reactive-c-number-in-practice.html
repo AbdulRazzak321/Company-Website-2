@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/reactive-c-number-in-practice by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:25:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Rx in practice — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Rx in practice — Futurice">
+  <meta property="og:description" name="description" content="Reactive Programming and Rx are buzz words nowadays in software developer sector. Unfortunately when I started to be interested in those topics, tangible examples, that I could use in production were hard to come by. That&#x27;s why I decided now to share some of my experiences with Rx in C#.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="reactive-c-number-in-practice.html">
+  <meta property="og:image" content="../../s3.amazonaws.com/bundlr-app-production/bundles/photos/large/4ff6005f1b92d70001000920/Rx_Logo_512a7a6.png?1368585296">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-6" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-6.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-6.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2014-11-05T11:18:49Z">
+          November  5, 2014
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Rx in practice
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/tomasz-polanski.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/tomasz_2_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Tomasz Polański</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Mobile Software Developer</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search1ea8?q=Rx" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Rx</span></a>, 
+                <a href="../search22fb.html?q=C%23" class="article__header__tag-link">
+                  <span class="article__header__tag-name">C#</span></a>, 
+                <a href="../searchfef0.html?q=ReactiveProperty" class="article__header__tag-link">
+                  <span class="article__header__tag-name">ReactiveProperty</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p dir="ltr" id="docs-internal-guid-460e0ce2-7f97-fec8-197e-632b72c1de8b"><span>The concept of Reactive Programming is basically to react to events. This is nothing new and can be done with a normal event based architecture in C#. Reacting to a single event is not a problem, but whenever we need to include additional events and make them depend on each other, we start getting spaghetti code. That's why I started to use Reactive Extensions (Rx) in C#. Its biggest strength is its ability to combine and aggregate any events into simple declarative code.</span></p>
+
+<p dir="ltr"><span>Since the concept of Reactive Programming is just getting traction, I could find only basic examples which couldn't solve the issues I had in my production code when I started investigating it. However, since then I have learned much more about Reactive Programming and Rx, and I hope that other people can benefit from this experience.</span></p>
+
+<p dir="ltr"><span>Ok, enough babbling. I've promised you guys reactive programming in practice so let’s do it.</span></p>
+
+<p dir="ltr"><span> </span></p>
+
+<p dir="ltr"><strong>Reactive Programming in action</strong></p>
+
+<p dir="ltr"><br>
+<span>My C# projects consist of an MVVM architecture, a dependency injection framework, unit tests, support of cancellation for every async method, view-models bound to XAML and no code behind non testable UI elements.</span></p>
+
+<p dir="ltr"><br>
+<span>I needed a way to nicely integrate Rx into such setups.</span></p>
+
+<p><span>Let’s look at an example of some basic Rx code. If I would like to display a number every second on the console, the code would look something like this:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">Observable.Interval(TimeSpan.FromSeconds(<span class="integer">1</span>))
+          .Subscribe(number =&gt; System.Diagnostics.Debug.WriteLine(number));</code></pre>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7f98-3dbd-aa2d-1a1e89a1724b"><span>This code doesn't look so bad, but since my view-model is bound to XAML, I would like to display it using a property that is bound to </span><span><code>TextBlock</code></span><span>. The resulting code doesn't look very clean:</span></p>
+
+<p dir="ltr"><strong>Normal property</strong></p>
+
+<p><span>First we need to define a property inside the view-model:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">public <span class="predefined-type">int</span> Title
+    {
+         get { <span class="keyword">return</span> _title; }
+         private set
+             {
+                 <span class="keyword">if</span> (_title != value)
+                 {
+                     _title = value;
+                     OnPropertyChanged(<span class="string"><span class="delimiter">"</span><span class="content">Title</span><span class="delimiter">"</span></span>);
+                 }
+             }
+    }
+private <span class="predefined-type">int</span> _title;
+</code></pre>
+
+<p><span>Next we need to bind it to XAML:</span></p>
+
+<pre class="article__code CodeRay CodeRay--xml">
+<code data-lang="xml"><span class="tag">&lt;TextBlock</span> <span class="attribute-name">Text</span>=<span class="error">{</span><span class="attribute-value">Binding</span> <span class="attribute-name">Title</span><span class="error">}</span><span class="tag">/&gt;</span></code></pre>
+
+<p><span>And we need to update it inside the view-model's constructor using Rx:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">Observable.Interval(TimeSpan.FromSeconds(<span class="integer">1</span>))
+          .Subscribe(number =&gt; Title = number);</code></pre>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7f99-769d-5a80-0544aa250b65"><span>Finally, we would need to switch to the UI thread somewhere before subscribing to the observable, because UI elements cannot be manipulated from other threads.</span></p>
+
+<p dir="ltr"><span>This is a lot of code for a really simple example. That's why you shouldn't be content with this way of doing reactive code.</span></p>
+
+<p dir="ltr"><strong>Reactive property</strong></p>
+
+<p dir="ltr"><span>Thankfully, I found a really nice </span><a href="https://reactiveproperty.codeplex.com/"><u>solution</u></a><span> by Mr Yoshifumi Kawai who introduced ReactiveProperty. This is a property that can be bound directly to XAML and also works perfectly with Rx code.</span></p>
+
+<p><span>Here's an example of defining a ReactiveProperty inside a view-model:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">public ReactiveProperty&lt;<span class="predefined-type">int</span>&gt; Title {get; private set;}</code></pre>
+
+<p><span>Next we need to bind to it from XAML:</span></p>
+
+<pre class="article__code CodeRay CodeRay--xml">
+<code data-lang="xml"><span class="tag">&lt;TextBlock</span> <span class="attribute-name">Text</span>=<span class="error">{</span><span class="attribute-value">Binding</span> <span class="attribute-name">Title.Value</span><span class="error">}</span><span class="tag">/&gt;</span></code></pre>
+
+<p><span>And update it in the view-model's constructor:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">Title = Observable.Interval(TimeSpan.FromSeconds(<span class="integer">1</span>))
+                  .ToReactiveProperty();</code></pre>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7f9a-2cb0-6a6a-b199e149e769"><span>Additionally, we don’t need to switch to the UI thread because it's done automatically inside the ReactiveProperty. The simplicity of changing an observable into a ReactiveProperty is great, but what’s even better is that a ReactiveProperty is also an observable. What this means is that you can now use properties as observables and, in turn, use them to create other reactive properties or observables.</span></p>
+
+<p dir="ltr"><span>ReactiveProperty was a milestone in my project, as it made it easier to use Rx in the view-models and services.</span></p>
+
+<p dir="ltr"><span> </span></p>
+
+<p dir="ltr"><strong>Reactive Extensions</strong></p>
+
+<p dir="ltr"><span>As I mentioned before, the biggest strength in Reactive Programming is the ability to operate on the streams (observables). When I found a simple way to connect observables with properties, the next step was to get to know all the extensions that the Rx library supplies.</span></p>
+
+<p dir="ltr"><span>It was a challenge, because I had to change the way I think about programming. I used to operate on variables, but reactive programming is about operating on streams. It was a struggle, but an enjoyable one.</span></p>
+
+<p dir="ltr"><span> </span></p>
+
+<p dir="ltr"><span>First I’ve learned about the most common and useful extensions:</span></p>
+
+<ul>
+	<li>
+	<p dir="ltr"><span><code>CombineLatest()</code></span><span> - the most used method of combining multiple observable. Use it whenever you need to combine multiple observables and operate on the last values they emitted</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><code>DistinctUntilChanged()</code></span><span> - a simple but very useful extension to reduce all the noise</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><code>Throttle()</code></span><span> - I usually use it with an observable that triggers often, and when I am interested in the last value that hasn’t changed for some time</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><code>FromEventPatters()</code></span><span> - very useful when changing those annoying C# events into nice and clean observables</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><code>Select(...).Switch()</code></span><span> - one of the most powerful combinations of extensions that I'll give an example on in a second. I could write an entire article about it, so if you don’t know what it is, check it out!</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><code>Do()</code></span><span> - really handy for logging and debugging issues, but I wouldn't be using it for changing state of the application as this could easily introduce side-effects, which is not the reactive way</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><code>FromAsync()</code></span><span> - used when you have some async method that returns a </span><span><code>Task</code> </span><span>and you would like to include it into your observable chain of execution</span></p>
+	</li>
+	<li>
+	<p dir="ltr"><span><code>ToObservable()</code></span><span> - when used on </span><span><code>IEnumberable</code></span><span> will allow you to handle lists in a reactive way</span></p>
+	</li>
+</ul>
+
+<p> </p>
+
+<p dir="ltr"><span>During my time with Rx I've learned also plenty of other really useful stuff that you may find interesting:</span></p>
+
+<p> </p>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7f9d-c6d1-47a6-f1b3ee7893a1"><strong>Cancellation:</strong></p>
+
+<p dir="ltr"><span>I cannot emphasize enough how important it is to properly cancel an asynchronous task. Every time you don’t cancel, for example, a web request that the user is no longer interested in, it's a big waste of resources. Thankfully C# has a really nice way of canceling a long running operation by using </span><code>CancellationToken</code><span>.</span></p>
+
+<p><span>Every asynchronous method that I write looks something like this:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">Task&lt;string&gt; GetDefinitionForTextAsync(string text, CancellationToken token)</code></pre>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7f9e-4ae7-553f-59e62e2a67c7"><span>This way a developer has the possibility to cancel an outgoing request that the user is no longer interested in. In normal C# programming this could be a bit messy with all those </span><code>CancellationTokenSources</code><span>.</span></p>
+
+<p dir="ltr"><span>Thankfully when it comes to Rx things get really simple. Let’s imagine that we would like to download a definition for some text that the user has submitted and assign the result to a ReactiveProperty.</span></p>
+
+<p dir="ltr"><span> </span></p>
+
+<p dir="ltr"><span>Let's imagine that the user is typing a word in a text field and wants to get a definition of that word.</span></p>
+
+<p><span>First let’s define two properties: one for text, that is bound to the </span><code>TextBox</code><span> where the user can input text, and the other one for displaying the definition, which is bound to a </span><code>TextBlock</code><span>:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">public ReactiveProperty&lt;string&gt; Text {get; private set;}
+public ReactiveProperty&lt;string&gt; Definition {get; private set;}</code></pre>
+
+<p><span>Now I will skip the XAML as it looks in most cases the same, but here is how does the constructor in the view-model looks like:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">Text = new ReactiveProperty&lt;string&gt;();
+
+Definition = Text.Select( text =&gt; Observable.FromAsync(token =&gt; GetDefinitionForTextAsync(text, token))
+                 .Switch()
+                 .ToReactiveProperty();</code></pre>
+
+<p> </p>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7f9f-8139-3b26-6130e850f5fb"><span>And that's it!</span></p>
+
+<p dir="ltr"><span>Whenever the user enters a new letter, </span><code>Select </code><span>creates a new observable from the </span><code>Task</code><span> returned from </span><code>GetDefinitionForTextAsync</code><span> and </span><code>Switch() </code><span>will cancel the previous running operation.</span></p>
+
+<p dir="ltr"><span>To make it even nicer I would add </span><code>Throttle()</code><span> so we wouldn't start a search after every single letter entered by the user.</span></p>
+
+<p dir="ltr"><span> </span></p>
+
+<p dir="ltr"><strong>CombineLatest:</strong></p>
+
+<p dir="ltr"><span>Remember that although observables really look like properties, they are not: they are like events. This is even more important when using </span><code>CombineLatest()</code><span>. If any of the given observables never push a value, </span><code>CombineLatest()</code><span> won't trigger.</span></p>
+
+<p><span>I usually like to add </span><code>StartWith(...)</code><span> to observables so </span><code>CombineLatest()</code><span> would work as expected.</span></p>
+
+<p><strong>Issues with <code>Select().Switch()</code>:</strong></p>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7fa4-0608-ed9b-8f334c4f903a"><span>As I mentioned before, the combination </span><code>Select(...).Switch()</code><span> is extremely powerful, but it has also been the part where I’ve had plenty of confusing bugs.</span></p>
+
+<p><span>Here is an example: let’s say we have a </span><code>ClickCommand </code><span>which is triggered every time I press a button:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">ClickCommand.Do(_ =&gt; Debug.WriteLine(<span class="string"><span class="delimiter">"</span><span class="content">Command</span><span class="delimiter">"</span></span>))
+            .Select(_ =&gt; Observable.Return&lt;object&gt;(null))
+            .Switch()
+            .Do(_ =&gt; Debug.WriteLine(<span class="string"><span class="delimiter">"</span><span class="content">Last</span><span class="delimiter">"</span></span>))
+            .Subscribe(_ =&gt; Debug.WriteLine(<span class="string"><span class="delimiter">"</span><span class="content">Subscription</span><span class="delimiter">"</span></span>));</code></pre>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7fa5-3e5e-5e98-19f10f169077"><span>On the first line I just log whenever the button is clicked, and then I create a </span><code>Select().Switch()</code><span> combination that returns </span><code>null</code><span>. After that I log "Last" whenever I receive the next element in the stream. Finally, I log "Subscription" whenever </span><code>OnNext </code><span>triggers.</span></p>
+
+<p><span>Whenever I press the button I get this console output:</span></p>
+
+<pre class="article__code CodeRay CodeRay-- CodeRay--unknown-lang">
+<code data-lang="">Command
+Last
+Subscription</code></pre>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7fa5-60e6-7f5c-d348f8f36f5e"><span>Which is expected behaviour.</span></p>
+
+<p><span>Now let’s say we want to use the observable that we get from the </span><code>Select().Switch()</code><span> chain and subscribe to it one additional time:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">var clickObservable = ClickCommand.Do(_ =&gt; Debug.WriteLine(<span class="string"><span class="delimiter">"</span><span class="content">Command</span><span class="delimiter">"</span></span>))
+                                  .Select(_ =&gt; Observable.Return&lt;object&gt;(null))
+                                  .Switch();
+
+clickObservable.Do(_ =&gt; Debug.WriteLine(<span class="string"><span class="delimiter">"</span><span class="content">Last</span><span class="delimiter">"</span></span>))
+               .Subscribe(_ =&gt; Debug.WriteLine(<span class="string"><span class="delimiter">"</span><span class="content">Subscription</span><span class="delimiter">"</span></span>));
+
+clickObservable.Subscribe(_ =&gt; { });</code></pre>
+
+<p><span>The only difference is that I subscribe after </span><code>Switch()</code><span> twice, so I would expect that I would have the same console output. However, that's not the case:</span></p>
+
+<pre class="article__code CodeRay CodeRay--c">
+<code data-lang="c">Command
+Last
+Subscription
+Command</code></pre>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7fa5-b89d-6151-26a7406fabf5"><span>Everything before </span><code>Switch()</code><span> is executed an additional time. Imagine that instead of logging "Command", you would make an HTTP request. Suddenly you are performing a completely unnecessary and pricey operation.</span></p>
+
+<p><span>The solution is to every time use this combination: </span><code>Select().Switch().Publish().RefCount()</code><span>. That's why I would recommend to add </span><code>Publish().RefCount()</code><span> to every </span><code>Select().Switch()</code><span> even if you are not subscribing multiple times.</span></p>
+
+<p> </p>
+
+<p><strong>Exceptions:</strong></p>
+
+<p><span>When creating chains of observables, usually I didn't think about things that could go wrong. I quickly learned better. Reactive code is still code where something could go wrong, so don’t forget to handle the exceptions (the best way to do it is by using </span><code>Catch()</code><span>).</span></p>
+
+<p> </p>
+
+<p><strong>When in doubt, use <code>Do()</code>:</strong></p>
+
+<p><code>Do()</code><span> is a really good tool for logging any observable that doesn’t behave the way you intended.</span></p>
+
+<p> </p>
+
+<p><strong>Memory leaks:</strong></p>
+
+<p><span>Don’t forget to clean up after you subscribe to any observable (every </span><code>Subscribe</code><span> returns </span><code>IDisposable</code><span>). Also, ReactiveProperties create a subscription internally, so don’t forget to dispose them.</span></p>
+
+<p> </p>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7fa7-ddd6-dfba-a45f1cbaec51"><strong>Don’t stress:</strong></p>
+
+<p><span>When learning how to write reactive code, you don’t need to write everything in a reactive way. I don’t see a problem in having normal code together with reactive. If you try to write reactive code that you don't feel comfortable with, it’s better to write it as you used to and come back to it when you have more experience.</span></p>
+
+<p> </p>
+
+<p><strong>Use <code>Subject&lt;T&gt;:</code></strong></p>
+
+<p><span>Whenever you need to change normal code into observable, use </span><code>Subject&lt;&gt;</code><span>. I would not advise using </span><code>Observable.Create()</code><span> as </span><code>Subject</code><span> is much easier to use and good enough 99% of time.</span></p>
+
+<p> </p>
+
+<p><strong>Do your own extensions:</strong></p>
+
+<p><span>Don’t be afraid to create your own extensions. It’s really simple to write for example a </span><code>WhereIsNotNull(),</code><span> which should be self-explanatory.</span></p>
+
+<p> </p>
+
+<p><strong>Testing:</strong></p>
+
+<p><span>Testing time/timer based code was a really big pain for me. So how can you test an observable that should trigger every hour? With ease: just include into your test project the “rx-testing” nuget package (from the same guys that develop Rx) and use the </span><code>TestScheduler</code><span>. It is a virtual time scheduler and makes you a </span><a href="http://en.wikipedia.org/wiki/Time_Lord"><u>Time Lord</u></a><span>.</span></p>
+
+<p> </p>
+
+<p><strong>Be mindful how you subscribe:</strong></p>
+
+<p><span>When subscribing, always attach the </span><code>IDisposable</code><span> object to a member variable. If you don't, when the method leaves the scope, the subscription will be disposed and the observable most likely will never be triggered.</span></p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p dir="ltr" id="docs-internal-guid-460e0ce2-7fa9-5d14-ac25-23c1162838ce"><span>If you’re interested in checking out some reactive C# code, I have a little </span><a href="https://github.com/tomaszpolanski/ShareLink"><u>pet project</u></a><span> where I'm testing out all the reactive/architectural approaches that I am keen on. Additionally I have a lightweight </span><a href="https://github.com/tomaszpolanski/Utilities"><u>ReactiveProperties library</u></a><span> that I use in that project, so you will need it as well.</span></p>
+
+<p dir="ltr"><span> </span></p>
+
+<p dir="ltr"><span>I really enjoyed my journey with Reactive Programming and  hope it gains traction in the development world.</span></p>
+
+<p dir="ltr"><span>If you haven't got the Reactive bug yet, try it out!</span></p>
+
+<p> </p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/tomasz-polanski.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Tomasz Polański</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f6f651942a0&gt;, #&lt;Tag:0x007f6f6518bd80&gt;, #&lt;Tag:0x007f6f6518b5b0&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search1ea8?q=Rx" class="article__tag-link">
+                <span class="article__tag-name">Rx</span></a>, 
+              <a href="../search22fb.html?q=C%23" class="article__tag-link">
+                <span class="article__tag-name">C#</span></a>, 
+              <a href="../searchfef0.html?q=ReactiveProperty" class="article__tag-link">
+                <span class="article__tag-name">ReactiveProperty</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Rx%20in%20practice&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Rx%20in%20practice&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice&amp;title=Rx%20in%20practice', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Freactive-c-number-in-practice&amp;title=Rx%20in%20practice">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="multi-platform-mobile-development-with-xamarin.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Multi-platform mobile development with Xamarin</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="reactive-mvc-and-the-virtual-dom.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Reactive MVC and the Virtual DOM</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="agile-tips-and-tricks.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Agile tips and tricks</h1>
+</a></article>
+
+    </aside>
+
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/reactive-c-number-in-practice by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:26:01 GMT -->
+</html>

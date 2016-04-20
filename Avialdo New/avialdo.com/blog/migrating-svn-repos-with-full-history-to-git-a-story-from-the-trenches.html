@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/migrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:28:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Migrating SVN repos (with full history) to Git – A story from the trenches — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Migrating SVN repos (with full history) to Git – A story from the trenches — Futurice">
+  <meta property="og:description" name="description" content="I recently ran into an interesting VCS-challenge. Combine two separate SVN repositories into one, preserving the relevant part of the history in the process. The challenge at first sight seemed to be straightforward, but turned out to be quite a hairy">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="migrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches.html">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-1.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-1.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2011-05-27T15:16:33Z">
+          May 27, 2011
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Migrating SVN repos (with full history) to Git – A story from the trenches
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <span class="article__header__author-link" rel="author">
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Kai Inkinen</span>
+                  <span class="article__header__author-title" itemprop="jobTitle"></span>
+                </div>
+              </span>
+          </div>
+
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p>I recently ran into an interesting VCS-challenge. Combine two separate <a href="http://subversion.apache.org/">SVN</a> repositories into one, preserving the relevant part of the history in the process. The challenge at first sight seemed to be straightforward, but turned out to be quite a hairy deal. As usual, a software project cannot stand still for long, so active development was done during the whole transition. I will describe some of my findings, in the hope that the next person trying something similar does not have to bump into all the same obstacles in the process. But first, a small warning. This post will be longer and more technical than the usual Futurice blog post, so unless you feel like taking a deep dive into the mysteries of VCS, you should stop reading now. Consider yourself warned.
+
+Here are a few Do's and Don'ts for the impatient. I will then discuss the process in more detail below.
+
+<strong>Don'ts</strong>
+
+</p>
+<ul>
+<li>Combine SVN repositories using SVN tools (like svndump)</li>
+	<li>Replay the history one commit at a time</li>
+	<li>Try to execute clever modifications of the histories in the repositories</li>
+	<li>Have several VCS in parallel for more time than is absolutely necessary</li>
+</ul>
+<strong>Do's</strong><ul>
+<li>Switch to a more capable system in the process (git, hg, bazaar, ...)</li>
+	<li>Import the full original histories, so you have a way to recover an old build</li>
+	<li>Map the SVN usernames to match the new naming scheme</li>
+        <li>Execute all and any major reorganization of the directory structures before export from SVN</li>
+</ul>
+<p>The two repositories that needed to be combined were a server repository and a separate client repository. Managing the dependencies and release cycles between the two had turned out to be too cumbersome for a fast paced, agile project, and it was slowing us down unnecessarily. The complication in the task was that the client repository had originally started as a branch of a larger codebase. The original small branch turned into a larger project, and soon matured to be a fully independent project, without any proper relation to the original parent project.</p>
+<strong>Failing approach number 1: svn admin dump and load</strong><p>SVN actually provides </p>
+<a href="http://svnbook.red-bean.com/en/1.5/svn.ref.svnadmin.c.dump.html">tools for combining several repositories</a><p>. The </p>
+<a href="http://stackoverflow.com/questions/267256/combining-multiple-svn-repositories-into-one">process of using svn admin dump and load</a><p> preserves the full history of the repositories. The process does, however, not cope with any conflicts for paths. I don't consider myself an SVN expert, and after consulting some experts on the topic, we decided that this was way too error prone and cumbersome to be done in practice. For full repository dumps the approach might work, but since we wanted only the relevant parts of the history, i.e. one branch, this was not a suitable approach. One of the repositories contained approximately 25000 revisions, and the other one well over 3000, so the overhead of the extra changesets and the probability of multiple conflicts on the paths was too big a risk to take.</p>
+<strong>Failing approach number 2: Rewrite and replay</strong><p>I have been using </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">git-svn</a><p> successfully as a SVN client for well over a year now, so the natural next approach was converting the repositories to git, and replaying the changes back to one of the SVN repositories. This approach could also be scripted in SVN-only fashion, but having the full history in git would make the process much faster. Git-svn allows for extracting </p>
+<a href="http://www.dmo.ca/blog/20070608113513/">specific branches into the repository</a><p>v, which was one of the original goals of the migration. The problem with replaying changes was the hosted SVN server we were using. We did not have shell access to it, making scripting much harder. The SVN server automatically assigns the unix username to the commit, so had I just replayed the changes, the history would have shown me as the only collaborator. As a compromise, we agreed that we could instead include the original commit data in the new log message. </p>
+<a href="http://svnbook.red-bean.com/en/1.5/svn.ref.svn.c.blame.html">Svn blame</a><p> would be broken, but at least it would be possible to find the original author in the log. Git has the very handy </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html">filter-branch command</a><p>, which lets the user do batch changes to the history. Changing common history is normally not a recommended approach, but in this case we saw it as the only option to keep svn as a viable solution. Git-svn adds some metadata to the commits, so they end up looking like this:</p>
+<code>commit fedcbaf1821677f02c1c36adb99f5ed3d5a5728d
+Author: unix-user
+Date: Fri Jan 14 16:36:46 2010 +0000
+
+LOG MESSAGE
+
+git-svn-id: svn+ssh://SVN-SERVER-AND-REPOSITORY@22222 11e32337-3d48-0410-9457-8905d971a4a1
+</code><p>The git-svn-id contains the original repository information, as well as the revision number of the SVN commit, i.e. 22222 in the example above. With a little bash+perl magic below, the log message could be made much more readable.</p>
+<code>#!/bin/bash
+git filter-branch --msg-filter '
+perl -pe "s/^s*git-svn-id: [^@]+@(d+) .*$/Revision:t$1/g" &amp;&amp;
+echo "Author:t$GIT_AUTHOR_NAME" &amp;&amp;
+echo "Timestamp:t"`perl -e "use POSIX strftime; print strftime("%Y-%m-%dT%H:%M:%S", localtime("$GIT_AUTHOR_DATE"))" `
+' $@</code><p>The operation takes several hours to run, even on my SSD equipped machine, but considering the one-time nature of the operation, this was acceptable. Filter-branch is also not restricted to changing log messages. It allows almost anything to be done to the history. For example, we played with the idea of moving the whole history of one of the projects to a suitable subdirectory before the merging, but found the approach too intrusive. It might compromise our ability to recreate earlier builds at a later time. However, figuring out the power of filter-branch made this trial and error a very educational one.</p>
+<strong>The winner: Move the whole project to git</strong><p>The results of rewriting the history were very promising. The flexibility of git, however, impressed the development team, and finally we decided to switch over completely to the world of DVCS. This way we could preserve the full history with the full commit information without having to rewrite log messages. We pondered over rewriting the history to reflect the new structure, but again rejected the idea for the same reason as before.</p>
+<p>The task of combining two or more git repositories is easy. It is possible to pull in the changes from any unrelated repositories. The initial cloning of the SVN repositories is quite straightforward. Co-operating with svn, however, makes synchronizing the repositories between git and SVN quite a big problem. </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html#_commands">Git-svn uses rebase strategy</a><p> to synchronize the local repository with the SVN repository. Rebasing </p>
+<a href="http://marklodato.github.com/visual-git-guide/index-en.html#rebase">keeps the history linear</a><p> by appending any changes done locally in git to the end of the chain of SVN changesets. This is not a problem as long as there are changes only on either git or svn, but maintaining changes in two systems becomes very work intensive after a while. I unfortunately did the mistake of creating the authoritative git repository at this point, contrary to the </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html#_caveats">recommendation in the git-svn manual</a><p>. At this point I also moved a lot of directories around in git, laying out the directory and project structure. The changes could not be committed back to SVN, thus laying out a stony path of synchronization work for myself. The transition took about two weeks, so there were a lot of changesets created on the SVN side, all of which had to be synchronized to git.</p>
+<p>In order not to create discrepancies in the now authoritative git repository, it was no longer possible to rebase the handful of changesets with the new structure on the SVN changes, but instead I had to rebase the SVN changes on top of the git changes. The local repository in git makes rebasing easy, as even this complex operation can easily be reverted and started over. The </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-reflog.html">git reflog command</a><p> is of tremendous help in the process, keeping a log of all the changes being made. Unfortunately, my changes in git introduced some interesting error cases for the rebasing.</p>
+<p>Git </p>
+<a href="http://book.git-scm.com/1_the_git_object_model.html">only tracks file contents, but not directories</a><p>. Git tries to deduce which files have moved from one place to another. SVN on the other hand, </p>
+<a href="http://subversion.apache.org/features.html">treats both directories and files as first class objects</a><p>, and only stores the file content as a property of the file-object. This distinction is very important when making git and SVN co-operate in the way that we were doing here. Git managed to do the rebase and deduce the new location of any old files being moved, and was thus able to carry on changes to the correct files. This, however, does not work properly for new files that were created in SVN after branching to git. All the new files were left at their original path, relative to the root of the repository. The fix was to manually move the directories to the new structure. Fortunately there were no complex renames of files in SVN, as this might make synchronizing significantly harder.</p>
+<p>Having noticed the problem during the first repository migration made me change the strategy for the second one. Instead of just rebasing the changes, I decided to first </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html">revert</a><p> any changes to the directory structure, in order to reduce confusion over new files in the repository. Revert is a safe, non-destructive operation as it creates new reverse changesets at the end of the history, thus keeping the history intact. Having reverted the directory renames, I was quite easily able to create a clean and linear history by rebasing all new SVN changes to git. This new approach saved me several hours of work of tracking down any possible missing files or conflicts due to git being unable to locate all changed files.</p>
+<p>One final problem we had was a handful of late changes in the SVN repository. Once the rebase had been done, there is really no proper way to repeat the process. All the changeset ids get changed due to the rebase, so trying to do the same rebase a second time is bound to fail. Fortunately git </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html">supports cherry-picking</a><p>, i.e. </p>
+<a href="http://marklodato.github.com/visual-git-guide/index-en.html#cherry-pick">moving individual changesets from one tree to another</a><p>. It was quite easy to loop over the missing changesets and cherry-pick them one by one to the new branch. Cherry-pick supports copying multiple changesets with a single command, but since there were only a handful of changes, I did it manually. This is the process that will have to be taken should there be any changes to the SVN repository later on. Because of this, however, it is very important to tag the key changesets to make sure it's easy to figure out which changesets, if any, have been fetched after the rebase operation.</p>
+<p>The final step of the process was to merge the two separate branches into a single development branch and start hacking away. The positive sides of this approach is that we now have the full history of both the repositories, so we will be able to recreate any earlier build. We also managed to remote all the extra and non-related branches from the repository in the process. This reduced the total number of changesets to under 50%, which is really valuable since it reduces the noise in the logs.</p>
+<strong>Improvements</strong><p>There were, of course, quite a few things that could have been done differently, and in a much better fashion. The following two are the most prominent. The biggest mistake was to create and publish the authoritative git repository too early. Had I not done that, most of the extra work with rebasing and moving files in git could have been avoided. I probably spent an extra working day or two on the task because of this. The optimal solution is to migrate to git in one step, without having to migrate changes between repositories.</p>
+<p>The second mistake was to not convert the unix usernames in the authors of svn to proper name + email pairs. </p>
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">Git-svn has an option of doing this</a><p> by providing a file with mappings between SVN usernames and git usernames. Since this was not done in the first place, the history will now contain entries with both unix username based authors and name+email authors.</p>
+<strong>Retrospective</strong><p>The project has now been using the new VCS and the new project structure for about a month. The reactions have been overwhelmingly positive, although unlearning SVN ways and embracing the git way has been challenging from time to time. Git is quite a lot more complex than SVN (or </p>
+<a href="http://mercurial.selenic.com/">Mercurial</a><p>), but given that most developers on the team had no previous experience with git or DVCS in general, there have been very few mistakes. The support for git on Windows is still a nuisance, as all the tools seem to do things a bit differently. So far we've used </p>
+<a href="http://www.eclipse.org/egit/">Egit for Eclipse</a><p>, </p>
+<a href="http://code.google.com/p/tortoisegit/">TortoiseGit</a><p> and </p>
+<a href="http://code.google.com/p/gitextensions/">Git Extensions</a><p>. On OS X the situation is much better, with tools like </p>
+<a href="http://www.git-tower.com/">Git Tower</a><p> and of course old trusty bash with command line git. For Windows users, Mercurial does seem like a route of less resistance, though.</p>
+<p>Git-svn is a great tool for a task like the one I have described, even with the problems in the process. A second go at the same task would probably be much easier after learning a number of things the hard way. Many of the problems I encountered were really things that you only know from previous experience, either your own or somebody else's. I would, however, be glad to hear and learn from you if you have done something similar and feel that you've got a better way of doing things.</p>
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <span class="article__author-link" rel="author">
+              <span class="article__author-name" itemprop="name">Kai Inkinen</span>
+            </span>
+        </div>
+      </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Migrating%20SVN%20repos%20%28with%20full%20history%29%20to%20Git%20%E2%80%93%20A%20story%20from%20the%20trenches&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Migrating%20SVN%20repos%20%28with%20full%20history%29%20to%20Git%20%E2%80%93%20A%20story%20from%20the%20trenches&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches&amp;title=Migrating%20SVN%20repos%20%28with%20full%20history%29%20to%20Git%20%E2%80%93%20A%20story%20from%20the%20trenches', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fmigrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches&amp;title=Migrating%20SVN%20repos%20%28with%20full%20history%29%20to%20Git%20%E2%80%93%20A%20story%20from%20the%20trenches">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="beer-and-tech-at-futurice-berlin.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Beer &amp; Tech at Futurice Berlin</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="intelligent-authentication.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Intelligent authentication</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="the-future-is-here-rails-and-the-cloud-ecosystem.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">The future is here - Rails and the cloud ecosystem</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Kai Inkinen</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="mongo-berlin-2010-and-thoughts-on-nosql.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Mongo Berlin 2010 and thoughts on NoSQL </h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/migrating-svn-repos-with-full-history-to-git-a-story-from-the-trenches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:28:49 GMT -->
+</html>

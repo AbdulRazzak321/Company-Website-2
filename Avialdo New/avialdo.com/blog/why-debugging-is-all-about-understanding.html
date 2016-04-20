@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/why-debugging-is-all-about-understanding by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:12:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Why debugging is all about understanding — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Why debugging is all about understanding — Futurice">
+  <meta property="og:description" name="description" content="Bugs can cost a software project up to 50% of its budget. How can programmers fight bugs faster and better?">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="why-debugging-is-all-about-understanding.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/diagrams-2--8hykmt7uui_s1200x630_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-6" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-6.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-6.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-08-06T11:28:56Z">
+          August  6, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Why debugging is all about understanding
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/andre-medeiros.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/new_andre_web_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Andre Medeiros</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">User Interface Engineer</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searchb33a.html?q=programming" class="article__header__tag-link">
+                  <span class="article__header__tag-name">programming</span></a>, 
+                <a href="../search497a.html?q=debugging" class="article__header__tag-link">
+                  <span class="article__header__tag-name">debugging</span></a>, 
+                <a href="../search4612.html?q=bugs" class="article__header__tag-link">
+                  <span class="article__header__tag-name">bugs</span></a>, 
+                <a href="../search9948.html?q=software" class="article__header__tag-link">
+                  <span class="article__header__tag-name">software</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p class="article__paragraph">Programming is <a href="http://c2.com/cgi/wiki?ProgrammingIsFun">fun</a> because a programmer has the power to build any virtual experience they can imagine. It's fun until we get stuck with bugs. And we might spend <a href="http://embedded-computing.com/articles/speeding-software-debugging/#">up to 50% (!) of our time solving them</a>. Overall, bug fixing costs billions of dollars per year to the software industry.</p>
+
+<p class="article__paragraph">Bugs can also be very demotivating, <a href="http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard">some people quit their programming careers</a> early on because of them. I have seen it happen.</p>
+
+<p dir="ltr" id="docs-internal-guid-adde7ece-027a-ee74-74c8-56df02b99b58">Obviously, we all want to avoid bugs. You should write code and design architecture in a way that makes debugging unnecessary. Code should be presented in a way that makes it obvious how it works. However, ultimately it seems impossible to eliminate bugs and debugging altogether.</p>
+
+<h4 class="article__heading--h4">If we are to become better programmers, we need to master debugging.</h4>
+
+<p class="article__paragraph">Our goal is to stay "in the flow". Both customers and programmers want to build software as quickly as possible. No one wants to spend time with bugs. How can we overcome bugs while spending as little time as possible?</p>
+
+<p class="article__paragraph"><em>Lean</em> is all about avoiding waste. Time is our valuable resource, so proper debugging is lean debugging.</p>
+
+<h2 class="article__heading--h2">Validate your riskiest assumptions as soon as possible</h2>
+
+<p class="article__paragraph">By definition, a bug is a phenomenon that we don't want. Normally, it's a phenomenon that happens for some unknown reason. If you know the reason, then fixing is normally trivial. Most of the time is, therefore, spent discovering the reason.</p>
+
+<p class="article__paragraph">In the process of resolving a bug, we naturally make assumptions. We might trust the compiler, assuming it doesn't make mistakes. We might assume that we made no typos. We might assume a certain class or function is working perfectly.</p>
+
+<p class="article__paragraph">How can we speed up our assumption validation and get the bug fixed as quickly as possible?</p>
+
+<h2 class="article__heading--h2">Assumption validation techniques for debugging</h2>
+
+<p class="article__paragraph" dir="ltr">Systematic debugging techniques are often top-to-bottom. If you have no idea where your bug lives, you can start by blindly assuming the bug exists in one large region of your codebase, and validating whether it does or not. In other contexts, this is known as divide-and-conquer.</p>
+
+<p class="article__paragraph">You can search for bugs in time or in space. When searching for the bug in time, you are trying to answer the question: "<em>when (at which Git commit) was this bug introduced?</em>" When searching for the bug in space, the question is "<em>where precisely is the root of this bug in my codebase?</em>".</p>
+
+<p class="article__paragraph">For searching in time, <a href="http://git-scm.com/docs/git-bisect">git bisect</a> is a known tool. It allows you to tag one state of your codebase as "good" (the bug does not occur), and another state as "bad" (bug occurs), then recursively search for the states in between until you discover the specific git commit which introduced the bug.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/diagrams-1--mojh5iob1d_s1800x0_q80_noupscale.png" target="_blank"><img alt="Searching a bug in time using git bisect" src="../../flockler.com/thumbs/1992/diagrams-1--mojh5iob1d_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Searching a bug in time using git bisect</span></figcaption>
+</figure>
+
+<p>Searching bugs with git bisect is made easier if your commits are atomic changes. This is why git and its best practices are a powerful tool not only for teamwork and version control, but specially for debugging your own code. Consider using git and writing small coherent commits even when working alone.</p>
+
+<p>For searching in space, most programmers have done binary-search with commented code: comment out or bypass half of your codebase. Do that recursively until you nail down where (at which file, which function, which lines) the bug lives.</p>
+
+<figure class="article__figure">
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/diagrams-2_s1800x0_q80_noupscale.png" target="_blank"><img alt="" src="../../flockler.com/thumbs/1992/diagrams-2_s830x0_q80_noupscale.png"></a></div>
+
+<figcaption><span class="article__figure__caption">Searching for bugs in space using comments to bypass sections of code</span></figcaption>
+</figure>
+
+<p class="article__paragraph">It's not always that simple, though. A bug might span multiple modules, requiring understanding of the whole state and control flow of those modules. In unfortunate cases, however, there is nothing wrong with your codebase. The cause for the bug might even be external to your codebase.</p>
+
+<p class="article__paragraph">When binary search doesn't work, you need more creative approaches. Consider brainstorming to enumerate even the wildest possibilities: for instance, maybe the bug is in some external resource like a library or a remote service; maybe there is version mismatch of libraries; maybe your tool (e.g. IDE) has a problem; maybe it is <a href="http://windowsitpro.com/systems-management/bit-flips-was-zero-or-one">bit flipping in the hard disk</a>; maybe the date and time library is sensitive to your computer's settings, etc.</p>
+
+<p class="article__paragraph">When validating your assumptions, your problem could also be in your validation method: you might think you have validated that there are no typos, but there actually might still be a typo. Consider validating your assumption twice with different methods. If you are in a team, do pair programming so at least two people have validated the same assumption, in different ways.</p>
+
+<h4 class="article__heading--h4">Your goal should be to validate the assumption of the PROBLEM, not to validate the assumption of the SOLUTION.</h4>
+
+<h2 class="article__heading--h2">Avoid antagonizing the bug</h2>
+
+<p class="article__paragraph">Programmers often make the bug "the enemy", and it's not rare to swear at the computer. Programming, however, is a lot about understanding correctly, not about typing and building. Most of our programming time is spent understanding how all parts should be connected, and only a small fraction of our time is spent with actual keyboard typing.</p>
+
+<p class="article__paragraph">Prefer to antagonize your lack of understanding more than the bug itself. This might sound obvious, but in the middle of debugging, you are likely to antagonize the bug. Make a conscious decision to avoid that. Once you understand everything, fixing the bug is normally a simple task.</p>
+
+<h2 class="article__heading--h2">How can you understand better and quicker?</h2>
+
+<p class="article__paragraph">Some programmers are geniuses and understand everything in little time. If you are like me, you do not understand a lot by just glancing at the code. You might need to run the program a couple of times and experiment with it to discover some properties of its functionality.</p>
+
+<p class="article__paragraph">Debuggers are an obvious tool for understanding your program. But you can also rely on ad-hoc tools for aiding your understanding. Reading logs or using the poorer variant of printing debugging strings to the console are great tools that complement debuggers. While debuggers give you insight into deep and specific parts of your codebase, logs and console prints can help you build a bird's-eye perspective of your program. This might be useful for validating assumptions that span multiple modules.</p>
+
+<p class="article__paragraph">Be creative and think outside the box to <a href="https://vimeo.com/36579366">build more exotic tools than the common ones</a>. <a href="https://github.com/jaredly/rxvision">RxVision</a> is one example for reactive programming. Build them yourself or search the web for others. Don't shy away from spending time building tools for improving your understanding of the code, and remember that bugs cost billions to the software industry.</p>
+
+<h2 class="article__heading--h2">Preventing bugs</h2>
+
+<p dir="ltr">Because programming is understanding, preventing bugs is often related to proper architecture which makes it easier to reason about the program's functionality. There is a lot of ongoing discussion on which programming model and architectures are the best, but some practices are widely recommended.</p>
+
+<p dir="ltr">One of these ubiquitous practices is to <strong>keep different levels of abstraction separated</strong>. Here is one simple example in Kotlin:</p>
+
+<pre class="article__code CodeRay CodeRay--groovy">
+<code data-lang="groovy">fun getEuroString(<span class="key">value</span>: <span class="predefined-type">Number</span>): <span class="predefined-type">String</span> {
+    <span class="comment">// if is decimal currency value</span>
+    <span class="keyword">if</span> (<span class="predefined-type">Math</span>.abs(value.toDouble() - value.toInt().toDouble()) &gt;= <span class="float">0.01</span>) {
+        val decimalValue = <span class="string"><span class="delimiter">"</span><span class="content">%.2f</span><span class="delimiter">"</span></span>.format(value).replace(<span class="string"><span class="delimiter">"</span><span class="char">\\</span><span class="content">.</span><span class="char">\\</span><span class="content">d+</span><span class="delimiter">"</span></span>, <span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span>)
+        <span class="keyword">return</span> <span class="string"><span class="delimiter">"</span><span class="inline"><span class="inline-delimiter">$</span>decimalValue</span><span class="content"> </span><span class="inline"><span class="inline-delimiter">$</span>EURO_SYMBOL</span><span class="delimiter">"</span></span>      
+    } <span class="keyword">else</span> {
+        <span class="keyword">return</span> getIntegerEuroString(value.toInt())
+    }
+}
+</code></pre>
+
+<p>This <code>getEuroString()</code> function checks if the given number is not an integer, returning a price label in euros with two decimal digits, otherwise returning a price label with a whole value. This function works, but has a problem: the condition in the if is working on a lower abstraction level than the rest of the control flow. This function should only express the logic we mentioned above, yet it goes into details which are irrelevant to its purpose.</p>
+
+<p>The function might be a source of bugs and an obstacle during debugging in the future. The reason for that is: while debugging, it is likely you will look <code>getEuroString()</code> through the perspective of one level of abstraction ("it checks if the value is a decimal, to use the decimal format, otherwise uses the integer format") and dismiss the lower levels of abstraction, assuming they are correctly doing what you want them to do. And that is where the problem is: letting an assumption slip away unchecked.</p>
+
+<p>Instead, we should refactor the function so that it uses other functions which hide those lower level instructions.</p>
+
+<pre class="article__code CodeRay CodeRay--groovy">
+<code data-lang="groovy">fun getEuroString(<span class="key">value</span>: <span class="predefined-type">Number</span>): <span class="predefined-type">String</span> {
+    <span class="keyword">if</span> (isDecimal(value)) {
+        <span class="keyword">return</span> getDecimalEuroString(value.toDouble())
+    } <span class="keyword">else</span> {
+        <span class="keyword">return</span> getIntegerEuroString(value.toInt())
+    }
+}
+
+fun isDecimal(<span class="key">value</span>: <span class="predefined-type">Number</span>): <span class="predefined-type">Boolean</span> {
+    <span class="keyword">return</span> <span class="predefined-type">Math</span>.abs(value.toDouble() - value.toInt().toDouble()) &gt;= <span class="float">0.01</span>
+}
+
+fun getIntegerEuroString(<span class="key">value</span>: Int): <span class="predefined-type">String</span> {
+    <span class="keyword">return</span> <span class="string"><span class="delimiter">"</span><span class="inline"><span class="inline-delimiter">$</span>value</span><span class="content"> </span><span class="inline"><span class="inline-delimiter">$</span>EURO_SYMBOL</span><span class="delimiter">"</span></span>
+}
+
+fun getDecimalEuroString(<span class="key">value</span>: <span class="predefined-type">Double</span>): <span class="predefined-type">String</span> {
+    val decimalValue = <span class="string"><span class="delimiter">"</span><span class="content">%.2f</span><span class="delimiter">"</span></span>.format(value).replace(<span class="string"><span class="delimiter">"</span><span class="char">\\</span><span class="content">.</span><span class="char">\\</span><span class="content">d+</span><span class="delimiter">"</span></span>, <span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span>)
+    <span class="keyword">return</span> <span class="string"><span class="delimiter">"</span><span class="inline"><span class="inline-delimiter">$</span>decimalValue</span><span class="content"> </span><span class="inline"><span class="inline-delimiter">$</span>EURO_SYMBOL</span><span class="delimiter">"</span></span>
+}</code></pre>
+
+<p dir="ltr">In this fashion, you facilitate the assumption validation process when debugging: when inspecting <code>getIntegerEuroString()</code> or any other function, it will be straightforward to check whether it only does what it says it does. Each function makes it obvious on which level of abstraction it operates, so you don't need to mentally switch between different levels of abstraction when inspecting the function. It focuses your mind, pointing you in the right direction for hunting bugs.</p>
+
+<p dir="ltr">Overall, programming practices that prevent bugs are empathic to other programmers and to your future self. Code which looks obvious and looks easy to read and change is code which eventually yields less bugs.</p>
+
+<blockquote>
+<p dir="ltr">"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."<br>
+<a href="https://en.wikiquote.org/wiki/Brian_Kernighan">— Brian Kernighan</a></p>
+</blockquote>
+
+<h2 class="article__heading--h2">The takeaway</h2>
+
+<p dir="ltr" id="docs-internal-guid-adde7ece-0287-6cfd-4df1-b5bd1c5d6c29">To prevent bugs, write code that looks easy in any programmer's eyes. To fix bugs, understand your code. To understand your code with precision, enumerate and validate your assumptions, building debugging tools if necessary.</p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/andre-medeiros.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Andre Medeiros</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f729db51500&gt;, #&lt;Tag:0x007f729db51118&gt;, #&lt;Tag:0x007f729db50ce0&gt;, #&lt;Tag:0x007f729db508f8&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searchb33a.html?q=programming" class="article__tag-link">
+                <span class="article__tag-name">programming</span></a>, 
+              <a href="../search497a.html?q=debugging" class="article__tag-link">
+                <span class="article__tag-name">debugging</span></a>, 
+              <a href="../search4612.html?q=bugs" class="article__tag-link">
+                <span class="article__tag-name">bugs</span></a>, 
+              <a href="../search9948.html?q=software" class="article__tag-link">
+                <span class="article__tag-name">software</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Why%20debugging%20is%20all%20about%20understanding&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Why%20debugging%20is%20all%20about%20understanding&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding&amp;title=Why%20debugging%20is%20all%20about%20understanding', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fwhy-debugging-is-all-about-understanding&amp;title=Why%20debugging%20is%20all%20about%20understanding">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="code-school-for-adults.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Code school for adults</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="introducing-children-to-the-joy-of-programming.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Introducing children to the joy of programming</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="android-development-has-its-own-swift.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Android development has its own Swift</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Andre Medeiros</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="best-practices-mobile.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Sharing best practices for Android, iOS, and Windows apps</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="../events/frp-lounge-meetup.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Helsinki FRP Pioneers 6.5.2015</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="programmer-proverbs.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Programmer proverbs</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/why-debugging-is-all-about-understanding by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:12:05 GMT -->
+</html>

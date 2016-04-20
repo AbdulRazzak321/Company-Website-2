@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/play-scala-test-drive by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:27:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Play Scala test drive — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Play Scala test drive — Futurice">
+  <meta property="og:description" name="description" content="IntroductionThe Play framework is a fresh, agile Java alternative to bloated enterprise stacks. It focuses on developer productivity and targets RESTful architectures. On the other hand, Scala is a hot new functional/object-oriented, JVM-based program">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="play-scala-test-drive.html">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-1.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-1.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2011-09-20T14:03:39Z">
+          September 20, 2011
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Play Scala test drive
+      </h1>
+
+      <div class="article__header__meta">
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searchbe34.html?q=Play%20Framework" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Play Framework</span></a>, 
+                <a href="../search4775.html?q=Scala" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Scala</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p><strong>Introduction</strong></p>
+<p><a href="http://www.playframework.org/">The Play framework</a> is a fresh, agile Java alternative to bloated enterprise stacks. It focuses on developer productivity and targets RESTful architectures. On the other hand, <a href="http://www.scala-lang.org/">Scala</a> is a hot new functional/object-oriented, JVM-based programming language. It is fully interoperable with Java, but being more concise and powerful, an interesting alternative for developers.</p>
+<p>The Play framework’s goal is to ease web application development, but the default target language is still Java. However, an alternative called <a href="http://scala.playframework.org/">Play Scala</a> is in development, which enables you to use the Scala language for your application while keeping key properties of the Play framework. This post sums up the evaluation of Play Scala's default features, or technology choices, and lists a few alternative technologies.</p>
+<p>The main focus is on trying things out hands-on, especially the data access layer options.</p>
+<p><strong>The Maturity of Play Scala</strong></p>
+<p>First of all, I think it’s worth mentioning that there are people (with hands-on Play Scala experience) who feel that Play Scala is not quite as mature as Play Java. That is understandable, as Play started as a Java framework and I guess Java is still the main target. Some of the key guys behind Play, like Guillaume Bort and Sadek Drobi, seem to be fans of Scala and functional programming, so I’m expecting a bright future for Play Scala as well.</p>
+<p>Also, while writing thism I found out that Play Scala documentation is not as extensive as Play Java documentation. That will hopefully change in the future.</p>
+<p>Play’s Google group has some <a href="https://groups.google.com/group/play-framework/browse_thread/thread/ffd031085b6b89f6">discussion about the maturity of Play Scala</a> that might be worth reading.</p>
+<p><strong>Data Access Layer</strong></p>
+<p><strong></strong>One of the most notable differences between Play Scala and Play Java is the provided default data access layer. Play Java utilizes Hibernate (a JPA implementation) to provide access to a database. But with Play Scala, the use of JPA is discouraged and an alternative default data access layer, called <a href="http://scala.playframework.org/documentation/scala-0.9.1/anorm">Anorm</a>, is provided.</p>
+<p>Unlike Hibernate, Anorm is not an ORM. It’s built on top of JDBC and uses plain SQL to make database queries. It provides APIs for parsing and transforming the resulting dataset. That may sound like a step backwards since there are already ORMs that do the somewhat laborious work of constructing SQL queries and handling the resulting dataset. But according to authors of Anorm, when we have the power of a higher level language – such as Scala – at our disposal, there is no need to have an ORM working for us. It may actually start working against us at some point (and that’s true in the Java world as well).</p>
+<p>Even though using JPA with Scala is discouraged, some people do it anyway. But the truth is that JPA and Scala isn’t a match made in heaven. There are problems with the way Scala annotations work (although, starting from Scala v2.8, nested annotations are supported), there is no support for Scala collections, there are differences in the reflection API (I don’t know the details) and so on. See <a href="https://groups.google.com/group/play-framework/browse_thread/thread/7c5360e2956636c2">the discussion about Play Scala and JPA</a>.</p>
+<p>Anorm and JPA are not the only possible data access layers for Play Scala. Some people feel that plain SQL is not the best way to go and one would benefit the most by using a data access layer that uses a (SQL-like) DSL instead. For example, <a href="http://scalaquery.org/">ScalaQuery</a> is an API / DSL built on top of JDBC for accessing relational databases in Scala. It’s referred to as the most mature pure Scala non-ORM database access layer. Pure Scala ORMs exist as well, such as <a href="http://circumflex.ru/projects/orm/index.html">Circumflex ORM</a>.</p>
+<p>There is a pretty good introduction to the different alternatives on Stack Overflow: <a href="http://stackoverflow.com/questions/1362748/wanted-good-examples-of-scala-database-persistence">Wanted: Good examples of Scala database persistence</a>.</p>
+<p><strong>Hands-on: Data Access Layer</strong></p>
+<p>In order to get a better understanding of different data access layer options, I tried out a few of them in real life.</p>
+<p><strong><a href="http://scala.playframework.org/documentation/scala-0.9.1/anorm">Anorm</a></strong> felt a bit obnoxious. I really don’t mind writing plain SQL, but knowing the benefits of a DSL, I just don’t see the point. In addition, the parser syntax is not very intuitive. Obviously, you just need to learn it, but still, the syntax looks pretty off-putting. After using Anorm, I definitely wanted to try out some of the alternatives.</p>
+<p><a href="http://scalaquery.org/"><strong>ScalaQuery</strong></a> was a step up. Installation was a no-brainer. Adjusting to it takes a little bit more time, but I like the Scala-like approach. This shows up in, for example, the way queries are built with using the for comprehension. However, the project documentation is almost nonexistent.</p>
+<p>The approach used in the official documentation is to deal with column projections instead of objects (definitely not an ORM). In other words, whenever something is queried from a database, the resulting dataset is not mapped to an instance of the corresponding domain model(s) but to a tuple construct with a variable amount of columns. This leaves out the abstraction of mapping results to objects. However, it is possible, with a little bit of extra work, to handle the mapping, too.</p>
+<p><a href="http://circumflex.ru/projects/orm/index.html"><strong>Circumflex ORM</strong></a>: you will need to implement a Play specific connection provider for Circumlex ORM in order to use a Play managed data source. Although this is not too big an effort, it can still be a daunting task for less experienced developers.</p>
+<p>Compared to ScalaQuery documentation, the Circumflex ORM documentation is actually quite good.</p>
+<p>With my background, Cirumflex ORM was the most approachable data access layer of the three that I tried out. It is also probably the easiest to get used to if you are coming from the JPA world. Note that it would be good to consider using the Criteria API to avoid performance issues when joining several relations.</p>
+<p>All in all, Play Scala with the Circumflex ORM was a positive experience. Circumflex ORM is actually being used in the project that I’m currently working on, even though we have had some issues with it (especially with Circumflex v1 and its Oracle dialect). I still recommend it.</p>
+<p><strong>JSON Support</strong></p>
+<p>Play comes with a JSON library called <a href="https://code.google.com/p/google-gson/">GSON</a>, but according to experiences that some people have had with it, it may not be the best possible JSON library to be used with Scala. It apparently has problems, at least when dealing with Scala collections.</p>
+<p>Fortunately, an alternative JSON library called <a href="https://www.assembla.com/spaces/liftweb/wiki/JSON_Support">Lift JSON</a> is available. It comes with the Lift framework, but it’s not tied to it. In other words, it can be used with Play Scala as well.</p>
+<p>Just before posting this, I learned that in future versions of Play Scala, GSON is replaced with a library called <a href="https://github.com/debasishg/sjson">sjson</a>. However, at this time I have zero experience with sjson but I'm assuming that it does its job well. After all, sjson was chosen over Lift JSON (which was already mentioned on the <a href="http://scala.playframework.org/documentation/scala-0.9.1/roadmap">Play Scala roadmap</a>) to be the default JSON library for Play Scala and I'm confident that there is solid reasoning behind that decision.</p>
+<p><strong>Other Features</strong></p>
+<p>Just like Play Java, Play Scala features a testing framework and templating engine. Both are different from Play Java: the testing framework is based on ScalaTest and the templating engine uses Scala instead of Groovy and has a design inpired by ASP.NET Razor.</p>
+<p>One nice feature of Play is its pluggable modules. CRUD and secure, the modules that come with Play, seem to be especially popular. With Play Scala, however, you seem to be currently out of luck when it comes to those modules. The CRUD module, for example, is JPA dependent.</p>
+<p><strong>Alternatives to Play Scala</strong></p>
+<p>While writing this, I was left under the impression that Play Scala, being a full stack framework, is more complete and ready for development out-of-box than most of the Scala-based alternatives. That is, after installing Play, you just need to type “play install scala”, “play new [something] –with scala” and “play run” and you have a running web application.</p>
+<p>On the other hand, Play Scala still seems a bit immature, especially when compared to Play Java. The documentation of the Scala version is not quite there yet. Plus, if you just need to write a RESTful backend that spills out JSON, you probably do not need all of Play’s features.</p>
+<p>In case you are interested, here are a few alternatives that are out there: <a href="http://liftweb.net/">Lift</a>, <a href="http://circumflex.ru/projects/web/index.html">Circumflex Web Framework</a>, <a href="https://github.com/scalatra/scalatra">Scalatra</a>, <a href="http://unfiltered.databinder.net/Unfiltered.html">Unfiltered</a>, <a href="https://github.com/spray/spray">spray</a> and <a href="http://bowlerframework.org/">Bowler</a>.</p>
+<p><strong>Conclusions</strong></p>
+<p>Based on my hands-on experiences and comments that I’ve read from the Internet, I can pretty confidently say that Play Scala is ready for (production) use as is. However, not all the nice features of Play Java work with Play Scala. For example, when doing quick demo applications, you might miss the handy CRUD and secure modules. But then again, the power of Scala itself may compensate for the missing features when considering overall productivity.</p>
+<p>You might want to consider using alternative components/libraries in place of some of the default ones, especially as it is very easy to take them into use with the Play’s dependency management system.</p>
+<p>The default data access layer, Anorm, seems to do its job, but I still wouldn’t use it. I don’t quite buy the arguments of using plain SQL over a DSL. I would probably choose Circumflex ORM as it seems to be the most productive without doing too much magic under the hood. As an alternative, some of the DSLs / APIs built on top of JDBC (like ScalaQuery or Squeryl) seem to work well enough.</p>
+<p>For JSON stuff – and I’m saying this purely based on arguments I’ve read from the Internet – I wouldn’t touch GSON. When working with Scala, simply better options are available, such as Lift-JSON or sjson.</p>
+<p>But overall, I’m giving a thumbs up for Play Scala!<br><br></p>
+    </div>
+
+    <footer class="article__footer">
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f6f651ceb30&gt;, #&lt;Tag:0x007f6f651ce630&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searchbe34.html?q=Play%20Framework" class="article__tag-link">
+                <span class="article__tag-name">Play Framework</span></a>, 
+              <a href="../search4775.html?q=Scala" class="article__tag-link">
+                <span class="article__tag-name">Scala</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Play%20Scala%20test%20drive&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Play%20Scala%20test%20drive&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive&amp;title=Play%20Scala%20test%20drive', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fplay-scala-test-drive&amp;title=Play%20Scala%20test%20drive">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="tech-pick-of-the-week-play-2-dot-2.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Tech Pick of the Week: Play 2.2</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="tech-pick-of-the-week-play-2-dot-2.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Tech Pick of the Week: Play 2.2</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="from-t-to-pi-design-skill-expectations-in-change.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">From T to Pi: design skill expectations in change</h1>
+</a></article>
+
+    </aside>
+
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/play-scala-test-drive by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:27:04 GMT -->
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/a-swift-outlook by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:13:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>A Swift Outlook — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="A Swift Outlook — Futurice">
+  <meta property="og:description" name="description" content="
+
+As we all probably noticed, Apple introduced a new programming language,&amp;nbsp;Swift, at this year&amp;#39;s Worldwide Developers Conference (WWDC). It is intended to replace Objective-C, the language that iOS and OS X applications have been written in f">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="a-swift-outlook.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/swift_s1200x630_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-3" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-3.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-3.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2014-06-18T06:00:29Z">
+          June 18, 2014
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        A Swift Outlook
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/ali-rantakari.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/omakuva_s100x100_q80_noupscale.png" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Ali Rantakari</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">Senior Consultant</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../searchcf6b.html?q=Functional%20Programming" class="article__header__tag-link">
+                  <span class="article__header__tag-name">Functional Programming</span></a>, 
+                <a href="../searche7f4.html?q=iOS" class="article__header__tag-link">
+                  <span class="article__header__tag-name">iOS</span></a>, 
+                <a href="../searchb33a.html?q=programming" class="article__header__tag-link">
+                  <span class="article__header__tag-name">programming</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p><img alt="​" src="../../flockler.com/thumbs/1992/swift--bflqap49ll_s830x0_q80_noupscale.png"></p>
+
+<p>As we all probably noticed, Apple introduced a new programming language, <a href="https://developer.apple.com/swift/">Swift</a>, at this year's Worldwide Developers Conference (WWDC). It is intended to replace Objective-C, the language that iOS and OS X applications have been written in for as long as these platforms have existed.</p>
+
+<p>New winds are blowing from Cupertino — here are some thoughts three of our developers have on the topic:</p>
+
+<h2><img alt="Oleg Grenrus" src="http://www.gravatar.com/avatar/97e33f7f5a184d254c8f1d5101cdd04a?s=120"></h2>
+
+<h2>Oleg Grenrus</h2>
+
+<p>When Apple introduced Swift in the WWDC keynote, my twitter feed was instantly flooded with <code>#swiftlang</code> tweets:</p>
+
+<ul>
+	<li><a href="https://twitter.com/bos31337/status/473542616882368512">So Swift has algebraic data types and pattern matching. We've won!</a></li>
+	<li><a href="https://twitter.com/headinthebox/status/473552760520994816">Swift makes Java look tired.</a></li>
+	<li><a href="https://twitter.com/headinthebox/status/473550870257209344">Just read the Swift book. Looks like a decent, traditional OO language. Nothing ground shaking.</a></li>
+	<li><a href="https://twitter.com/kmett/status/474161289577902080">I find it hard to get excited about Swift when I already have better languages available in which to work.</a></li>
+</ul>
+
+<p>Guess which language I'd like to work in! <em>[Editor's note: Oleg is in the kissing tree with Haskell.]</em> Yet, that's not always possible, and in my humble opinion Swift will definitely make programming for Apple platforms much more pleasant.</p>
+
+<p>The <code>Optional</code> type is an awesome thing. No more NULL pointer exceptions, though it was more of a problem in Java than in Objective-C. You could make that yourself in Swift (and <a href="http://blog.sharetribe.com/2014/06/02/option-pattern-maybe-monad-in-ruby/">a former futuricean did for Ruby</a>,) but it's nice that we have some syntactic sugar for this common pattern.</p>
+
+<p>The abstract data types and generics are the most welcome new features: finally we can have typed containers. ADTs are fine, but yet it feels that generics are just glued on top of everything else. As a person who's been exposed to Haskell you immediately try weird things, and when they don't work, you're really disappointed. Hopefully the situation will improve. After all, it did with <a href="http://www.typescriptlang.org/">TypeScript</a>!</p>
+
+<p>Just to show a few examples of what we'd like to do, but can't: you try to combine protocols and extensions with generics:</p>
+
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang">
+<code>protocol Functor&lt;A&gt; {
+    func fmap&lt;B&gt;(f : A -&gt; B) -&gt; Functor&lt;B&gt;
+}
+
+extension Optional&lt;A&gt; {
+    func orElse(def : A) -&gt; A {
+        switch self {
+        case let .Some(x): return x
+        case let .None:    return def
+        }
+    }
+}</code></pre>
+
+<p><br>
+But you have to do:</p>
+
+<pre class=" CodeRay CodeRay-- CodeRay--unknown-lang">
+<code>protocol Container {
+    typealias A
+    func map&lt;B&gt;(f : A -&gt; B) -&gt; Container // you cannot parametrise protocols
+}
+
+extension Optional {
+    // T is implicit, pulled from definition of Optional
+    func orElse(def : T) -&gt; T {
+        switch self {
+        case let .Some(x):
+            return x
+        case let .None:
+            return def
+        }
+    }
+}</code></pre>
+
+<p><br>
+The <a href="https://github.com/maxpow4h/swiftz">swiftz</a> library project requires the very same feature to implement higher abstractions. One can argue whether everybody need functors or monads, but at least making such abstractions push the language (and compiler) to the limit.</p>
+
+<p>We hadn't yet had much time to play with Swift — thought someone else already ported <a href="https://github.com/fullstackio/FlappySwift">FlappyBirds</a> — but the initial feeling is that Swift is definitely nicer than Objective-C. Hopefully it will help us make more awesome apps in even less time than before.</p>
+
+<h2><img alt="Boris Tschirschwitz" src="../../www.gravatar.com/avatar/a8be00a84865476b0d0d5415d7e73b17.jpeg"></h2>
+
+<h2>Boris Tschirschwitz</h2>
+
+<p>When Apple introduced the Swift programming language at WWDC on June 2nd, it wasn’t the culmination of a four year development effort. This was a MVP release four years in the making.</p>
+
+<p>In parallel to the development of the new language, new features like closures and properties were grafted onto Objective-C and it shows. Blocks can make Objective C programs semantically much more elegant, but syntactically they make code ugly. And for a programmer ugly means hard to read and hard to understand.</p>
+
+<p>For now I see Swift mostly as syntactic relief. I will finally enjoy the flow of my code again.</p>
+
+<p>Swift offers the core set of features expected from a strongly typed modern wrapper around Objective-C. It will be interesting to see how the APIs change to make use of Swift’s features.</p>
+
+<p>Just like C++ has already seen several transformations from Cfront to C++11, Swift will change, too.The less important backwards compatibility becomes the more it can change, “tick, tock, tick, tock” Intel might call it.</p>
+
+<p>Of course, I didn't get all I wanted, so keeping in mind that the language will develop I'd like to mention the following problems:</p>
+
+<p>Most importantly, the total lack of access control is a big step back even from Objective C. Apple has over the years added several features like private class extensions, to give us some access control, but now in Swift these are all gone again. Yes, the Swift team already stated that access control is high on their feature list, but they already spent four years of development time.</p>
+
+<p>With Swift we finally get encapsulated modules, but the language has only an "import" statement to access a module's contents, no corresponding exporting statement. In fact, grouping objects into modules happens completely above the language level, on the compilation target level, so it's impossible to know on the language level, what module an object belongs to. And just like the missing access control for classes, it's all or nothing.</p>
+
+<p>Both of these problems should have been addressed during the first four years of development, as their lack means missing encapsulation and thus less structure in our code.</p>
+
+<p>I would have wished for more language features related to concurrency, maybe atomics, but this can probably more easily be added later.</p>
+
+<p>Also, with a new language Apple had the chance to finally make documentation part of the code. This would have been especially useful in conjunction with the new REPL. Fortunately, this can also be added later.</p>
+
+<p>This brings me to my last complaint: the Swift book. It is a run of the mill "Programming X" book, just rattling down the features with trivial examples. I want to know why the Swift team chose a feature, and why it was implemented in the current way. I also want to know what they are planning for the future.</p>
+
+<p>Almost as important as the new language is the new development environment with its REPL. Finally we can break the write-compile-run cycle and write live code.</p>
+
+<p>I certainly can’t wait to start developing in Swift, and a program written in Swift runs on iOS 7 today. We will be more productive in Swift starting today and that is exactly because Apple designed Swift 1.0 as developer relief.</p>
+
+<p>Let's hope they have a good road map for the future of the language.</p>
+
+<p>I am very proud of the depth of knowledge and the excitement displayed by my colleagues about this new language since it was introduced. Apple encouraged all developers to file bug reports with improvements to Swift, and we already have a bunch of these.</p>
+
+<p>This passion about our craft might sometimes get lost in day-to-day coding, but at times like this everybody wins: We can try exciting new stuff and our customers profit from our eagerness to be experts on day one.</p>
+
+<h2><img alt="Ali Rantakari" src="http://www.gravatar.com/avatar/43e106b919cca66c0ba4a98a27b9f68d?s=120"></h2>
+
+<h2>Ali Rantakari</h2>
+
+<p>Swift may seem underwhelming for some — that it's not a big enough leap forward from Objective-C. This is understandable, given all the great features that are available in other programming languages, but you have to remember that:</p>
+
+<ul>
+	<li>Swift uses the same runtime as Objective-C</li>
+	<li>Swift uses all the same system framework APIs as Objective-C (and is thus subject to most of the same “platform idioms”)</li>
+	<li>Swift is ABI-compatible with Objective-C (essentially, the languages can talk to each other, so you can mix and match as you please.)</li>
+</ul>
+
+<p>This pragmatic design makes the language transition as painless as possible: you don't have to learn new APIs, or completely rewrite your existing projects. Instead, you can keep working with Objective-C until you're ready to take on this new language, and then gradually start incorporating it into your apps.</p>
+
+<p>Even though Swift is a completely new language, there is something familiar there for both experienced Cocoa developers and programmers new to Apple's platforms. For the former, it's familiar because all the APIs and their associated platform idioms are the same, and for the latter it's familiar primarily because it eschews Objective-C's strange square bracket message-send syntax in favor of the more common dot notation.</p>
+
+<p>All valid C code is also valid Objective-C code. This is an asset in and of itself, but prevents the Objective-C language designers from improving it in ways that would break this compatibility. Swift makes a clean break and thus introduces many improvements:</p>
+
+<ul>
+	<li>Much simpler syntax</li>
+	<li>No concept of pointers</li>
+	<li>No concept of instance variables (property storage is more abstract)</li>
+	<li>Values are never implicitly converted to another type</li>
+	<li>Better switch-case with pattern matching and no fall-through</li>
+</ul>
+
+<p><em>…et cetera, et cetera.</em></p>
+
+<p>People often complain about Objective-C's “verbosity,” referring primarily to the Cocoa APIs that like to spell things out with their named parameters. I've never agreed with this criticism: in my experience the verbose APIs more often than not make code more readable. I do, however, find that Objective-C code can be unnecessarily verbose, due in part to its C roots, but also because its type inference leaves something to be desired.</p>
+
+<p>This is an area where Swift has clearly been improved with its <a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-XID_1029">local type inference</a>. In addition, while I've never had any real issues with the untyped collections in Objective-C, <a href="https://developer.apple.com/library/prerelease/ios/documentation/swift/conceptual/swift_programming_language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-XID_234">generics</a> are still a welcome addition.</p>
+
+<p>In a world where individual CPU speeds have plateaued for years concurrency is an important topic, and an important tool in writing safe concurrent code is the exclusive use of immutable values. In Objective-C you can of course do this, but it's a manual job based on conventions where the language and the compiler cannot really help you avoid mistakes.</p>
+
+<p>Swift seems to take one step forward and two steps back with regard to this. It does introduce the <code>let</code> keyword for constants, as well as the <code>mutating</code> and <code>nonmutating</code> keywords for structures and enumerations, but the <a href="https://developer.apple.com/library/prerelease/ios/documentation/swift/conceptual/swift_programming_language/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-XID_151">mutability</a> in the standard collection types is very disappointing: for example, you can change the contents of “immutable” arrays so long as their size doesn't change (which is a very surprising definition of “immutability.”)</p>
+
+<p>There also doesn't seem to be a way for a class to <a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/WritingSwiftClassesWithObjective-CBehavior.html#//apple_ref/doc/uid/TP40014216-CH5-XID_62">expose a property as read-only</a> in its public interface, while keeping it writeable behind the scenes. This, coupled with the language's complete lack of access controls, could be a recipe for an encapsulation nightmare. <em>(Access controls will likely be added in a future version of the language, though.)</em></p>
+
+<p>Apple's basic pitch for Swift in the WWDC keynote was “Objective-C without the C.” If you adjust your expectations to this premise, right now it looks like they're off to a good start, but it's also clear that the language still needs work. Apple expects to get bug reports and feature requests for the language from the developer community, and someone has set up <a href="http://swiftradar.tumblr.com/">a public listing of reports submitted to them</a>, along with a request to file duplicates, so that the language developers can prioritize future improvements.</p>
+
+<h2>Conclusion</h2>
+
+<p>Swift is likely to be the primary language for writing iOS and Mac apps at some point, but it's not yet clear when that time will arrive. Whenever it is, though, Objective-C will certainly stick around for long past that time, so writing your new apps in it right now will not put a “legacy” stamp on your code.</p>
+
+<p>We believe that when Swift 1.0 arrives this fall, choosing between it and Objective-C for new projects is a 50/50 proposition, depending on what you value:</p>
+
+<p>Choose Swift if:</p>
+
+<ul>
+	<li>You want to “bet on the future” and ensure that your code will be ready for any (distant) future improvements Apple adds to the platform</li>
+	<li>You are willing to wrestle with and work around the initial problems and deficiencies in the new language — this means investing more time and money in initial development, and in refactoring the code later when Swift matures and new idioms and practices become possible and commonly accepted.</li>
+</ul>
+
+<p>If, on the other hand, you want to wait until Swift has matured, choose Objective-C. Swift can be adopted later in a gradual fashion, for example writing only new features in it.</p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/ali-rantakari.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Ali Rantakari</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f729ba0f810&gt;, #&lt;Tag:0x007f729ba0f428&gt;, #&lt;Tag:0x007f729ba0f040&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../searchcf6b.html?q=Functional%20Programming" class="article__tag-link">
+                <span class="article__tag-name">Functional Programming</span></a>, 
+              <a href="../searche7f4.html?q=iOS" class="article__tag-link">
+                <span class="article__tag-name">iOS</span></a>, 
+              <a href="../searchb33a.html?q=programming" class="article__tag-link">
+                <span class="article__tag-name">programming</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=A%20Swift%20Outlook&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=A%20Swift%20Outlook&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook&amp;title=A%20Swift%20Outlook', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fa-swift-outlook&amp;title=A%20Swift%20Outlook">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="tech-pick-of-the-week-clojure.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Tech Pick of the Week: Clojure</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="best-practices-mobile.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Sharing best practices for Android, iOS, and Windows apps</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="programmer-proverbs.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Programmer proverbs</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Ali Rantakari</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="validating-in-app-purchases-in-your-ios-app.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Validating in-app purchases in your iOS app</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="ios-8.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">iOS 8</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/a-swift-outlook by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:13:54 GMT -->
+</html>

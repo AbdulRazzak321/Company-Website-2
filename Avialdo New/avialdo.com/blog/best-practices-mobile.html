@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
+
+-->
+
+<!-- Mirrored from futurice.com/blog/best-practices-mobile by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:12:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+  <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="rss">
+
+  <title>Sharing best practices for Android, iOS, and Windows apps — Futurice</title>
+  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <!--[if IE]>
+    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
+  <![endif]-->
+
+  
+  <meta property="og:title" content="Sharing best practices for Android, iOS, and Windows apps — Futurice">
+  <meta property="og:description" name="description" content="Read how Futurice shares its mobile development expertise internally and with the global developer community.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="best-practices-mobile.html">
+  <meta property="og:image" content="../../flockler.com/thumbs/1992/screen-shot-2015-04-22-at-11-17-21_s1200x630_noupscale.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <script src="../../use.typekit.net/yvs3xkq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+<!-- End Google Tag Manager -->
+
+<div style="display:none">
+  <!-- Google Code for Remarketing Tag -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 997302464;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt"></script>
+  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
+  ga('flocklerInternal.html', 'forceSSL', true);
+  ga('flocklerInternal.send', 'pageview');
+</script>
+
+
+  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="nav__padding">
+    <a href="../index.html" class="nav__logo-link">
+      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--green.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--green.svg" />
+</a>    <div class="nav-collapse">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="../work.html">Work</a>
+        </li>
+        <li class="nav__item">
+          <a href="../services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="../culture.html">Culture</a>
+        </li>
+        <li class="nav__item">
+          <a href="../careers.html">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="../events.html">Events</a>
+        </li>
+        <li class="nav__item">
+          <a href="../people.html">People</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact.html">Contact</a>
+        </li>
+        <li class="nav__item nav__item--search">
+          <a href="../search.html"><i class="icon-search"></i><span>Search</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__container">
+    <img alt="Bg-6" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-6.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-6.svg" />
+
+  </div>
+</header>
+
+  <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
+    
+  <div class="article-wrapper">
+  <article class="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <header class="article__header">
+      <div class="article__header__meta">
+        <time class="article__header__meta__published-at" itemprop="datePublished" datetime="2015-04-24T07:36:48Z">
+          April 24, 2015
+        </time>
+          <span class="article__header__meta__category" itemprop="articleSection">
+            Software development
+          </span>
+      </div>
+
+      <h1 class="article__header__title" itemprop="headline">
+        Sharing best practices for Android, iOS, and Windows apps
+      </h1>
+
+      <div class="article__header__meta">
+          <div class="article__header__meta__item article__header__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+              <a href="../people/andre-medeiros.html" class="article__header__author-link" itemprop="url" rel="author">
+                <figure class="article__header__author__avatar">
+                  <img alt="" src="../../flockler.com/thumbs/sites/377/new_andre_web_s100x100_q80_noupscale.jpg" />
+                </figure>
+                <div class="article__header__meta__item__body">
+                  <span class="article__header__author-name" itemprop="name">Andre Medeiros</span>
+                  <span class="article__header__author-title" itemprop="jobTitle">User Interface Engineer</span>
+                </div>
+              </a>
+          </div>
+
+          <div class="article__header__tags">
+            <span class="article__header__tags-label">Topics</span>
+            <div class="article__header__meta__item__body article__header__tags__body">
+                <a href="../search3f84.html?q=mobile" class="article__header__tag-link">
+                  <span class="article__header__tag-name">mobile</span></a>, 
+                <a href="../searcha484.html?q=development" class="article__header__tag-link">
+                  <span class="article__header__tag-name">development</span></a>, 
+                <a href="../search98d5.html?q=best" class="article__header__tag-link">
+                  <span class="article__header__tag-name">best</span></a>, 
+                <a href="../searche217.html?q=practices" class="article__header__tag-link">
+                  <span class="article__header__tag-name">practices</span></a>, 
+                <a href="../search7fac.html?q=good" class="article__header__tag-link">
+                  <span class="article__header__tag-name">good</span></a>, 
+                <a href="../search13b4.html?q=android" class="article__header__tag-link">
+                  <span class="article__header__tag-name">android</span></a>, 
+                <a href="../search307d.html?q=ios" class="article__header__tag-link">
+                  <span class="article__header__tag-name">ios</span></a>, 
+                <a href="../searchcbf0.html?q=windows" class="article__header__tag-link">
+                  <span class="article__header__tag-name">windows</span></a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <div class="article__body" itemprop="articleBody">
+      <p dir="ltr"><span><span>Working at a consultancy company with an </span><a href="../culture.html">open culture</a> <span>and over 200 employees has its benefits over being a lone-wolf freelancer or a small startup. Whenever you’re stuck on some issue, it’s very easy to reach out to dozens of highly competent developers. One of them is sure to have answer to your problem.</span></span></p>
+
+<p dir="ltr"><span><span>But great software developers don’t just overcome issues; they constantly learn new things to keep up with their fast-paced industry and even lead it at times. At Futurice we work on hundreds of different projects, so we get to share practices among a rich variety of cases and technologies. This isn't true for every type of workplace: a product-centric company, for instance, might have only a handful of software products and a more limited technology set.</span></span></p>
+
+<p dir="ltr"><span><span>Our tool of choice for daily communication is </span><a href="https://www.flowdock.com/">Flowdock</a><span>. e have flows for dozens of topics ranging from individual technologies to an all-company “god flow”. Over time, we have discovered some practices which we agree are good for mobile development. </span></span></p>
+
+<p dir="ltr"><span><span>We decided to write down our advice, so new developers can understand our way of working and more experienced folks can learn "that new trick" they hadn't known about. We call these our "best practices READMEs". These repositories are publicly available on GitHub, because </span><a href="http://spiceprogram.org/">why not</a><span>? Sharing our discoveries with the world is the least we can do to show appreciation for the benefits we have gained from open source tools and the larger developer community.</span></span></p>
+
+<p dir="ltr"><span><span>We currently have best practice documents for </span><a href="https://github.com/futurice/android-best-practices">Android</a><span>, </span><a href="https://github.com/futurice/ios-good-practices">iOS</a><span>, and </span><a href="https://github.com/futurice/windows-app-development-best-practices">Windows</a><span>. In these documents we list hints and tips, describe recommended architectures, good libraries, good conventions, etc. Notice that the approaches in the repos are somewhat different. We would love to hear some feedback on the strengths and weaknesses of the different approaches. </span></span></p>
+
+<p dir="ltr"><span><span>Not only are we delivering a document to the world, but we actively maintain it as part of our profession. It often becomes a two-way street, where we receive contributions from the larger developer community too, such as </span><a href="https://github.com/futurice/android-best-practices/issues/10">critical discussion on questionable advice</a><span>. Some people even translated our content to </span><a href="https://github.com/futurice/android-best-practices/blob/master/translations/Japanese/README.ja.md">Japanese</a><span>, </span><a href="https://github.com/futurice/android-best-practices/blob/master/translations/Korean/README.ko.md">Korean</a><span>, and </span><a href="https://github.com/futurice/android-best-practices/blob/master/translations/Chinese/README.cn.md">Chinese</a><span>!</span></span></p>
+
+<p dir="ltr"><span><span>These community contributions are very important to us. They challenge us to keep our internal development practices on par with the world's top expertise. Feel free to open issues on practices you don't agree with, or to engage in discussions on topics you'd like to see a best practice formulated on!</span></span></p>
+
+    </div>
+
+    <footer class="article__footer">
+      <span class="article__footer__item article__author" itemprop="author" itemscope itemptype="http://schema.org/Person">
+        <span class="article__footer__item__label">Written by</span>
+        <div class="article__footer__item__body">
+            <a href="../people/andre-medeiros.html" class="article__author-link" itemprop="url" rel="author">
+              <span class="article__author-name" itemprop="name">Andre Medeiros</span>
+            </a>
+        </div>
+      </span>
+        <span class="article__footer__item article__tags">
+          <meta itemprop="keywords" content="#&lt;Tag:0x007f6f624d99b8&gt;, #&lt;Tag:0x007f6f624d9080&gt;, #&lt;Tag:0x007f6f624d7be0&gt;, #&lt;Tag:0x007f6f624d7168&gt;, #&lt;Tag:0x007f6f624d6b78&gt;, #&lt;Tag:0x007f6f624d6498&gt;, #&lt;Tag:0x007f6f624d5e58&gt;, #&lt;Tag:0x007f6f624d5868&gt;">
+          <span class="article__footer__item__label">Topics</span>
+          <div class="article__footer__item__body">
+              <a href="../search3f84.html?q=mobile" class="article__tag-link">
+                <span class="article__tag-name">mobile</span></a>, 
+              <a href="../searcha484.html?q=development" class="article__tag-link">
+                <span class="article__tag-name">development</span></a>, 
+              <a href="../search98d5.html?q=best" class="article__tag-link">
+                <span class="article__tag-name">best</span></a>, 
+              <a href="../searche217.html?q=practices" class="article__tag-link">
+                <span class="article__tag-name">practices</span></a>, 
+              <a href="../search7fac.html?q=good" class="article__tag-link">
+                <span class="article__tag-name">good</span></a>, 
+              <a href="../search13b4.html?q=android" class="article__tag-link">
+                <span class="article__tag-name">android</span></a>, 
+              <a href="../search307d.html?q=ios" class="article__tag-link">
+                <span class="article__tag-name">ios</span></a>, 
+              <a href="../searchcbf0.html?q=windows" class="article__tag-link">
+                <span class="article__tag-name">windows</span></a>
+          </div>
+        </span>
+
+      <span class="article__footer__item article__footer__item--share">
+  <span class="article__footer__item__label">Share</span>
+  <div class="article__footer__item__body">
+
+    <a onClick="event.preventDefault(); window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_blank"  class="article__footer__item__share-link" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile">
+      <i class="icon-facebook"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?text=Sharing%20best%20practices%20for%20Android%2C%20iOS%2C%20and%20Windows%20apps&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://twitter.com/intent/tweet?text=Sharing%20best%20practices%20for%20Android%2C%20iOS%2C%20and%20Windows%20apps&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile">
+      <i class="icon-twitter"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://plus.google.com/share?url=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile">
+      <i class="icon-google-plus"></i>
+    </a>
+
+    <a onClick="event.preventDefault(); window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile&amp;title=Sharing%20best%20practices%20for%20Android%2C%20iOS%2C%20and%20Windows%20apps', 'sharer', 'toolbar=0,status=0,width=548,height=525');" target="_blank" class="article__footer__item__share-link"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffuturice.com%2Fblog%2Fbest-practices-mobile&amp;title=Sharing%20best%20practices%20for%20Android%2C%20iOS%2C%20and%20Windows%20apps">
+      <i class="icon-linkedin"></i>
+    </a>
+  </div>
+</span>
+
+    </footer>
+  </article>
+
+    <aside class="related-articles related-articles--tag" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More to read</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="validating-in-app-purchases-in-your-ios-app.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Validating in-app purchases in your iOS app</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="where-we-are-with-digital-in-finland.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Where we are with digital in Finland</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="sneak-peek-at-google-fit.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Sneak Peek at Google Fit</h1>
+</a></article>
+
+    </aside>
+
+    <aside class="related-articles related-articles--author" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <h2 class="related-articles__heading">More by Andre Medeiros</h2>
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="why-debugging-is-all-about-understanding.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Why debugging is all about understanding</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="../events/frp-lounge-meetup.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Helsinki FRP Pioneers 6.5.2015</h1>
+</a></article>
+
+        
+<article class="article-list-item "
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <a href="programmer-proverbs.html" class="article-list-item__link" itemprop="url">
+    <h1 class="article-list-item__title" itemprop="headline">Programmer proverbs</h1>
+</a></article>
+
+    </aside>
+
+</div>
+
+
+  </main>
+  
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="follow-us">
+      <h3 class="follow-us__heading">Follow us:</h3>
+
+        <a href="https://www.facebook.com/futurice" class="follow-us__link follow-us__link--facebook" target="_blank">
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://twitter.com/futurice" class="follow-us__link follow-us__link--twitter" target="_blank">
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>        <a href="https://www.instagram.com/futurice" class="follow-us__link follow-us__link--instagram" target="_blank">
+          <img alt="Instagram" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                <a href="http://vimeo.com/futurice" class="follow-us__link follow-us__link--vimeo" target="_blank">
+          <img alt="Vimeo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                                                <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
+          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/some-icons.png';" src="http://static.flockler.com/assets/futurice/images/some-icons.svg" />
+</a>                        
+    </div>
+  <div class="footer__padding">
+    <div class="footer__logo">
+      <a href="../index.html">
+        <img alt="Futurice" data-pin-no-hover="true" onerror="this.onerror=null;this.src='../assets/futurice/images/futurice-logo--white.png';" src="http://static.flockler.com/assets/futurice/images/futurice-logo--white.svg" />
+</a>
+      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+    </div>
+
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../work.html">Work</a>
+        <a href="../culture.html">Culture</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../people.html">People</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </p>
+    </div>
+    <div class="footer__menu">
+      <hr>
+      <p>
+        <a href="../contact.html#helsinki" class="js-contact-location">Helsinki</a>
+        <a href="../contact.html#berlin" class="js-contact-location">Berlin</a>
+        <a href="../contact.html#london" class="js-contact-location">London</a>
+        <a href="../contact.html#tampere" class="js-contact-location">Tampere</a>
+        <a href="../contact.html#stockholm" class="js-contact-location">Stockholm</a>
+        <a href="../contact.html#munich" class="js-contact-location">Munich</a>
+      </p>
+    </div>
+
+    <div class="footer__details">
+      <span>&copy; 2016 Futurice. All Rights Reserved</span>
+      <a href="../legal-disclaimer.html">Legal disclaimer</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
+  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
+</form>
+
+
+  <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+
+  <script src="../../static.flockler.com/assets/futurice/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <!--[if IE 8 ]>
+<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/respond.proxy.js"></script>
+<![endif]-->
+
+
+  <aside class="cookie-notice js-cookie-notice">
+  <p class="cookie-notice__description">
+    By continuing to use this site, you agree to the use of cookies.
+    You can change this and find out more by following&nbsp;this&nbsp;<a href="../cookies.html">link</a>.
+  </p>
+  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
+</aside>
+
+
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</body>
+
+<!-- Mirrored from futurice.com/blog/best-practices-mobile by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 08:12:23 GMT -->
+</html>
