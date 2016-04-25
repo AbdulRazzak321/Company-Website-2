@@ -35,82 +35,14 @@
 </head>
 <body class="view--static_pages view--static_pages-show is-page-view is-page-view--work" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
-<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
-<!-- End Google Tag Manager -->
-
-<div style="display:none">
-  <!-- Google Code for Remarketing Tag -->
-  <script type="text/javascript">
-  /* <![CDATA[ */
-    var google_conversion_id = 997302464;
-    var google_custom_params = window.google_tag_params;
-    var google_remarketing_only = true;
-  /* ]]> */
-  </script>
-  <script type="text/javascript" src="assets/javascripts/f.txt"></script>
-  <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/997302464/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
-</div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','assets/javascripts/analytics.js','ga');
-
-  ga('create', 'UA-15911025-14', 'auto', {'name': 'flocklerInternal'});
-  ga('flocklerInternal.html', 'forceSSL', true);
-  ga('flocklerInternal.send', 'pageview');
-</script>
 
 
-  <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-  <div class="nav__padding">
-    <a href="index.html" class="nav__logo-link">
-      <img alt="Futurice" class="nav__logo" onerror="this.onerror=null;this.src='assets/images/avialdo-logo--green.png';" src="assets/images/avialdo-logo--green.svg" />
-</a>    <div class="nav-collapse">
-      <ul class="nav__items">
-        <li class="nav__item">
-          <a href="work.html" class="active">Work</a>
-        </li>
-<!--
-        <li class="nav__item">
-          <a href="services.html">Services</a>
-        </li>
--->
-        <li class="nav__item">
-          <a href="culture.html">Culture</a>
-        </li>
-        <li class="nav__item">
-          <a href="careers.html">Careers</a>
-        </li>
-        <li class="nav__item">
-          <a href="events.html">Events</a>
-        </li>
-        <li class="nav__item">
-          <a href="people.html">People</a>
-        </li>
-        <li class="nav__item">
-          <a href="blog.html">Blog</a>
-        </li>
-        <li class="nav__item">
-          <a href="contact.html">Contact</a>
-        </li>
-<!--
-        <li class="nav__item nav__item--search">
-          <a href="search.html"><i class="icon-search"></i><span>Search</span></a>
-        </li>
--->
-      </ul>
-    </div>
-  </div>
-</nav>
 
+ <?php
+    
+    include ("Header.php");
+    
+    ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
       
@@ -130,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/me-and-mycity.html" class="card__cover">
+<a href="cases/me-and-mycity.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
@@ -1044,51 +976,12 @@ The #Snapshot project is our spearhead into taking our service design methods to
 
   </main>
   
-<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
  <?php 
     include ("footer.php");
     ?>
-</footer>
-
-  <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
-  <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
-</form>
 
 
-  <script>
-    var Futurice = {
-      siteId: 377,
-      itemsPerPage: 8
-    };
-    var APIBASEPATH = "https://flockler.com/api";
-  </script>
-
-  <script src="assets/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
-  <!--[if IE 8 ]>
-<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-<script src="/respond.proxy.js"></script>
-<![endif]-->
-
-
-  <aside class="cookie-notice js-cookie-notice">
-  <p class="cookie-notice__description">
-    By continuing to use this site, you agree to the use of cookies.
-    You can change this and find out more by following&nbsp;this&nbsp;<a href="cookies.html">link</a>.
-  </p>
-  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
-</aside>
-
-
-    <!-- Start of Async HubSpot Analytics Code -->
-    <script type="text/javascript">
-      (function(d,s,i,r) {
-        if (d.getElementById(i)){return;}
-        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/553433.js';
-        e.parentNode.insertBefore(n, e);
-      })(document,"script","hs-analytics",300000);
-    </script>
+ 
     <!-- End of Async HubSpot Analytics Code -->
 </body>
 
