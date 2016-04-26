@@ -36,6 +36,7 @@
 <body class="view--static_pages view--static_pages-show is-page-view is-page-view--contact" itemscope itemtype="http://schema.org/WebPage">
 
     <?php
+    $current = 'contact';
     include ("Header.php");
     ?>
     
@@ -787,17 +788,17 @@
     <div class="contact-detail">
       <h2 class="contact-detail__title">Company information</h2>
       <p>
-        <strong>Futurice Oy</strong><br>
-        VAT-ID: FI16235074<br>
+        <strong>Avialdo Solutions</strong><br>
+        VAT-ID: +(92-213-2243459<br>
         CEO: <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%74%75%6f%6d%61%73%2e%73%79%72%6a%61%6e%65%6e%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%54%75%6f%6d%61%73%20%53%79%72%6a%c3%a4%6e%65%6e%3c%5c%2f%61%3e%27%29%3b'))</script>
       </p>
     </div>
     <div class="contact-detail">
       <hr class="contact-detail__hr">
       <p>
-        <strong>Futurice GmbH</strong><br>
-        Registergericht AG Charlottenburg: HRB 127385 B<br>
-        VAT/Ust.-ID: DE272835332<br>
+        <strong>Avialdo Add</strong><br>
+        343/3, D-3, Garden East,<br>
+        Karachi, Pakistan<br>
         Geschäftsführer:
         <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%67%69%61%6e%2e%63%61%73%61%6e%6f%76%61%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%47%69%61%6e%20%43%61%73%61%6e%6f%76%61%3c%5c%2f%61%3e%27%29%3b'))</script>,
         <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%68%65%6c%6d%75%74%2e%73%63%68%65%72%65%72%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%48%65%6c%6d%75%74%20%53%63%68%65%72%65%72%3c%5c%2f%61%3e%27%29%3b'))</script>
@@ -806,11 +807,11 @@
     <div class="contact-detail">
       <hr class="contact-detail__hr">
       <p>
-        <strong>Futurice Ltd</strong><br>
-        VAT-ID: 141214561<br>
-        CRN: 8011293<br>
-        Managing Director:
-        <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%74%75%6f%6d%61%73%2e%73%79%72%6a%61%6e%65%6e%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%54%75%6f%6d%61%73%20%53%79%72%6a%c3%a4%6e%65%6e%3c%5c%2f%61%3e%27%29%3b'))</script>
+        <strong>Avialdo</strong><br>
+        <br>
+        <br>
+        
+          <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%74%75%6f%6d%61%73%2e%73%79%72%6a%61%6e%65%6e%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%54%75%6f%6d%61%73%20%53%79%72%6a%c3%a4%6e%65%6e%3c%5c%2f%61%3e%27%29%3b'))</script>
       </p>
     </div>
   </div>

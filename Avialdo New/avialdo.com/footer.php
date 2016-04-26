@@ -14,11 +14,7 @@
         <a href="skype:avialdo.solutions?call" class="follow-us__link follow-us__link--vimeo" target="_blank">
           <img alt="Skype" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.svg" />
 </a>    
-<!--
-        <a href="https://github.com/futurice" class="follow-us__link follow-us__link--github" target="_blank">
-          <img alt="Github" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.svg" />
-</a>                        
--->
+
     </div>
   <div class="footer__padding">
     <div class="footer__logo">
@@ -60,17 +56,8 @@
       <form id="load-more-state-form" style="overflow:hidden;width:1px;height:1px;margin:0;padding:0;position:absolute;bottom:0;">
   <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
 </form>
-
-
-  <script>
-    var Futurice = {
-      siteId: 377,
-      itemsPerPage: 8
-    };
-    var APIBASEPATH = "https://flockler.com/api";
-  </script>
-
-  <script src="assets/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+      
+  <script src="/avialdo.com/assets/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
   <!--[if IE 8 ]>
 <link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
 <link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />

@@ -35,7 +35,9 @@
 </head>
 <body class="view--sections view--sections-show is-section-show is-section-view is-section-view--events" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
-      <?php include ("Header.php");?>
+      <?php
+            $current = 'event';
+            include ("Header.php");?>
     
     <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
@@ -58,7 +60,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="events/muotoillaan-terveyspalvelut-uusiksi.html" class="card__cover">
+<a href="events/muotoillaan-terveyspalvelut-uusiksi.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s444x250_c2863x1670_l0x0_m1x0_q90_noupscale.jpg,
@@ -78,7 +80,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="events/muotoillaan-terveyspalvelut-uusiksi.html">Muotoillaan terveyspalvelut uusiksi</a>
+    <a href="events/muotoillaan-terveyspalvelut-uusiksi.php">Muotoillaan terveyspalvelut uusiksi</a>
   </h1>
 
   <div class="card__meta">

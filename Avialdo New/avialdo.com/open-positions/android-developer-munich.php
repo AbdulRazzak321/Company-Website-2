@@ -54,6 +54,7 @@
 </head>
 <body class="view--articles view--articles-show is-article-view is-case-study-view" itemscope itemtype="http://schema.org/WebPage">
 <?php 
+$current = 'career';
     include ("../Header.php");
     ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">

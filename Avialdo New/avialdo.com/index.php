@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from futurice.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:51:00 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
   <title>Avialdo</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-  <!--[if IE]>
-    <link rel="shortcut icon" href="//static.flockler.com/assets/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
-  <![endif]-->
-
-  
-  <meta property="og:title" content="Futurice">
+  <meta property="og:title" content="Avialdo">
   <meta property="og:description" name="description" content="We create digital services for people to love">
   <meta property="og:type" content="website">
   <meta property="og:url" content="index.html">
@@ -27,6 +19,7 @@
 
 
 <?php
+    $current = 'home';
     include ("Header.php");
     
     ?>
@@ -1130,7 +1123,7 @@
 <section class="section section--frontpage-tweets">
   <div class="section__padding">
     <h2 class="section__heading section__heading--main">
-      <a href="https://twitter.com/futurice" target="_blank">Avialdo on Twitter</a>
+      <a href="#" target="_blank">Avialdo on Twitter</a>
     </h2>
     <div class="tweets js-packery">
         <article class="card card--tweet" data-id="3468386"
@@ -1138,7 +1131,7 @@
   <div class="card__inner">
         <div class="card__body">
       <div class="card__meta">
-        <a href="https://twitter.com/futurice/status/720273770150137858" class="card__published-at-link" target="_blank">
+        <a href="h#" class="card__published-at-link" target="_blank">
           <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T15:37:38+00:00">
             April 13, 2016 15:33
           </time>
@@ -1156,7 +1149,7 @@
   <div class="card__inner">
         <div class="card__body">
       <div class="card__meta">
-        <a href="https://twitter.com/futurice/status/720235441149100033" class="card__published-at-link" target="_blank">
+        <a href="#" class="card__published-at-link" target="_blank">
           <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T13:04:47+00:00">
             April 13, 2016 13:01
           </time>
@@ -1173,7 +1166,7 @@
   <div class="card__inner">
         <div class="card__body">
       <div class="card__meta">
-        <a href="https://twitter.com/futurice/status/720144711189667840" class="card__published-at-link" target="_blank">
+        <a href="#" class="card__published-at-link" target="_blank">
           <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T07:04:19+00:00">
             April 13, 2016 07:00
           </time>
@@ -1492,8 +1485,5 @@
 
 
   
-    <!-- End of Async HubSpot Analytics Code -->
 </body>
-
-<!-- Mirrored from futurice.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:51:33 GMT -->
 </html>

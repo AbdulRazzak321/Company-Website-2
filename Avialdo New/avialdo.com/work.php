@@ -30,16 +30,16 @@
   <script src="assets/javascripts/yvs3xkq.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
-  <link href="assets/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
-
+ 
 </head>
+   
 <body class="view--static_pages view--static_pages-show is-page-view is-page-view--work" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
 
 
 
  <?php
-    
+   $current = 'work'; 
     include ("Header.php");
     
     ?>
@@ -84,7 +84,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/me-and-mycity.html">Jangda Law</a>
+    <a href="cases/me-and-mycity.php">Jangda Law</a>
   </h1>
 
   <div class="card__meta">
@@ -906,67 +906,67 @@ The #Snapshot project is our spearhead into taking our service design methods to
     <div class="section__padding">
       <h2 class="section__heading section__heading--main">Clients</h2>
       <div class="client-logos">
-        <p><a href="http://en.volkswagen.com/en.html"><img alt="" src="../flockler.com/thumbs/sites/377/graphic_logo_vw_bw--eqqsklxdkt_s0x96_q80_noupscale.png"></a></p>
+        <p><a href="http://en.volkswagen.com/en.html"><img alt="" src="assets/images/res/graphic_logo_vw_bw--eqqsklxdkt_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.bmw.com/"><img alt="" src="../flockler.com/thumbs/sites/377/real-bmw-logo-bw_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.bmw.com/"><img alt="" src="assets/images/res/real-bmw-logo-bw_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://www.nespresso.com/"><img alt="" src="../flockler.com/thumbs/sites/377/c3bc48e622e9cc802b72739dc3b65011_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://www.nespresso.com/"><img alt="" src="assets/images/res/c3bc48e622e9cc802b72739dc3b65011_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://unity3d.com/"><img alt="" src="../flockler.com/thumbs/sites/377/unity-logo--qlysv19yoy_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://unity3d.com/"><img alt="" src="assets/images/res/unity-logo--qlysv19yoy_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://www.germanwings.com/"><img alt="" src="../flockler.com/thumbs/sites/377/germanwings-logo_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://www.germanwings.com/"><img alt="" src="assets/images/res/germanwings-logo_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.wall.de/"><img alt="" src="../flockler.com/thumbs/sites/377/header_logo--7zhpwcvbgy_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.wall.de/"><img alt="" src="assets/images/res/header_logo--7zhpwcvbgy_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://www.axelspringer.de/en/"><img alt="" src="../flockler.com/thumbs/sites/377/axelspringer-b8a27aa6e63890813996e470f2de1d31_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://www.axelspringer.de/en/"><img alt="" src="assets/images/res/axelspringer-b8a27aa6e63890813996e470f2de1d31_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.microsoft.com/"><img alt="" src="../flockler.com/thumbs/sites/377/microsoft_bw--c4c2rzg9ra_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.microsoft.com/"><img alt="" src="assets/images/res/microsoft_bw--c4c2rzg9ra_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.radio.de/"><img alt="" src="../flockler.com/thumbs/sites/377/radio_de_logo_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.radio.de/"><img alt="" src="assets/images/res/radio_de_logo_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.bayer.com/"><img alt="" src="../flockler.com/thumbs/sites/377/bayer_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.bayer.com/"><img alt="" src="assets/images/res/bayer_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.fiba.com/"><img alt="" src="../flockler.com/thumbs/sites/377/fibalogo_net--a8chlsacxm_s0x96_q80_noupscale.jpg"></a></p>
+<p><a href="http://www.fiba.com/"><img alt="" src="assets/images/res/fibalogo_net--a8chlsacxm_s0x96_q80_noupscale.jpg"></a></p>
 
-<p><a href="http://www.orange.co.uk/"><img alt="" src="../flockler.com/thumbs/sites/377/orange1_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.orange.co.uk/"><img alt="" src="assets/images/res/orange1_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://www.dna.fi/"><img alt="" src="../flockler.com/thumbs/sites/377/dna_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://www.dna.fi/"><img alt="" src="assets/images/res/dna_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://www.mtv.fi/"><img alt="" src="../flockler.com/thumbs/sites/377/mtv-logo-gray-small_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://www.mtv.fi/"><img alt="" src="assets/images/res/mtv-logo-gray-small_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.elenia.fi/"><img alt="" src="../flockler.com/thumbs/sites/377/elenia-logo1_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.elenia.fi/"><img alt="" src="assets/images/res/elenia-logo1_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.gm.com/"><img alt="" src="../flockler.com/thumbs/sites/377/gm_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.gm.com/"><img alt="" src="assets/images/res/gm_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.kcl.fi/"><img alt="" src="../flockler.com/thumbs/sites/377/kcl_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.kcl.fi/"><img alt="" src="assets/images/res/kcl_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.kesko.fi/"><img alt="" src="../flockler.com/thumbs/sites/377/kesko_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.kesko.fi/"><img alt="" src="assets/images/res/kesko_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://beta.kotipizza.fi/fi/"><img alt="" src="../flockler.com/thumbs/sites/377/kotipizza_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://beta.kotipizza.fi/fi/"><img alt="" src="assets/images/res/kotipizza_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.lemonde.fr/"><img alt="" src="../flockler.com/thumbs/sites/377/lemonde_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.lemonde.fr/"><img alt="" src="assets/images/res/lemonde_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://www.mandatumlife.fi/home"><img alt="" src="../flockler.com/thumbs/sites/377/mandatum_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://www.mandatumlife.fi/home"><img alt="" src="assets/images/res/mandatum_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://nokia.com/"><img alt="" src="../flockler.com/thumbs/sites/377/nokia_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://nokia.com/"><img alt="" src="assets/images/res/nokia_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://networks.nokia.com/"><img alt="" src="../flockler.com/thumbs/sites/377/nsn_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://networks.nokia.com/"><img alt="" src="assets/images/res/nsn_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.rtl.de/cms/index.html"><img alt="" src="../flockler.com/thumbs/sites/377/rtl_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.rtl.de/cms/index.html"><img alt="" src="assets/images/res/rtl_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://sanoma.com/"><img alt="" src="../flockler.com/thumbs/sites/377/sanoma_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://sanoma.com/"><img alt="" src="assets/images/res/sanoma_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="https://www.sofigate.com/"><img alt="" src="../flockler.com/thumbs/sites/377/sofigate1_s0x96_q80_noupscale.png"></a></p>
+<p><a href="https://www.sofigate.com/"><img alt="" src="assets/images/res/sofigate1_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.yrittajat.fi/"><img alt="" src="../flockler.com/thumbs/sites/377/suomen-yrittajat_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.yrittajat.fi/"><img alt="" src="assets/images/res/suomen-yrittajat_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.teliasonera.com/fi/"><img alt="" src="../flockler.com/thumbs/sites/377/teliasoner_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.teliasonera.com/fi/"><img alt="" src="assets/images/res/teliasoner_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.truphone.com/row/"><img alt="" src="../flockler.com/thumbs/sites/377/truphone_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.truphone.com/row/"><img alt="" src="assets/images/res/truphone_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://www.vodafone.com/"><img alt="" src="../flockler.com/thumbs/sites/377/vodafone_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://www.vodafone.com/"><img alt="" src="assets/images/res/vodafone_s0x96_q80_noupscale.png"></a></p>
 
-<p><a href="http://vtt.fi/"><img alt="" src="../flockler.com/thumbs/sites/377/vtt_s0x96_q80_noupscale.png"></a></p>
+<p><a href="http://vtt.fi/"><img alt="" src="assets/images/res/vtt_s0x96_q80_noupscale.png"></a></p>
 
       </div>
     </div>

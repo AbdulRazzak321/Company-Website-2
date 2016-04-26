@@ -36,7 +36,10 @@
 <body class="view--sections view--sections-show is-section-show is-section-view is-section-view--careers" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
     
-          <?php include ("Header.php");?>
+          <?php
+        $current = 'career';
+        include ("Header.php");
+            ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
       <h1 class="header__title">Responsible and inspiring software professionals. Your future colleagues.</h1>
@@ -53,7 +56,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/stockholm.html" class="card__cover">
+<a href="careers/stockholm.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2003/istock_000047541008_web_s444x250_m1x0_q90_noupscale.jpg,
@@ -73,7 +76,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/stockholm.html">Do you want to make better software for a better world?</a>
+    <a href="careers/stockholm.php">Do you want to make better software for a better world?</a>
   </h1>
 
   <div class="card__meta">
@@ -94,7 +97,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/career-stories-martin-richter.html" class="card__cover">
+<a href="careers/career-stories-martin-richter.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2003/martin_richter_s444x250_m1x0_q90_noupscale.jpg,
@@ -114,7 +117,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/career-stories-martin-richter.html">Career stories: Martin Richter</a>
+    <a href="careers/career-stories-martin-richter.php">Career stories: Martin Richter</a>
   </h1>
 
   <div class="card__meta">

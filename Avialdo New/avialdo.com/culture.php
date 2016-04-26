@@ -35,7 +35,9 @@
 </head>
 <body class="view--sections view--sections-show is-section-show is-section-view is-section-view--culture" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
-      <?php include ("Header.php");?>
+      <?php
+            $current = 'culture';
+            include ("Header.php");?>
     
     <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
@@ -54,7 +56,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="culture/i-love-feedback.html" class="card__cover">
+<a href="culture/i-love-feedback.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/1994/i-love-feedback_s444x250_m1x0_q90_noupscale.png,
@@ -74,7 +76,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="culture/i-love-feedback.html">I love feedback</a>
+    <a href="culture/i-love-feedback.php">I love feedback</a>
   </h1>
 
   <div class="card__meta">
@@ -96,7 +98,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="culture/the-3x2-model.html" class="card__cover">
+<a href="culture/the-3x2-model.php" class="card__cover">
   <picture>
      <source srcset="https://flockler.com/thumbs/1994/3x2_s444x250_m1x0_q90_noupscale.png,
                     https://flockler.com/thumbs/1994/3x2_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
@@ -114,7 +116,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="culture/the-3x2-model.html">The 3x2 Model</a>
+    <a href="culture/the-3x2-model.php">The 3x2 Model</a>
   </h1>
 
   <div class="card__meta">

@@ -1,42 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-
-  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
-
--->
-
-<!-- Mirrored from futurice.com/blog by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:53:43 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
   <link rel="alternate" type="application/rss+xml" title="Futurice Blog" href="blog/rss">
 
-  <title>Blog — Avialdo</title>
+  <title>Avialdo - Blog</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-  <!--[if IE]>
-    <link rel="shortcut icon" href="//static.flockler.com/assets/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
-  <![endif]-->
-
   
   <meta property="og:title" content="Blog — Avialdo">
   <meta property="og:description" name="description" content="We create digital services for people to love">
   <meta property="og:type" content="website">
   <meta property="og:url" content="blog.html">
 
-
-  <script src="assets/javascripts/yvs3xkq.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-
-  <link href="assets/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
-
 </head>
 <body class="view--sections view--sections-show is-section-show is-section-view is-section-view--blog" itemscope itemtype="http://schema.org/WebPage">
-  <!-- Google Tag Manager -->
 <?php
+$current = 'blog';
     include ("Header.php");
     
     ?>
@@ -56,9 +38,8 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="blog/want-happy-employees.html" class="card__cover">
+<a href="blog/want-happy-employees.php" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/1992/heartcorn_s444x250_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/1992/heartcorn_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/1992/heartcorn_s368x207_m1x0_q90_noupscale.jpg,
@@ -69,14 +50,13 @@
                     https://flockler.com/thumbs/1992/heartcorn_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/1992/heartcorn_s320x180_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/1992/heartcorn_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
     <img srcset="https://flockler.com/thumbs/1992/heartcorn_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="blog/want-happy-employees.html">Want happy employees? Save the world or get a spa truck</a>
+    <a href="blog/want-happy-employees.php">Want happy employees? Save the world or get a spa truck</a>
   </h1>
 
   <div class="card__meta">
@@ -109,7 +89,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="blog/playful-curious-digital.html" class="card__cover">
+<a href="blog/playful-curious-digital.php" class="card__cover">
   <picture>
   
     <source srcset="https://flockler.com/thumbs/1992/jaana_s444x250_m1x0_q90_noupscale.jpg,
@@ -129,7 +109,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="blog/playful-curious-digital.html">Guest column - Playful, curious, digital</a>
+    <a href="blog/playful-curious-digital.php">Guest column - Playful, curious, digital</a>
   </h1>
 
   <div class="card__meta">

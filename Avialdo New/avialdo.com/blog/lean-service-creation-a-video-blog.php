@@ -40,6 +40,7 @@
 <body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
 <?php 
+ $current = 'blog';
     include ("../Header.php");
     ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
@@ -180,6 +181,7 @@
   </main>
   
 <?php 
+   
     include ("../footer.php");
     ?>
     <!-- End of Async HubSpot Analytics Code -->

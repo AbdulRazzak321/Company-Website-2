@@ -43,6 +43,7 @@ Me &amp;amp; MyCity is a unique education concept, with separate solutions tailo
 <body class="view--articles view--articles-show is-article-view is-case-study-view" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
 <?php
+$current = 'work';
 include ("../Header.php");
 ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
