@@ -57,6 +57,14 @@
   <input id="load-more-state" type="checkbox" tabindex="-1" aria-hidden="true">
 </form>
       
+      <script>
+    var Futurice = {
+      siteId: 377,
+      itemsPerPage: 8
+    };
+    var APIBASEPATH = "https://flockler.com/api";
+  </script>
+      
   <script src="/avialdo.com/assets/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
   <!--[if IE 8 ]>
 <link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />

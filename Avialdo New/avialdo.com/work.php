@@ -66,16 +66,16 @@
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
-    <source srcset="https://flockler.com/thumbs/1993/yrityskyla_s444x250_c329x192_l0x140_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/yrityskyla_s888x500_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/yrityskyla_s368x207_c329x192_l0x140_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/yrityskyla_s736x414_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/yrityskyla_s256x144_c329x192_l0x140_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/yrityskyla_s512x288_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/yrityskyla_s600x338_c329x192_l0x140_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/yrityskyla_s1200x675_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/yrityskyla_s320x180_c329x192_l0x140_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/yrityskyla_s640x360_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+    <source srcset="assets/images/res/yrityskyla_s444x250_c329x192_l0x140_m1x0_q90_noupscale.png,
+                    assets/images/res/yrityskyla_s888x500_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/yrityskyla_s368x207_c329x192_l0x140_m1x0_q90_noupscale.png,
+                    assets/images/res/yrityskyla_s736x414_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/yrityskyla_s256x144_c329x192_l0x140_m1x0_q90_noupscale.png,
+                    assets/images/res/yrityskyla_s512x288_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/yrityskyla_s600x338_c329x192_l0x140_m1x0_q90_noupscale.png,
+                    assets/images/res/yrityskyla_s1200x675_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/yrityskyla_s320x180_c329x192_l0x140_m1x0_q90_noupscale.png,
+                    assets/images/res/yrityskyla_s640x360_c329x192_l0x140_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
 -->
     <!--[if IE 9]></video><![endif]-->
     <img srcset="assets/images/work/jangdalaw.png" alt="">
@@ -109,16 +109,16 @@
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
-    <source srcset="https://flockler.com/thumbs/1993/is-refet_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/is-refet_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/is-refet_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/is-refet_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/is-refet_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/is-refet_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/is-refet_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/is-refet_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/is-refet_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/is-refet_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+    <source srcset="assets/images/res/is-refet_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/is-refet_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/is-refet_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/is-refet_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/is-refet_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/is-refet_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/is-refet_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/is-refet_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/is-refet_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/is-refet_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
 -->
     <!--[if IE 9]></video><![endif]-->
     <img srcset="assets/images/work/korkster.png" alt="">
@@ -152,16 +152,16 @@
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
-    <source srcset="https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s444x250_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s888x500_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s368x207_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s736x414_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s256x144_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s512x288_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s600x338_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s1200x675_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s320x180_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_slide_kesko-blank_s640x360_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+    <source srcset="assets/images/res/reference_slide_kesko-blank_s444x250_c1227x716_l692x192_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_slide_kesko-blank_s888x500_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/reference_slide_kesko-blank_s368x207_c1227x716_l692x192_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_slide_kesko-blank_s736x414_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/reference_slide_kesko-blank_s256x144_c1227x716_l692x192_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_slide_kesko-blank_s512x288_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/reference_slide_kesko-blank_s600x338_c1227x716_l692x192_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_slide_kesko-blank_s1200x675_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/reference_slide_kesko-blank_s320x180_c1227x716_l692x192_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_slide_kesko-blank_s640x360_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
 -->
     <!--[if IE 9]></video><![endif]-->
     <img srcset="assets/images/work/korkster.png" alt="">
@@ -195,19 +195,19 @@
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
-    <source srcset="https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg,
+                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s368x207_m1x0_q90_noupscale.jpg,
+                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s256x144_m1x0_q90_noupscale.jpg,
+                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s600x338_m1x0_q90_noupscale.jpg,
+                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s320x180_m1x0_q90_noupscale.jpg,
+                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
 -->
     <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/1993/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg" alt="">
+    <img srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -237,18 +237,18 @@
 <a href="cases/taking-design-methods-to-the-next-level-case-number-snapshot.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2015-1-14-kello-13-30-53_s444x250_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/n-ytt-kuva-2015-1-14-kello-13-30-53_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -280,18 +280,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/caruna-website.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/caruna-case-laptop--30wqq1fc2j_s444x250_m1x0_q90_noupscale.jpg,
+                    assets/images/res/caruna-case-laptop--30wqq1fc2j_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/caruna-case-laptop--30wqq1fc2j_s368x207_m1x0_q90_noupscale.jpg,
+                    assets/images/res/caruna-case-laptop--30wqq1fc2j_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/caruna-case-laptop--30wqq1fc2j_s256x144_m1x0_q90_noupscale.jpg,
+                    assets/images/res/caruna-case-laptop--30wqq1fc2j_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/caruna-case-laptop--30wqq1fc2j_s600x338_m1x0_q90_noupscale.jpg,
+                    assets/images/res/caruna-case-laptop--30wqq1fc2j_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/caruna-case-laptop--30wqq1fc2j_s320x180_m1x0_q90_noupscale.jpg,
+                    assets/images/res/caruna-case-laptop--30wqq1fc2j_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-   <!-- <img srcset="https://flockler.com/thumbs/1993/caruna-case-laptop--30wqq1fc2j_s444x250_m1x0_q90_noupscale.jpg" alt="">
+   <!-- <img srcset="assets/images/res/caruna-case-laptop--30wqq1fc2j_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -321,18 +321,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/ruisrock-for-iphone-and-android.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/ruisrock_small--5jpbocuew8_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/ruisrock_small--5jpbocuew8_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/ruisrock_small--5jpbocuew8_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/ruisrock_small--5jpbocuew8_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/ruisrock_small--5jpbocuew8_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/ruisrock_small--5jpbocuew8_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/ruisrock_small--5jpbocuew8_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/ruisrock_small--5jpbocuew8_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/ruisrock_small--5jpbocuew8_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/ruisrock_small--5jpbocuew8_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/ruisrock_small--5jpbocuew8_s444x250_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/ruisrock_small--5jpbocuew8_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -362,18 +362,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/helsinki-vantaa-airport-smooth-travelling.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/finavia-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/finavia-2x_s888x500_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/finavia-2x_s368x207_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/finavia-2x_s736x414_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/finavia-2x_s256x144_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/finavia-2x_s512x288_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/finavia-2x_s600x338_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/finavia-2x_s1200x675_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/finavia-2x_s320x180_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/finavia-2x_s640x360_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/finavia-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/finavia-2x_s888x500_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/finavia-2x_s368x207_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/finavia-2x_s736x414_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/finavia-2x_s256x144_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/finavia-2x_s512x288_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/finavia-2x_s600x338_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/finavia-2x_s1200x675_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/finavia-2x_s320x180_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/finavia-2x_s640x360_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/finavia-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg" alt="">
+<!--    <img srcset="assets/images/res/finavia-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -403,18 +403,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/karkimedia-baari-modern-tools-for-media-planning.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/logo-baari--44cxru2igj_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/logo-baari--44cxru2igj_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/logo-baari--44cxru2igj_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/logo-baari--44cxru2igj_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/logo-baari--44cxru2igj_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/logo-baari--44cxru2igj_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/logo-baari--44cxru2igj_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/logo-baari--44cxru2igj_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/logo-baari--44cxru2igj_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/logo-baari--44cxru2igj_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/logo-baari--44cxru2igj_s444x250_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/logo-baari--44cxru2igj_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -444,18 +444,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/lean-service-creation-coaching-case-helsingin-energia.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-10-10-kello-11-38-43_s444x250_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/n-ytt-kuva-2014-10-10-kello-11-38-43_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -485,18 +485,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/batman-hits-lumia.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s444x250_c602x351_l0x268_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s888x500_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s368x207_c602x351_l0x268_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s736x414_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s256x144_c602x351_l0x268_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s512x288_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s600x338_c602x351_l0x268_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s1200x675_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s320x180_c602x351_l0x268_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s640x360_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/lumia920_redbatman--gy2cnv4qgt_s444x250_c602x351_l0x268_m1x0_q90_noupscale.png,
+                    assets/images/res/lumia920_redbatman--gy2cnv4qgt_s888x500_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/lumia920_redbatman--gy2cnv4qgt_s368x207_c602x351_l0x268_m1x0_q90_noupscale.png,
+                    assets/images/res/lumia920_redbatman--gy2cnv4qgt_s736x414_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/lumia920_redbatman--gy2cnv4qgt_s256x144_c602x351_l0x268_m1x0_q90_noupscale.png,
+                    assets/images/res/lumia920_redbatman--gy2cnv4qgt_s512x288_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/lumia920_redbatman--gy2cnv4qgt_s600x338_c602x351_l0x268_m1x0_q90_noupscale.png,
+                    assets/images/res/lumia920_redbatman--gy2cnv4qgt_s1200x675_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/lumia920_redbatman--gy2cnv4qgt_s320x180_c602x351_l0x268_m1x0_q90_noupscale.png,
+                    assets/images/res/lumia920_redbatman--gy2cnv4qgt_s640x360_c602x351_l0x268_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/lumia920_redbatman--gy2cnv4qgt_s444x250_c602x351_l0x268_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/lumia920_redbatman--gy2cnv4qgt_s444x250_c602x351_l0x268_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -526,18 +526,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/futurice-show-reel.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/n-ytt-kuva-2014-11-10-kello-14-13-07_s444x250_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/n-ytt-kuva-2014-11-10-kello-14-13-07_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -567,18 +567,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/buzzing-mobile-media-case-ilta-sanomat.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/supersaa-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/supersaa-2x_s888x500_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/supersaa-2x_s368x207_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/supersaa-2x_s736x414_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/supersaa-2x_s256x144_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/supersaa-2x_s512x288_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/supersaa-2x_s600x338_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/supersaa-2x_s1200x675_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/supersaa-2x_s320x180_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/supersaa-2x_s640x360_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/supersaa-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/supersaa-2x_s888x500_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/supersaa-2x_s368x207_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/supersaa-2x_s736x414_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/supersaa-2x_s256x144_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/supersaa-2x_s512x288_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/supersaa-2x_s600x338_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/supersaa-2x_s1200x675_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/supersaa-2x_s320x180_c1103x645_l1056x0_m1x0_q90_noupscale.jpg,
+                    assets/images/res/supersaa-2x_s640x360_c1103x645_l1056x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/supersaa-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg" alt="">
+<!--    <img srcset="assets/images/res/supersaa-2x_s444x250_c1103x645_l1056x0_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -608,18 +608,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/eyeem-for-windows-phone.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/eyeembanner_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/eyeembanner_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/eyeembanner_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/eyeembanner_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/eyeembanner_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/eyeembanner_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/eyeembanner_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/eyeembanner_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/eyeembanner_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/eyeembanner_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/eyeembanner_s444x250_m1x0_q90_noupscale.jpg,
+                    assets/images/res/eyeembanner_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/eyeembanner_s368x207_m1x0_q90_noupscale.jpg,
+                    assets/images/res/eyeembanner_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/eyeembanner_s256x144_m1x0_q90_noupscale.jpg,
+                    assets/images/res/eyeembanner_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/eyeembanner_s600x338_m1x0_q90_noupscale.jpg,
+                    assets/images/res/eyeembanner_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/eyeembanner_s320x180_m1x0_q90_noupscale.jpg,
+                    assets/images/res/eyeembanner_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/eyeembanner_s444x250_m1x0_q90_noupscale.jpg" alt="">
+<!--    <img srcset="assets/images/res/eyeembanner_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -649,18 +649,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/innovate-finance.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s444x250_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -690,18 +690,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/wrc-an-app-for-rally-fans.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <!--<source srcset="https://flockler.com/thumbs/1993/wrc_live-web_01_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/wrc_live-web_01_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/wrc_live-web_01_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/wrc_live-web_01_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/wrc_live-web_01_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/wrc_live-web_01_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/wrc_live-web_01_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/wrc_live-web_01_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/wrc_live-web_01_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/wrc_live-web_01_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+    <!--<source srcset="assets/images/res/wrc_live-web_01_s444x250_m1x0_q90_noupscale.jpg,
+                    assets/images/res/wrc_live-web_01_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/wrc_live-web_01_s368x207_m1x0_q90_noupscale.jpg,
+                    assets/images/res/wrc_live-web_01_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/wrc_live-web_01_s256x144_m1x0_q90_noupscale.jpg,
+                    assets/images/res/wrc_live-web_01_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/wrc_live-web_01_s600x338_m1x0_q90_noupscale.jpg,
+                    assets/images/res/wrc_live-web_01_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/wrc_live-web_01_s320x180_m1x0_q90_noupscale.jpg,
+                    assets/images/res/wrc_live-web_01_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/wrc_live-web_01_s444x250_m1x0_q90_noupscale.jpg" alt="">
+<!--    <img srcset="assets/images/res/wrc_live-web_01_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -731,18 +731,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/orange-improved-product-development-practices-through-ci.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/222_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/222_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/222_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/222_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/222_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/222_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/222_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/222_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/222_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/222_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/222_s444x250_m1x0_q90_noupscale.jpg,
+                    assets/images/res/222_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/222_s368x207_m1x0_q90_noupscale.jpg,
+                    assets/images/res/222_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/222_s256x144_m1x0_q90_noupscale.jpg,
+                    assets/images/res/222_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/222_s600x338_m1x0_q90_noupscale.jpg,
+                    assets/images/res/222_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/222_s320x180_m1x0_q90_noupscale.jpg,
+                    assets/images/res/222_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/222_s444x250_m1x0_q90_noupscale.jpg" alt="">
+<!--    <img srcset="assets/images/res/222_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -772,18 +772,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/3d-ui-consulting-for-orange-uk.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/orange_small_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/orange_small_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/orange_small_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/orange_small_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/orange_small_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/orange_small_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/orange_small_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/orange_small_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/orange_small_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1993/orange_small_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/orange_small_s444x250_m1x0_q90_noupscale.jpg,
+                    assets/images/res/orange_small_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/orange_small_s368x207_m1x0_q90_noupscale.jpg,
+                    assets/images/res/orange_small_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/orange_small_s256x144_m1x0_q90_noupscale.jpg,
+                    assets/images/res/orange_small_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/orange_small_s600x338_m1x0_q90_noupscale.jpg,
+                    assets/images/res/orange_small_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/orange_small_s320x180_m1x0_q90_noupscale.jpg,
+                    assets/images/res/orange_small_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/orange_small_s444x250_m1x0_q90_noupscale.jpg" alt="">
+<!--    <img srcset="assets/images/res/orange_small_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -813,18 +813,18 @@ The #Snapshot project is our spearhead into taking our service design methods to
 <a href="cases/digital-strategy-for-kesko-food.html" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-<!--    <source srcset="https://flockler.com/thumbs/1993/1_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/1_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1993/1_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/1_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1993/1_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/1_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1993/1_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/1_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1993/1_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1993/1_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+<!--    <source srcset="assets/images/res/1_s444x250_m1x0_q90_noupscale.png,
+                    assets/images/res/1_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/res/1_s368x207_m1x0_q90_noupscale.png,
+                    assets/images/res/1_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/res/1_s256x144_m1x0_q90_noupscale.png,
+                    assets/images/res/1_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/res/1_s600x338_m1x0_q90_noupscale.png,
+                    assets/images/res/1_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/res/1_s320x180_m1x0_q90_noupscale.png,
+                    assets/images/res/1_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-<!--    <img srcset="https://flockler.com/thumbs/1993/1_s444x250_m1x0_q90_noupscale.png" alt="">
+<!--    <img srcset="assets/images/res/1_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -856,31 +856,31 @@ The #Snapshot project is our spearhead into taking our service design methods to
     <h2 class="section__heading section__heading--main">Lean Service Creation</h2>
     <div class="lsc-process">
       <div class="lsc-process-step lsc-process-step--one">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc-process/lsc-process-1.png';" src="http://static.flockler.com/assets/futurice/images/lsc-process/lsc-process-1.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-1.png';" src="assets/images/lsc-process/lsc-process-1.svg" />
         <h2 class="lsc-process-step__title">Business opportunity</h2>
       </div>
       <div class="lsc-process-step lsc-process-step--arrow">
-        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc/arrow-down.png';" src="http://static.flockler.com/assets/futurice/images/lsc/arrow-down.svg" />
-        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc/arrow-right.png';" src="http://static.flockler.com/assets/futurice/images/lsc/arrow-right.svg" />
+        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.svg" />
+        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.svg" />
       </div>
       <div class="lsc-process-step lsc-process-step--two">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc-process/lsc-process-2.png';" src="http://static.flockler.com/assets/futurice/images/lsc-process/lsc-process-2.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-2.png';" src="assets/images/lsc-process/lsc-process-2.svg" />
         <h2 class="lsc-process-step__title">Business co-creation<br>User co-creation</h2>
       </div>
       <div class="lsc-process-step lsc-process-step--arrow">
-        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc/arrow-down.png';" src="http://static.flockler.com/assets/futurice/images/lsc/arrow-down.svg" />
-        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc/arrow-right.png';" src="http://static.flockler.com/assets/futurice/images/lsc/arrow-right.svg" />
+        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.svg" />
+        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.svg" />
       </div>
       <div class="lsc-process-step lsc-process-step--three">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc-process/lsc-process-3.png';" src="http://static.flockler.com/assets/futurice/images/lsc-process/lsc-process-3.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-3.png';" src="assets/images/lsc-process/lsc-process-3.svg" />
         <h2 class="lsc-process-step__title">Service direction / concept</h2>
       </div>
       <div class="lsc-process-step lsc-process-step--arrow">
-        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc/arrow-down.png';" src="http://static.flockler.com/assets/futurice/images/lsc/arrow-down.svg" />
-        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc/arrow-right.png';" src="http://static.flockler.com/assets/futurice/images/lsc/arrow-right.svg" />
+        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.svg" />
+        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.svg" />
       </div>
       <div class="lsc-process-step lsc-process-step--four">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/futurice/images/lsc-process/lsc-process-4.png';" src="http://static.flockler.com/assets/futurice/images/lsc-process/lsc-process-4.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-4.png';" src="assets/images/lsc-process/lsc-process-4.svg" />
         <ul class="lsc-process-step--four__one">
           <li>Prototypes</li>
           <li>Mock-up ads</li>

@@ -29,6 +29,7 @@
 
   <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
     
+<!--
 <section class="section section--people-filter">
   <h2 class="people-filter__title">Find people by</h2>
 
@@ -249,6 +250,7 @@
     </select>
   </div>
 </section>
+-->
 <section class="section section--people">
   <div class="section__padding">
     <section class="persons">

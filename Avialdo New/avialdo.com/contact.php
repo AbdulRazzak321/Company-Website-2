@@ -1,36 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-
-  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
-
--->
-
-<!-- Mirrored from futurice.com/contact by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:53:49 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
   <title>Contact — Avialdo</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-  <!--[if IE]>
-    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
-  <![endif]-->
 
-  
   <meta property="og:title" content="Contact — Avialdo">
   <meta property="og:description" name="description" content="We create digital services for people to love">
   <meta property="og:type" content="website">
   <meta property="og:url" content="contact.html">
 
-
-  <script src="assets/javascripts/yvs3xkq.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-
-  <link href="assets/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
 
 </head>
 <body class="view--static_pages view--static_pages-show is-page-view is-page-view--contact" itemscope itemtype="http://schema.org/WebPage">
@@ -56,9 +39,7 @@
   <div class="contact-block contact-block--location">
     
 <picture class="contact-block__cover">
-  <!--[if IE 9]><video style="display: none;"><![endif]-->
   <source srcset="//static.flockler.com/assets/futurice/images/contact/helsinki-b906bd1470fab9518e258bf68b09203f.jpg, //static.flockler.com/assets/futurice/images/contact/helsinki-2x-5ed0d22177041a6b5bbbfb5ca454863c.jpg 2x">
-  <!--[if IE 9]></video><![endif]-->
   <img srcset="//static.flockler.com/assets/futurice/images/contact/helsinki-b906bd1470fab9518e258bf68b09203f.jpg" alt="">
 </picture>
 
@@ -67,7 +48,7 @@
   <h2 class="contact-block__title">
     Sales
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/normal_futuliens_0239_s120x120_q80_noupscale.jpg" alt="Timo Hyväoja"
+  <img src="assets/images/res/normal_futuliens_0239_s120x120_q80_noupscale.jpg" alt="Timo Hyväoja"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Timo Hyväoja</h3>
   <p class="contact-block__contact-person__details">
@@ -87,7 +68,7 @@
   <h2 class="contact-block__title">
     Sales
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/futurice-0163jussi-hacklin_s120x120_q80_noupscale.jpg" alt="Jussi Hacklin"
+  <img src="futurice-0163jussi-hacklin_s120x120_q80_noupscale.jpg" alt="Jussi Hacklin"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Jussi Hacklin</h3>
   <p class="contact-block__contact-person__details">
@@ -107,7 +88,7 @@
   <h2 class="contact-block__title">
     Sales
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/p2011151--hf2yuq0cyu_s120x120_c2000x1168_l0x117_q80_noupscale.jpg" alt="Claes Kaarni"
+  <img src="assets/images/res/p2011151--hf2yuq0cyu_s120x120_c2000x1168_l0x117_q80_noupscale.jpg" alt="Claes Kaarni"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Claes Kaarni</h3>
   <p class="contact-block__contact-person__details">
@@ -127,7 +108,7 @@
   <h2 class="contact-block__title">
     Digital Growth &amp; eCommerce
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/sampo2--u3thoqmf4l_s120x120_q80_noupscale.jpg" alt="Sampo Hämäläinen"
+  <img src="assets/images/res/sampo2--u3thoqmf4l_s120x120_q80_noupscale.jpg" alt="Sampo Hämäläinen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Sampo Hämäläinen</h3>
   <p class="contact-block__contact-person__details">
@@ -144,7 +125,7 @@
   <h2 class="contact-block__title">
     Site Head
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/teemu-moisala_s120x120_q80_noupscale.jpg" alt="Teemu Moisala"
+  <img src="assets/images/res/teemu-moisala_s120x120_q80_noupscale.jpg" alt="Teemu Moisala"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Teemu Moisala</h3>
   <p class="contact-block__contact-person__details">
@@ -164,7 +145,7 @@
   <h2 class="contact-block__title">
     Recruitment
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/tuomasp_s120x120_q80_noupscale.jpg" alt="Tuomas Paasonen"
+  <img src="assets/images/res/tuomasp_s120x120_q80_noupscale.jpg" alt="Tuomas Paasonen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Tuomas Paasonen</h3>
   <p class="contact-block__contact-person__details">
@@ -184,7 +165,7 @@
   <h2 class="contact-block__title">
     Finance
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/timo-suominen_s120x120_q80_noupscale.jpg" alt="Timo Suominen"
+  <img src="assets/images/res/timo-suominen_s120x120_q80_noupscale.jpg" alt="Timo Suominen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Timo Suominen</h3>
   <p class="contact-block__contact-person__details">
@@ -204,7 +185,7 @@
   <h2 class="contact-block__title">
     Management
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/tuomas_s120x120_q80_noupscale.jpg" alt="Tuomas Syrjänen"
+  <img src="assets/images/res/tuomas_s120x120_q80_noupscale.jpg" alt="Tuomas Syrjänen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Tuomas Syrjänen</h3>
   <p class="contact-block__contact-person__details">
@@ -224,7 +205,7 @@
   <h2 class="contact-block__title">
     Press
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/futurice-arttu_tolonen_s120x120_q80_noupscale.jpg" alt="Arttu Tolonen"
+  <img src="assets/images/res/futurice-arttu_tolonen_s120x120_q80_noupscale.jpg" alt="Arttu Tolonen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Arttu Tolonen</h3>
   <p class="contact-block__contact-person__details">
@@ -287,7 +268,7 @@
   <h2 class="contact-block__title">
     Sales
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/normal_futuliens_0035_s120x120_q80_noupscale.jpg" alt="Olli-Pekka Saksa"
+  <img src="assets/images/res/normal_futuliens_0035_s120x120_q80_noupscale.jpg" alt="Olli-Pekka Saksa"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Olli-Pekka Saksa</h3>
   <p class="contact-block__contact-person__details">
@@ -307,7 +288,7 @@
   <h2 class="contact-block__title">
     Site Head
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/riku-nick-crop_s120x120_q80_noupscale.jpg" alt="Riku Valtasola"
+  <img src="assets/images/res/riku-nick-crop_s120x120_q80_noupscale.jpg" alt="Riku Valtasola"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Riku Valtasola</h3>
   <p class="contact-block__contact-person__details">
@@ -327,7 +308,7 @@
   <h2 class="contact-block__title">
     Sales
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/osmo_v2_s120x120_q80_noupscale.png" alt="Osmo Haapaniemi"
+  <img src="assets/images/res/osmo_v2_s120x120_q80_noupscale.png" alt="Osmo Haapaniemi"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Osmo Haapaniemi</h3>
   <p class="contact-block__contact-person__details">
@@ -347,7 +328,7 @@
   <h2 class="contact-block__title">
     HR &amp; Press
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/normal_anni_kervinen_s120x120_q80_noupscale.jpg" alt="Anni Kervinen"
+  <img src="assets/images/res/normal_anni_kervinen_s120x120_q80_noupscale.jpg" alt="Anni Kervinen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Anni Kervinen</h3>
   <p class="contact-block__contact-person__details">
@@ -406,7 +387,7 @@
   <h2 class="contact-block__title">
     Sales UK
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/normal_tom_mcqueen_2_s120x120_q80_noupscale.jpg" alt="Tom McQueen"
+  <img src="assets/images/res/normal_tom_mcqueen_2_s120x120_q80_noupscale.jpg" alt="Tom McQueen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Tom McQueen</h3>
   <p class="contact-block__contact-person__details">
@@ -423,7 +404,7 @@
   <h2 class="contact-block__title">
     Sales UK
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/normal_futuliens_0315--hlid4od47i_s120x120_q80_noupscale.jpg" alt="Jarkko Leppälahti"
+  <img src="assets/images/res/normal_futuliens_0315--hlid4od47i_s120x120_q80_noupscale.jpg" alt="Jarkko Leppälahti"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Jarkko Leppälahti</h3>
   <p class="contact-block__contact-person__details">
@@ -482,7 +463,7 @@
   <h2 class="contact-block__title">
     Sales Germany
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/futuliens_0488_s120x120_q80_noupscale.jpg" alt="Gian Casanova"
+  <img src="assets/images/res/futuliens_0488_s120x120_q80_noupscale.jpg" alt="Gian Casanova"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Gian Casanova</h3>
   <p class="contact-block__contact-person__details">
@@ -502,7 +483,7 @@
   <h2 class="contact-block__title">
     Sales Germany
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/alex-2_s120x120_q80_noupscale.jpg" alt="Alex Kluwe"
+  <img src="assets/images/res/alex-2_s120x120_q80_noupscale.jpg" alt="Alex Kluwe"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Alex Kluwe</h3>
   <p class="contact-block__contact-person__details">
@@ -522,7 +503,7 @@
   <h2 class="contact-block__title">
     Sales Germany
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/raid2_s120x120_q80_noupscale.jpg" alt="Raid Naim"
+  <img src="assets/images/res/raid2_s120x120_q80_noupscale.jpg" alt="Raid Naim"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Raid Naim</h3>
   <p class="contact-block__contact-person__details">
@@ -542,7 +523,7 @@
   <h2 class="contact-block__title">
     Sales Germany
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/normal_futuliens_0473_s120x120_q80_noupscale.jpg" alt="Magnus Nilsson"
+  <img src="assets/images/res/normal_futuliens_0473_s120x120_q80_noupscale.jpg" alt="Magnus Nilsson"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Magnus Nilsson</h3>
   <p class="contact-block__contact-person__details">
@@ -562,7 +543,7 @@
   <h2 class="contact-block__title">
     Recruitment Germany
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/futuliens_0475--tizuu1dpeb_s120x120_q80_noupscale.jpg" alt="Isabell Pörksen"
+  <img src="assets/images/res/futuliens_0475--tizuu1dpeb_s120x120_q80_noupscale.jpg" alt="Isabell Pörksen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Isabell Pörksen</h3>
   <p class="contact-block__contact-person__details">
@@ -615,7 +596,7 @@
   <h2 class="contact-block__title">
     Sales Germany
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/helmut_scherer--66unhpbj4r_s120x120_q80_noupscale.jpg" alt="Helmut Scherer"
+  <img src="assets/images/res/helmut_scherer--66unhpbj4r_s120x120_q80_noupscale.jpg" alt="Helmut Scherer"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Helmut Scherer</h3>
   <p class="contact-block__contact-person__details">
@@ -635,7 +616,7 @@
   <h2 class="contact-block__title">
     Sales Germany
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/mathias_portrait_s120x120_q80_noupscale.png" alt="Mathias Calonius"
+  <img src="assets/images/res/mathias_portrait_s120x120_q80_noupscale.png" alt="Mathias Calonius"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Mathias Calonius</h3>
   <p class="contact-block__contact-person__details">
@@ -692,7 +673,7 @@
   <h2 class="contact-block__title">
     Sales Sweden
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/henrik-sv_s120x120_q80_noupscale.jpg" alt="Henrik Edlund"
+  <img src="assets/images/res/henrik-sv_s120x120_q80_noupscale.jpg" alt="Henrik Edlund"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Henrik Edlund</h3>
   <p class="contact-block__contact-person__details">
@@ -712,7 +693,7 @@
   <h2 class="contact-block__title">
     Sales Sweden
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/feature_simohakkarainen--3u3n8ulybh_s120x120_q80_noupscale.jpg" alt="Simo Hakkarainen"
+  <img src="assets/images/res/feature_simohakkarainen--3u3n8ulybh_s120x120_q80_noupscale.jpg" alt="Simo Hakkarainen"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Simo Hakkarainen</h3>
   <p class="contact-block__contact-person__details">
@@ -732,7 +713,7 @@
   <h2 class="contact-block__title">
     Sales Sweden
   </h2>
-  <img src="../flockler.com/thumbs/sites/377/matti_jylha_6_2015_s120x120_q80_noupscale.jpg" alt="Matti Jylhä"
+  <img src="assets/images/res/matti_jylha_6_2015_s120x120_q80_noupscale.jpg" alt="Matti Jylhä"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Matti Jylhä</h3>
   <p class="contact-block__contact-person__details">

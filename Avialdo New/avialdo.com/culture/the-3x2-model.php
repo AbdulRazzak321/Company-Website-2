@@ -6,14 +6,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
-  <title>The 3x2 Model — Futurice</title>
-  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <title>The 3x2 Model — Avialdo</title>
+  <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
   
   <meta property="og:title" content="The 3x2 Model — Futurice">
   <meta property="og:description" name="description" content="The best decisions are made out in the field with the most information available. Still, in a traditional hierarchical organization, decisions are often made on the top floor.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="the-3x2-model.html">
-  <meta property="og:image" content="../../flockler.com/thumbs/1994/3x2_s1200x630_noupscale.png">
+  <meta property="og:image" content="../assets/images/res/3x2_s1200x630_noupscale.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 </head>
@@ -43,7 +43,7 @@
 
 
     <div class="article__body" itemprop="articleBody">
-      <figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../../flockler.com/thumbs/1994/3x2_artcile_s830x0_q80_noupscale.png">
+      <figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../assets/images/res/3x2_artcile_s830x0_q80_noupscale.png">
 <figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
 </figure>
 
