@@ -1,4 +1,30 @@
 <!DOCTYPE html>
+
+<?php
+
+        
+          if($_POST){
+
+
+            $to ="a.razzaqbhutto@yahoo.com";        
+            $txt = $_POST['name'];
+            $email = $_POST['Email'];
+            $subject = $_POST['msg'];
+            $com = $_POST['msg'];
+            $headers = "name: $email" . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
+              
+              if(mail($to,$subject,$txt,$headers)){
+                  echo "Mail sent";
+              }
+              else{
+              
+              echo "Mail sending fail";
+              }
+              
+          }
+    ?>
+
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head prefix="og: http://ogp.me/ns#">
@@ -756,14 +782,54 @@
 </div>
 
 -->
-
-    <div class="section--contact__links">
-      <a href="press.html" class="button">Press</a>
-    </div>
   </div>
       </div>
 </section>
+      <section class="section section--news-our-work ">
+  <div class="section__padding">
 
+    <div class="section--news-our-work__our-work">
+    
+      <div>
+            <div class="application-form">
+  <h2 class="application-form__title">Contact Us</h2>
+  <form method="POST" action="contact.php" enctype="multipart/form-data" accept-charset="UTF-8">
+    <input type="hidden" value="Helsinki" name="application[location]">
+    <input type="hidden" value="iOS or Android Developer (Helsinki)" name="application[position]">
+
+    <fieldset class="application-form__fieldset">
+      <div class="application-form__field">
+        <label class="application-form__label" for="application-form__name">Name*</label>
+        <input type="text" id="application-form__name" name="name" placeholder="Name" required>
+      </div>
+
+      <div class="application-form__field">
+        <label class="application-form__label" for="application-form__email">Email*</label>
+        <input type="email" id="application-form__email" name="Email" placeholder="E-Mail" required>
+      </div>
+      <div class="application-form__field">
+        <label class="application-form__label" for="application-form__github">Message*</label>
+          <textarea id="application-form__github" name="msg" required></textarea>
+      </div>
+        
+    </fieldset>
+
+   
+
+    <div class="application-form__field application-form__field--full">
+      <button type="submit" class="button button--submit">Submit You Message</button>
+    </div>
+
+  </form>
+
+</div>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+      
 <section class="contact-details">
   <div class="contact-details__padding">
     <div class="contact-detail">

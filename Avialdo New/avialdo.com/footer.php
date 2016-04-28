@@ -21,10 +21,10 @@
       <a href="/avialdo.com/index.php">
         <img alt="Avialdo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/avialdo-logo--white.png';" src="/avialdo.com/assets/images/avialdo-logo--white.svg" />
 </a>
-      <p class="footer__tagline">We create digital services for people&nbsp;to&nbsp;love</p>
+      <p class="footer__tagline">We create digital services for people to love</p>
     </div>
 
-    <div class="footer__menu">
+    <div class="footer__menu" style="display:initial;">
       <hr>
       <p>
         <a href="/avialdo.com/work.php">Work</a>
@@ -33,17 +33,6 @@
         <a href="/avialdo.com/people.php">People</a>
         <a href="/avialdo.com/blog.php">Blog</a>
         <a href="/avialdo.com/contact.php">Contact</a>
-      </p>
-    </div>
-    <div class="footer__menu">
-      <hr>
-      <p>
-        <a href="contact.html#helsinki" class="js-contact-location">Helsinki</a>
-        <a href="contact.html#berlin" class="js-contact-location">Berlin</a>
-        <a href="contact.html#london" class="js-contact-location">London</a>
-        <a href="contact.html#tampere" class="js-contact-location">Tampere</a>
-        <a href="contact.html#stockholm" class="js-contact-location">Stockholm</a>
-        <a href="contact.html#munich" class="js-contact-location">Munich</a>
       </p>
     </div>
 
@@ -66,20 +55,6 @@
   </script>
       
   <script src="/avialdo.com/assets/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
-  <!--[if IE 8 ]>
-<link href="//static.flockler.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-<link href="/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-<script src="/respond.proxy.js"></script>
-<![endif]-->
-
-
-  <aside class="cookie-notice js-cookie-notice">
-  <p class="cookie-notice__description">
-    By continuing to use this site, you agree to the use of cookies.
-    You can change this and find out more by following&nbsp;this&nbsp;<a href="cookies.html">link</a>.
-  </p>
-  <button type="button" class="cookie-notice__button js-cookie-notice__button">Accept cookies</button>
-</aside>
 
 
     <!-- Start of Async HubSpot Analytics Code -->
