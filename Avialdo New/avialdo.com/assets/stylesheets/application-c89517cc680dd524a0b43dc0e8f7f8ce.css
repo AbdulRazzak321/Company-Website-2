@@ -1459,7 +1459,7 @@ p {
 
 .article__body img {
     max-width: 100%;
-    height: auto
+    height: 656px;
 }
 
 .article__body>img {
@@ -2018,7 +2018,8 @@ span.article__author-link {
     background: #db4a2f;
     font-size: 16px;
     color: #fff;
-    margin-right: 150px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .button--submit {
@@ -2238,6 +2239,13 @@ span.article__author-link {
     font-weight: 600;
     color: #db4a2f;
     margin-bottom: 0
+}
+.contact_conditions {
+    font-size: 25px;
+    font-weight: 600;
+    color: #db4a2f;
+    margin-bottom: 0;
+    margin-left:auto;
 }
 
 .contact-block__contact-person__details {
@@ -3218,10 +3226,10 @@ span.article__author-link {
     font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
     font-size: 0.88889em;
     font-weight: 400;
-    width: 90%;
+    width: 85%;
     border: 2px solid #B5ACAC;
     background: #fff;
-    margin-left: 100px;
+
     padding: 10px;
     -webkit-transition: border-color 0.3s, background 0.3s;
     -moz-transition: border-color 0.3s, background 0.3s;
@@ -3278,15 +3286,14 @@ span.article__author-link {
 
 .application-form__field label {
     text-align: initial;
-    margin-left: 100px;
+    margin-left: 60px;
 
 }
 
 @media (min-width: 600px) {
     .application-form__field {
-        float: left;
-        padding: 10px;
-        width: 80%
+       
+        width: 100%
     }
 }
 
@@ -3309,9 +3316,8 @@ span.article__author-link {
 
 .application-form__field--full {
     float: none;
-    width: 100%;
     text-align: center;
-    padding-top: 30px
+    padding-top: 0px
 }
 
 .application-form__label {
@@ -4943,7 +4949,11 @@ span.article__author-link {
     background: #063642
 }
 form {
-    margin:0
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53%;
+    position: relative;
 }
 form label {
     margin-bottom:.2em;
@@ -4951,7 +4961,7 @@ form label {
     line-height:1.3rem;
     font-size:13px;
     line-height:13px;
-    color:#e6e6e1;
+    color:#51514F;
     text-shadow:0px -1px #202020
 }
 form label.error {

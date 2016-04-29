@@ -27,9 +27,7 @@
 
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    
-
-      <div class="header__reel">
+    <div class="header__reel">
         <iframe data-src="https://player.vimeo.com/video/111213012?badge=0&amp;byline=0&amp;loop=1&amp;portrait=0&amp;title=0&amp;api=1&amp;player_id=vimeoplayer"
            id="futurice-reel" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -93,7 +91,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/ilta-sanomat.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
 <!--
      <source srcset="assets/images/res/is-refet_s444x250_m1x0_q90_noupscale.png,
@@ -113,7 +111,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/ilta-sanomat.html">Korkster</a>
+    <a href="">Korkster</a>
   </h1>
 
   <div class="card__meta">
@@ -132,7 +130,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/k-ruoka-mobile.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
 <!--
      <source srcset="assets/images/res/reference_slide_kesko-blank_s444x250_c1227x716_l692x192_m1x0_q90_noupscale.png,
@@ -152,7 +150,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/k-ruoka-mobile.html">WalknSell</a>
+    <a href="">WalknSell</a>
   </h1>
 
   <div class="card__meta">
@@ -173,7 +171,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/case-tallink.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
 <!--
       <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg,
@@ -194,7 +192,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/case-tallink.html">Polypropylene</a>
+    <a href="">Polypropylene</a>
   </h1>
 
   <div class="card__meta">
@@ -1137,7 +1135,11 @@
           </time>
 </a>      </div>
       <p class="card__tweet">
-        Half an hour to go before the games start at <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23SpaceTyckiting" rel="nofollow" target="_blank" title="#SpaceTyckiting">#SpaceTyckiting</a> Stockholm. Follow the battles live from <a href="https://t.co/8dMiEHeRU4" rel="nofollow" target="_blank">https://t.co/8dMiEHeRU4</a>!
+        Half an hour to go before the games start at 
+<!--          <a class="tweet-url hashtag" href="" rel="nofollow" target="_blank" title="#SpaceTyckiting">#SpaceTyckiting</a>-->
+          Stockholm. Follow the battles live from 
+<!--          <a href="" rel="nofollow" target="_blank">https://t.co/8dMiEHeRU4</a>-->
+          !
       </p>
     </div>
   </div>
@@ -1155,7 +1157,9 @@
           </time>
 </a>      </div>
       <p class="card__tweet">
-        We are hacking again! This time in Stockholm. You can follow the games from <a href="https://t.co/TYPGtqNkAS" rel="nofollow" target="_blank">https://t.co/TYPGtqNkAS</a> (Battle time: 17:00 CET) <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23SpaceTyckiting" rel="nofollow" target="_blank" title="#SpaceTyckiting">#SpaceTyckiting</a>
+        We are hacking again! This time in Stockholm. You can follow the games from 
+<!--          <a href="https://t.co/TYPGtqNkAS" rel="nofollow" target="_blank">https://t.co/TYPGtqNkAS</a>-->
+<!--          (Battle time: 17:00 CET) <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23SpaceTyckiting" rel="nofollow" target="_blank" title="#SpaceTyckiting">#SpaceTyckiting</a>-->
       </p>
     </div>
   </div>
@@ -1172,7 +1176,8 @@
           </time>
 </a>      </div>
       <p class="card__tweet">
-        Want to know more about creating an <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23innovation" rel="nofollow" target="_blank" title="#innovation">#innovation</a> <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23culture" rel="nofollow" target="_blank" title="#culture">#culture</a>? Vote for <a class="tweet-url username" href="https://twitter.com/TuomasSyrjanen" rel="nofollow" target="_blank">@TuomasSyrjanen</a>'s <a class="tweet-url username" href="https://twitter.com/nextconf" rel="nofollow" target="_blank">@nextconf</a> session &gt; <a href="https://t.co/Stlwvh1Q16" rel="nofollow" target="_blank">https://t.co/Stlwvh1Q16</a> <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23Next16" rel="nofollow" target="_blank" title="#Next16">#Next16</a>
+        Want to know more about creating an 
+<!--          <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23innovation" rel="nofollow" target="_blank" title="#innovation">#innovation</a><a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23culture" rel="nofollow" target="_blank" title="#culture">#culture</a>? Vote for <a class="tweet-url username" href="https://twitter.com/TuomasSyrjanen" rel="nofollow" target="_blank">@TuomasSyrjanen</a>'s <a class="tweet-url username" href="https://twitter.com/nextconf" rel="nofollow" target="_blank">@nextconf</a> session &gt; <a href="https://t.co/Stlwvh1Q16" rel="nofollow" target="_blank">https://t.co/Stlwvh1Q16</a> <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23Next16" rel="nofollow" target="_blank" title="#Next16">#Next16</a>-->
       </p>
     </div>
   </div>
@@ -1189,7 +1194,8 @@
           </time>
 </a>      </div>
       <p class="card__tweet">
-        The latest <a class="tweet-url username" href="https://twitter.com/thethingcast" rel="nofollow" target="_blank">@thethingcast</a> episode is up! <a class="tweet-url username" href="https://twitter.com/mobile_rat" rel="nofollow" target="_blank">@mobile_rat</a> &amp; <a class="tweet-url username" href="https://twitter.com/toastedric" rel="nofollow" target="_blank">@toastedric</a>  speak to <a class="tweet-url username" href="https://twitter.com/thornet" rel="nofollow" target="_blank">@thornet</a> of the <a class="tweet-url username" href="https://twitter.com/mozilla" rel="nofollow" target="_blank">@mozilla</a> Foundation <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23IoT" rel="nofollow" target="_blank" title="#IoT">#IoT</a> <a href="https://t.co/q9qky9uhV5" rel="nofollow" target="_blank">https://t.co/q9qky9uhV5</a>
+        The latest 
+<!--          <a class="tweet-url username" href="https://twitter.com/thethingcast" rel="nofollow" target="_blank">@thethingcast</a> episode is up! <a class="tweet-url username" href="https://twitter.com/mobile_rat" rel="nofollow" target="_blank">@mobile_rat</a> &amp; <a class="tweet-url username" href="https://twitter.com/toastedric" rel="nofollow" target="_blank">@toastedric</a>  speak to <a class="tweet-url username" href="https://twitter.com/thornet" rel="nofollow" target="_blank">@thornet</a> of the <a class="tweet-url username" href="https://twitter.com/mozilla" rel="nofollow" target="_blank">@mozilla</a> Foundation <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23IoT" rel="nofollow" target="_blank" title="#IoT">#IoT</a> <a href="https://t.co/q9qky9uhV5" rel="nofollow" target="_blank">https://t.co/q9qky9uhV5</a>-->
       </p>
     </div>
   </div>
@@ -1299,24 +1305,25 @@
 
 <section class="section section--instagram">
   <div class="section__padding">
-    <h2 class="section__heading section__heading--main">#WorkingatFuturice</h2>
+    <h2 class="section__heading section__heading--main">#WorkingatAvialdo</h2>
     <div class="tweets js-packery">
           <article class="card card--instagram" data-id="3469351"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEJbSuhODnU/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1227632407591008724_1197043597.jpg';" src="https://www.instagram.com/p/BEJbSuhODnU/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEJbSuhODnU/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T16:36:12+00:00">
               April 13, 2016 16:33
             </time>
 </a>        </div>
         <p class="card__instagram">
-          Super students working on value propositions at "Muotoillaan terveyspalvelut uusiksi"-seminar <a href="https://instagram.com/futurice" target="_blank">@futurice</a> <a href="https://instagram.com/explore/tags/lovetheproblem/" target="_blank">#lovetheproblem</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/joinfuturice/" target="_blank">#joinfuturice</a> <a href="https://instagram.com/explore/tags/tampereenyliopisto/" target="_blank">#tampereenyliopisto</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> .
+          Super students working on value propositions at "Muotoillaan terveyspalvelut uusiksi"-seminar 
+<!--            <a href="https://instagram.com/futurice" target="_blank">@Avialdo</a> <a href="https://instagram.com/explore/tags/lovetheproblem/" target="_blank">#lovetheproblem</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/joinfuturice/" target="_blank">#joinfuturice</a> <a href="https://instagram.com/explore/tags/tampereenyliopisto/" target="_blank">#tampereenyliopisto</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> .-->
         </p>
       </div>
   </div>
@@ -1326,19 +1333,20 @@
           <article class="card card--instagram" data-id="3463938"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEIy-UgCnr7/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1227455083403967227_1309720669.jpg';" src="https://www.instagram.com/p/BEIy-UgCnr7/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEIy-UgCnr7/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T10:46:00+00:00">
               April 13, 2016 10:41
             </time>
 </a>        </div>
         <p class="card__instagram">
-          Whappu is a must-have! wappu.futurice.com <a href="https://instagram.com/explore/tags/wappuapp/" target="_blank">#wappuapp</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> <a href="https://instagram.com/explore/tags/whappuvyötiäinen/" target="_blank">#whappuvyötiäinen</a> <a href="https://instagram.com/explore/tags/teekkariwappu/" target="_blank">#teekkariwappu</a> <a href="https://instagram.com/explore/tags/WorkingatFuturice/" target="_blank">#WorkingatFuturice</a> <a href="https://instagram.com/explore/tags/maycelebrations/" target="_blank">#maycelebrations</a> <a href="https://instagram.com/explore/tags/partyanimal/" target="_blank">#partyanimal</a>
+          Whappu is a must-have! wappu.Avialdo.com 
+<!--            <a href="https://instagram.com/explore/tags/wappuapp/" target="_blank">#wappuapp</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> <a href="https://instagram.com/explore/tags/whappuvyötiäinen/" target="_blank">#whappuvyötiäinen</a> <a href="https://instagram.com/explore/tags/teekkariwappu/" target="_blank">#teekkariwappu</a> <a href="https://instagram.com/explore/tags/WorkingatFuturice/" target="_blank">#WorkingatFuturice</a> <a href="https://instagram.com/explore/tags/maycelebrations/" target="_blank">#maycelebrations</a> <a href="https://instagram.com/explore/tags/partyanimal/" target="_blank">#partyanimal</a>-->
         </p>
       </div>
   </div>
@@ -1347,19 +1355,20 @@
           <article class="card card--instagram" data-id="3447318"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEGmBOSinm4/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1226835158335388088_1309720669.jpg';" src="https://www.instagram.com/p/BEGmBOSinm4/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEGmBOSinm4/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T14:13:20+00:00">
               April 12, 2016 14:09
             </time>
 </a>        </div>
         <p class="card__instagram">
-          It started with a simple idea. But what exactly is <a href="https://instagram.com/explore/tags/operationsnowflake/" target="_blank">#operationsnowflake</a>? We'll be letting you know very soon. Watch this (snow) flake. <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> #❄️ <a href="https://instagram.com/explore/tags/snowflake/" target="_blank">#snowflake</a> <a href="https://instagram.com/explore/tags/adventure/" target="_blank">#adventure</a> <a href="https://instagram.com/explore/tags/workperks/" target="_blank">#workperks</a> <a href="https://instagram.com/explore/tags/snow/" target="_blank">#snow</a>
+          It started with a simple idea. But what exactly is 
+<!--            <a href="https://instagram.com/explore/tags/operationsnowflake/" target="_blank">#operationsnowflake</a>? We'll be letting you know very soon. Watch this (snow) flake. <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> #❄️ <a href="https://instagram.com/explore/tags/snowflake/" target="_blank">#snowflake</a> <a href="https://instagram.com/explore/tags/adventure/" target="_blank">#adventure</a> <a href="https://instagram.com/explore/tags/workperks/" target="_blank">#workperks</a> <a href="https://instagram.com/explore/tags/snow/" target="_blank">#snow</a>-->
         </p>
       </div>
   </div>
@@ -1368,19 +1377,19 @@
           <article class="card card--instagram" data-id="3440098"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEFtIK8CS4g/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1226584947121794592_11960586.jpg';" src="https://www.instagram.com/p/BEFtIK8CS4g/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEFtIK8CS4g/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T05:53:38+00:00">
               April 12, 2016 05:52
             </time>
 </a>        </div>
         <p class="card__instagram">
-          <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/terde/" target="_blank">#terde</a> <a href="https://instagram.com/explore/tags/aamulatte/" target="_blank">#aamulatte</a> <a href="https://instagram.com/explore/tags/helsinki/" target="_blank">#helsinki</a> <a href="https://instagram.com/explore/tags/tänäänonhyväpäivä/" target="_blank">#tänäänonhyväpäivä</a>
+<!--          <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/terde/" target="_blank">#terde</a> <a href="https://instagram.com/explore/tags/aamulatte/" target="_blank">#aamulatte</a> <a href="https://instagram.com/explore/tags/helsinki/" target="_blank">#helsinki</a> <a href="https://instagram.com/explore/tags/tänäänonhyväpäivä/" target="_blank">#tänäänonhyväpäivä</a>-->
         </p>
       </div>
   </div>

@@ -137,7 +137,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="culture/ask-why.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
      <source srcset="https://flockler.com/thumbs/1994/ask-why_s444x250_m1x0_q90_noupscale.png,
                     https://flockler.com/thumbs/1994/ask-why_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
@@ -155,7 +155,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="culture/ask-why.html">Ask why.</a>
+    <a href="">Ask why.</a>
   </h1>
 
   <div class="card__meta">
@@ -171,6 +171,46 @@
 
   </div>
 </article>
+        
+         <article class="card" data-id="1588430"
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <div class="card__inner">
+    
+<a href="" class="card__cover">
+  <picture>
+     <source srcset="https://flockler.com/thumbs/1992/futucafe_s444x250_m1x0_q90_noupscale.jpg,
+                    https://flockler.com/thumbs/1992/futucafe_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
+    <source srcset="https://flockler.com/thumbs/1992/futucafe_s368x207_m1x0_q90_noupscale.jpg,
+                    https://flockler.com/thumbs/1992/futucafe_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
+    <source srcset="https://flockler.com/thumbs/1992/futucafe_s256x144_m1x0_q90_noupscale.jpg,
+                    https://flockler.com/thumbs/1992/futucafe_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
+    <source srcset="https://flockler.com/thumbs/1992/futucafe_s600x338_m1x0_q90_noupscale.jpg,
+                    https://flockler.com/thumbs/1992/futucafe_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
+    <source srcset="https://flockler.com/thumbs/1992/futucafe_s320x180_m1x0_q90_noupscale.jpg,
+                    https://flockler.com/thumbs/1992/futucafe_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+     <img srcset="https://flockler.com/thumbs/1992/futucafe_s444x250_m1x0_q90_noupscale.jpg" alt="">
+  </picture>
+</a>
+    
+<div class="card__body">
+  <h1 class="card__title">
+    <a href="">Some things never change</a>
+  </h1>
+
+  <div class="card__meta">
+      <span class="card__meta__category">Blog</span>
+  </div>
+
+  <p class="card__summary">
+    I took a two-year leave of absence to study. During that time some things at Futurice changed. The most important thing didn’t. 
+  </p>
+
+  <div class="card__clipper"></div>
+</div>
+
+  </div>
+</article>
+
 <!--
         <article class="card" data-id="591915"
   itemscope itemprop="article" itemtype="http://schema.org/article">
@@ -254,49 +294,11 @@
     </div>
   </div>
 </section>
+<!--
 
   <section class="section section--featured-in-culture">
     <div class="section__padding">
-        <article class="card" data-id="1588430"
-  itemscope itemprop="article" itemtype="http://schema.org/article">
-  <div class="card__inner">
-    
-<a href="blog/some-things-never-change.html" class="card__cover">
-  <picture>
-     <source srcset="https://flockler.com/thumbs/1992/futucafe_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/futucafe_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1992/futucafe_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/futucafe_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1992/futucafe_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/futucafe_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1992/futucafe_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/futucafe_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1992/futucafe_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/futucafe_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-     <img srcset="https://flockler.com/thumbs/1992/futucafe_s444x250_m1x0_q90_noupscale.jpg" alt="">
-  </picture>
-</a>
-    
-<div class="card__body">
-  <h1 class="card__title">
-    <a href="blog/some-things-never-change.html">Some things never change</a>
-  </h1>
-
-  <div class="card__meta">
-      <span class="card__meta__category">Blog</span>
-  </div>
-
-  <p class="card__summary">
-    I took a two-year leave of absence to study. During that time some things at Futurice changed. The most important thing didn’t. 
-  </p>
-
-  <div class="card__clipper"></div>
-</div>
-
-  </div>
-</article>
-
-<!--
+       
         <article class="card" data-id="809114"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
@@ -713,11 +715,11 @@
 
   </div>
 </article>
--->
 
     </div>
   </section>
 
+-->
 
 
   </main>

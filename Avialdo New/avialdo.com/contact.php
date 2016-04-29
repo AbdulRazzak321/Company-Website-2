@@ -1,30 +1,5 @@
 <!DOCTYPE html>
 
-<?php
-
-        
-          if($_POST){
-
-
-            $to ="a.razzaqbhutto@yahoo.com";        
-            $txt = $_POST['name'];
-            $email = $_POST['Email'];
-            $subject = $_POST['msg'];
-            $com = $_POST['msg'];
-            $headers = "name: $email" . "\r\n" .
-                'X-Mailer: PHP/' . phpversion();
-              
-              if(mail($to,$subject,$txt,$headers)){
-                  echo "Mail sent";
-              }
-              else{
-              
-              echo "Mail sending fail";
-              }
-              
-          }
-    ?>
-
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head prefix="og: http://ogp.me/ns#">
@@ -793,32 +768,35 @@
       <div>
             <div class="application-form">
   <h2 class="application-form__title">Contact Us</h2>
-  <form method="POST" action="contact.php" enctype="multipart/form-data" accept-charset="UTF-8">
-    <input type="hidden" value="Helsinki" name="application[location]">
-    <input type="hidden" value="iOS or Android Developer (Helsinki)" name="application[position]">
-
+  <form  action="" id="contact-form" role="form">
+   
     <fieldset class="application-form__fieldset">
       <div class="application-form__field">
         <label class="application-form__label" for="application-form__name">Name*</label>
-        <input type="text" id="application-form__name" name="name" placeholder="Name" required>
+        <input type="text" id="contact-name" name="contact-name" placeholder="Name" required>
       </div>
 
       <div class="application-form__field">
         <label class="application-form__label" for="application-form__email">Email*</label>
-        <input type="email" id="application-form__email" name="Email" placeholder="E-Mail" required>
+        <input type="email" id="contact-email" name="contact-email" placeholder="E-Mail" required>
       </div>
       <div class="application-form__field">
         <label class="application-form__label" for="application-form__github">Message*</label>
-          <textarea id="application-form__github" name="msg" required></textarea>
+          <textarea id="contact-message" name="contact-message" rows="8"  required></textarea>
       </div>
+        <div class="application-form__field">
+            <div>
+                <p id="contact-alert" class="contact_conditions" ></p>
+            </div>
+        </div>
         
     </fieldset>
 
    
 
     <div class="application-form__field application-form__field--full">
-      <button type="submit" class="button button--submit">Submit You Message</button>
-    </div>
+      <button type="button" class="button button--submit" id="contact-submit" >Submit You Message</button>
+    </div> 
 
   </form>
 
@@ -837,7 +815,8 @@
       <p>
         <strong>Avialdo Solutions</strong><br>
         VAT-ID: +(92-213-2243459<br>
-        CEO: <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%74%75%6f%6d%61%73%2e%73%79%72%6a%61%6e%65%6e%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%54%75%6f%6d%61%73%20%53%79%72%6a%c3%a4%6e%65%6e%3c%5c%2f%61%3e%27%29%3b'))</script>
+        CEO:
+<!--          <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%74%75%6f%6d%61%73%2e%73%79%72%6a%61%6e%65%6e%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%54%75%6f%6d%61%73%20%53%79%72%6a%c3%a4%6e%65%6e%3c%5c%2f%61%3e%27%29%3b'))</script>-->
       </p>
     </div>
     <div class="contact-detail">
@@ -847,28 +826,74 @@
         343/3, D-3, Garden East,<br>
         Karachi, Pakistan<br>
         Geschäftsführer:
+<!--
         <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%67%69%61%6e%2e%63%61%73%61%6e%6f%76%61%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%47%69%61%6e%20%43%61%73%61%6e%6f%76%61%3c%5c%2f%61%3e%27%29%3b'))</script>,
         <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%68%65%6c%6d%75%74%2e%73%63%68%65%72%65%72%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%48%65%6c%6d%75%74%20%53%63%68%65%72%65%72%3c%5c%2f%61%3e%27%29%3b'))</script>
+-->
       </p>
     </div>
     <div class="contact-detail">
       <hr class="contact-detail__hr">
       <p>
         <strong>Avialdo</strong><br>
-        <br>
-        <br>
+       
         
-          <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%74%75%6f%6d%61%73%2e%73%79%72%6a%61%6e%65%6e%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%54%75%6f%6d%61%73%20%53%79%72%6a%c3%a4%6e%65%6e%3c%5c%2f%61%3e%27%29%3b'))</script>
+<!--          <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%74%75%6f%6d%61%73%2e%73%79%72%6a%61%6e%65%6e%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%54%75%6f%6d%61%73%20%53%79%72%6a%c3%a4%6e%65%6e%3c%5c%2f%61%3e%27%29%3b'))</script>-->
       </p>
     </div>
   </div>
 </section>
 
-
   </main>
     <?php
     include ("footer.php");
     ?>
+    
+    
+<script>
+		 function validateEmail($email) {
+		  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		  return emailReg.test( $email );
+		}
+            $("#contact-submit").click(function(){
+
+			 
+				var dataString = 
+					{
+						name: $("#contact-name").val(),
+						email: $("#contact-email").val(),
+						message: $("#contact-message").val()
+					};
+				if(dataString['name'] == '' || dataString['email'] == '' || dataString['message'] == ''){
+					$('#contact-alert').text("All fields are required.");
+				}else if($("#contact-message").val().length < 10){
+					$('#contact-alert').text("Your message should contain more than 10 characters.");
+				}else if(!validateEmail($('#contact-email').val()))
+				{
+					$('#contact-alert').text("Please enter a valid email address.");
+				}else{
+				 $.ajax({
+					 type: "POST",
+					 url: "contact_mail.php",
+					 data: dataString,
+					 success: function(result){
+                    if(result=='success!'){
+                         $('.contact_conditions').css('color', 'green');                            
+                        $('#contact-alert').text("Your message was sent successfully, Thanks!");
+                          $('input[type="text"],textarea').val('');
+                        $('input[type="email"],textarea').val('');
+                    }else{
+                            $('#contact-alert').text("Failed to send your message. Please try later.");
+						}
+					 },
+					 error: function() {
+						$('#contact-alert').text("");
+						alert("Oops! Something has gone wrong.");
+					 }
+				 });
+				}
+			});
+</script>
     
   </body>
 

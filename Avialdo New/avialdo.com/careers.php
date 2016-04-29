@@ -138,7 +138,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/career-stories-andre-medeiros.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2003/andre_s444x250_c639x373_l35x0_m1x0_q90_noupscale.jpg,
@@ -158,7 +158,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/career-stories-andre-medeiros.html">Career stories: Andre Medeiros</a>
+    <a href="">Career stories: Andre Medeiros</a>
   </h1>
 
   <div class="card__meta">
@@ -179,7 +179,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/five-steps-to-a-great-application.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2003/_mg_3199--5s23v7szqo_s444x250_c2046x1196_l0x144_m1x0_q90_noupscale.jpg,
@@ -199,7 +199,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/five-steps-to-a-great-application.html">Five steps to a great application</a>
+    <a href="">Five steps to a great application</a>
   </h1>
 
   <div class="card__meta">
@@ -220,9 +220,9 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/futurices-interview-process.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
+ 
     <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s444x250_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s888x500_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s368x207_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
@@ -233,14 +233,14 @@
                     https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s1200x675_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s320x180_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s640x360_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
+
     <img srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s444x250_c2230x1301_l0x131_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/futurices-interview-process.html">Futurice&#x27;s interview process</a>
+    <a href="">Futurice&#x27;s interview process</a>
   </h1>
 
   <div class="card__meta">
@@ -261,9 +261,9 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/onboarding-into-futurice.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
     <source srcset="https://flockler.com/thumbs/2003/15348648700_99ed1b29ea_h_s444x250_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2003/15348648700_99ed1b29ea_h_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/2003/15348648700_99ed1b29ea_h_s368x207_m1x0_q90_noupscale.jpg,
@@ -274,14 +274,14 @@
                     https://flockler.com/thumbs/2003/15348648700_99ed1b29ea_h_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/2003/15348648700_99ed1b29ea_h_s320x180_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2003/15348648700_99ed1b29ea_h_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
+  
     <img srcset="https://flockler.com/thumbs/2003/15348648700_99ed1b29ea_h_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/onboarding-into-futurice.html">Onboarding into Futurice</a>
+    <a href="">Onboarding into Avialdo</a>
   </h1>
 
   <div class="card__meta">
@@ -302,9 +302,9 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="http://tammerforce.futurice.com/" class="card__cover" target="_blank">
+<a href="" class="card__cover" target="_blank">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
+ 
     <source srcset="https://flockler.com/thumbs/2003/n-ytt-kuva-2014-9-26-kello-8-45-18-9poitx6l17_s444x250_m1x0_q90_noupscale.png,
                     https://flockler.com/thumbs/2003/n-ytt-kuva-2014-9-26-kello-8-45-18-9poitx6l17_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/2003/n-ytt-kuva-2014-9-26-kello-8-45-18-9poitx6l17_s368x207_m1x0_q90_noupscale.png,
@@ -315,14 +315,14 @@
                     https://flockler.com/thumbs/2003/n-ytt-kuva-2014-9-26-kello-8-45-18-9poitx6l17_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/2003/n-ytt-kuva-2014-9-26-kello-8-45-18-9poitx6l17_s320x180_m1x0_q90_noupscale.png,
                     https://flockler.com/thumbs/2003/n-ytt-kuva-2014-9-26-kello-8-45-18-9poitx6l17_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
+
     <img srcset="https://flockler.com/thumbs/2003/n-ytt-kuva-2014-9-26-kello-8-45-18-9poitx6l17_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="http://tammerforce.futurice.com/" target="_blank">Awesome #Tammerforce – more about jobs at Futurice Tampere</a>
+    <a href="" target="_blank">Awesome #Tammerforce – more about jobs at Futurice Tampere</a>
   </h1>
 
   <div class="card__meta">
@@ -353,9 +353,9 @@
           <div class="careers-block careers-block--location">
             
 <picture class="contact-block__cover">
-  <!--[if IE 9]><video style="display: none;"><![endif]-->
+
   <source srcset="assets/images/res/binary-65473_640_s830x0_q80_noupscale.jpg, assets/images/res/binary-65473_640_s830x0_q80_noupscale.jpg 2x">
-  <!--[if IE 9]></video><![endif]-->
+
   <img srcset="assets/images/res/binary-65473_640_s830x0_q80_noupscale.jpg" alt="">
 </picture>
 
@@ -366,9 +366,9 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="open-positions/ios-or-android-developer-helsinki.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
+ 
     <source srcset="https://flockler.com/thumbs/2659/futucafecup-improved--78ipp5tc9t_s444x250_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2659/futucafecup-improved--78ipp5tc9t_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/2659/futucafecup-improved--78ipp5tc9t_s368x207_m1x0_q90_noupscale.jpg,
@@ -379,14 +379,14 @@
                     https://flockler.com/thumbs/2659/futucafecup-improved--78ipp5tc9t_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/2659/futucafecup-improved--78ipp5tc9t_s320x180_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2659/futucafecup-improved--78ipp5tc9t_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
+  
     <img srcset="https://flockler.com/thumbs/2659/futucafecup-improved--78ipp5tc9t_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/ios-or-android-developer-helsinki.html">iOS or Android Developer (Helsinki)</a>
+    <a href="">iOS or Android Developer (Helsinki)</a>
   </h1>
 
   <div class="card__meta">
@@ -409,7 +409,7 @@
     
 <a href="open-positions/full-stack-developer-helsinki.html" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
     <source srcset="https://flockler.com/thumbs/2659/1_s444x250_m1x0_q90_noupscale.jpeg,
                     https://flockler.com/thumbs/2659/1_s888x500_m1x0_q65_noupscale.jpeg 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/2659/1_s368x207_m1x0_q90_noupscale.jpeg,
@@ -420,14 +420,14 @@
                     https://flockler.com/thumbs/2659/1_s1200x675_m1x0_q65_noupscale.jpeg 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/2659/1_s320x180_m1x0_q90_noupscale.jpeg,
                     https://flockler.com/thumbs/2659/1_s640x360_m1x0_q65_noupscale.jpeg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
+   
     <img srcset="https://flockler.com/thumbs/2659/1_s444x250_m1x0_q90_noupscale.jpeg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/full-stack-developer-helsinki.html">Full-stack web developer (Helsinki)</a>
+    <a href="">Full-stack web developer (Helsinki)</a>
   </h1>
 
   <div class="card__meta">
@@ -448,9 +448,9 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="open-positions/cloud-software-engineer-helsinki.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
     <source srcset="https://flockler.com/thumbs/2659/cloud-sw-engineer--zdi4c5gebt_s444x250_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2659/cloud-sw-engineer--zdi4c5gebt_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/2659/cloud-sw-engineer--zdi4c5gebt_s368x207_m1x0_q90_noupscale.jpg,
@@ -461,14 +461,14 @@
                     https://flockler.com/thumbs/2659/cloud-sw-engineer--zdi4c5gebt_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/2659/cloud-sw-engineer--zdi4c5gebt_s320x180_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2659/cloud-sw-engineer--zdi4c5gebt_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
+ 
     <img srcset="https://flockler.com/thumbs/2659/cloud-sw-engineer--zdi4c5gebt_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/cloud-software-engineer-helsinki.html">Cloud Software Engineer</a>
+    <a href="">Cloud Software Engineer</a>
   </h1>
 
   <div class="card__meta">
@@ -489,9 +489,9 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="open-positions/every-tech-position-at-futurice-ever.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
+
     <source srcset="https://flockler.com/thumbs/2659/kamppi_s444x250_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2659/kamppi_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
     <source srcset="https://flockler.com/thumbs/2659/kamppi_s368x207_m1x0_q90_noupscale.jpg,
@@ -502,14 +502,14 @@
                     https://flockler.com/thumbs/2659/kamppi_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
     <source srcset="https://flockler.com/thumbs/2659/kamppi_s320x180_m1x0_q90_noupscale.jpg,
                     https://flockler.com/thumbs/2659/kamppi_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
+
     <img srcset="https://flockler.com/thumbs/2659/kamppi_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/every-tech-position-at-futurice-ever.html">Every tech position at Futurice. Ever.</a>
+    <a href="">Every tech position at Avialdo. Ever.</a>
   </h1>
 
   <div class="card__meta">
@@ -530,7 +530,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="open-positions/helsinki-senior-service-designer.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
      <source srcset="https://flockler.com/thumbs/2659/unsplash-workspace-1_s444x250_c4000x2338_l0x0_m1x0_q90_noupscale.jpeg,
                     https://flockler.com/thumbs/2659/unsplash-workspace-1_s888x500_c4000x2338_l0x0_m1x0_q65_noupscale.jpeg 2x" media="(min-width: 984px)">
@@ -548,7 +548,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/helsinki-senior-service-designer.html">Senior Service Designer</a>
+    <a href="">Senior Service Designer</a>
   </h1>
 
   <div class="card__meta">
@@ -1369,24 +1369,25 @@
 
 <section class="section section--instagram">
   <div class="section__padding">
-    <h2 class="section__heading section__heading--main">#WorkingatFuturice</h2>
+    <h2 class="section__heading section__heading--main">#WorkingatAvialdo</h2>
     <div class="tweets js-packery">
           <article class="card card--instagram" data-id="3469351"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEJbSuhODnU/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1227632407591008724_1197043597.jpg';" src="https://www.instagram.com/p/BEJbSuhODnU/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEJbSuhODnU/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T16:36:12+00:00">
               April 13, 2016 16:33
             </time>
 </a>        </div>
         <p class="card__instagram">
-          Super students working on value propositions at "Muotoillaan terveyspalvelut uusiksi"-seminar <a href="https://instagram.com/futurice" target="_blank">@futurice</a> <a href="https://instagram.com/explore/tags/lovetheproblem/" target="_blank">#lovetheproblem</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/joinfuturice/" target="_blank">#joinfuturice</a> <a href="https://instagram.com/explore/tags/tampereenyliopisto/" target="_blank">#tampereenyliopisto</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> .
+          Super students working on value propositions at "Muotoillaan terveyspalvelut uusiksi"-seminar 
+<!--            <a href="https://instagram.com/futurice" target="_blank">@futurice</a> <a href="https://instagram.com/explore/tags/lovetheproblem/" target="_blank">#lovetheproblem</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/joinfuturice/" target="_blank">#joinfuturice</a> <a href="https://instagram.com/explore/tags/tampereenyliopisto/" target="_blank">#tampereenyliopisto</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> .-->
         </p>
       </div>
   </div>
@@ -1395,19 +1396,20 @@
           <article class="card card--instagram" data-id="3463938"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEIy-UgCnr7/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1227455083403967227_1309720669.jpg';" src="https://www.instagram.com/p/BEIy-UgCnr7/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEIy-UgCnr7/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T10:46:00+00:00">
               April 13, 2016 10:41
             </time>
 </a>        </div>
         <p class="card__instagram">
-          Whappu is a must-have! wappu.futurice.com <a href="https://instagram.com/explore/tags/wappuapp/" target="_blank">#wappuapp</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> <a href="https://instagram.com/explore/tags/whappuvyötiäinen/" target="_blank">#whappuvyötiäinen</a> <a href="https://instagram.com/explore/tags/teekkariwappu/" target="_blank">#teekkariwappu</a> <a href="https://instagram.com/explore/tags/WorkingatFuturice/" target="_blank">#WorkingatFuturice</a> <a href="https://instagram.com/explore/tags/maycelebrations/" target="_blank">#maycelebrations</a> <a href="https://instagram.com/explore/tags/partyanimal/" target="_blank">#partyanimal</a>
+          Whappu is a must-have! wappu.futurice.com
+<!--            <a href="https://instagram.com/explore/tags/wappuapp/" target="_blank">#wappuapp</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a> <a href="https://instagram.com/explore/tags/whappuvyötiäinen/" target="_blank">#whappuvyötiäinen</a> <a href="https://instagram.com/explore/tags/teekkariwappu/" target="_blank">#teekkariwappu</a> <a href="https://instagram.com/explore/tags/WorkingatFuturice/" target="_blank">#WorkingatFuturice</a> <a href="https://instagram.com/explore/tags/maycelebrations/" target="_blank">#maycelebrations</a> <a href="https://instagram.com/explore/tags/partyanimal/" target="_blank">#partyanimal</a>-->
         </p>
       </div>
   </div>
@@ -1416,19 +1418,20 @@
           <article class="card card--instagram" data-id="3447318"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEGmBOSinm4/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1226835158335388088_1309720669.jpg';" src="https://www.instagram.com/p/BEGmBOSinm4/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEGmBOSinm4/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T14:13:20+00:00">
               April 12, 2016 14:09
             </time>
 </a>        </div>
         <p class="card__instagram">
-          It started with a simple idea. But what exactly is <a href="https://instagram.com/explore/tags/operationsnowflake/" target="_blank">#operationsnowflake</a>? We'll be letting you know very soon. Watch this (snow) flake. <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> #❄️ <a href="https://instagram.com/explore/tags/snowflake/" target="_blank">#snowflake</a> <a href="https://instagram.com/explore/tags/adventure/" target="_blank">#adventure</a> <a href="https://instagram.com/explore/tags/workperks/" target="_blank">#workperks</a> <a href="https://instagram.com/explore/tags/snow/" target="_blank">#snow</a>
+<!--          It started with a simple idea. But what exactly is <a href="https://instagram.com/explore/tags/operationsnowflake/" target="_blank">#operationsnowflake</a>? We'll be letting you know very soon. Watch this (snow) flake.-->
+<!--            <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> #❄️ <a href="https://instagram.com/explore/tags/snowflake/" target="_blank">#snowflake</a> <a href="https://instagram.com/explore/tags/adventure/" target="_blank">#adventure</a> <a href="https://instagram.com/explore/tags/workperks/" target="_blank">#workperks</a> <a href="https://instagram.com/explore/tags/snow/" target="_blank">#snow</a>-->
         </p>
       </div>
   </div>
@@ -1437,19 +1440,19 @@
           <article class="card card--instagram" data-id="3440098"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEFtIK8CS4g/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1226584947121794592_11960586.jpg';" src="https://www.instagram.com/p/BEFtIK8CS4g/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEFtIK8CS4g/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T05:53:38+00:00">
               April 12, 2016 05:52
             </time>
 </a>        </div>
         <p class="card__instagram">
-          <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/terde/" target="_blank">#terde</a> <a href="https://instagram.com/explore/tags/aamulatte/" target="_blank">#aamulatte</a> <a href="https://instagram.com/explore/tags/helsinki/" target="_blank">#helsinki</a> <a href="https://instagram.com/explore/tags/tänäänonhyväpäivä/" target="_blank">#tänäänonhyväpäivä</a>
+<!--          <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/terde/" target="_blank">#terde</a> <a href="https://instagram.com/explore/tags/aamulatte/" target="_blank">#aamulatte</a> <a href="https://instagram.com/explore/tags/helsinki/" target="_blank">#helsinki</a> <a href="https://instagram.com/explore/tags/tänäänonhyväpäivä/" target="_blank">#tänäänonhyväpäivä</a>-->
         </p>
       </div>
   </div>
@@ -1458,19 +1461,20 @@
           <article class="card card--instagram" data-id="3439573"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BEFn_1XAFsv/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1226562383963511599_1700095021.jpg';" src="https://www.instagram.com/p/BEFn_1XAFsv/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BEFn_1XAFsv/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T05:11:53+00:00">
               April 12, 2016 05:07
             </time>
 </a>        </div>
         <p class="card__instagram">
-          G'morning! <a href="https://instagram.com/explore/tags/armadillo/" target="_blank">#armadillo</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/tuesday/" target="_blank">#tuesday</a> <a href="https://instagram.com/explore/tags/normipäivä/" target="_blank">#normipäivä</a> <a href="https://instagram.com/explore/tags/vyöfie/" target="_blank">#vyöfie</a> <a href="https://instagram.com/explore/tags/vyötiäinen/" target="_blank">#vyötiäinen</a> <a href="https://instagram.com/explore/tags/office/" target="_blank">#office</a>
+          G'morning! 
+<!--            <a href="https://instagram.com/explore/tags/armadillo/" target="_blank">#armadillo</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/tuesday/" target="_blank">#tuesday</a> <a href="https://instagram.com/explore/tags/normipäivä/" target="_blank">#normipäivä</a> <a href="https://instagram.com/explore/tags/vyöfie/" target="_blank">#vyöfie</a> <a href="https://instagram.com/explore/tags/vyötiäinen/" target="_blank">#vyötiäinen</a> <a href="https://instagram.com/explore/tags/office/" target="_blank">#office</a>-->
         </p>
       </div>
   </div>
@@ -1479,19 +1483,20 @@
           <article class="card card--instagram" data-id="3422128"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BD8aG59rUqf/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1223968022502132383_179772897.jpg';" src="https://www.instagram.com/p/BD8aG59rUqf/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BD8aG59rUqf/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-11T07:41:00+00:00">
               April  8, 2016 15:13
             </time>
 </a>        </div>
         <p class="card__instagram">
-          It's been a long week but a good week. Feel like I've earned this. Looking forward to a weekend in London! I'm coming home <a href="https://instagram.com/kittycatcook" target="_blank">@kittycatcook</a> <a href="https://instagram.com/explore/tags/travel/" target="_blank">#travel</a> <a href="https://instagram.com/explore/tags/london/" target="_blank">#london</a> <a href="https://instagram.com/explore/tags/home/" target="_blank">#home</a> <a href="https://instagram.com/explore/tags/beer/" target="_blank">#beer</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a>
+          It's been a long week but a good week. Feel like I've earned this. Looking forward to a weekend in London! I'm coming home 
+<!--            <a href="https://instagram.com/kittycatcook" target="_blank">@kittycatcook</a> <a href="https://instagram.com/explore/tags/travel/" target="_blank">#travel</a> <a href="https://instagram.com/explore/tags/london/" target="_blank">#london</a> <a href="https://instagram.com/explore/tags/home/" target="_blank">#home</a> <a href="https://instagram.com/explore/tags/beer/" target="_blank">#beer</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a>-->
         </p>
       </div>
   </div>
@@ -1500,19 +1505,20 @@
           <article class="card card--instagram" data-id="3422125"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BDpWaqNAFhO/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1218603763225352270_1700095021.jpg';" src="https://www.instagram.com/p/BDpWaqNAFhO/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BDpWaqNAFhO/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-11T07:41:00+00:00">
               April  1, 2016 05:35
             </time>
 </a>        </div>
         <p class="card__instagram">
-          It's <a href="https://instagram.com/explore/tags/Friday/" target="_blank">#Friday</a>, <a href="https://instagram.com/explore/tags/bar/" target="_blank">#bar</a> is open! <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/oispajoskustavallista/" target="_blank">#oispajoskustavallista</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a>
+          It's 
+<!--            <a href="https://instagram.com/explore/tags/Friday/" target="_blank">#Friday</a>, <a href="https://instagram.com/explore/tags/bar/" target="_blank">#bar</a> is open! <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a> <a href="https://instagram.com/explore/tags/oispajoskustavallista/" target="_blank">#oispajoskustavallista</a> <a href="https://instagram.com/explore/tags/tammerforce/" target="_blank">#tammerforce</a>-->
         </p>
       </div>
   </div>
@@ -1521,20 +1527,22 @@
           <article class="card card--instagram" data-id="3422124"
          itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
-    <a href="https://www.instagram.com/p/BDn4jDSCniJ/" target="_blank">
+    <a href="" target="_blank">
       <figure class="wall-item__figure wall-item--instagram__figure wall-item__figure--cover">
         <img alt="" onerror="this.onerror=null;this.src='../fl-cdn.scdn1.secure.raxcdn.com/files/2490/instagram-1218190923537217673_1309720669.jpg';" src="https://www.instagram.com/p/BDn4jDSCniJ/media/" />
       </figure>
 </a>      <div class="card__body">
         <div class="card__meta">
-          <a href="https://www.instagram.com/p/BDn4jDSCniJ/" class="card__published-at-link" target="_blank">
+          <a href="" class="card__published-at-link" target="_blank">
             <time class="card__published-at" itemprop="datePublished" datetime="2016-04-11T07:41:00+00:00">
               March 31, 2016 15:54
             </time>
 </a>        </div>
         <p class="card__instagram">
+<!--
           Awesome code camp beanie is awesome! <a href="https://instagram.com/explore/tags/swag/" target="_blank">#swag</a> <a href="https://instagram.com/explore/tags/workingatfuturice/" target="_blank">#workingatfuturice</a>
         </p>
+-->
       </div>
   </div>
 </article>

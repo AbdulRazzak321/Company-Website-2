@@ -56,7 +56,7 @@
     
   <section class="section section--cases">
   <div class="section__padding">
-    <h2 class="section__heading section__heading--main">Cases</h2>
+    <h2 class="section__heading section__heading--main">Work</h2>
     <div class="section__cases three-cols">
         <article class="card" data-id="2027441"
   itemscope itemprop="article" itemtype="http://schema.org/article">
@@ -105,7 +105,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/ilta-sanomat.html" class="card__cover">
+<a href="#" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
@@ -127,7 +127,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/ilta-sanomat.html">Korkster</a>
+    <a href="#">Korkster</a>
   </h1>
 
   <div class="card__meta">
@@ -148,7 +148,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/k-ruoka-mobile.html" class="card__cover">
+<a href="#" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
@@ -170,7 +170,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/k-ruoka-mobile.html">WalknSell</a>
+    <a href="#">WalknSell</a>
   </h1>
 
   <div class="card__meta">
@@ -191,7 +191,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/case-tallink.html" class="card__cover">
+<a href="#" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
@@ -207,13 +207,13 @@
                     assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
 -->
     <!--[if IE 9]></video><![endif]-->
-    <img srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg" alt="">
+    <img srcset="assets/images/work/polypropylene_main.png" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/case-tallink.html">Polypropylene</a>
+    <a href="#">Polypropylene</a>
   </h1>
 
   <div class="card__meta">

@@ -287,7 +287,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/tuomas-ahva.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -315,7 +315,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/antti-ajanki.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -343,7 +343,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/veera-andersson.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -977,7 +977,7 @@
     <h2 class="section__heading section__heading--main">Tampere</h2>
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/laurianttila.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1005,7 +1005,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/mike.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1033,7 +1033,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/ilkka-auer.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1061,7 +1061,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/kimmo-brunfeldt.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1095,7 +1095,7 @@
     <h2 class="section__heading section__heading--main">London</h2>
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/aniello-del-sorbo.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1123,7 +1123,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/jani-evakallio.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1151,7 +1151,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/aino-hanttu.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1179,7 +1179,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/mikko-heikela.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1213,7 +1213,7 @@
     <h2 class="section__heading section__heading--main">Berlin</h2>
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/ricardo-brito.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1241,7 +1241,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/neil-calderwood.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1269,7 +1269,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/gian-casanova.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1297,7 +1297,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/daniel-gimpel.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1330,7 +1330,7 @@
     <h2 class="section__heading section__heading--main">Munich</h2>
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/christian-baumann.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1358,7 +1358,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/mathias-calonius.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1386,7 +1386,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/helmut-scherer.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1419,7 +1419,7 @@
     <h2 class="section__heading section__heading--main">Stockholm</h2>
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/henrik-edlund.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1447,7 +1447,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/simo-hakkarainen.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1475,7 +1475,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/matti-jylha.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -1503,7 +1503,7 @@
 
       
 <article class="person-block" itemscope itemtype="http://schema.org/Person">
-  <a href="people/kirsi-louhelainen.html" class="person-block__link person-block__padding" itemprop="url">
+  <a href="" class="person-block__link person-block__padding" itemprop="url">
     <figure class="person-block__picture">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->

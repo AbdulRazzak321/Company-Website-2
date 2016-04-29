@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-
-  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
-
--->
-
-<!-- Mirrored from futurice.com/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:52:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
   <title>Events — Avialdo</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-  <!--[if IE]>
-    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
-  <![endif]-->
-
-  
   <meta property="og:title" content="Events — Avialdo">
   <meta property="og:description" name="description" content="We create digital services for people to love">
   <meta property="og:type" content="website">
   <meta property="og:url" content="events.html">
 
 
-  <script src="assets/javascripts/yvs3xkq.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-
-  <link href="assets/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
-
 </head>
 <body class="view--sections view--sections-show is-section-show is-section-view is-section-view--events" itemscope itemtype="http://schema.org/WebPage">
-  <!-- Google Tag Manager -->
       <?php
             $current = 'event';
             include ("Header.php");?>
@@ -117,7 +98,7 @@ Finland&hellip;
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="events/whappu.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2004/whappu_s444x250_m1x0_q90_noupscale.png,
@@ -137,7 +118,7 @@ Finland&hellip;
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="events/whappu.html">Whappu app to experience Wappu like never before</a>
+    <a href="">Whappu app to experience Wappu like never before</a>
   </h1>
 
   <div class="card__meta">
@@ -181,7 +162,7 @@ http://wappu.futurice.com/&hellip;
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="events/space-tyckiting-stockholm.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s444x250_m1x0_q90_noupscale.jpg,
@@ -201,7 +182,7 @@ http://wappu.futurice.com/&hellip;
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="events/space-tyckiting-stockholm.html">Space Tyckiting, Stockholm</a>
+    <a href="">Space Tyckiting, Stockholm</a>
   </h1>
 
   <div class="card__meta">
@@ -233,7 +214,7 @@ http://wappu.futurice.com/&hellip;
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="events/space-tyckiting-london.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <source srcset="https://flockler.com/thumbs/2004/space_tyckiting2_event_pic-01--pbwbn1m8rn_s444x250_m1x0_q90_noupscale.png,
@@ -253,7 +234,7 @@ http://wappu.futurice.com/&hellip;
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="events/space-tyckiting-london.html">Space Tyckiting, London</a>
+    <a href="">Space Tyckiting, London</a>
   </h1>
 
   <div class="card__meta">

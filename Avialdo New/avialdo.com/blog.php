@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
@@ -136,7 +136,7 @@ $current = 'blog';
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="blog/are-you-enough-critical-to-be-creative.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
 
     <source srcset="https://flockler.com/thumbs/1992/blog-photo-questionmarks_s444x250_m1x0_q90_noupscale.jpg,
@@ -156,7 +156,7 @@ $current = 'blog';
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="blog/are-you-enough-critical-to-be-creative.html">Are You Critical Enough To Be Creative?</a>
+    <a href="">Are You Critical Enough To Be Creative?</a>
   </h1>
 
   <div class="card__meta">
@@ -193,7 +193,7 @@ $current = 'blog';
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="blog/a-saner-windows-command-line-part-2.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
     
     <source srcset="https://flockler.com/thumbs/1992/super_console--aj72ozn2wu_s444x250_m1x0_q90_noupscale.png,
@@ -213,7 +213,7 @@ $current = 'blog';
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="blog/a-saner-windows-command-line-part-2.html">A Saner Windows Command Line - Part 2</a>
+    <a href="">A Saner Windows Command Line - Part 2</a>
   </h1>
 
   <div class="card__meta">
