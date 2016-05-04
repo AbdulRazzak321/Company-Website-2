@@ -105,7 +105,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="#" class="card__cover">
+<a href="cases/k-ruoka-mobile.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
@@ -127,7 +127,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="#">Korkster</a>
+    <a href="cases/k-ruoka-mobile.php">Korkster</a>
   </h1>
 
   <div class="card__meta">
@@ -148,7 +148,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="#" class="card__cover">
+<a href="cases/case-tallink.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
@@ -170,7 +170,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="#">WalknSell</a>
+    <a href="cases/case-tallink.php">WalknSell</a>
   </h1>
 
   <div class="card__meta">
@@ -191,7 +191,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="#" class="card__cover">
+<a href="cases/innovate-finance.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
 <!--
@@ -213,7 +213,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="#">Polypropylene</a>
+    <a href="cases/innovate-finance.php">Polypropylene</a>
   </h1>
 
   <div class="card__meta">
@@ -856,31 +856,31 @@ The #Snapshot project is our spearhead into taking our service design methods to
     <h2 class="section__heading section__heading--main">Lean Service Creation</h2>
     <div class="lsc-process">
       <div class="lsc-process-step lsc-process-step--one">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-1.png';" src="assets/images/lsc-process/lsc-process-1.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-1.png';" src="assets/images/lsc-process/lsc-process-1.png" />
         <h2 class="lsc-process-step__title">Business opportunity</h2>
       </div>
       <div class="lsc-process-step lsc-process-step--arrow">
-        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.svg" />
-        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.svg" />
+        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.png" />
+        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.png" />
       </div>
       <div class="lsc-process-step lsc-process-step--two">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-2.png';" src="assets/images/lsc-process/lsc-process-2.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-2.png';" src="assets/images/lsc-process/lsc-process-2.png" />
         <h2 class="lsc-process-step__title">Business co-creation<br>User co-creation</h2>
       </div>
       <div class="lsc-process-step lsc-process-step--arrow">
-        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.svg" />
-        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.svg" />
+        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.png" />
+        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.png" />
       </div>
       <div class="lsc-process-step lsc-process-step--three">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-3.png';" src="assets/images/lsc-process/lsc-process-3.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-3.png';" src="assets/images/lsc-process/lsc-process-3.png" />
         <h2 class="lsc-process-step__title">Service direction / concept</h2>
       </div>
       <div class="lsc-process-step lsc-process-step--arrow">
-        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.svg" />
-        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.svg" />
+        <img alt="" class="lsc-process-step--arrow__down" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-down.png';" src="assets/images/lsc/arrow-down.png" />
+        <img alt="" class="lsc-process-step--arrow__right" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc/arrow-right.png';" src="assets/images/lsc/arrow-right.png" />
       </div>
       <div class="lsc-process-step lsc-process-step--four">
-        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-4.png';" src="assets/images/lsc-process/lsc-process-4.svg" />
+        <img alt="" class="lsc-process-step__graphic" data-pin-no-hover="true" onerror="this.onerror=null;this.src='assets/images/lsc-process/lsc-process-4.png';" src="assets/images/lsc-process/lsc-process-4.png" />
         <ul class="lsc-process-step--four__one">
           <li>Prototypes</li>
           <li>Mock-up ads</li>

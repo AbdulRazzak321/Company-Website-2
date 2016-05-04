@@ -71,7 +71,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/me-and-mycity.html">Jangda Law</a>
+    <a href="cases/me-and-mycity.php">Jangda Law</a>
   </h1>
 
   <div class="card__meta">
@@ -91,7 +91,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="" class="card__cover">
+<a href="cases/k-ruoka-mobile.php" class="card__cover">
   <picture>
 <!--
      <source srcset="assets/images/res/is-refet_s444x250_m1x0_q90_noupscale.png,
@@ -111,7 +111,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="">Korkster</a>
+    <a href="cases/k-ruoka-mobile.php">Korkster</a>
   </h1>
 
   <div class="card__meta">
@@ -130,7 +130,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="" class="card__cover">
+<a href="cases/case-tallink.php" class="card__cover">
   <picture>
 <!--
      <source srcset="assets/images/res/reference_slide_kesko-blank_s444x250_c1227x716_l692x192_m1x0_q90_noupscale.png,
@@ -150,7 +150,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="">WalknSell</a>
+    <a href="cases/case-tallink.php">WalknSell</a>
   </h1>
 
   <div class="card__meta">
@@ -171,7 +171,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="" class="card__cover">
+<a href="cases/innovate-finance.php" class="card__cover">
   <picture>
 <!--
       <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg,
@@ -192,7 +192,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="">Polypropylene</a>
+    <a href="cases/innovate-finance.php">Polypropylene</a>
   </h1>
 
   <div class="card__meta">
@@ -565,7 +565,7 @@
   </div>
 
   <p class="card__summary">
-    We are Futurice: the leanest, meanest (not really, we are nice! It's one of our superpowers) and one of the most international design &amp; t&hellip;
+    We are Avialdo: the leanest, meanest (not really, we are nice! It's one of our superpowers) and one of the most international design &amp; t&hellip;
   </p>
 
   <div class="card__clipper"></div>
@@ -1129,7 +1129,7 @@
   <div class="card__inner">
         <div class="card__body">
       <div class="card__meta">
-        <a href="h#" class="card__published-at-link" target="_blank">
+        <a href="#" class="card__published-at-link" target="_blank">
           <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T15:37:38+00:00">
             April 13, 2016 15:33
           </time>
@@ -1188,7 +1188,7 @@
   <div class="card__inner">
         <div class="card__body">
       <div class="card__meta">
-        <a href="https://twitter.com/futurice/status/719933432680345600" class="card__published-at-link" target="_blank">
+        <a href="" class="card__published-at-link" target="_blank">
           <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T17:03:38+00:00">
             April 12, 2016 17:01
           </time>

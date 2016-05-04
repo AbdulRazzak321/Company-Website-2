@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-
-  Want to apply for a developer job? Follow this path: http://challenge.futurice.com/
-
--->
-
-<!-- Mirrored from futurice.com/cases/me-and-mycity by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:53:58 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <!--[if lt IE 9]><script src="//static.flockler.com/assets/html5shiv/html5shiv-3.7.2-411c036062e933ea2996a9e81d0a1a10.js" type="text/javascript"></script><![endif]-->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
   <title>Jangda Law — Avialdo</title>
   <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
-  <!--[if IE]>
-    <link rel="shortcut icon" href="//static.flockler.com/assets/futurice/images/favicon-3225e8217799f7ff156f47c394d9eb67.ico"/>
-  <![endif]-->
-
-  
+ 
   <meta property="og:title" content="Teaching school kids about life - Me &amp; MyCity — Futurice">
   <meta property="og:description" name="description" content="
 
@@ -34,7 +23,6 @@ Me &amp;amp; MyCity is a unique education concept, with separate solutions tailo
   <meta property="og:image:height" content="630">
 
 
-  <script src="../assets/javascripts/yvs3xkq.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
  
@@ -48,7 +36,7 @@ include ("../Header.php");
 ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-1.png';" src="../assets/images/backgrounds/bg-1.svg" />
+    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-1.png';" src="../assets/images/backgrounds/bg-1.png" />
 
   </div>
 </header>
@@ -211,5 +199,4 @@ Saara Hautala, Me &amp; MyCity Coordinator, Lappeenranta, Finland</p>
     ?>
     </body>
 
-<!-- Mirrored from futurice.com/cases/me-and-mycity by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:54:06 GMT -->
 </html>

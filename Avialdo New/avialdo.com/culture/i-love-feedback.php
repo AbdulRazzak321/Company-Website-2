@@ -29,7 +29,7 @@
     
     <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    <img alt="Bg-6" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-6.png';" src="../assets/images/backgrounds/bg-6.svg" />
+    <img alt="Bg-6" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-6.png';" src="../assets/images/backgrounds/bg-6.png" />
 
   </div>
 </header>

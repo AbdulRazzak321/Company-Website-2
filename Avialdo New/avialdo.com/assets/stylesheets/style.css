@@ -2723,8 +2723,9 @@ span.article__author-link {
     .footer__logo {
         display: inline-block;
         vertical-align: top;
-        width: 32%;
-        text-align: right
+        width: 17%;
+        text-align: center;
+        margin-left: 45px;
     }
 }
 
@@ -2732,24 +2733,24 @@ span.article__author-link {
     display: inline-block;
     width: 120px;
     height: auto;
-    margin: -30px 100px 18px
+    margin: auto;
         
 }
 
 .footer__tagline {
-    display: block;
+    display: inline-block;
     text-align: center;
     font-size: 0.88889em;
     font-weight: 600;
     max-width: 200px;
-    margin-left: auto;
-    margin-right: 65px
+   
+   
 }
 
 @media (min-width: 824px) {
     .footer__tagline {
         max-width: 200px;
-        margin-left: 130px
+      
     }
 }
 
@@ -2782,7 +2783,7 @@ span.article__author-link {
     width: 40px;
     height: 6px;
     border: 0;
-    margin: 17px 0 15px 5px
+    
 }
 
 .footer__menu p {
@@ -3226,7 +3227,7 @@ span.article__author-link {
     font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
     font-size: 0.88889em;
     font-weight: 400;
-    width: 85%;
+    width: 100%;
     border: 2px solid #B5ACAC;
     background: #fff;
 
@@ -3286,7 +3287,7 @@ span.article__author-link {
 
 .application-form__field label {
     text-align: initial;
-    margin-left: 60px;
+    
 
 }
 

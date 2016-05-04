@@ -33,6 +33,7 @@
     <picture class="person__feature-image">
       <img src="../assets/images/res/kaho20150727140956--t2ih9q1fji_s800x450_q80_noupscale.jpg" alt="Kimmo Ahokas">
       <!--[if IE 9]><video style="display: none;"><![endif]-->
+<!--
       <source srcset="
         https:../assets/images/res/kaho20150727140956--t2ih9q1fji_s800x450_q90_noupscale.jpeg,
         https:../assets/images/res/kaho20150727140956--t2ih9q1fji_s1600x900_q65_noupscale.jpeg 2x" media="(min-width: 800px)">
@@ -42,8 +43,9 @@
       <source srcset="
         https:../assets/images/res/377/kaho20150727140956--t2ih9q1fji_s360x202_q90_noupscale.jpeg,
         https:../assets/images/res/kaho20150727140956--t2ih9q1fji_s720x404_q65_noupscale.jpeg 2x" media="(min-width: 200px)">
+-->
       <!--[if IE 9]></video><![endif]-->
-      <img srcset="../assets/images/res/kaho20150727140956--t2ih9q1fji_s800x450_q90_noupscale.jpeg" alt="Kimmo Ahokas">
+      <img srcset="../assets/images/res/kaho20150727140956--t2ih9q1fji_s800x450_q80_noupscale.jpg" alt="Kimmo Ahokas">
     </picture>
   <div class="person__sheet__padding">
     <h1 class="person__name">Kimmo Ahokas</h1>

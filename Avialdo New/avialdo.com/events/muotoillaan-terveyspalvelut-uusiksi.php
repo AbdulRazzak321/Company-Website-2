@@ -54,7 +54,7 @@ http://tinyurl.com/futurice-palvelumuotoilukurssi
     ?>  
     <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-4.png';" src="../assets/images/backgrounds/bg-4.svg" />
+    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-4.png';" src="../assets/images/backgrounds/bg-4.png" />
 
   </div>
 </header>
@@ -97,12 +97,12 @@ http://tinyurl.com/futurice-palvelumuotoilukurssi
 <div class="article__event__field article__event__field--website">
 <div class="article__event__label">Kotisivu</div>
 
-<div class="article__event__website"><a href="http://tinyurl.com/futurice-palvelumuotoilukurssi" target="_blank">http://tinyurl.com/futurice-palvelumuotoilukurssi</a></div>
+<div class="article__event__website"><a href="" target="_blank">http://tinyurl.com/futurice-palvelumuotoilukurssi</a></div>
 </div>
 </div>
 
 <figure class="article__figure">
-<div class="article__figure__placeholder"><img alt="" src="../../flockler.com/thumbs/2004/palvelumuotoilukurssi_s830x0_q80_noupscale.png" style="max-height:none !important"></div>
+<div class="article__figure__placeholder"><img alt="" src="../assets/images/res/palvelumuotoilukurssi_s830x0_q80_noupscale.png" style="max-height:none !important"></div>
 </figure>
 
 <p> </p>
@@ -114,7 +114,7 @@ http://tinyurl.com/futurice-palvelumuotoilukurssi
       <h3 class="contact-person__heading">For more information, contact:</h3>
         <div class="contact-person" itemscope itemptype="http://schema.org/Person">
           <figure class="contact-person__figure">
-            <img alt="" src="../../flockler.com/thumbs/sites/377/mirkka-leve-hk_s100x100_q80_noupscale.png" />
+            <img alt="" src="../assets/images/res/mirkka-leve-hk_s100x100_q80_noupscale.png" />
           </figure>
           <div class="contact-person__body">
             <span class="contact-person__name" itemprop="name">Mirkka Länsisalo</span>

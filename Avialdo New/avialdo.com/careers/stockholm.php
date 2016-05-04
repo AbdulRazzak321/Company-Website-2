@@ -50,7 +50,8 @@ We&amp;#39;re doing awes">
             ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-4.png';" src="../assets/images/backgrounds/bg-4.svg" />
+    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-4.png';" src="../assets/images/backgrounds/bg-4.png" />
+    <img alt="Bg-4" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-4.png';" src="../assets/images/backgrounds/bg-4.png" />
 
   </div>
 </header>

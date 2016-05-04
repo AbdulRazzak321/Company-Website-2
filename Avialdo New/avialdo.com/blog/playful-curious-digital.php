@@ -38,12 +38,6 @@ Digi">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-
-  <script src="../../use.typekit.net/yvs3xkq.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-
-  <link href="../../static.flockler.com/assets/futurice/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
-
 </head>
 <body class="view--articles view--articles-show is-article-view is-blog-post-view" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->
@@ -80,7 +74,7 @@ Digi">
     </header>
     <div class="article__body" itemprop="articleBody">
       <figure class="article__figure">
-<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../../flockler.com/thumbs/1992/jaana_s1800x0_q80_noupscale.jpg" target="_blank"><img alt="Jaana Rosendahl, Taaleritehdas" src="../../flockler.com/thumbs/1992/jaana_s830x0_q80_noupscale.jpg"></a></div>
+<div class="article__figure__placeholder"><a class="article__figure__link" data-type="image" href="../assets/images/res/jaana_s1800x0_q80_noupscale.jpg" target="_blank"><img alt="Jaana Rosendahl, Taaleritehdas" src="../assets/images/res/jaana_s830x0_q80_noupscale.jpg"></a></div>
 
 <figcaption><span class="article__figure__caption">Jaana Rosendahl</span></figcaption>
 </figure>

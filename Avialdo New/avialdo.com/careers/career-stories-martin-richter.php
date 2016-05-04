@@ -14,7 +14,7 @@
   <meta property="og:description" name="description" content="Futurice gives people freedom to develop themselves. I think that people are smart, and if you don’t get in their way, they’ll know what to do. ">
   <meta property="og:type" content="article">
   <meta property="og:url" content="career-stories-martin-richter.html">
-  <meta property="og:image" content="../../flockler.com/thumbs/2003/martin_richter_s1200x630_noupscale.jpg">
+  <meta property="og:image" content="../assets/images/res/martin_richter_s1200x630_noupscale.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -28,7 +28,7 @@
   
         <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
             <div class="header__container">
-            <img alt="Bg-5" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-5.png';"                              src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-5.svg" />
+            <img alt="Bg-5" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-5.png';"                              src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-5.png" />
 
   </div>
 </header>
@@ -47,7 +47,7 @@
 
 
     <div class="article__body" itemprop="articleBody">
-      <figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../../flockler.com/thumbs/2003/martin_richter--ld7fbhgway_s830x0_q80_noupscale.jpg">
+      <figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../assets/images/res/martin_richter--ld7fbhgway_s830x0_q80_noupscale.jpg">
 <figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
 </figure>
 
@@ -91,7 +91,7 @@
 <p>When we build something, it actually has an impact in the user game: our products are guaranteed to be used by real people. This also means that we get to further develop our clients’ products – they’re never done, so to speak.</p>
 </blockquote>
 
-<figure contenteditable="false" data-flockler="image-add"><img alt="Martin on Google Hangout​​" src="../../flockler.com/thumbs/2003/martin2_s830x0_q80_noupscale.jpg">
+<figure contenteditable="false" data-flockler="image-add"><img alt="Martin on Google Hangout​​" src="../assets/images/res/martin2_s830x0_q80_noupscale.jpg">
 <figcaption><span class="image-caption-title" contenteditable="false">Martin on Google Hangout​​</span></figcaption>
 </figure>
 

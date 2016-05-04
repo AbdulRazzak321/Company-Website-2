@@ -69,7 +69,7 @@
   <h2 class="contact-block__title">
     Sales
   </h2>
-  <img src="futurice-0163jussi-hacklin_s120x120_q80_noupscale.jpg" alt="Jussi Hacklin"
+  <img src="assets/images/res/futurice-0163jussi-hacklin_s120x120_q80_noupscale.jpg" alt="Jussi Hacklin"
     class="contact-block__contact-person__avatar">
   <h3 class="contact-block__contact-person__name">Jussi Hacklin</h3>
   <p class="contact-block__contact-person__details">
@@ -773,7 +773,7 @@
     <fieldset class="application-form__fieldset">
       <div class="application-form__field">
         <label class="application-form__label" for="application-form__name">Name*</label>
-        <input type="text" id="contact-name" name="contact-name" placeholder="Name" required>
+        <input type="text" pattern=”\w*” id="contact-name" name="contact-name" placeholder="Name" required>
       </div>
 
       <div class="application-form__field">
@@ -864,13 +864,21 @@
 						email: $("#contact-email").val(),
 						message: $("#contact-message").val()
 					};
-				if(dataString['name'] == '' || dataString['email'] == '' || dataString['message'] == ''){
+                
+				 if(dataString['name'] == '' && dataString['email'] == '' && dataString['message'] == ''){
 					$('#contact-alert').text("All fields are required.");
-				}else if($("#contact-message").val().length < 10){
-					$('#contact-alert').text("Your message should contain more than 10 characters.");
-				}else if(!validateEmail($('#contact-email').val()))
+				}
+                else if(dataString['name'] == ''){
+					$('#contact-alert').text("Name fields is required.");}
+                else if(dataString['email'] == ''){
+					$('#contact-alert').text("Email fields is required.");}
+                else if(dataString['message'] == ''){
+					$('#contact-alert').text("Message fields is required.");}
+                else if(!validateEmail($('#contact-email').val()))
 				{
 					$('#contact-alert').text("Please enter a valid email address.");
+				}else if($("#contact-message").val().length < 10){
+					$('#contact-alert').text("Your message should contain more than 10 characters.");
 				}else{
 				 $.ajax({
 					 type: "POST",

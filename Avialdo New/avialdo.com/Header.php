@@ -1,14 +1,9 @@
 <html>
-     <link href="/avialdo.com/assets/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+     <link href="/avialdo.com/assets/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
     
  
-   <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-M2CWVJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M2CWVJ');</script>
+  
+
 
     <script src="/avialdo.com/assets/javascripts/yvs3xkq.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
@@ -28,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
   <div class="nav__padding">
     <a href="/avialdo.com/index.php" class="nav__logo-link">
-      <img alt="Avialdo" class="nav__logo" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/avialdo-logo--green.png';" src="/avialdo.com/assets/images/avialdo-logo--green.svg" />
+      <img alt="Avialdo" class="nav__logo" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/avialdo-logo--green.png';" src="/avialdo.com/assets/images/avialdo-logo--green.png" />
 </a>    <div class="nav-collapse">
 
 

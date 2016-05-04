@@ -1,25 +1,25 @@
 <html>
-     <link href="assets/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
+    
   <body>
       <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
        <div class="follow-us">
       <h3 class="follow-us__heading">Follow us:</h3>    
        <a href="https://www.facebook.com/avialdo.inc" class="follow-us__link follow-us__link--facebook" target="_blank">
-          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.svg" />
+          <img alt="Facebook" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.png" />
 </a>      <a href="https://twitter.com/AvialdoSolution" class="follow-us__link follow-us__link--twitter" target="_blank">
-          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.svg" />
+          <img alt="Twitter" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.png" />
 </a>        <a href="https://www.linkedin.com/company/avialdo" class="follow-us__link follow-us__link--instagram" target="_blank">
-          <img alt="Linkedin" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.svg" />
+          <img alt="Linkedin" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.png" />
 </a>                             
         <a href="skype:avialdo.solutions?call" class="follow-us__link follow-us__link--vimeo" target="_blank">
-          <img alt="Skype" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.svg" />
+          <img alt="Skype" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.png" />
 </a>    
 
     </div>
   <div class="footer__padding">
     <div class="footer__logo">
       <a href="/avialdo.com/index.php">
-        <img alt="Avialdo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/avialdo-logo--white.png';" src="/avialdo.com/assets/images/avialdo-logo--white.svg" />
+        <img alt="Avialdo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/avialdo-logo--white.png';" src="/avialdo.com/assets/images/avialdo-logo--white.png" />
 </a>
       <p class="footer__tagline">We create digital services for people to love</p>
     </div>
@@ -54,7 +54,7 @@
     var APIBASEPATH = "https://flockler.com/api";
   </script>
       
-  <script src="/avialdo.com/assets/javascripts/application-689c6d006591a03af50a5a56fc93ce18.js" type="text/javascript"></script>
+  <script src="/avialdo.com/assets/javascripts/script.js" type="text/javascript"></script>
 
 
     <!-- Start of Async HubSpot Analytics Code -->

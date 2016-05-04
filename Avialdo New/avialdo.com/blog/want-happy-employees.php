@@ -44,7 +44,7 @@ $current = 'blog';
     ?>
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-1.png';" src="../a ssets/images/backgrounds/bg-1.svg" />
+    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/images/backgrounds/bg-1.png"';" src="../assets/images/backgrounds/bg-1.png" />
 
   </div>
 </header>
