@@ -869,15 +869,19 @@
 					$('#contact-alert').text("All fields are required.");
 				}
                 else if(dataString['name'] == ''){
+                     $('.contact_conditions').css('color', 'red');
 					$('#contact-alert').text("Name fields is required.");}
                 else if(dataString['email'] == ''){
+                     $('.contact_conditions').css('color', 'red');
 					$('#contact-alert').text("Email fields is required.");}
                 else if(dataString['message'] == ''){
+                     $('.contact_conditions').css('color', 'red');
 					$('#contact-alert').text("Message fields is required.");}
                 else if(!validateEmail($('#contact-email').val()))
 				{
 					$('#contact-alert').text("Please enter a valid email address.");
 				}else if($("#contact-message").val().length < 10){
+                     $('.contact_conditions').css('color', 'red');
 					$('#contact-alert').text("Your message should contain more than 10 characters.");
 				}else{
 				 $.ajax({
@@ -891,6 +895,7 @@
                           $('input[type="text"],textarea').val('');
                         $('input[type="email"],textarea').val('');
                     }else{
+                         $('.contact_conditions').css('color', 'red');
                             $('#contact-alert').text("Failed to send your message. Please try later.");
 						}
 					 },
