@@ -130,21 +130,21 @@
         
 <article class="article-list-item "
   itemscope itemprop="article" itemtype="http://schema.org/article">
-  <a href="banks-without-assets.html" class="article-list-item__link" itemprop="url">
+  <a href="" class="article-list-item__link" itemprop="url">
     <h1 class="article-list-item__title" itemprop="headline">Banks without assets</h1>
 </a></article>
 
         
 <article class="article-list-item "
   itemscope itemprop="article" itemtype="http://schema.org/article">
-  <a href="from-brick-walls-to-glass-walls.html" class="article-list-item__link" itemprop="url">
+  <a href="" class="article-list-item__link" itemprop="url">
     <h1 class="article-list-item__title" itemprop="headline">From brick walls to glass walls</h1>
 </a></article>
 
         
 <article class="article-list-item "
   itemscope itemprop="article" itemtype="http://schema.org/article">
-  <a href="setting-it-goals-wheres-your-focus.html" class="article-list-item__link" itemprop="url">
+  <a href="" class="article-list-item__link" itemprop="url">
     <h1 class="article-list-item__title" itemprop="headline">Setting IT goals: Where&#x27;s your focus?</h1>
 </a></article>
 
@@ -155,21 +155,21 @@
         
 <article class="article-list-item "
   itemscope itemprop="article" itemtype="http://schema.org/article">
-  <a href="design-at-futurice.html" class="article-list-item__link" itemprop="url">
+  <a href="" class="article-list-item__link" itemprop="url">
     <h1 class="article-list-item__title" itemprop="headline">What kind of company are you?</h1>
 </a></article>
 
         
 <article class="article-list-item "
   itemscope itemprop="article" itemtype="http://schema.org/article">
-  <a href="key-features.html" class="article-list-item__link" itemprop="url">
+  <a href="" class="article-list-item__link" itemprop="url">
     <h1 class="article-list-item__title" itemprop="headline">Key Features</h1>
 </a></article>
 
         
 <article class="article-list-item "
   itemscope itemprop="article" itemtype="http://schema.org/article">
-  <a href="digital-hospitality.html" class="article-list-item__link" itemprop="url">
+  <a href="" class="article-list-item__link" itemprop="url">
     <h1 class="article-list-item__title" itemprop="headline">Hospitality in the digital age</h1>
 </a></article>
 

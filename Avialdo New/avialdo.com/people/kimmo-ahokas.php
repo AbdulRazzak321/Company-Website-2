@@ -64,24 +64,21 @@
                 <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%63%6c%61%73%73%3d%5c%22%70%65%72%73%6f%6e%5f%5f%73%6f%6d%65%2d%6c%69%6e%6b%5c%22%20%68%72%65%66%3d%5c%22%6d%61%69%6c%74%6f%3a%6b%69%6d%6d%6f%2e%61%68%6f%6b%61%73%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%5c%22%3e%6b%69%6d%6d%6f%2e%61%68%6f%6b%61%73%40%66%75%74%75%72%69%63%65%2e%63%6f%6d%3c%5c%2f%61%3e%27%29%3b'))</script>
             </li>
             <li>
-                <a href="https://github.com/kimmoahokas" class="person__some-link">Github</a>
+                <a href="" class="person__some-link">Github</a>
             </li>
             <li>
-                <a href="tel://+358 50 533 1351" class="person__some-link">+358 50 533 1351</a>
+                <a href="" class="person__some-link">+358 50 533 1351</a>
             </li>
             <li>
-                <a href="https://twitter.com/kimmoahokas" class="person__some-link">@kimmoahokas</a>
+                <a href="" class="person__some-link">@kimmoahokas</a>
             </li>
             <li>
-                <a href="http://kimia.fi/" class="person__some-link">Website</a>
+                <a href="" class="person__some-link">Website</a>
             </li>
         </ul>
       </div>
 
-      <div class="person__section person__section--twitter">
-        <a class="twitter-timeline" href="https://twitter.com/kimmoahokas" data-screen-name="kimmoahokas" data-tweet-limit="1" data-chrome="nofooter noheader transparent" data-widget-id="525192070701408256" data-link-color="#349D4A" data-show-replies="false">Tweets by @kimmoahokas</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
+      
 
   </div>
 </div>

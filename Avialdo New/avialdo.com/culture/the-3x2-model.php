@@ -59,8 +59,8 @@
 <p dir="ltr"><span>"We trust our people to make the best decisions themselves. Nobody else can know better what they should be doing."</span></p>
 </blockquote>
 
-<p dir="ltr" style="margin-left:40px">Hanno Nevanlinna on <a href="http://new.futurice.com/culture/trust">Trust</a><br>
-More on <strong><a href="http://new.futurice.com/search?q=3x2">3x2</a></strong></p>
+<p dir="ltr" style="margin-left:40px">Hanno Nevanlinna on <a href="">Trust</a><br>
+More on <strong><a href="">3x2</a></strong></p>
 
     </div>
 

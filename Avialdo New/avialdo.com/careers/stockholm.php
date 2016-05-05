@@ -105,11 +105,11 @@ We&amp;#39;re doing awes">
 
 <p>Important: as you read the job ads below, keep in mind that they’re just examples and we’re really looking for people, not line items on a resumé. If you’re willing to grow, we’ll support you in the process. You’ll work with bleeding edge tech, using the best available methods, with the full backing of our world-class developers.</p>
 
-<p><a href="../open-positions/web-developer-stockholm.html">http://futurice.com/open-positions/web-developer-stockholm</a></p>
+<p><a href="">http://futurice.com/open-positions/web-developer-stockholm</a></p>
 
-<p><a href="../open-positions/ios-developer-stockholm.html">http://futurice.com/open-positions/ios-developer-stockholm</a></p>
+<p><a href="">http://futurice.com/open-positions/ios-developer-stockholm</a></p>
 
-<p>PS. <a href="five-steps-to-a-great-application.html">Make your application great in five easy steps</a>.</p>
+<p>PS. <a href="">Make your application great in five easy steps</a>.</p>
 
     </div>
 

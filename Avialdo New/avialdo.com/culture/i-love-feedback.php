@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
  
   
-  <meta property="og:title" content="I love feedback — Futurice">
+  <meta property="og:title" content="I love feedback — Avialdo">
   <meta property="og:description" name="description" content="Giving and receiving feedback on a daily basis is something that binds us together while working on a shared project. ">
   <meta property="og:type" content="article">
   <meta property="og:url" content="i-love-feedback.html">
@@ -59,13 +59,13 @@
 
 <p>For making it everyone’s business, we created the ”I Love Feedback” slogan to embrace sharing our opinions. </p>
 
-<p>As Software Developer <strong>Jouni Kaplas</strong> <a href="http://new.futurice.com/blog/the-day-when-i-started-to-listen-to-the-client">put it</a>: </p>
+<p>As Software Developer <strong>Jouni Kaplas</strong> <a href="">put it</a>: </p>
 
 <blockquote>
 <p>Listening to another party is not about dismissing your own argument, it’s about understanding theirs. When two parties reach a mutual understanding, they can count on each other, and the communication transforms into a search for common strategies. If you reach that point, you’re golden.  </p>
 </blockquote>
 
-<p>More on <strong><a href="http://new.futurice.com/search?q=Feedback">Feedback</a></strong></p>
+<p>More on <strong><a href="">Feedback</a></strong></p>
 
     </div>
 
@@ -108,5 +108,4 @@
     ?>
 </body>
 
-<!-- Mirrored from futurice.com/culture/i-love-feedback by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:56:40 GMT -->
 </html>

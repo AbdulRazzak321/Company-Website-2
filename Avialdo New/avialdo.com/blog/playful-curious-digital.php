@@ -79,7 +79,7 @@ Digi">
 <figcaption><span class="article__figure__caption">Jaana Rosendahl</span></figcaption>
 </figure>
 
-<p><em><a href="https://www.linkedin.com/in/jaana-rosendahl-a9aa309">Jaane Rosendahl</a> is a business developer with a passion for customer-centricity, brands, company cultures and customer economics. For 50% of her 30-year career, she has worked to help companies embrace the digital. </em></p>
+<p><em><a href="">Jaane Rosendahl</a> is a business developer with a passion for customer-centricity, brands, company cultures and customer economics. For 50% of her 30-year career, she has worked to help companies embrace the digital. </em></p>
 
 <p>Digital technogy is awesome! It makes the impossible possible. I remember being one of the lucky ones who got a mobile phone in the early 90’s. Could there be a more wondrous device? And emails? I came to work after maternity leave and it was there! What a difference! The speed, reach and simultaneity of it! Not to mention text messaging! The world had changed. We had stepped into the world of communication. It’s a world in which we are – as companies – still struggling to find our way.</p>
 

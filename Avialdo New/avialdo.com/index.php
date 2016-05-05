@@ -473,7 +473,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/android-developer-munich.html">(Senior) Android Developer (Munich)</a>
+    <a href="open-positions/android-developer-munich.php">(Senior) Android Developer (Munich)</a>
   </h1>
 
   <div class="card__meta">
@@ -496,7 +496,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="open-positions/senior-ios-developer-munich.html" class="card__cover">
+<a href="open-positions/senior-ios-developer-munich.php" class="card__cover">
   <picture>
   
     <source srcset="https://flockler.com/thumbs/2659/munich_ios_s444x250_m1x0_q90_noupscale.jpg,
@@ -516,7 +516,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/senior-ios-developer-munich.html">(Senior) iOS Developer (Munich)</a>
+    <a href="open-positions/senior-ios-developer-munich.php">(Senior) iOS Developer (Munich)</a>
   </h1>
 
   <div class="card__meta">
@@ -537,7 +537,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="open-positions/technical-lead-stockholm.html" class="card__cover">
+<a href="open-positions/technical-lead-stockholm.php" class="card__cover">
   <picture>
    
     <source srcset="https://flockler.com/thumbs/2659/photo-1438354886727-070458b3b5cf_s444x250_m1x0_q90_noupscale.jpeg,
@@ -557,7 +557,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="open-positions/technical-lead-stockholm.html">Tech Lead (Stockholm)</a>
+    <a href="open-positions/technical-lead-stockholm.php">Tech Lead (Stockholm)</a>
   </h1>
 
   <div class="card__meta">

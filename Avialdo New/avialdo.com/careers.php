@@ -407,7 +407,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="open-positions/full-stack-developer-helsinki.html" class="card__cover">
+<a href="" class="card__cover">
   <picture>
 
     <source srcset="https://flockler.com/thumbs/2659/1_s444x250_m1x0_q90_noupscale.jpeg,

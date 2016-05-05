@@ -3294,7 +3294,7 @@ span.article__author-link {
 @media (min-width: 600px) {
     .application-form__field {
        
-        width: 100%
+        width: 100%;
     }
 }
 
@@ -4610,7 +4610,8 @@ span.article__author-link {
 
 .section__heading a:focus,
 .section__heading a:hover {
-    text-decoration: underline
+    text-decoration: underline;
+    color: #FF2A55;
 }
 
 .section__heading--main {

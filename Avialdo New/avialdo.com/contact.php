@@ -229,7 +229,7 @@
         Annankatu 34 B, 8th floor<br>
         00100 Helsinki<br>
         Finland<br>
-        <a href="https://www.google.fi/maps/search/Annankatu+34+B/@60.1687025,24.9341899,17z/data=!3m1!4b1" target="_blank">See on Google Maps</a><br><br>
+        <a href="https://www.google.com/maps/place/Blue+Ribbon+Bakery/@24.8798984,67.0367009,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e5b929c737b:0x69f9ac452066ce92!8m2!3d24.8798935!4d67.0388896" target="_blank">See on Google Maps</a><br><br>
         Fax +358 9 6124 7038
       </p>
     </div>
