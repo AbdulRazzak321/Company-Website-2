@@ -27,11 +27,6 @@
   <meta property="og:url" content="careers.html">
 
 
-  <script src="assets/javascripts/yvs3xkq.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-
-  <link href="assets/stylesheets/application-c89517cc680dd524a0b43dc0e8f7f8ce.css" media="screen" rel="stylesheet" type="text/css" />
-
 </head>
 <body class="view--sections view--sections-show is-section-show is-section-view is-section-view--careers" itemscope itemtype="http://schema.org/WebPage">
   <!-- Google Tag Manager -->

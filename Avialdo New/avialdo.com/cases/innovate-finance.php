@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
-  <title>Design and implementation of a digital presence - Case Innovate Finance — Availdo</title>
-  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <title>Design and implementation of a digital presence - Case Innovate Finance — Avialdo </title>
+  
   <meta property="og:title" content="Design and implementation of a digital presence - Case Innovate Finance — Futurice">
   <meta property="og:description" name="description" content="We designed a responsive user interface for members and public audience which they can access both with desktop and mobile devices. ">
   <meta property="og:type" content="article">
   <meta property="og:url" content="innovate-finance.html">
-  <meta property="og:image" content="../../flockler.com/thumbs/1993/reference_innovate_finance_01--50wvyi7t3h_s1200x630_noupscale.png">
+  <meta property="og:image" content="../assets/images/res/reference_innovate_finance_01--50wvyi7t3h_s1200x630_noupscale.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-
+</head>
 <body class="view--articles view--articles-show is-article-view is-case-study-view" itemscope itemtype="http://schema.org/WebPage">
 <?php
     $current ='work';
@@ -63,7 +63,7 @@
 <div> </div>
 
 <div style="margin-left: 40px;">
-<span>Read more on </span><a href="http://www.innovatefinance.com/">www.innovatefinance.com</a>
+<span>Read more on </span><a href="">www.innovatefinance.com</a>
 </div>
 
     </div>
@@ -130,5 +130,5 @@
     ?>
 </body>
 
-<!-- Mirrored from futurice.com/cases/innovate-finance by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Apr 2016 07:56:24 GMT -->
+
 </html>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
   <title>Avialdo Korkster</title>
-  <link rel="icon" type="image/png" href="../../static.flockler.com/assets/futurice/images/favicon-73ef94531581d9f27e41233515c60919.png">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
   <meta property="og:title" content="Mobile app makes customers&#x27; daily lives easier -  K-ruoka — Futurice">
   <meta property="og:description" name="description" content="Design &amp; development of a mobile app to make the daily lives of Kesko&#x27;s customers a little easier. ">
   <meta property="og:type" content="article">
@@ -79,7 +79,7 @@
 
 <p><em>“Futurice’s agile way of working and the ability to create products that appeal to users helped us take better advantage of the deep understanding we have of our customers’ needs.”  </em><strong>Mika Kakko, E-commerce Sales Director at Ruokakesko Oy</strong></p>
 
-<p><a href="https://itunes.apple.com/fi/app/k-ruoka/id1012903895?mt=8">K-ruoka at App Store</a>   <a href="https://play.google.com/store/apps/details?id=fi.ruokakesko.k_ruoka&amp;hl=fi">K-ruoka at Play Store</a>  <a href="https://www.microsoft.com/fi-fi/store/apps/k-ruoka/9nblggh6hzfj">K-ruoka at Windows Phone Store</a></p>
+<p><a href="">K-ruoka at App Store</a>   <a href="">K-ruoka at Play Store</a>  <a href="">K-ruoka at Windows Phone Store</a></p>
 
 <p> </p>
 

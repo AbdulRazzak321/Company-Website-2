@@ -24,7 +24,7 @@
     ?>
     <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-1.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-1.svg" />
+    <img alt="Bg-1" onerror="this.onerror=null;this.src='../assets/futurice/images/backgrounds/bg-1.png';" src="http://static.flockler.com/assets/futurice/images/backgrounds/bg-1.png" />
 
   </div>
 </header>
@@ -43,8 +43,8 @@
 
 
     <div class="article__body" itemprop="articleBody">
-      <figure contenteditable="false" data-flockler="image-add"><img alt="​" src="../assets/images/res/3x2_artcile_s830x0_q80_noupscale.png">
-<figcaption><span class="image-caption-title" contenteditable="false">​</span></figcaption>
+      <figure contenteditable="false" data-flockler="image-add"><img alt="" src="../assets/images/res/3x2_artcile_s830x0_q80_noupscale.png">
+<figcaption><span class="image-caption-title" contenteditable="false"></span></figcaption>
 </figure>
 
 <p><span><span>The best decisions are made out in the field with the most information available. Still, in a traditional hierarchical organization, decisions are often made on the top floor.</span></span></p>

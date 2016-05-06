@@ -1459,7 +1459,7 @@ p {
 
 .article__body img {
     max-width: 100%;
-    height: 656px;
+    height: auto;
 }
 
 .article__body>img {
@@ -1487,6 +1487,9 @@ p {
 @media (min-width: 984px) {
     .article__body figure {
         margin: 3.75em -75px
+    }
+    .article__body img {
+     height: 656px;
     }
 }
 
@@ -2908,13 +2911,13 @@ span.article__author-link {
 
 .is-page-view--work .header {
     background-color: #CDE9E3;
-    background-image: url("../images/backgrounds/work-2e0479ae682e14d26850fd0eeee19b8b.png");
+    background-image: url("../images/backgrounds/work-2e0479ae682e14d26850fd0eeee19b8b3.png");
 
 }
 
 @media (min-width: 568px) {
     .is-page-view--work .header {
-        background-image: image("../images/backgrounds/work-2e0479ae682e14d26850fd0eeee19b8b.png")
+        background-image: url("../images/backgrounds/work-2e0479ae682e14d26850fd0eeee19b8b2.png")
  
     }
 }
@@ -2928,13 +2931,13 @@ span.article__author-link {
 
 .is-section-view--culture .header {
     background-color: #F2EDE5;
-    background-image: url(../images/backgrounds/culture-small-8ec2f32579bd9359b41a33529b805dc4.png);
+    background-image: url(../images/backgrounds/culture-b51ed4776a21503d47b5817636aef3253.png);
    
 }
 
 @media (min-width: 568px) {
     .is-section-view--culture .header {
-        background-image: url(../images/backgrounds/culture-narrow-6a07055fb94ae7406e53b72b09eb3e33.png);
+        background-image: url(../images/backgrounds/culture-b51ed4776a21503d47b5817636aef3251.png);
    
     }
 }
@@ -2948,12 +2951,12 @@ span.article__author-link {
 
 .is-section-view--blog .header {
     background-color: #EEF2F4;
-       background-image: url(../images/backgrounds/blog-narrow-55d462c5580946f6b7120e2541b5f84e.png);
+       background-image: url(../images/backgrounds/blog-narrow-55d462c5580946f6b7120e2541b5f84e3.png);
 }
 
 @media (min-width: 568px) {
     .is-section-view--blog .header {
-            background-image: url(../images/backgrounds/blog-narrow-55d462c5580946f6b7120e2541b5f84e.png);
+            background-image: url(../images/backgrounds/blog-narrow-55d462c5580946f6b7120e2541b5f84e1.png);
     }
 }
 
@@ -2965,13 +2968,13 @@ span.article__author-link {
 
 .is-section-view--careers .header {
     background-color: #EEF2F4;
-    background-image: url(../images/backgrounds/careers-small-226433ddd462c7c91398ef9425f22d02.png);
+    background-image: url(../images/backgrounds/Untitled22.png);
 /*    background-image: url(//static.flockler.com/assets/futurice/images/headers/careers-small-0dd01990d88a974d714d0b53fee4501b.svg), none*/
 }
 
 @media (min-width: 568px) {
     .is-section-view--careers .header {
-        background-image: url(../images/backgrounds/careers-narrow-15bc2a8ef1bd1084b7e2f74cfea46784.png);
+        background-image: url(../images/backgrounds/Untitled21.png);
 /*        background-image: url(//static.flockler.com/assets/futurice/images/headers/careers-narrow-46bb54a4c7e89c3c0a8500bb5e57778d.svg), none*/
     }
 }
@@ -2991,7 +2994,7 @@ span.article__author-link {
 
 @media (min-width: 568px) {
     .is-section-view--events .header {
-        background-image: url(../images/backgrounds/events-narrow-3a1c7959d553e5099fb0ddfd8101838b.png);
+        background-image: url(../images/backgrounds/events-7eb67ad260782bf452ff3f8c2fe3baec11.png);
 /*        background-image: url(//static.flockler.com/assets/futurice/images/headers/events-narrow-4b0c3005f89bd0eabd0a87ffa17a20cb.svg), none*/
     }
 }
@@ -3005,13 +3008,13 @@ span.article__author-link {
 
 .view--authors-index .header {
     background-color: #F2EDE5;
-    background-image: url(../images/backgrounds/people-small-41074ce5de5e7f09709085163f4b4da2.png);
+    background-image: url(../images/backgrounds/Untitled12.png);
 /*    background-image: url(//static.flockler.com/assets/futurice/images/headers/people-small-bfe37669e2f2acbf3f7985262d2262e2.svg), none*/
 }
 
 @media (min-width: 568px) {
     .view--authors-index .header {
-        background-image: url(../images/backgrounds/headers/people-narrow-6c18ed81958137bf90cda433a4f5b56c.png);
+        background-image: url(../images/backgrounds/Untitled11.png);
 /*        background-image: url(//static.flockler.com/assets/futurice/images/headers/people-narrow-9d5eb2d28cb80486ba67580310d2c6e9.svg), none*/
     }
 }
@@ -3025,13 +3028,13 @@ span.article__author-link {
 
 .is-page-view--contact .header {
     background-color: #FFFFFF;
-    background-image: url(../images/backgrounds/contact-small-7e3b96fc86128cdfa7867659d2901414.png);
+    background-image: url(../images/backgrounds/contact-668dfc400bef7f74867009ea6a1845e83.png);
 /*    background-image: url(//static.flockler.com/assets/futurice/images/headers/contact-small-1c8682c070840e20b1b99c11dbc7312c.svg), none*/
 }
 
 @media (min-width: 568px) {
     .is-page-view--contact .header {
-        background-image: url(../images/backgrounds/contact-narrow-2b4c7c1280b2f247f9d2def48687c985.png);
+        background-image: url(../images/backgrounds/contact-668dfc400bef7f74867009ea6a1845e82.png);
 /*        background-image: url(//static.flockler.com/assets/futurice/images/headers/contact-narrow-9b464c3124dcdf039d4dfa1c42ab30d1.svg), none*/
     }
 }
