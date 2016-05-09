@@ -11,26 +11,22 @@
   <meta property="og:title" content="Avialdo">
   <meta property="og:description" name="description" content="We create digital services for people to love">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="index.html">
+  <meta property="og:url" content="index.php">
 
 </head>
 <body class="view--sites view--sites-index is-site-index" itemscope itemtype="http://schema.org/WebPage">
-  <!-- Google Tag Manager -->
 
-
-<?php
-    $current = 'home';
-    include ("Header.php");
-    
-    ?>
+            <?php
+                    $current = 'home';
+                    include ("Header.php");
+            ?>
   
-
   <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="header__container">
-    <div class="header__reel">
-        <iframe data-src="https://player.vimeo.com/video/111213012?badge=0&amp;byline=0&amp;loop=1&amp;portrait=0&amp;title=0&amp;api=1&amp;player_id=vimeoplayer"
-           id="futurice-reel" frameborder="0" allowfullscreen></iframe>
-      </div>
+        <div class="header__reel">
+                    <iframe data-src="https://player.vimeo.com/video/111213012?                                                                 badge=0&amp;byline=0&amp;loop=1&amp;portrait=0&amp;title=0&amp;api=1&amp;player_id=vimeoplayer"
+                       id="futurice-reel" frameborder="0" allowfullscreen></iframe>
+          </div>
   </div>
 </header>
   <main class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPage">
@@ -49,33 +45,29 @@
   <div class="card__inner">
     
 <a href="cases/me-and-mycity.php">
-<!--
+
   <picture>
-    <source srcset="assets/images/work/jangdalaw.png,
-                    assets/images/jangdalaw.png 2x" media="(min-width: 984px)">
-    <source srcset="assets/images/work/jangdalaw.png,
-                    assets/images/work/jangdalaw.png 2x" media="(min-width: 768px)">
-    <source srcset="assets/images/work/jangdalaw.png,
-                    assets/images/work/jangdalaw.png 2x" media="(min-width: 600px)">
-    <source srcset="assets/images/work/jangdalaw.png,
-                    assets/images/work/jangdalaw.png 2x" media="(min-width: 480px)">
-    <source srcset="assets/images/work/jangdalaw.png,
-                    assets/images/work/jangdalaw.png 2x" media="(min-width: 200px)">
-    <img srcset="assets/images/jangdalaw.png" alt="">
+    <source srcset="assets/images/work/mobile-app-design1(1).png,
+                    assets/images/mobile-app-design1(2).png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/work/mobile-app-design2(1).png,
+                    assets/images/work/mobile-app-design2(2).png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/work/mobile-app-design3(1).png,
+                    assets/images/work/mobile-app-design3(2).png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/work/mobile-app-design4(1).png,
+                    assets/images/work/mobile-app-design4(2).png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/work/mobile-app-design5(1).png,
+                    assets/images/work/mobile-app-design5(2).png 2x" media="(min-width: 200px)">
+    <img srcset="assets/images/mobile-app-design1(1).png" alt="">
   </picture>
-</a>
--->
-    
-  <img src="assets/images/work/jangdalaw.png" alt="HTML tutorial">
       </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/me-and-mycity.php">Jangda Law</a>
+    <a href="cases/me-and-mycity.php">Prize Bond</a>
   </h1>
 
   <div class="card__meta">
-      <span class="card__meta__category">Cases</span>
+      <span class="card__meta__category">Cases: Mobile App</span>
   </div>
 
   <p class="card__summary">
@@ -87,25 +79,103 @@
   </div>
 </article>
 
-          <article class="card" data-id="1735038"
+          <article class="card" data-id="1147235"
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <div class="card__inner">
+    
+<a href="cases/innovate-finance.php" class="card__cover">
+  <picture>
+      <source srcset="assets/images/work/ufcw1.png,
+                    assets/images/work/ufcw2.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/work/ufcw3.png,
+                    assets/images/work/ufcw4.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/work/ufcw5.png,
+                    assets/images/work/ufcw6.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/work/ufcw7.png,
+                    assets/images/work/ufcw8.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/work/ufcw9.png,
+                    assets/images/work/ufcw10.png 2x" media="(min-width: 200px)">
+
+      <img srcset="assets/images/work/ufcw1.png" alt="">
+  </picture>
+</a>
+    
+<div class="card__body">
+  <h1 class="card__title">
+    <a href="cases/innovate-finance.php">UFCW 99</a>
+  </h1>
+
+  <div class="card__meta">
+      <span class="card__meta__category">Cases Moblie App</span>
+  </div>
+
+  <p class="card__summary">
+    Polypropylene Products Limited was a pioneering investment made in 1973 which introduced, for the first time in Pakistan, woven polypropylene bags for industrial packaging.
+  </p>
+
+  <div class="card__clipper"></div>
+</div>
+
+  </div>
+</article>
+                    
+
+          <article class="card" data-id="1671186"
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <div class="card__inner">
+    
+<a href="cases/case-tallink.php" class="card__cover">
+  <picture>
+     <source srcset="assets/images/work/walknsell1.png,
+                    assets/images/work/walknsell2.png 5x" media="(min-width: 984px)">
+    <source srcset="assets/images/work/walknsell3.png,
+                    assets/images/work/walknsell4.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/work/walknsell5.png,
+                    assets/images/work/walknsell6.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/work/walknsell7.png,
+                    assets/images/work/walknsell8.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/work/walknsell9.png,
+                    assets/images/work/walknsell10.png 2x" media="(min-width: 200px)">
+    <img srcset="assets/images/work/walknsell1.png" alt="">
+  </picture>
+</a>
+    
+<div class="card__body">
+  <h1 class="card__title">
+    <a href="cases/case-tallink.php">WalknSell</a>
+  </h1>
+
+  <div class="card__meta">
+      <span class="card__meta__category">Cases: Web Solutions</span>
+  </div>
+
+  <p class="card__summary">
+    WalknSell is a social website that helps students and teachers post classifieds related to their school or university.
+  </p>
+
+  <div class="card__clipper"></div>
+</div>
+
+  </div>
+</article>
+
+                    <article class="card" data-id="1735038"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
 <a href="cases/k-ruoka-mobile.php" class="card__cover">
   <picture>
-<!--
-     <source srcset="assets/images/res/is-refet_s444x250_m1x0_q90_noupscale.png,
-                    assets/images/res/is-refet_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="assets/images/res/is-refet_s368x207_m1x0_q90_noupscale.png,
-                    assets/images/res/is-refet_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="assets/images/res/is-refet_s256x144_m1x0_q90_noupscale.png,
-                    assets/images/res/is-refet_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="assets/images/res/is-refet_s600x338_m1x0_q90_noupscale.png,
-                    assets/images/res/is-refet_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="assets/images/res/is-refet_s320x180_m1x0_q90_noupscale.png,
-                    assets/images/res/is-refet_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
--->
-     <img srcset="assets/images/work/korkster.png" alt="">
+     <source srcset="assets/images/work/korkster1.png,
+                    assets/images/work/korkster2.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/work/korkster3.png,
+                    assets/images/work/korkster4.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/work/korkster5.png,
+                    assets/images/work/korkster6.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/work/korkster7.png,
+                    assets/images/work/korkster8.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/work/korkster9.png,
+                    assets/images/work/korkster10.png 2x" media="(min-width: 200px)">
+     <img srcset="assets/images/work/korkster1.png" alt="">
   </picture>
 </a>
     
@@ -126,89 +196,6 @@
   </div>
 </article>
 
-          <article class="card" data-id="1671186"
-  itemscope itemprop="article" itemtype="http://schema.org/article">
-  <div class="card__inner">
-    
-<a href="cases/case-tallink.php" class="card__cover">
-  <picture>
-<!--
-     <source srcset="assets/images/res/reference_slide_kesko-blank_s444x250_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    assets/images/res/reference_slide_kesko-blank_s888x500_c1227x716_l692x192_m1x0_q65_noupscale.png 5x" media="(min-width: 984px)">
-    <source srcset="assets/images/res/reference_slide_kesko-blank_s368x207_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    assets/images/res/reference_slide_kesko-blank_s736x414_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="assets/images/res/reference_slide_kesko-blank_s256x144_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    assets/images/res/reference_slide_kesko-blank_s512x288_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="assets/images/res/reference_slide_kesko-blank_s600x338_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    assets/images/res/reference_slide_kesko-blank_s1200x675_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="assets/images/res/reference_slide_kesko-blank_s320x180_c1227x716_l692x192_m1x0_q90_noupscale.png,
-                    assets/images/res/reference_slide_kesko-blank_s640x360_c1227x716_l692x192_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
--->
-    <img srcset="assets/images/work/walknsell.png" alt="">
-  </picture>
-</a>
-    
-<div class="card__body">
-  <h1 class="card__title">
-    <a href="cases/case-tallink.php">WalknSell</a>
-  </h1>
-
-  <div class="card__meta">
-      <span class="card__meta__category">Cases: Mobile Solutions</span>
-  </div>
-
-  <p class="card__summary">
-    WalknSell is a social website that helps students and teachers post classifieds related to their school or university.
-  </p>
-
-  <div class="card__clipper"></div>
-</div>
-
-  </div>
-</article>
-
-          <article class="card" data-id="1147235"
-  itemscope itemprop="article" itemtype="http://schema.org/article">
-  <div class="card__inner">
-    
-<a href="cases/innovate-finance.php" class="card__cover">
-  <picture>
-<!--
-      <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s444x250_m1x0_q90_noupscale.jpg,
-                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s368x207_m1x0_q90_noupscale.jpg,
-                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s256x144_m1x0_q90_noupscale.jpg,
-                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s600x338_m1x0_q90_noupscale.jpg,
-                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s320x180_m1x0_q90_noupscale.jpg,
-                    assets/images/res/small2015_ts_ships_baltic_queen_night_jokemedia_rgb_007_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
--->
-    <!--[if IE 9]></video><![endif]-->
-    <img srcset="assets/images/work/polypropylene_main.png" alt="">
-  </picture>
-</a>
-    
-<div class="card__body">
-  <h1 class="card__title">
-    <a href="cases/innovate-finance.php">Polypropylene</a>
-  </h1>
-
-  <div class="card__meta">
-      <span class="card__meta__category">Consulting</span>
-  </div>
-
-  <p class="card__summary">
-    Polypropylene Products Limited was a pioneering investment made in 1973 which introduced, for the first time in Pakistan, woven polypropylene bags for industrial packaging.
-  </p>
-
-  <div class="card__clipper"></div>
-</div>
-
-  </div>
-</article>
-                    
 <!--
  <article class="card" data-id="514505"
   itemscope itemprop="article" itemtype="http://schema.org/article">
