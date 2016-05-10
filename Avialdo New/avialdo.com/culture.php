@@ -43,18 +43,8 @@
 <a href="culture/i-love-feedback.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="https://flockler.com/thumbs/1994/i-love-feedback_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/i-love-feedback_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1994/i-love-feedback_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/i-love-feedback_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1994/i-love-feedback_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/i-love-feedback_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1994/i-love-feedback_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/i-love-feedback_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1994/i-love-feedback_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/i-love-feedback_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/1994/i-love-feedback_s444x250_m1x0_q90_noupscale.png" alt="">
+   
+    <img srcset="assets/images/work/i-love-feedback_s830x0_q80_noupscale.png" alt="">
   </picture>
 </a>
     
@@ -123,17 +113,8 @@
     
 <a href="" class="card__cover">
   <picture>
-     <source srcset="https://flockler.com/thumbs/1994/ask-why_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/ask-why_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1994/ask-why_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/ask-why_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1994/ask-why_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/ask-why_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1994/ask-why_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/ask-why_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1994/ask-why_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/1994/ask-why_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
-      <img srcset="https://flockler.com/thumbs/1994/ask-why_s444x250_m1x0_q90_noupscale.png" alt="">
+   
+      <img srcset="assets/images/work/ask-why_s444x250_m1x0_q90_noupscale.png" alt="">
   </picture>
 </a>
     

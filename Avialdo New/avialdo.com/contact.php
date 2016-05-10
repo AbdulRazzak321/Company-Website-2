@@ -84,6 +84,7 @@
       </span>
   </p>
 </div>
+<!--
 
     <div class="contact-block contact-block--person">
   <h2 class="contact-block__title">
@@ -221,6 +222,7 @@
       </span>
   </p>
 </div>
+-->
 
   <div class="contact-block contact-block--address">
     <div class="contact-block__padding">
@@ -284,6 +286,7 @@
       </span>
   </p>
 </div>
+<!--
 
     <div class="contact-block contact-block--person">
   <h2 class="contact-block__title">
@@ -344,6 +347,7 @@
       </span>
   </p>
 </div>
+-->
 
   
   <div class="contact-block contact-block--address">
@@ -384,6 +388,7 @@
 
   </div>
 
+<!--
     <div class="contact-block contact-block--person">
   <h2 class="contact-block__title">
     Sales UK
@@ -420,6 +425,7 @@
       </span>
   </p>
 </div>
+-->
 
 
   <div class="contact-block contact-block--address">
@@ -458,7 +464,7 @@
 </picture>
 
   </div>
-<!--
+
 
     <div class="contact-block contact-block--person">
   <h2 class="contact-block__title">
@@ -479,7 +485,7 @@
       </span>
   </p>
 </div>
-
+<!--
     <div class="contact-block contact-block--person">
   <h2 class="contact-block__title">
     Sales Germany
@@ -729,7 +735,7 @@
       </span>
   </p>
 </div>
-
+-->
   
   <div class="contact-block contact-block--address">
     <h2 class="contact-block__title">Address</h2>
@@ -756,7 +762,7 @@
   </div>
 </div>
 
--->
+
   </div>
       </div>
 </section>

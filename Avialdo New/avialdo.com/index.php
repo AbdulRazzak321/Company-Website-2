@@ -412,7 +412,7 @@
   <picture>
    
       
-     <img srcset="https://flockler.com/thumbs/2659/munich_web--osek4dwdzf_s444x250_m1x0_q90_noupscale.jpg" alt="">
+     <img srcset="assets/images/work/munich_web--osek4dwdzf_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
@@ -443,18 +443,18 @@
 <a href="open-positions/android-developer-munich.php" class="card__cover">
   <picture>
 
-    <source srcset="https://flockler.com/thumbs/2659/munich_android_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_android_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_android_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_android_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_android_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_android_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_android_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_android_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_android_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_android_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+    <source srcset="assets/images/work/design1.png,
+                    assets/images/work/design2.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/work/design3.png,
+                    assets/images/work/design4.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/work/design5.png,
+                    assets/images/work/design6.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/work/design7.png,
+                    assets/images/work/design8.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/work/design9.png,
+                    assets/images/work/design10.png 2x" media="(min-width: 200px)">
    
-    <img srcset="https://flockler.com/thumbs/2659/munich_android_s444x250_m1x0_q90_noupscale.jpg" alt="">
+    <img srcset="assets/images/work/design1.png" alt="">
   </picture>
 </a>
     
@@ -485,19 +485,8 @@
     
 <a href="open-positions/senior-ios-developer-munich.php" class="card__cover">
   <picture>
-  
-    <source srcset="https://flockler.com/thumbs/2659/munich_ios_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_ios_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_ios_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_ios_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_ios_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_ios_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_ios_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_ios_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2659/munich_ios_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2659/munich_ios_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-   
-    <img srcset="https://flockler.com/thumbs/2659/munich_ios_s444x250_m1x0_q90_noupscale.jpg" alt="">
+      
+     <img srcset="assets/images/work/ios1.png" alt="">
   </picture>
 </a>
     
@@ -1181,6 +1170,11 @@
         <article class="card card--tweet" data-id="3460535"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
+       <a href="https://twitter.com/AvialdoSolution/status/631789653071237120" class="card__cover" target="_blank">
+      <picture>
+        <img src="assets/images/CMSRVzFUAAA4vfB%20(1).jpg" alt="">
+      </picture>
+</a>
         <div class="card__body">
       <div class="card__meta">
         <a href="#" class="card__published-at-link" target="_blank">
@@ -1189,30 +1183,13 @@
           </time>
 </a>      </div>
       <p class="card__tweet">
-        Want to know more about creating an 
-<!--          <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23innovation" rel="nofollow" target="_blank" title="#innovation">#innovation</a><a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23culture" rel="nofollow" target="_blank" title="#culture">#culture</a>? Vote for <a class="tweet-url username" href="https://twitter.com/TuomasSyrjanen" rel="nofollow" target="_blank">@TuomasSyrjanen</a>'s <a class="tweet-url username" href="https://twitter.com/nextconf" rel="nofollow" target="_blank">@nextconf</a> session &gt; <a href="https://t.co/Stlwvh1Q16" rel="nofollow" target="_blank">https://t.co/Stlwvh1Q16</a> <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23Next16" rel="nofollow" target="_blank" title="#Next16">#Next16</a>-->
+       - "I have not failed.
+          <a class="tweet-url hashtag" href="" rel="nofollow" target="_blank" title="#innovation"> I've just found</a><a class="tweet-url hashtag" href="" rel="nofollow" target="_blank" title="#culture">#10,000 ways</a>that won't work." <a class="tweet-url username" href="" rel="nofollow" target="_blank"> #ThomasEdison</a>
       </p>
     </div>
   </div>
 </article>
 
-        <article class="card card--tweet" data-id="3450199"
-  itemscope itemprop="article" itemtype="http://schema.org/article">
-  <div class="card__inner">
-        <div class="card__body">
-      <div class="card__meta">
-        <a href="" class="card__published-at-link" target="_blank">
-          <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T17:03:38+00:00">
-            April 12, 2016 17:01
-          </time>
-</a>      </div>
-      <p class="card__tweet">
-        The latest 
-<!--          <a class="tweet-url username" href="https://twitter.com/thethingcast" rel="nofollow" target="_blank">@thethingcast</a> episode is up! <a class="tweet-url username" href="https://twitter.com/mobile_rat" rel="nofollow" target="_blank">@mobile_rat</a> &amp; <a class="tweet-url username" href="https://twitter.com/toastedric" rel="nofollow" target="_blank">@toastedric</a>  speak to <a class="tweet-url username" href="https://twitter.com/thornet" rel="nofollow" target="_blank">@thornet</a> of the <a class="tweet-url username" href="https://twitter.com/mozilla" rel="nofollow" target="_blank">@mozilla</a> Foundation <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23IoT" rel="nofollow" target="_blank" title="#IoT">#IoT</a> <a href="https://t.co/q9qky9uhV5" rel="nofollow" target="_blank">https://t.co/q9qky9uhV5</a>-->
-      </p>
-    </div>
-  </div>
-</article>
         <!--
         <article class="card card--tweet" data-id="3447117"
   itemscope itemprop="article" itemtype="http://schema.org/article">
