@@ -13,7 +13,7 @@
   <meta property="og:title" content="Contact — Avialdo">
   <meta property="og:description" name="description" content="We create digital services for people to love">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="contact.html">
+  <meta property="og:url" content="contact.php">
 
 
 </head>

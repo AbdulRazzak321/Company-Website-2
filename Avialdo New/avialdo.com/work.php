@@ -90,7 +90,7 @@
   </div>
 
   <p class="card__summary">
-   Our goal is to give you peace of mind. Our legal team works with individuals, families and businesses to provide a wide range of high quality legal services.  </p>
+  Prize Bond is the easiest and fastest way to look up Prize Bond draws and check if you got lucky.  </p>
 
   <div class="card__clipper"></div>
 </div>
@@ -129,7 +129,7 @@
   </div>
 
   <p class="card__summary">
-    Polypropylene Products Limited was a pioneering investment made in 1973 which introduced, for the first time in Pakistan, woven polypropylene bags for industrial packaging.
+   The UFCW5 App is the best way for its member to stay connected on the go with their Android powered phone.
   </p>
 
   <div class="card__clipper"></div>

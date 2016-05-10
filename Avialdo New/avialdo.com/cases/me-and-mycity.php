@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
-  <title>Jangda Law — Avialdo</title>
+  <title>Prize Bond — Avialdo</title>
   <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
  
   <meta property="og:title" content="Teaching school kids about life - Me &amp; MyCity — Futurice">
@@ -49,14 +49,14 @@ include ("../Header.php");
       <div class="article__header__meta">
       </div>
       <h1 class="article__header__title" itemprop="headline">
-        Jangda Law
+        Prize Bond
       </h1>
     </header>
 
 
     <div class="article__body" itemprop="articleBody">
       <figure class="article__figure">
-<div class="article__figure__placeholder"><img alt="" src="../assets/images/work/jangdalaw.png"></div>
+<div class="article__figure__placeholder"><img alt="" src="../assets/images/work/prizebond.png"></div>
 </figure>
 
 <p><a href="http://yrityskyla.fi/en/">Me &amp; MyCity</a> is a unique education concept, with separate solutions tailored to teach primary and secondary school children about entrepreneurship, the economy and society. The study modules include training for teachers, learning materials based on the national curriculum and a visit to the MyCity learning environment.</p>

@@ -71,7 +71,7 @@
   </div>
 
   <p class="card__summary">
-   Our goal is to give you peace of mind. Our legal team works with individuals, families and businesses to provide a wide range of high quality legal services.  </p>
+   Prize Bond is the easiest and fastest way to look up Prize Bond draws and check if you got lucky. </p>
 
   <div class="card__clipper"></div>
 </div>
@@ -102,7 +102,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/innovate-finance.php">UFCW 99</a>
+    <a href="cases/innovate-finance.php">UFCW 5</a>
   </h1>
 
   <div class="card__meta">
@@ -110,7 +110,7 @@
   </div>
 
   <p class="card__summary">
-    Polypropylene Products Limited was a pioneering investment made in 1973 which introduced, for the first time in Pakistan, woven polypropylene bags for industrial packaging.
+   The UFCW5 App is the best way for its member to stay connected on the go with their Android powered phone.
   </p>
 
   <div class="card__clipper"></div>
@@ -1114,19 +1114,40 @@
         <article class="card card--tweet" data-id="3468386"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
+      <a href="https://twitter.com/AvialdoSolution/status/662264484703014912" class="card__cover" target="_blank">
+      <picture>
+        <img src="assets/images/CPG8-NiUYAIuYK3.jpg" alt="">
+      </picture>
+</a>
         <div class="card__body">
       <div class="card__meta">
-        <a href="#" class="card__published-at-link" target="_blank">
-          <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T15:37:38+00:00">
-            April 13, 2016 15:33
+        <a href="https://twitter.com/AvialdoSolution/status/662264484703014912" class="card__published-at-link" target="_blank">
+          <time class="card__published-at" itemprop="datePublished" datetime="2015-11-13T15:37:38+00:00">
+            Nov 5, 2015 18:45
           </time>
 </a>      </div>
       <p class="card__tweet">
-        Half an hour to go before the games start at 
-<!--          <a class="tweet-url hashtag" href="" rel="nofollow" target="_blank" title="#SpaceTyckiting">#SpaceTyckiting</a>-->
-          Stockholm. Follow the battles live from 
-<!--          <a href="" rel="nofollow" target="_blank">https://t.co/8dMiEHeRU4</a>-->
-          !
+       "First, solve the problem. <a class="tweet-url hashtag" href="" rel="nofollow" target="_blank" title="#SpaceTyckiting">#then,</a> write the code."<a href="" rel="nofollow" target="_blank">#JohnJohnson</a>!
+      </p>
+    </div>
+  </div>
+</article>
+        <article class="card card--tweet" data-id="3441617"
+  itemscope itemprop="article" itemtype="http://schema.org/article">
+  <div class="card__inner">
+    <a href="https://twitter.com/AvialdoSolution/status/712270250532847616" class="card__cover" target="_blank">
+      <picture>
+        <img src="assets/images/CeJ-BGsW0AAUPoM.jpg-large" alt="">
+      </picture>
+</a>    <div class="card__body">
+      <div class="card__meta">
+        <a href="https://twitter.com/AvialdoSolution/status/712270250532847616" class="card__published-at-link" target="_blank">
+          <time class="card__published-at" itemprop="datePublished" datetime="2016-04-12T07:46:42+00:00">
+            May 22, 2016 07:42
+          </time>
+</a>      </div>
+      <p class="card__tweet">
+        - Prize Bond <a class="tweet-url hashtag" href="" rel="nofollow" target="_blank" title="#agile">#Application</a> - is now also available on the- <a class="tweet-url username" href="" rel="nofollow" target="_blank">iOS App Store.</a> and <a href="" rel="nofollow" target="_blank"> Android Play Store</a>
       </p>
     </div>
   </div>
@@ -1136,17 +1157,22 @@
         <article class="card card--tweet" data-id="3465961"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
+      <a href="https://twitter.com/AvialdoSolution/status/644504000499331073" class="card__cover" target="_blank">
+      <picture>
+        <img src="assets/images/CMDQW3wUsAQRPsy.jpg" alt="">
+      </picture>
+</a>
         <div class="card__body">
       <div class="card__meta">
-        <a href="#" class="card__published-at-link" target="_blank">
+        <a href="https://twitter.com/AvialdoSolution/status/644504000499331073" class="card__published-at-link" target="_blank">
           <time class="card__published-at" itemprop="datePublished" datetime="2016-04-13T13:04:47+00:00">
-            April 13, 2016 13:01
+            Sept 6, 2015 18:31
           </time>
 </a>      </div>
       <p class="card__tweet">
-        We are hacking again! This time in Stockholm. You can follow the games from 
-<!--          <a href="https://t.co/TYPGtqNkAS" rel="nofollow" target="_blank">https://t.co/TYPGtqNkAS</a>-->
-<!--          (Battle time: 17:00 CET) <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23SpaceTyckiting" rel="nofollow" target="_blank" title="#SpaceTyckiting">#SpaceTyckiting</a>-->
+       "It's fine to celebrate SUCCESS
+          <a href="" rel="nofollow" target="_blank">but it is more important </a>
+           to heed the lessons of FAILURE." <a class="tweet-url hashtag" href="" rel="nofollow" target="_blank" title="#SpaceTyckiting"> #BillGates</a>
       </p>
     </div>
   </div>
