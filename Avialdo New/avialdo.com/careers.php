@@ -47,31 +47,21 @@
   <div class="section__padding">
     <h2 class="section__heading section__heading--main">Join Avialdo</h2>
     <div class="section__careers three-cols">
-        <article class="card card--careers" data-id="1900927"
+       <article class="card" data-id="2721194"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/stockholm.php" class="card__cover">
+<a href="open-positions/web-service-creator-munich.php" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="https://flockler.com/thumbs/2003/istock_000047541008_web_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/istock_000047541008_web_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2003/istock_000047541008_web_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/istock_000047541008_web_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2003/istock_000047541008_web_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/istock_000047541008_web_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2003/istock_000047541008_web_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/istock_000047541008_web_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2003/istock_000047541008_web_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/istock_000047541008_web_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/2003/istock_000047541008_web_s444x250_m1x0_q90_noupscale.jpg" alt="">
+   
+      
+     <img srcset="assets/images/work/munich_web--osek4dwdzf_s444x250_m1x0_q90_noupscale.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/stockholm.php">Do you want to make better software for a better world?</a>
+    <a href="open-positions/web-service-creator-munich.html">(Senior) Web Service Creator (Munich)</a>
   </h1>
 
   <div class="card__meta">
@@ -79,7 +69,7 @@
   </div>
 
   <p class="card__summary">
-    We’re in a bit of a pickle. A jam, even. We’re looking for people, but not just anyone will do. We’re looking for a very particular type: an&hellip;
+    You think in systems, services and API’s? A browser is not just a rendering tool, it's your medium of choice? Whether it's JavaScript, Java,&hellip;
   </p>
 
   <div class="card__clipper"></div>
@@ -88,31 +78,32 @@
   </div>
 </article>
 
-        <article class="card card--careers" data-id="810264"
+
+        <article class="card" data-id="2721523"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="careers/career-stories-martin-richter.php" class="card__cover">
+<a href="open-positions/android-developer-munich.php" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="https://flockler.com/thumbs/2003/martin_richter_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/martin_richter_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2003/martin_richter_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/martin_richter_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2003/martin_richter_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/martin_richter_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2003/martin_richter_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/martin_richter_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2003/martin_richter_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/martin_richter_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/2003/martin_richter_s444x250_m1x0_q90_noupscale.jpg" alt="">
+
+    <source srcset="assets/images/work/design1.png,
+                    assets/images/work/design2.png 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/work/design3.png,
+                    assets/images/work/design4.png 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/work/design5.png,
+                    assets/images/work/design6.png 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/work/design7.png,
+                    assets/images/work/design8.png 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/work/design9.png,
+                    assets/images/work/design10.png 2x" media="(min-width: 200px)">
+   
+    <img srcset="assets/images/work/design1.png" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="careers/career-stories-martin-richter.php">Career stories: Martin Richter</a>
+    <a href="open-positions/android-developer-munich.php">(Senior) Android Developer (Munich)</a>
   </h1>
 
   <div class="card__meta">
@@ -120,7 +111,7 @@
   </div>
 
   <p class="card__summary">
-    Futurice gives people freedom to develop themselves. I think that people are smart, and if you don’t get in their way, they’ll know what to do. 
+    Are you are a passionate Android developer who wants to have an impact on people's lives, loves fresh challenges and enjoys life on the edge?&hellip;
   </p>
 
   <div class="card__clipper"></div>
@@ -129,31 +120,22 @@
   </div>
 </article>
 
-        <article class="card card--careers" data-id="809114"
+
+
+        <article class="card" data-id="2721455"
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="" class="card__cover">
+<a href="open-positions/senior-ios-developer-munich.php" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="https://flockler.com/thumbs/2003/andre_s444x250_c639x373_l35x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/andre_s888x500_c639x373_l35x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2003/andre_s368x207_c639x373_l35x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/andre_s736x414_c639x373_l35x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2003/andre_s256x144_c639x373_l35x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/andre_s512x288_c639x373_l35x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2003/andre_s600x338_c639x373_l35x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/andre_s1200x675_c639x373_l35x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2003/andre_s320x180_c639x373_l35x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/andre_s640x360_c639x373_l35x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/2003/andre_s444x250_c639x373_l35x0_m1x0_q90_noupscale.jpg" alt="">
+      
+     <img srcset="assets/images/work/ios1.png" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="">Career stories: Andre Medeiros</a>
+    <a href="open-positions/senior-ios-developer-munich.php">(Senior) iOS Developer (Munich)</a>
   </h1>
 
   <div class="card__meta">
@@ -161,7 +143,7 @@
   </div>
 
   <p class="card__summary">
-    "The best thing about working at Futurice is being surrounded by people who have plenty of experience."
+    Are you are a passionate iOS developer who wants to have an impact on people's lives, loves fresh challenges and enjoys life on the edge? Do&hellip;
   </p>
 
   <div class="card__clipper"></div>
@@ -169,6 +151,7 @@
 
   </div>
 </article>
+
 
         <article class="card card--careers" data-id="1407301"
   itemscope itemprop="article" itemtype="http://schema.org/article">
@@ -218,18 +201,9 @@
 <a href="" class="card__cover">
   <picture>
  
-    <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s444x250_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s888x500_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s368x207_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s736x414_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s256x144_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s512x288_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s600x338_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s1200x675_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s320x180_c2230x1301_l0x131_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s640x360_c2230x1301_l0x131_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+  
 
-    <img srcset="https://flockler.com/thumbs/2003/13057182083_82d73b00b0_o_s444x250_c2230x1301_l0x131_m1x0_q90_noupscale.jpg" alt="">
+    <img srcset="assets/images/work/microsoft_surface_pro_4_lid-100620065-orig.jpg" alt="">
   </picture>
 </a>
     

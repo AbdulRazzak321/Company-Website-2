@@ -43,49 +43,27 @@
     
 <a href="events/muotoillaan-terveyspalvelut-uusiksi.php" class="card__cover">
   <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s444x250_c2863x1670_l0x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s888x500_c2863x1670_l0x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s368x207_c2863x1670_l0x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s736x414_c2863x1670_l0x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s256x144_c2863x1670_l0x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s512x288_c2863x1670_l0x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s600x338_c2863x1670_l0x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s1200x675_c2863x1670_l0x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s320x180_c2863x1670_l0x0_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s640x360_c2863x1670_l0x0_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
-    <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/2004/palvelumuotoilukurssi--ls8pbpihjy_s444x250_c2863x1670_l0x0_m1x0_q90_noupscale.jpg" alt="">
+   
+    <img srcset="assets/images/event/avialdo-logo--green.png" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="events/muotoillaan-terveyspalvelut-uusiksi.php">Muotoillaan terveyspalvelut uusiksi</a>
+    <a href="events/muotoillaan-terveyspalvelut-uusiksi.php">Avialdo organizes workshop to promote learning of new technologies</a>
   </h1>
 
   <div class="card__meta">
       <span class="card__meta__event">
-      On Wednesday Mar 16
+      On Wednesday June 15
       in Tampere
       </span>
   </div>
 
   <p class="card__summary">
-    Muotoillaan terveyspalvelut uusiksi 
-
-
-Milloin 
-2016-03-16 15:00 2016-05-11 18:00  
-
-
-Missä 
-
-Kuninkaankatu 21, 4 krs 
-
-Tampere 
-
-Finland&hellip;
+   June 2015,
+      IBA encourages its students to start
+      their own business ventures,
   </p>
 
   <div class="card__clipper"></div>
@@ -101,55 +79,36 @@ Finland&hellip;
 <a href="" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="https://flockler.com/thumbs/2004/whappu_s444x250_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/2004/whappu_s888x500_m1x0_q65_noupscale.png 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2004/whappu_s368x207_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/2004/whappu_s736x414_m1x0_q65_noupscale.png 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2004/whappu_s256x144_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/2004/whappu_s512x288_m1x0_q65_noupscale.png 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2004/whappu_s600x338_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/2004/whappu_s1200x675_m1x0_q65_noupscale.png 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2004/whappu_s320x180_m1x0_q90_noupscale.png,
-                    https://flockler.com/thumbs/2004/whappu_s640x360_m1x0_q65_noupscale.png 2x" media="(min-width: 200px)">
+    <source srcset="assets/images/event/Event_2_1.jpg,
+                    assets/images/event/Event_2_2.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/event/Event_2_3.jpg,
+                    assets/images/event/Event_2_4.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/event/Event_2_5.jpg,
+                    assets/images/event/Event_2_6.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/event/Event_2_7.jpg,
+                    assets/images/event/Event_2_8.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/event/Event_2_9.jpg,
+                    assets/images/event/Event_2_10.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/2004/whappu_s444x250_m1x0_q90_noupscale.png" alt="">
+    <img srcset="assets/images/work/Event_2_1.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="">Whappu app to experience Wappu like never before</a>
+    <a href="">Probattle organized by IBA Computer Science Society</a>
   </h1>
 
   <div class="card__meta">
       <span class="card__meta__event">
-      On Thursday Apr 07
-      in Tampere
+      On April 13 - 15 2015 
+      in IBA
       </span>
   </div>
 
   <p class="card__summary">
-    Whappu app 
-
-
-Milloin 
-2016-04-07 12:00 2016-05-01 23:59  
-
-
-Missä 
-
-  
-
-Tampere 
-
-Finland 
- 
-
-
-Kotisivu 
-
-
-http://wappu.futurice.com/&hellip;
+  IBA ProBattle,
+      the flagship event under the banner of the IBA Computer Science Society
   </p>
 
   <div class="card__clipper"></div>

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
 
-  <title>Muotoillaan terveyspalvelut uusiksi — Avialdo</title>
+  <title>Avialdo organizes workshop — Avialdo</title>
   <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
   
   <meta property="og:title" content="Muotoillaan terveyspalvelut uusiksi — Futurice">
@@ -70,14 +70,14 @@ http://tinyurl.com/futurice-palvelumuotoilukurssi
           </span>
       </div>
       <h1 class="article__header__title" itemprop="headline">
-        Muotoillaan terveyspalvelut uusiksi
+       Avialdo organizes workshop to promote learning of new technologies
       </h1>
     </header>
 
 
     <div class="article__body" itemprop="articleBody">
       <div class="article__event">
-<h2 class="article__event__name">Muotoillaan terveyspalvelut uusiksi</h2>
+<h2 class="article__event__name">Avialdo organizes workshop</h2>
 
 <div class="article__event__field article__event__field--time">
 <div class="article__event__label">Milloin</div>
@@ -102,10 +102,20 @@ http://tinyurl.com/futurice-palvelumuotoilukurssi
 </div>
 
 <figure class="article__figure">
-<div class="article__figure__placeholder"><img alt="" src="../assets/images/res/palvelumuotoilukurssi_s830x0_q80_noupscale.png" style="max-height:none !important"></div>
+<div class="article__figure__placeholder"><img alt="" src="../assets/images/event/avialdo_organizes_workshop_Even_1_2.jpg" style="max-height:none !important"></div>
 </figure>
 
-<p> </p>
+<p><span><span>June 2015, IBA encourages its students to start their own business ventures, one such example is Avialdo. Started by three students Zohair Hemani, Abdul Wahab and Zain Shafi, Avialdo has now established itself as a major solution provider dealing with everything from cutting edge applications to the most comprehensive web solutions in the IT Industry.
+</span></span></p>
+
+<p>Unlike most startups, Avialdo also focuses on collective growth of the society. Targeting students going into the field of programming and development, Avialdo has held several workshops for imparting focused skills within the CS students. 
+
+The first of their workshops was held by Zohair Hemani and Zain Shafi at Iqra University for PhoneGap, an open source framework that allows you to create mobile applications using standardized web APIs.
+
+Avialdo has also organized two workshops at IBA to familiarize students with iOS development and to give them a basic knowledge of iOS programming. The two workshops were held at different days and timings to facilitate the maximum number of students. Abdul Wahab and Zain Shafi gave a 3 hour extensive workshop giving detailed knowledge of the iOS Framework and at the end of it students were able to design a small fully functional applications for iPhone.
+
+Avialdo further aim to promote the newer disciplines even further within IBA and in other universities through these workshops and training sessions. We wish them the best of luck for the future.</p>
+
 
     </div>
 

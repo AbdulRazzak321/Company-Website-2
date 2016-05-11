@@ -11,17 +11,14 @@
 </a>        <a href="https://www.linkedin.com/company/avialdo" class="follow-us__link follow-us__link--instagram" target="_blank">
           <img alt="Linkedin" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.png" />
 </a>                             
-        <a href="skype:avialdo.solutions?call" class="follow-us__link follow-us__link--vimeo" target="_blank">
-          <img alt="Skype" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/some-icons.png';" src="/avialdo.com/assets/images/some-icons.png" />
-</a>    
-
+        
     </div>
   <div class="footer__padding">
     <div class="footer__logo">
       <a href="/avialdo.com/index.php">
         <img alt="Avialdo" data-pin-no-hover="true" onerror="this.onerror=null;this.src='/avialdo.com/assets/images/avialdo-logo--white.png';" src="/avialdo.com/assets/images/avialdo-logo--white.png" />
 </a>
-      <p class="footer__tagline">We create digital services for people to love</p>
+      <p class="footer__tagline">Scalable Solutions For Growing Businesses</p>
     </div>
 
     <div class="footer__menu" style="display:initial;">

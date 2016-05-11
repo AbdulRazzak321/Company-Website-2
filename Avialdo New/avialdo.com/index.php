@@ -932,18 +932,9 @@
 <a href="blog/lean-service-creation-a-video-blog.php" class="card__cover">
   <picture>
  
-    <source srcset="https://flockler.com/thumbs/1992/lsc-way-of-working_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/lsc-way-of-working_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/1992/lsc-way-of-working_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/lsc-way-of-working_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/1992/lsc-way-of-working_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/lsc-way-of-working_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/1992/lsc-way-of-working_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/lsc-way-of-working_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/1992/lsc-way-of-working_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/1992/lsc-way-of-working_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+   
      
-    <img srcset="https://flockler.com/thumbs/1992/lsc-way-of-working_s444x250_m1x0_q90_noupscale.jpg" alt="">
+    <img srcset="assets/images/work/microsoft_surface_pro_4_lid-100620065-orig.jpg" alt="">
   </picture>
 </a>
     
