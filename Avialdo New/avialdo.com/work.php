@@ -63,7 +63,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/me-and-mycity.php">
+<a href="cases/prize-bond.php">
 
   <picture>
     <source srcset="assets/images/work/mobile-app-design1(1).png,
@@ -82,7 +82,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/me-and-mycity.php">Prize Bond</a>
+    <a href="cases/prize-bond.php">Prize Bond</a>
   </h1>
 
   <div class="card__meta">
@@ -102,7 +102,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/innovate-finance.php" class="card__cover">
+<a href="cases/UFCW5.php" class="card__cover">
   <picture>
       <source srcset="assets/images/work/ufcw1.png,
                     assets/images/work/ufcw2.png 2x" media="(min-width: 984px)">
@@ -121,7 +121,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/innovate-finance.php">UFCW 99</a>
+    <a href="cases/UFCW5.php">UFCW 99</a>
   </h1>
 
   <div class="card__meta">
@@ -143,7 +143,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/case-tallink.php" class="card__cover">
+<a href="cases/Walknsell.php" class="card__cover">
   <picture>
      <source srcset="assets/images/work/walknsell1.png,
                     assets/images/work/walknsell2.png 5x" media="(min-width: 984px)">
@@ -161,7 +161,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/case-tallink.php">WalknSell</a>
+    <a href="cases/Walknsell.php">WalknSell</a>
   </h1>
 
   <div class="card__meta">
@@ -182,7 +182,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="cases/k-ruoka-mobile.php" class="card__cover">
+<a href="cases/Korkster.php" class="card__cover">
   <picture>
      <source srcset="assets/images/work/korkster1.png,
                     assets/images/work/korkster2.png 2x" media="(min-width: 984px)">
@@ -200,7 +200,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="cases/k-ruoka-mobile.php">Korkster</a>
+    <a href="cases/Korkster.php">Korkster</a>
   </h1>
 
   <div class="card__meta">

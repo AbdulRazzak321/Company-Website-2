@@ -41,7 +41,7 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="events/muotoillaan-terveyspalvelut-uusiksi.php" class="card__cover">
+<a href="events/IBA_Event.php" class="card__cover">
   <picture>
    
     <img srcset="assets/images/event/avialdo-logo--green.png" alt="">
@@ -50,7 +50,7 @@
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="events/muotoillaan-terveyspalvelut-uusiksi.php">Avialdo organizes workshop to promote learning of new technologies</a>
+    <a href="events/IBA_Event.php">Avialdo organizes workshop to promote learning of new technologies</a>
   </h1>
 
   <div class="card__meta">
@@ -121,38 +121,38 @@
   itemscope itemprop="article" itemtype="http://schema.org/article">
   <div class="card__inner">
     
-<a href="" class="card__cover">
+<a href="events/Iqra_University_Event.php" class="card__cover">
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s444x250_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s888x500_m1x0_q65_noupscale.jpg 2x" media="(min-width: 984px)">
-    <source srcset="https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s368x207_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s736x414_m1x0_q65_noupscale.jpg 2x" media="(min-width: 768px)">
-    <source srcset="https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s256x144_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s512x288_m1x0_q65_noupscale.jpg 2x" media="(min-width: 600px)">
-    <source srcset="https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s600x338_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s1200x675_m1x0_q65_noupscale.jpg 2x" media="(min-width: 480px)">
-    <source srcset="https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s320x180_m1x0_q90_noupscale.jpg,
-                    https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s640x360_m1x0_q65_noupscale.jpg 2x" media="(min-width: 200px)">
+    <source srcset="assets/images/event/Iqra_1.jpg,
+                    assets/images/event/Iqra_2.jpg 2x" media="(min-width: 984px)">
+    <source srcset="assets/images/event/Iqra_3.jpg,
+                    assets/images/event/Iqra_4.jpg 2x" media="(min-width: 768px)">
+    <source srcset="assets/images/event/Iqra_5.jpg,
+                    assets/images/event/Iqra_6.jpg 2x" media="(min-width: 600px)">
+    <source srcset="assets/images/event/Iqra_7.jpg,
+                    assets/images/event/Iqra_8.jpg 2x" media="(min-width: 480px)">
+    <source srcset="assets/images/event/Iqra_9.jpg,
+                    assets/images/event/Iqra_10.jpg 2x" media="(min-width: 200px)">
     <!--[if IE 9]></video><![endif]-->
-    <img srcset="https://flockler.com/thumbs/2004/space_tyckiting_ad_2_s444x250_m1x0_q90_noupscale.jpg" alt="">
+    <img srcset="assets/images/event/Iqra_1.jpg" alt="">
   </picture>
 </a>
     
 <div class="card__body">
   <h1 class="card__title">
-    <a href="">Space Tyckiting, Stockholm</a>
+    <a href="events/Iqra_University_Event.php">IQRA University PhoneGap Workshop</a>
   </h1>
 
   <div class="card__meta">
       <span class="card__meta__event">
-      On Wednesday Apr 13
-      in Stockholm
+      On Friday Apr 17 2015
+      in Iqra University
       </span>
   </div>
 
   <p class="card__summary">
-    Futurice calls for 24 eager programmers to battle for the mastery of Space Tyckiting!
+    Workshop on PhoneGap in Iqra University which was sucessfully done. 
   </p>
 
   <div class="card__clipper"></div>

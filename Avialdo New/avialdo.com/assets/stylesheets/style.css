@@ -5032,3 +5032,50 @@ fieldset {
 #error span p {
   color:#c0392b;
 }
+
+.image_list {
+    display: inline-block !important;
+    max-width: 32%  !important;
+    max-height: 200px !important;
+}
+
+}
+@media (min-width: 450px) {
+    
+    .image_list{
+    max-width: 49%  !important;
+    max-height: 400px !important;
+}
+
+    .image_list img {
+max-width: 49%  !important;
+    max-height: 400px !important;
+    }
+
+}
+@media (min-width: 360px) {
+    
+    .image_list{
+    max-width: 100%  !important;
+    max-height: 600px !important;
+}
+
+    .image_list img {
+max-width: 100%  !important;
+    max-height: 500px !important;
+    }
+
+}
+@media (min-width: 512px) {
+    
+    .image_list{
+    max-width: 32%  !important;
+    max-height: 200px !important;
+}
+
+    .image_list img {
+max-width: 32%  !important;
+    max-height: 200px !important;
+    }
+
+}
